@@ -1,6 +1,5 @@
 import requests
-import re
-import json
+from lxml import html
 import DataSuite as ds
 import linksFilesCreds as lfc
 import PlayerSuite as ps
@@ -13,7 +12,7 @@ URL = lfc.NF_SCRAPE_URL
 AUTH = lfc.NF_CREDS
 
 
-def getRawData(url, creds):
+def getFinalData(url, creds):
     """
     Takes in scrape_url, creds, search param
     Returns raw data in json format
@@ -25,61 +24,34 @@ def getRawData(url, creds):
     # get raw html from url
     raw_html = r.text
 
-    # search raw html for re paramter to get raw data
-    raw_data = re.search("NF_DATA = (.*)}}};", raw_html)
-
-    # convert raw data to json data
-    json_data = json.loads((raw_data.group(1)) + "}}}")
-
-    return json_data
-
-
-def extractProjectedStats(json_data):
+    tree = html.fromstring(raw_html)
 
     projection_dict = {}
 
-    for item in json_data["daily_projections"]:
+    for dataRow in tree.cssselect('#projection-data tr'):
+        # print (dataRow[0].cssselect('button')[0].get('rel'))
+        player_link = dataRow.cssselect('td.player a')[0]
+        slug = player_link.get('href').split('/')[-1]
+        name = player_link.cssselect('span.full')[0].text_content().split(' (')[0]
 
-        # get nf stats
-        source_id = item["nba_player_id"]
+        pts = float(dataRow[4].text_content())
+        reb = float(dataRow[5].text_content())
+        ast = float(dataRow[6].text_content())
+        stl = float(dataRow[7].text_content())
+        blk = float(dataRow[8].text_content())
+        tpt = None
+        tov = float(dataRow[9].text_content())
+        mins = float(dataRow[3].text_content())
 
-        # create dict entry for player stats
-        entry = ds.createEntry(item["pts"], item["treb"],
-                                    item["ast"], item["stl"],
-                                    item["blk"], item["tov"],
-                                    item["p3m"], item["minutes"])
+        player_id = ps.getPlayerId(slug, 1, name)
 
-        # get name from player dict
-        name = json_data["players"][source_id]["name"]
-
-        # look up or generate universal id for player
-        player_id = ps.getPlayerId(source_id, 1, name)
-
-        # if no player id:
         if player_id is None:
-            # pass on data entry, do not add proj data for this player
             pass
-            # entry for the unfound id added to queue
+
+        entry = ds.createEntry(pts, reb, ast, stl, blk, tov, tpt, mins)
 
         ds.addEntryToProjectionDict(projection_dict, player_id, entry)
 
     return projection_dict
 
-
-def extractPlayerData(json_data):
-    """
-    used for updating master player list
-    extracts player data from raw data
-    """
-
-    # json_data = getRawData(URL, AUTH)
-    player_data = json_data['players']
-
-    return player_data
-
-
-def updatePlayerList(player_data):
-
-    for player_id, data in player_data.items():
-        name = data["name"]
-        player_id = ps.getPlayerId(player_id, 1, name)
+# print(getRawData(URL, AUTH))

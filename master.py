@@ -18,13 +18,13 @@ with open(lfc.DAILY_JSON_TEMPLATE, encoding='utf-8') as data_file:
 data_dict["game_date"] = ds.getCurrentDate()
 
 # get raw nf data
-# raw_nf_data = nf.getRawData(lfc.NF_SCRAPE_URL, lfc.NF_CREDS)
+nf_data = nf.getFinalData(lfc.NF_SCRAPE_URL, lfc.NF_CREDS)
 
 # get final nf data
 # nf_data = nf.extractProjectedStats(raw_nf_data)
 
 # add nf data to data_dict
-# ds.addProjectionDictForSource("number_fire", data_dict, nf_data)
+ds.addProjectionDictForSource("number_fire", data_dict, nf_data)
 
 # get raw rw data
 raw_rw_data = rw.getHtmlTreeFromPage(lfc.RW_LOGIN_URL, lfc.RW_CREDS, lfc.RW_SCRAPE_URL)

@@ -11,7 +11,7 @@ def createEntry(pts, reb, ast, stl, blk, tov, tpt, mins):
 
     entry = {"pts": float(pts), "reb": float(reb), "ast": float(ast),
              "stl": float(stl), "blk": float(blk), "tov": float(tov),
-             "3pt": float(tpt), "min": float(mins)}
+             "3pt": tpt, "min": float(mins)}
 
     return entry
 

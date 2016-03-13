@@ -66,8 +66,14 @@ SUBJECT = 'Daily Scraper Update'
 
 # internal files
 
-DAILY_JSON_TEMPLATE = '/home/tylerpalmer/fantasy/json-data/projections_object_template.json'
-PLAYER_DATA = '/home/tylerpalmer/fantasy/json-data/player_data.json'
-PLAYER_ID_LOOKUP_JSON = '/home/tylerpalmer/fantasy/json-data/player_id_lookup.json'
-PLAYER_INFO_BY_NF_ID = '/home/tylerpalmer/fantasy/json-data/players_by_nf_id.json'
-PLAYER_QUEUE = '/home/tylerpalmer/fantasy/json-data/player_queue.json'
+# DAILY_JSON_TEMPLATE = '/home/tylerpalmer/fantasy/json-data/projections_object_template.json'
+# PLAYER_DATA = '/home/tylerpalmer/fantasy/json-data/player_data.json'
+# PLAYER_ID_LOOKUP_JSON = '/home/tylerpalmer/fantasy/json-data/player_id_lookup.json'
+# PLAYER_INFO_BY_NF_ID = '/home/tylerpalmer/fantasy/json-data/players_by_nf_id.json'
+# PLAYER_QUEUE = '/home/tylerpalmer/fantasy/json-data/player_queue.json'
+
+DAILY_JSON_TEMPLATE = './json-data/projections_object_template.json'
+PLAYER_DATA = './json-data/player_data.json'
+PLAYER_ID_LOOKUP_JSON = './json-data/player_id_lookup.json'
+PLAYER_INFO_BY_NF_ID = './json-data/players_by_nf_id.json'
+PLAYER_QUEUE = './json-data/player_queue.json'

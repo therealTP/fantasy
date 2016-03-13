@@ -33,8 +33,8 @@ def createMessage(daily_proj_dict, s3_status, queue_num):
     Returns message to send in e-mail
     """
     date = daily_proj_dict["game_date"]
-    # nf = str(daily_proj_dict["number_fire"]["record_count"])
-    nf = "DISABLED"
+    nf = str(daily_proj_dict["number_fire"]["record_count"])
+    # nf = "DISABLED"
     rw = str(daily_proj_dict["roto_wire"]["record_count"])
     bm = str(daily_proj_dict["basketball_monster"]["record_count"])
     fp = str(daily_proj_dict["fantasy_pros"]["record_count"])

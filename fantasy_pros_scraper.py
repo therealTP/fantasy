@@ -20,8 +20,8 @@ def getHtmlTreeFromPage(login_url, user, pw, page_url):
     browser.get(login_url)
 
     # pass
-    username = browser.find_element_by_name('username')
-    password = browser.find_element_by_name('password')
+    username = browser.find_element_by_id('id_username')
+    password = browser.find_element_by_id('id_password')
 
     username.send_keys(user)
     password.send_keys(pw)
@@ -70,7 +70,7 @@ def extractProjectedStats(tree):
         mins = float(data[11].text_content())
 
         # get player id for player, or add new entry to player dict with info
-        player_id = ps.getPlayerId(slug, 4, name)
+        player_id = ps.getPlayerId(slug, 4, name) # "4" is source id
 
         # if no player id:
         if player_id is None:
