@@ -7,6 +7,7 @@ import linksFilesCreds as lfc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import json
 
 
 def checkForElement(browsObj, elemName):
@@ -45,6 +46,14 @@ def getHtmlTreeFromPage(login_url, user, pw, page_url):
     # go to scrape url
     browser.get(page_url)
 
+    refresh_button = checkForElement(browser, lfc.BM_REFRESH_BUTTON)
+
+    date_input = checkForElement(browser, lfc.BM_DATE_FIELD)
+    date_input.clear()
+    todays_date = '3/20/2016'
+    date_input.send_keys(todays_date)
+    refresh_button.click()
+
     # print (browser.current_url)
 
     # find select all game box (when loaded) and click
@@ -53,12 +62,11 @@ def getHtmlTreeFromPage(login_url, user, pw, page_url):
     # select_all = browser.find_element_by_xpath('//*[@id="form1"]/div[4]/div[2]/table/tbody/tr/td[1]/table/tbody/tr/td/p[2]/input[1]')
     select_all.click()
 
+
     # print (browser.current_url)
 
     # find refresh data button (when loaded) and click
     refresh_button = checkForElement(browser, lfc.BM_REFRESH_BUTTON)
-    # refresh_button = checkForElement(browser, "ContentPlaceHolder1_RefreshButton")
-    # refresh_button = browser.find_element_by_id("ContentPlaceHolder1_RefreshButton")
     refresh_button.click()
 
     # print (browser.current_url)
@@ -118,8 +126,15 @@ def extractProjectedStats(tree):
 
     return projection_dict
 
-# tree = getHtmlTreeFromPage(lfc.BM_LOGIN_URL, lfc.BM_USER, lfc.BM_PW, lfc.BM_SCRAPE_URL)
+tree = getHtmlTreeFromPage(lfc.BM_LOGIN_URL, lfc.BM_USER, lfc.BM_PW, lfc.BM_SCRAPE_URL)
 
-# stats = extractProjectedStats(tree)
+stats = extractProjectedStats(tree)
 
-# print(stats)
+print(json.dumps(stats))
+
+counter = 0
+
+for stat in stats:
+    counter += 1
+
+print(counter)

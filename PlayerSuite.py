@@ -3,7 +3,7 @@ import linksFilesCreds as lfc
 from difflib import get_close_matches
 
 
-def queueNewPlayer(player_name, id_key, player_id):
+def queueNewPlayer(player_name, id_key, player_id, position=None):
     """
     Adds new data to player_queue json for eval
     id_key = 'nf_id'/ 'rw_id'/ 'bm_id'/ etc.
@@ -33,15 +33,19 @@ def queueNewPlayer(player_name, id_key, player_id):
         queue_dict[player_name] = {"id_key": id_key, "player_id": player_id,
                                    "name_matches": matches}
 
+        if position != None:
+            queue_dict[player_name]["pos"] = position
+
     with open(lfc.PLAYER_QUEUE, 'w') as queue_json:
         json.dump(queue_dict, queue_json)
 
 
-def getPlayerId(player_id, source_id, player_name):
+def getPlayerId(player_id, source_id, player_name, position=None):
     """
     lookup_param: name(str) or ID
     source id: single digit
     returns universal id from player dict
+    position only comes from fantasy cruncher
     """
 
     # assign correct value for id_key based on source
@@ -59,6 +63,9 @@ def getPlayerId(player_id, source_id, player_name):
 
     elif source_id == 5:
         id_key = "bref_id"
+
+    elif source_id == 6:
+        id_key = "fc_id"
 
     else:
         return "You've entered an invalid source_id."
@@ -79,6 +86,9 @@ def getPlayerId(player_id, source_id, player_name):
         elif val["name"].lower() == player_name.lower():
             # if so, add current source_id to data_dict
             val[id_key] = player_id
+            # if positon argument included, add that as well
+            if position != None:
+                val["pos"] = position
 
             # update player_data file with player_id
             with open(lfc.PLAYER_DATA, 'w') as write_json:
@@ -88,12 +98,12 @@ def getPlayerId(player_id, source_id, player_name):
             return key
 
     # if loop through current dict finds no matches:
-    queueNewPlayer(player_name, id_key, player_id)
+    queueNewPlayer(player_name, id_key, player_id, position)
     print ("ID for " + player_name + " not found. Added to player queue.")
     return None
 
 
-def addNewPlayerData(id_key, player_id, player_name):
+def addNewPlayerData(id_key, player_id, player_name, position=None):
     """
     id_key = "nf_id", "rw_id", "bm_id" etc.
     player id = id from source, name
@@ -106,13 +116,16 @@ def addNewPlayerData(id_key, player_id, player_name):
 
         player_dict[new_id] = {id_key: player_id, "name": player_name}
 
+        if position != None:
+            player_dict[new_id]["pos"] = position
+
     with open(lfc.PLAYER_DATA, 'w') as f:
         json.dump(player_dict, f)
 
     print ("New player entry added for " + player_name)
 
 
-def updateExistingPlayer(player_name, id_key, player_id):
+def updateExistingPlayer(player_name, id_key, player_id, position=None):
     """
     id_key = "nf_id", "rw_id", "bm_id" etc.
     player id = id from source, name
@@ -129,6 +142,9 @@ def updateExistingPlayer(player_name, id_key, player_id):
         if val["name"] == player_name:
             # if so, add current source_id to player_data
             val[id_key] = player_id
+            # if a position is provided, include it in player update
+            if position != None:
+                val["pos"] = position
             break
 
     with open(lfc.PLAYER_DATA, 'w') as f:
@@ -154,14 +170,18 @@ def checkPlayerQueue():
             id_key = val["id_key"]
             player_id = val["player_id"]
             matches = val["name_matches"]
+            try:
+                position = val["pos"]
+            except KeyError:
+                position = None
 
             print (key + ": " + str(val))
 
-            response = input('What to do with this entry?')
+            response = input('What to do with this entry? 1 to add new player, 2 to update existing, 3 to skip, 4 to delete entry.')
 
             # response 1: add new entry for player in player data
             if response == "1":
-                addNewPlayerData(id_key, player_id, name)
+                addNewPlayerData(id_key, player_id, name, position)
                 # add to entries to delete arr
                 entries_to_delete.append(name)
 
@@ -174,7 +194,7 @@ def checkPlayerQueue():
                 name_to_update = matches[int(name_index) - 1]
 
                 # update chosen player with new data
-                updateExistingPlayer(name_to_update, id_key, player_id)
+                updateExistingPlayer(name_to_update, id_key, player_id, position)
 
                 # add to entries to delete arr
                 entries_to_delete.append(name)

@@ -31,7 +31,7 @@ def getHtmlTreeFromPage(login_url, user, pw, page_url):
 
     browser.get(page_url)
 
-    # print (browser.page_source)
+    print (browser.page_source)
 
     tree = html.fromstring(browser.page_source)
 
@@ -86,6 +86,6 @@ def extractProjectedStats(tree):
 
     return projection_dict
 
-# tree = getHtmlTreeFromPage(lfc.FP_LOGIN_URL, lfc.FP_USER, lfc.FP_PW, lfc.FP_SCRAPE_URL)
-# # print(tree)
-# print(extractProjectedStats(tree))
+tree = getHtmlTreeFromPage(lfc.FP_LOGIN_URL, lfc.FP_USER, lfc.FP_PW, lfc.FP_SCRAPE_URL)
+# print(tree)
+print(extractProjectedStats(tree))

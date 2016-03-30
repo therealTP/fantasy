@@ -21,7 +21,8 @@ def getStatsForDate(game_date):
 
     # get page from url & turn into html tree
     with requests.Session() as c:
-        page = c.get(full_url, headers=lfc.BR_HEADER, proxies = lfc.BR_PROXY)
+        # page = c.get(full_url, headers=lfc.BR_HEADER, proxies = lfc.BR_PROXY)
+        page = c.get(full_url, headers=lfc.BR_HEADER)
         tree = html.fromstring(page.text)
 
     # extract rows
@@ -63,4 +64,4 @@ def getStatsForDate(game_date):
 
     return stats_dict
 
-# print (getStatsForDate('2015-11-16'))
+print (getStatsForDate('2015-02-21'))

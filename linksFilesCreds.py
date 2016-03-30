@@ -31,7 +31,7 @@ BM_SCRAPE_URL = 'https://basketballmonster.com/Daily.aspx'
 BM_LOGIN_FIELD = 'ctl00$ContentPlaceHolder1$UsernameTextBox'
 BM_PW_FIELD = 'ctl00$ContentPlaceHolder1$PasswordTextBox'
 BM_LOGIN_BUTTON = 'ContentPlaceHolder1_LoginButton'
-# BM_DATE_FIELD = 'ctl00$ContentPlaceHolder1$StartDateTextBox'
+BM_DATE_FIELD = 'ctl00$ContentPlaceHolder1$StartDateTextBox'
 # BM_UPDATE_BUTTON = 'UPDATEDATE'
 BM_SELECT_ALL = 'SELECTALL'
 BM_REFRESH_BUTTON = 'ctl00$ContentPlaceHolder1$RefreshButton'
@@ -45,8 +45,11 @@ FP_PW = 'larry25'
 
 # bball reference (actual stats)
 BR_BASE_URL = 'http://www.basketball-reference.com/friv/dailyleaders.cgi'
-BR_PROXY = {"http": "http://198.169.246.30:80"}
+BR_PROXY = {"http": "http://38.103.38.120:80"}
 BR_HEADER = {'User-agent': 'Mozilla/5.0'}
+
+# fantasy cruncher: salaries and positions
+FC_BASE_URL = 'https://www.fantasycruncher.com/lineup-rewind/'
 
 # aws
 
@@ -55,6 +58,7 @@ AWS_SECRET_ACCESS_KEY = ''  # stored in config file
 AWS_BUCKET_NAME = 'nba-data-2015-2016'
 PROJECTIONS_FOLDER = 'daily-projections/'  # same for internal & s3
 STATS_FOLDER = 'actual-stats/'
+SALARIES_FOLDER = 'salaries/'
 
 # email
 
