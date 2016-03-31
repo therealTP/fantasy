@@ -228,3 +228,9 @@ def getQueueCount():
         count = len(queue_dict)
 
         return count
+
+def getPlayerList():
+    with open(lfc.PLAYER_DATA, encoding='utf-8') as data_file:
+        player_dict = json.loads(data_file.read())
+
+        return player_dict

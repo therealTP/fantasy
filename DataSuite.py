@@ -84,4 +84,19 @@ def getAllGameDates():
 
     return date_array
 
+def getFinalPoints(proj, site):
+    """
+    dk: pts: 1, 3pt: 0.5, reb: 1.25, ast: 1.5, stl: 2, blk: 2, tov: -0.5
+
+    """
+    # create vals arrays for each site [pts, reb, ast, stl, blk, tov, 3pt]
+    if site == 'draftkings':
+        scoringArr = [1, 1.25, 1.5, 2, 2, -0.5, 0.5]
+    elif site == 'fanduel':
+        scoringArr = [1, 1.2, 1.5, 2, 2, -1, 0]
+
+    points = proj["pts"] * scoringArr[0] + proj["reb"] * scoringArr[1] + proj["ast"] * scoringArr[2] + proj["stl"] * scoringArr[3] + proj["blk"] * scoringArr[4] + proj["tov"] * scoringArr[5] + proj["3pt"] * scoringArr[6]
+
+    return points
+
 # print(getAllGameDates())
