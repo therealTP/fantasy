@@ -12,7 +12,7 @@ def addSourceProjsToDict(source, sourceProjs, dict):
     calculates final points proj & optimizes
     """
     for player_id, proj in sourceProjs.items():
-        pointsProj = round(ds.getFinalPoints(proj, 'draftkings'), 3) # only do dk for now
+        pointsProj = round(ds.getFinalPoints(proj, 'fanduel'), 3) # only do dk for now
         # try to add point projections to
         try:
             dict[player_id][source] = pointsProj
@@ -73,14 +73,14 @@ def addPosAndSalaryData(playerProjsDict, dateStr):
     playerData = ps.getPlayerList()
 
     # get salary data for date
-    salaries = s3.getObjectS3(lfc.AWS_BUCKET_NAME, lfc.SALARIES_FOLDER + 'salaries.json')[dateStr]
+    salaries = s3.getObjectS3(lfc.AWS_BUCKET_NAME, lfc.SALARIES_FOLDER + 'fanduel_salaries.json')[dateStr]
 
     # create empty arr for final player projs
     finalProjs = []
 
     for player_id, proj in playerProjsDict.items():
         try:
-            salary = int(salaries[player_id]["draftkings"])
+            salary = int(salaries[player_id]["fanduel"])
             name = playerData[player_id]["name"]
             pos = playerData[player_id]["pos"]
             finalProj = FinalProjection(player_id, pos, name, salary, proj)
@@ -90,12 +90,7 @@ def addPosAndSalaryData(playerProjsDict, dateStr):
 
     return finalProjs
 
-dateToTest = '2015-12-09'
-playerProjs = getFinalProjsForDay(dateToTest)
-finalProjs = addPosAndSalaryData(playerProjs, dateToTest)
 
-# for finalProj in finalProjs:
-#     print(finalProj.name, finalProj.player_id, finalProj.points, finalProj.value, finalProj.position, finalProj.salary)
 
 # function to get optimal lineup from arr of player objects
 def getOptimalLineup(playerData, salaryCap):
@@ -106,14 +101,14 @@ def getOptimalLineup(playerData, salaryCap):
     """
     current_team_salary = 0
     constraints = {
-        'PG':1,
-        'SG':1,
-        'SF':1,
-        'PF':1,
-        'C':1,
-        'G':1,
-        'F':1,
-        'UTIL': 1
+        'PG':2,
+        'SG':2,
+        'SF':2,
+        'PF':2,
+        'C':1
+        # 'G':1,
+        # 'F':1,
+        # 'UTIL': 1
         }
 
     counts = {
@@ -121,10 +116,10 @@ def getOptimalLineup(playerData, salaryCap):
         'SG':0,
         'SF':0,
         'PF':0,
-        'C':0,
-        'G':0,
-        'F':0,
-        'UTIL': 0
+        'C':0
+        # 'G':0,
+        # 'F':0,
+        # 'UTIL': 0
         }
 
     playerData.sort(key=lambda x: x.value, reverse=True)
@@ -140,18 +135,18 @@ def getOptimalLineup(playerData, salaryCap):
             counts[pos] = counts[pos] + 1
             current_team_salary += sal
             continue
-        if counts['G'] < constraints['G'] and current_team_salary + sal <= salaryCap and pos in ['PG','SG']:
-            team.append(player)
-            counts['G'] = counts['G'] + 1
-            current_team_salary += sal
-        if counts['F'] < constraints['F'] and current_team_salary + sal <= salaryCap and pos in ['SF','PF']:
-            team.append(player)
-            counts['F'] = counts['F'] + 1
-            current_team_salary += sal
-        if counts['UTIL'] < constraints['UTIL'] and current_team_salary + sal <= salaryCap and pos in ['PG','SG','SF', 'PF', 'C']:
-            team.append(player)
-            counts['UTIL'] = counts['UTIL'] + 1
-            current_team_salary += sal
+        # if counts['G'] < constraints['G'] and current_team_salary + sal <= salaryCap and pos in ['PG','SG']:
+        #     team.append(player)
+        #     counts['G'] = counts['G'] + 1
+        #     current_team_salary += sal
+        # if counts['F'] < constraints['F'] and current_team_salary + sal <= salaryCap and pos in ['SF','PF']:
+        #     team.append(player)
+        #     counts['F'] = counts['F'] + 1
+        #     current_team_salary += sal
+        # if counts['UTIL'] < constraints['UTIL'] and current_team_salary + sal <= salaryCap and pos in ['PG','SG','SF', 'PF', 'C']:
+        #     team.append(player)
+        #     counts['UTIL'] = counts['UTIL'] + 1
+        #     current_team_salary += sal
 
     playerData.sort(key=lambda x: x.points, reverse=True)
     for player in playerData:
@@ -169,12 +164,52 @@ def getOptimalLineup(playerData, salaryCap):
                     break
     return team
 
-team = getOptimalLineup(finalProjs, 50000)
-points = 0
-salary = 0
-for player in team:
-    points += player.points
-    salary += player.salary
-    print (player)
-print ("\nPoints: {}".format(points))
-print ("Salary: {}".format(salary))
+def getActualPointsForTeam(teamArr, dateStr):
+    """
+    Takes in team arr, which is arr of finalProjection objects
+    Gets actual stats for each player on team & calculates points scored
+    Returns points scored
+    """
+    # get raw projections for date
+    actualStats = s3.getObjectS3(lfc.AWS_BUCKET_NAME, lfc.STATS_FOLDER + dateStr + '_actual.json')
+    actualTeamPoints = 0
+    for playerObj in teamArr:
+        actualPlayerStats = actualStats[playerObj.player_id]
+        actualPlayerPoints = ds.getFinalPoints(actualPlayerStats, 'fanduel')
+        actualTeamPoints += actualPlayerPoints
+
+    return actualTeamPoints
+
+datesToTest = ds.getDateRangeArr('2015-11-04', '2016-04-05')
+
+totalTested = 0
+totalOver265 = 0
+totalUnder275 = 0
+
+for dateToTest in datesToTest:
+
+    try:
+        playerProjs = getFinalProjsForDay(dateToTest)
+        finalProjs = addPosAndSalaryData(playerProjs, dateToTest)
+        team = getOptimalLineup(finalProjs, 60000)
+        points = 0
+        salary = 0
+        for player in team:
+            points += player.points
+            salary += player.salary
+        actualPoints = getActualPointsForTeam(team, dateToTest)
+        totalTested += 1
+        if actualPoints > 275:
+            totalOver265 += 1
+
+        print(points, actualPoints)
+    except (KeyError, TypeError):
+        pass
+
+print(totalOver265 / totalTested)
+
+
+
+#     print (player)
+# print ("\nPoints: {}".format(points))
+# print ("Salary: {}".format(salary))

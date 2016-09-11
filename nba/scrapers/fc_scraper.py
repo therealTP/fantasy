@@ -1,4 +1,3 @@
-import arrow
 import requests
 import json
 import os
@@ -7,27 +6,6 @@ from lxml import html
 import PlayerSuite as ps
 import DataSuite as ds
 import linksFilesCreds as lfc
-
-def getDateRangeArr(startDate, endDate):
-    """
-    Date arguments in YYYY-MM-DD format
-    Inclusive of dates entered
-    Dates in arr also in YYYY-MM-DD format
-    """
-    # convert date strings to arrow objects
-    startArrow = arrow.Arrow.strptime(startDate, '%Y-%m-%d')
-    endArrow = arrow.Arrow.strptime(endDate, '%Y-%m-%d')
-
-    datesArr = []
-
-    # loop through range between start & end
-    while (startArrow <= endArrow):
-        # add each date to datesArr
-        datesArr.append(startArrow.format('YYYY-MM-DD'))
-        # increment start by a day
-        startArrow = startArrow.replace(days=+1)
-
-    return datesArr
 
 def getFcDataForDates(datesArr, site):
     """
@@ -70,12 +48,12 @@ def getFcDataForDates(datesArr, site):
 
     return [salaries, projections]
 
-datesArr = getDateRangeArr('2015-11-02', '2016-03-29')
-fcData = getFcDataForDates(datesArr, 'draftkings')
+datesArr = ds.getDateRangeArr('2015-11-02', '2016-04-05')
+fcData = getFcDataForDates(datesArr, 'fanduel')
 
 # create file name from today's date, inc. data folder
-salary_json_file = "salaries.json"
-proj_json_file = "fc_projections.json"
+salary_json_file = "fanduel_salaries.json"
+proj_json_file = "fc_fanduel_projections.json"
 
 # write final data_dict to json file w/ file name
 with open(salary_json_file, 'w') as write_json:

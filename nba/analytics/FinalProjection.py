@@ -13,4 +13,4 @@ class FinalProjection():
     #     return iter(self.list)
 
     def __str__(self):
-        return str(self.player_id) + " " + self.name + " " + self.position + " " + str(self.salary) + " " + str(self.points)
+        return str(self.player_id) + " " + self.name + " " + self.position + " " + str(self.salary) + " " + str(self.points) + " " + str(self.value)

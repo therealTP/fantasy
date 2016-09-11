@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta, date
 import pytz
+import arrow
 
 
 def createEntry(pts, reb, ast, stl, blk, tov, tpt, mins):
@@ -83,6 +84,27 @@ def getAllGameDates():
         start += delta
 
     return date_array
+
+def getDateRangeArr(startDate, endDate):
+    """
+    Date arguments in YYYY-MM-DD format
+    Inclusive of dates entered
+    Dates in arr also in YYYY-MM-DD format
+    """
+    # convert date strings to arrow objects
+    startArrow = arrow.Arrow.strptime(startDate, '%Y-%m-%d')
+    endArrow = arrow.Arrow.strptime(endDate, '%Y-%m-%d')
+
+    datesArr = []
+
+    # loop through range between start & end
+    while (startArrow <= endArrow):
+        # add each date to datesArr
+        datesArr.append(startArrow.format('YYYY-MM-DD'))
+        # increment start by a day
+        startArrow = startArrow.replace(days=+1)
+
+    return datesArr
 
 def getFinalPoints(proj, site):
     """
