@@ -1,4 +1,4 @@
-class NbaGamePre(Object):
+class NbaGamePre:
     """
     Class for objects containing data on games before they take place
     Used to insert new game data into db
@@ -10,12 +10,13 @@ class NbaGamePre(Object):
     -away_team_id
     """
 
-    def __init__(self, gameDate, dayOfWeek, startTime, homeTeamId, awayTeamId):
+    def __init__(self, gameDate, dayOfWeek, startTime, awayTeamId, homeTeamId):
         self.gameDate = gameDate
         self.dayOfWeek = dayOfWeek
         self.startTime = startTime
-        self.homeTeamId = homeTeamId
         self.awayTeamId = awayTeamId
+        self.homeTeamId = homeTeamId
+
 
     def getCsvRow(self):
         return [
