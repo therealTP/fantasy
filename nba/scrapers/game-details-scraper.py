@@ -47,8 +47,9 @@ def getBoxScoreData(gameUrl, sessionObj, idDict, posDict):
         }
     }
 
-    injuryDivSelector = "div#content > div"
-    inactiveSpans = tree.cssselect(injuryDivSelector)[11]
+    injuryDivSelector = "div#content > div:not(.filter)"
+    inactiveSpans = tree.cssselect(injuryDivSelector)[10]
+    print("INACTIVE SPANS", inactiveSpans.text_content())
 
     # keep track of # spans to parse inactives
     spanCount = 0
@@ -172,13 +173,23 @@ def getDataForAllGames(gameDict, sessionObj, idDict, posDict):
     maxGames = 10
     for game in gameDict:
         print("getting data for ", gameDict[game])
-        if gamesScraped > maxGames:
-            break
+        # if gamesScraped > maxGames:
+        #     break
         
         masterDict[game] = getBoxScoreData(gameDict[game], sessionObj, idDict, posDict)
         gamesScraped += 1
 
+    print("num games scraped", gamesScraped)
+
     return masterDict
+
+def getDataForSomeGames(gamesArr, gameDict, sessionObj, idDict, posDict):
+    gamesData = {}
+    for game in gamesArr:
+        print("getting data for ", gameDict[game])
+        gamesData[game] = getBoxScoreData(gameDict[game], sessionObj, idDict, posDict)
+    
+    return gamesData
 
 # constants
 BASE_URL = 'http://www.basketball-reference.com/boxscores/'
@@ -196,9 +207,22 @@ posDict = getBrefIdToPlayerPosDict()
 # start session
 session = requests.Session()
 
-allGameData = getDataForAllGames(gameUrlDict, session, idDict, posDict)
+gamesToRescrape = ["10209", "11138", "10208", "10213", "11141", "11137", "10211", "10212", "11140", "10210", "11139"]
 
-with open('./../scraped-data/game-logs.json', 'w') as fp:
-    json.dump(allGameData, fp)
+# rescrapedData = getDataForSomeGames(gamesToRescrape, gameUrlDict, session, idDict, posDict)
 
-# print(getBoxScoreData(gameUrlDict["10010"], session, idDict, posDict))
+# with open('./../scraped-data/game-logs.json') as gameData:
+#     gameDataDict = json.load(gameData)
+
+# for game in rescrapedData:
+#     gameDataDict[game] = rescrapedData[game]
+
+# with open ('./../scraped-data/new-game-logs.json', 'w') as newGameData:
+#     json.dump(gameDataDict, newGameData)
+
+# allGameData = getDataForAllGames(gameUrlDict, session, idDict, posDict)
+
+# with open('./../scraped-data/game-logs.json', 'w') as fp:
+#     json.dump(allGameData, fp)
+
+# print(getBoxScoreData(gameUrlDict["11134"], session, idDict, posDict))

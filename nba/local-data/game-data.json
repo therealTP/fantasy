@@ -1,0 +1,7382 @@
+[
+  {
+    "game_id": 10000,
+    "away_team_id": 9,
+    "home_team_id": 1,
+    "game_date": "2015-10-27"
+  },
+  {
+    "game_id": 10001,
+    "away_team_id": 6,
+    "home_team_id": 5,
+    "game_date": "2015-10-27"
+  },
+  {
+    "game_id": 10002,
+    "away_team_id": 19,
+    "home_team_id": 10,
+    "game_date": "2015-10-27"
+  },
+  {
+    "game_id": 10003,
+    "away_team_id": 23,
+    "home_team_id": 3,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10004,
+    "away_team_id": 5,
+    "home_team_id": 2,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10005,
+    "away_team_id": 29,
+    "home_team_id": 9,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10006,
+    "away_team_id": 8,
+    "home_team_id": 11,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10007,
+    "away_team_id": 18,
+    "home_team_id": 14,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10008,
+    "away_team_id": 6,
+    "home_team_id": 15,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10009,
+    "away_team_id": 4,
+    "home_team_id": 16,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10010,
+    "away_team_id": 20,
+    "home_team_id": 17,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10011,
+    "away_team_id": 27,
+    "home_team_id": 21,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10012,
+    "away_team_id": 30,
+    "home_team_id": 22,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10013,
+    "away_team_id": 7,
+    "home_team_id": 24,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10014,
+    "away_team_id": 19,
+    "home_team_id": 25,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10015,
+    "away_team_id": 13,
+    "home_team_id": 26,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10016,
+    "away_team_id": 12,
+    "home_team_id": 28,
+    "game_date": "2015-10-28"
+  },
+  {
+    "game_id": 10017,
+    "away_team_id": 15,
+    "home_team_id": 12,
+    "game_date": "2015-10-29"
+  },
+  {
+    "game_id": 10018,
+    "away_team_id": 7,
+    "home_team_id": 13,
+    "game_date": "2015-10-29"
+  },
+  {
+    "game_id": 10019,
+    "away_team_id": 1,
+    "home_team_id": 20,
+    "game_date": "2015-10-29"
+  },
+  {
+    "game_id": 10020,
+    "away_team_id": 4,
+    "home_team_id": 1,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10021,
+    "away_team_id": 28,
+    "home_team_id": 3,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10022,
+    "away_team_id": 16,
+    "home_team_id": 6,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10023,
+    "away_team_id": 18,
+    "home_team_id": 8,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10024,
+    "away_team_id": 5,
+    "home_team_id": 9,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10025,
+    "away_team_id": 10,
+    "home_team_id": 11,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10026,
+    "away_team_id": 30,
+    "home_team_id": 17,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10027,
+    "away_team_id": 21,
+    "home_team_id": 22,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10028,
+    "away_team_id": 29,
+    "home_team_id": 23,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10029,
+    "away_team_id": 25,
+    "home_team_id": 24,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10030,
+    "away_team_id": 14,
+    "home_team_id": 26,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10031,
+    "away_team_id": 2,
+    "home_team_id": 27,
+    "game_date": "2015-10-30"
+  },
+  {
+    "game_id": 10032,
+    "away_team_id": 29,
+    "home_team_id": 12,
+    "game_date": "2015-10-31"
+  },
+  {
+    "game_id": 10033,
+    "away_team_id": 26,
+    "home_team_id": 13,
+    "game_date": "2015-10-31"
+  },
+  {
+    "game_id": 10034,
+    "away_team_id": 2,
+    "home_team_id": 15,
+    "game_date": "2015-10-31"
+  },
+  {
+    "game_id": 10035,
+    "away_team_id": 10,
+    "home_team_id": 19,
+    "game_date": "2015-10-31"
+  },
+  {
+    "game_id": 10036,
+    "away_team_id": 24,
+    "home_team_id": 25,
+    "game_date": "2015-10-31"
+  },
+  {
+    "game_id": 10037,
+    "away_team_id": 20,
+    "home_team_id": 30,
+    "game_date": "2015-10-31"
+  },
+  {
+    "game_id": 10038,
+    "away_team_id": 27,
+    "home_team_id": 3,
+    "game_date": "2015-11-01"
+  },
+  {
+    "game_id": 10039,
+    "away_team_id": 22,
+    "home_team_id": 5,
+    "game_date": "2015-11-01"
+  },
+  {
+    "game_id": 10040,
+    "away_team_id": 1,
+    "home_team_id": 4,
+    "game_date": "2015-11-01"
+  },
+  {
+    "game_id": 10041,
+    "away_team_id": 7,
+    "home_team_id": 14,
+    "game_date": "2015-11-01"
+  },
+  {
+    "game_id": 10042,
+    "away_team_id": 11,
+    "home_team_id": 16,
+    "game_date": "2015-11-01"
+  },
+  {
+    "game_id": 10043,
+    "away_team_id": 8,
+    "home_team_id": 21,
+    "game_date": "2015-11-01"
+  },
+  {
+    "game_id": 10044,
+    "away_team_id": 17,
+    "home_team_id": 28,
+    "game_date": "2015-11-01"
+  },
+  {
+    "game_id": 10045,
+    "away_team_id": 17,
+    "home_team_id": 2,
+    "game_date": "2015-11-02"
+  },
+  {
+    "game_id": 10046,
+    "away_team_id": 15,
+    "home_team_id": 10,
+    "game_date": "2015-11-02"
+  },
+  {
+    "game_id": 10047,
+    "away_team_id": 21,
+    "home_team_id": 11,
+    "game_date": "2015-11-02"
+  },
+  {
+    "game_id": 10048,
+    "away_team_id": 24,
+    "home_team_id": 13,
+    "game_date": "2015-11-02"
+  },
+  {
+    "game_id": 10049,
+    "away_team_id": 25,
+    "home_team_id": 18,
+    "game_date": "2015-11-02"
+  },
+  {
+    "game_id": 10050,
+    "away_team_id": 27,
+    "home_team_id": 20,
+    "game_date": "2015-11-02"
+  },
+  {
+    "game_id": 10051,
+    "away_team_id": 6,
+    "home_team_id": 23,
+    "game_date": "2015-11-02"
+  },
+  {
+    "game_id": 10052,
+    "away_team_id": 5,
+    "home_team_id": 4,
+    "game_date": "2015-11-03"
+  },
+  {
+    "game_id": 10053,
+    "away_team_id": 28,
+    "home_team_id": 7,
+    "game_date": "2015-11-03"
+  },
+  {
+    "game_id": 10054,
+    "away_team_id": 12,
+    "home_team_id": 9,
+    "game_date": "2015-11-03"
+  },
+  {
+    "game_id": 10055,
+    "away_team_id": 8,
+    "home_team_id": 14,
+    "game_date": "2015-11-03"
+  },
+  {
+    "game_id": 10056,
+    "away_team_id": 1,
+    "home_team_id": 16,
+    "game_date": "2015-11-03"
+  },
+  {
+    "game_id": 10057,
+    "away_team_id": 22,
+    "home_team_id": 19,
+    "game_date": "2015-11-03"
+  },
+  {
+    "game_id": 10058,
+    "away_team_id": 15,
+    "home_team_id": 26,
+    "game_date": "2015-11-03"
+  },
+  {
+    "game_id": 10059,
+    "away_team_id": 2,
+    "home_team_id": 1,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10060,
+    "away_team_id": 20,
+    "home_team_id": 6,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10061,
+    "away_team_id": 13,
+    "home_team_id": 10,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10062,
+    "away_team_id": 22,
+    "home_team_id": 11,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10063,
+    "away_team_id": 3,
+    "home_team_id": 12,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10064,
+    "away_team_id": 23,
+    "home_team_id": 17,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10065,
+    "away_team_id": 28,
+    "home_team_id": 21,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10066,
+    "away_team_id": 26,
+    "home_team_id": 24,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10067,
+    "away_team_id": 25,
+    "home_team_id": 29,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10068,
+    "away_team_id": 27,
+    "home_team_id": 30,
+    "game_date": "2015-11-04"
+  },
+  {
+    "game_id": 10069,
+    "away_team_id": 21,
+    "home_team_id": 5,
+    "game_date": "2015-11-05"
+  },
+  {
+    "game_id": 10070,
+    "away_team_id": 4,
+    "home_team_id": 7,
+    "game_date": "2015-11-05"
+  },
+  {
+    "game_id": 10071,
+    "away_team_id": 29,
+    "home_team_id": 8,
+    "game_date": "2015-11-05"
+  },
+  {
+    "game_id": 10072,
+    "away_team_id": 16,
+    "home_team_id": 18,
+    "game_date": "2015-11-05"
+  },
+  {
+    "game_id": 10073,
+    "away_team_id": 15,
+    "home_team_id": 25,
+    "game_date": "2015-11-05"
+  },
+  {
+    "game_id": 10074,
+    "away_team_id": 30,
+    "home_team_id": 3,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10075,
+    "away_team_id": 14,
+    "home_team_id": 2,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10076,
+    "away_team_id": 23,
+    "home_team_id": 6,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10077,
+    "away_team_id": 8,
+    "home_team_id": 10,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10078,
+    "away_team_id": 16,
+    "home_team_id": 12,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10079,
+    "away_team_id": 1,
+    "home_team_id": 19,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10080,
+    "away_team_id": 17,
+    "home_team_id": 20,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10081,
+    "away_team_id": 28,
+    "home_team_id": 22,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10082,
+    "away_team_id": 9,
+    "home_team_id": 24,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10083,
+    "away_team_id": 11,
+    "home_team_id": 26,
+    "game_date": "2015-11-06"
+  },
+  {
+    "game_id": 10084,
+    "away_team_id": 30,
+    "home_team_id": 1,
+    "game_date": "2015-11-07"
+  },
+  {
+    "game_id": 10085,
+    "away_team_id": 18,
+    "home_team_id": 5,
+    "game_date": "2015-11-07"
+  },
+  {
+    "game_id": 10086,
+    "away_team_id": 19,
+    "home_team_id": 7,
+    "game_date": "2015-11-07"
+  },
+  {
+    "game_id": 10087,
+    "away_team_id": 11,
+    "home_team_id": 13,
+    "game_date": "2015-11-07"
+  },
+  {
+    "game_id": 10088,
+    "away_team_id": 2,
+    "home_team_id": 17,
+    "game_date": "2015-11-07"
+  },
+  {
+    "game_id": 10089,
+    "away_team_id": 22,
+    "home_team_id": 23,
+    "game_date": "2015-11-07"
+  },
+  {
+    "game_id": 10090,
+    "away_team_id": 10,
+    "home_team_id": 26,
+    "game_date": "2015-11-07"
+  },
+  {
+    "game_id": 10091,
+    "away_team_id": 4,
+    "home_team_id": 27,
+    "game_date": "2015-11-07"
+  },
+  {
+    "game_id": 10092,
+    "away_team_id": 15,
+    "home_team_id": 29,
+    "game_date": "2015-11-07"
+  },
+  {
+    "game_id": 10093,
+    "away_team_id": 12,
+    "home_team_id": 6,
+    "game_date": "2015-11-08"
+  },
+  {
+    "game_id": 10094,
+    "away_team_id": 28,
+    "home_team_id": 16,
+    "game_date": "2015-11-08"
+  },
+  {
+    "game_id": 10095,
+    "away_team_id": 14,
+    "home_team_id": 20,
+    "game_date": "2015-11-08"
+  },
+  {
+    "game_id": 10096,
+    "away_team_id": 24,
+    "home_team_id": 21,
+    "game_date": "2015-11-08"
+  },
+  {
+    "game_id": 10097,
+    "away_team_id": 9,
+    "home_team_id": 25,
+    "game_date": "2015-11-08"
+  },
+  {
+    "game_id": 10098,
+    "away_team_id": 18,
+    "home_team_id": 1,
+    "game_date": "2015-11-09"
+  },
+  {
+    "game_id": 10099,
+    "away_team_id": 25,
+    "home_team_id": 8,
+    "game_date": "2015-11-09"
+  },
+  {
+    "game_id": 10100,
+    "away_team_id": 9,
+    "home_team_id": 10,
+    "game_date": "2015-11-09"
+  },
+  {
+    "game_id": 10101,
+    "away_team_id": 22,
+    "home_team_id": 12,
+    "game_date": "2015-11-09"
+  },
+  {
+    "game_id": 10102,
+    "away_team_id": 15,
+    "home_team_id": 13,
+    "game_date": "2015-11-09"
+  },
+  {
+    "game_id": 10103,
+    "away_team_id": 5,
+    "home_team_id": 23,
+    "game_date": "2015-11-09"
+  },
+  {
+    "game_id": 10104,
+    "away_team_id": 27,
+    "home_team_id": 26,
+    "game_date": "2015-11-09"
+  },
+  {
+    "game_id": 10105,
+    "away_team_id": 29,
+    "home_team_id": 6,
+    "game_date": "2015-11-10"
+  },
+  {
+    "game_id": 10106,
+    "away_team_id": 14,
+    "home_team_id": 16,
+    "game_date": "2015-11-10"
+  },
+  {
+    "game_id": 10107,
+    "away_team_id": 3,
+    "home_team_id": 17,
+    "game_date": "2015-11-10"
+  },
+  {
+    "game_id": 10108,
+    "away_team_id": 4,
+    "home_team_id": 18,
+    "game_date": "2015-11-10"
+  },
+  {
+    "game_id": 10109,
+    "away_team_id": 7,
+    "home_team_id": 19,
+    "game_date": "2015-11-10"
+  },
+  {
+    "game_id": 10110,
+    "away_team_id": 20,
+    "home_team_id": 28,
+    "game_date": "2015-11-10"
+  },
+  {
+    "game_id": 10111,
+    "away_team_id": 21,
+    "home_team_id": 30,
+    "game_date": "2015-11-10"
+  },
+  {
+    "game_id": 10112,
+    "away_team_id": 19,
+    "home_team_id": 1,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10113,
+    "away_team_id": 12,
+    "home_team_id": 3,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10114,
+    "away_team_id": 20,
+    "home_team_id": 4,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10115,
+    "away_team_id": 13,
+    "home_team_id": 7,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10116,
+    "away_team_id": 17,
+    "home_team_id": 8,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10117,
+    "away_team_id": 2,
+    "home_team_id": 11,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10118,
+    "away_team_id": 10,
+    "home_team_id": 15,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10119,
+    "away_team_id": 14,
+    "home_team_id": 22,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10120,
+    "away_team_id": 28,
+    "home_team_id": 23,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10121,
+    "away_team_id": 27,
+    "home_team_id": 25,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10122,
+    "away_team_id": 9,
+    "home_team_id": 26,
+    "game_date": "2015-11-11"
+  },
+  {
+    "game_id": 10123,
+    "away_team_id": 29,
+    "home_team_id": 16,
+    "game_date": "2015-11-12"
+  },
+  {
+    "game_id": 10124,
+    "away_team_id": 10,
+    "home_team_id": 18,
+    "game_date": "2015-11-12"
+  },
+  {
+    "game_id": 10125,
+    "away_team_id": 13,
+    "home_team_id": 24,
+    "game_date": "2015-11-12"
+  },
+  {
+    "game_id": 10126,
+    "away_team_id": 1,
+    "home_team_id": 3,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10127,
+    "away_team_id": 4,
+    "home_team_id": 5,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10128,
+    "away_team_id": 14,
+    "home_team_id": 7,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10129,
+    "away_team_id": 11,
+    "home_team_id": 8,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10130,
+    "away_team_id": 18,
+    "home_team_id": 12,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10131,
+    "away_team_id": 25,
+    "home_team_id": 15,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10132,
+    "away_team_id": 6,
+    "home_team_id": 20,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10133,
+    "away_team_id": 23,
+    "home_team_id": 21,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10134,
+    "away_team_id": 29,
+    "home_team_id": 22,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10135,
+    "away_team_id": 2,
+    "home_team_id": 26,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10136,
+    "away_team_id": 19,
+    "home_team_id": 28,
+    "game_date": "2015-11-13"
+  },
+  {
+    "game_id": 10137,
+    "away_team_id": 2,
+    "home_team_id": 10,
+    "game_date": "2015-11-14"
+  },
+  {
+    "game_id": 10138,
+    "away_team_id": 7,
+    "home_team_id": 11,
+    "game_date": "2015-11-14"
+  },
+  {
+    "game_id": 10139,
+    "away_team_id": 9,
+    "home_team_id": 13,
+    "game_date": "2015-11-14"
+  },
+  {
+    "game_id": 10140,
+    "away_team_id": 6,
+    "home_team_id": 17,
+    "game_date": "2015-11-14"
+  },
+  {
+    "game_id": 10141,
+    "away_team_id": 8,
+    "home_team_id": 24,
+    "game_date": "2015-11-14"
+  },
+  {
+    "game_id": 10142,
+    "away_team_id": 23,
+    "home_team_id": 27,
+    "game_date": "2015-11-14"
+  },
+  {
+    "game_id": 10143,
+    "away_team_id": 22,
+    "home_team_id": 30,
+    "game_date": "2015-11-14"
+  },
+  {
+    "game_id": 10144,
+    "away_team_id": 29,
+    "home_team_id": 1,
+    "game_date": "2015-11-15"
+  },
+  {
+    "game_id": 10145,
+    "away_team_id": 25,
+    "home_team_id": 4,
+    "game_date": "2015-11-15"
+  },
+  {
+    "game_id": 10146,
+    "away_team_id": 9,
+    "home_team_id": 14,
+    "game_date": "2015-11-15"
+  },
+  {
+    "game_id": 10147,
+    "away_team_id": 15,
+    "home_team_id": 18,
+    "game_date": "2015-11-15"
+  },
+  {
+    "game_id": 10148,
+    "away_team_id": 19,
+    "home_team_id": 20,
+    "game_date": "2015-11-15"
+  },
+  {
+    "game_id": 10149,
+    "away_team_id": 3,
+    "home_team_id": 21,
+    "game_date": "2015-11-15"
+  },
+  {
+    "game_id": 10150,
+    "away_team_id": 28,
+    "home_team_id": 26,
+    "game_date": "2015-11-15"
+  },
+  {
+    "game_id": 10151,
+    "away_team_id": 12,
+    "home_team_id": 5,
+    "game_date": "2015-11-16"
+  },
+  {
+    "game_id": 10152,
+    "away_team_id": 3,
+    "home_team_id": 11,
+    "game_date": "2015-11-16"
+  },
+  {
+    "game_id": 10153,
+    "away_team_id": 21,
+    "home_team_id": 15,
+    "game_date": "2015-11-16"
+  },
+  {
+    "game_id": 10154,
+    "away_team_id": 7,
+    "home_team_id": 23,
+    "game_date": "2015-11-16"
+  },
+  {
+    "game_id": 10155,
+    "away_team_id": 14,
+    "home_team_id": 24,
+    "game_date": "2015-11-16"
+  },
+  {
+    "game_id": 10156,
+    "away_team_id": 25,
+    "home_team_id": 27,
+    "game_date": "2015-11-16"
+  },
+  {
+    "game_id": 10157,
+    "away_team_id": 1,
+    "home_team_id": 2,
+    "game_date": "2015-11-17"
+  },
+  {
+    "game_id": 10158,
+    "away_team_id": 6,
+    "home_team_id": 9,
+    "game_date": "2015-11-17"
+  },
+  {
+    "game_id": 10159,
+    "away_team_id": 28,
+    "home_team_id": 10,
+    "game_date": "2015-11-17"
+  },
+  {
+    "game_id": 10160,
+    "away_team_id": 18,
+    "home_team_id": 16,
+    "game_date": "2015-11-17"
+  },
+  {
+    "game_id": 10161,
+    "away_team_id": 8,
+    "home_team_id": 19,
+    "game_date": "2015-11-17"
+  },
+  {
+    "game_id": 10162,
+    "away_team_id": 4,
+    "home_team_id": 20,
+    "game_date": "2015-11-17"
+  },
+  {
+    "game_id": 10163,
+    "away_team_id": 17,
+    "home_team_id": 30,
+    "game_date": "2015-11-17"
+  },
+  {
+    "game_id": 10164,
+    "away_team_id": 26,
+    "home_team_id": 1,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10165,
+    "away_team_id": 7,
+    "home_team_id": 3,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10166,
+    "away_team_id": 2,
+    "home_team_id": 4,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10167,
+    "away_team_id": 25,
+    "home_team_id": 11,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10168,
+    "away_team_id": 19,
+    "home_team_id": 21,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10169,
+    "away_team_id": 18,
+    "home_team_id": 22,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10170,
+    "away_team_id": 12,
+    "home_team_id": 23,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10171,
+    "away_team_id": 5,
+    "home_team_id": 24,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10172,
+    "away_team_id": 8,
+    "home_team_id": 27,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10173,
+    "away_team_id": 28,
+    "home_team_id": 29,
+    "game_date": "2015-11-18"
+  },
+  {
+    "game_id": 10174,
+    "away_team_id": 17,
+    "home_team_id": 6,
+    "game_date": "2015-11-19"
+  },
+  {
+    "game_id": 10175,
+    "away_team_id": 10,
+    "home_team_id": 13,
+    "game_date": "2015-11-19"
+  },
+  {
+    "game_id": 10176,
+    "away_team_id": 26,
+    "home_team_id": 16,
+    "game_date": "2015-11-19"
+  },
+  {
+    "game_id": 10177,
+    "away_team_id": 2,
+    "home_team_id": 3,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10178,
+    "away_team_id": 23,
+    "home_team_id": 4,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10179,
+    "away_team_id": 29,
+    "home_team_id": 7,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10180,
+    "away_team_id": 24,
+    "home_team_id": 8,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10181,
+    "away_team_id": 5,
+    "home_team_id": 10,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10182,
+    "away_team_id": 28,
+    "home_team_id": 14,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10183,
+    "away_team_id": 11,
+    "home_team_id": 15,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10184,
+    "away_team_id": 9,
+    "home_team_id": 18,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10185,
+    "away_team_id": 27,
+    "home_team_id": 19,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10186,
+    "away_team_id": 20,
+    "home_team_id": 21,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10187,
+    "away_team_id": 13,
+    "home_team_id": 25,
+    "game_date": "2015-11-20"
+  },
+  {
+    "game_id": 10188,
+    "away_team_id": 1,
+    "home_team_id": 6,
+    "game_date": "2015-11-21"
+  },
+  {
+    "game_id": 10189,
+    "away_team_id": 30,
+    "home_team_id": 9,
+    "game_date": "2015-11-21"
+  },
+  {
+    "game_id": 10190,
+    "away_team_id": 20,
+    "home_team_id": 11,
+    "game_date": "2015-11-21"
+  },
+  {
+    "game_id": 10191,
+    "away_team_id": 17,
+    "home_team_id": 12,
+    "game_date": "2015-11-21"
+  },
+  {
+    "game_id": 10192,
+    "away_team_id": 23,
+    "home_team_id": 16,
+    "game_date": "2015-11-21"
+  },
+  {
+    "game_id": 10193,
+    "away_team_id": 26,
+    "home_team_id": 22,
+    "game_date": "2015-11-21"
+  },
+  {
+    "game_id": 10194,
+    "away_team_id": 15,
+    "home_team_id": 27,
+    "game_date": "2015-11-21"
+  },
+  {
+    "game_id": 10195,
+    "away_team_id": 3,
+    "home_team_id": 2,
+    "game_date": "2015-11-22"
+  },
+  {
+    "game_id": 10196,
+    "away_team_id": 10,
+    "home_team_id": 8,
+    "game_date": "2015-11-22"
+  },
+  {
+    "game_id": 10197,
+    "away_team_id": 28,
+    "home_team_id": 13,
+    "game_date": "2015-11-22"
+  },
+  {
+    "game_id": 10198,
+    "away_team_id": 25,
+    "home_team_id": 14,
+    "game_date": "2015-11-22"
+  },
+  {
+    "game_id": 10199,
+    "away_team_id": 24,
+    "home_team_id": 19,
+    "game_date": "2015-11-22"
+  },
+  {
+    "game_id": 10200,
+    "away_team_id": 7,
+    "home_team_id": 21,
+    "game_date": "2015-11-22"
+  },
+  {
+    "game_id": 10201,
+    "away_team_id": 26,
+    "home_team_id": 4,
+    "game_date": "2015-11-23"
+  },
+  {
+    "game_id": 10202,
+    "away_team_id": 22,
+    "home_team_id": 6,
+    "game_date": "2015-11-23"
+  },
+  {
+    "game_id": 10203,
+    "away_team_id": 20,
+    "home_team_id": 16,
+    "game_date": "2015-11-23"
+  },
+  {
+    "game_id": 10204,
+    "away_team_id": 9,
+    "home_team_id": 17,
+    "game_date": "2015-11-23"
+  },
+  {
+    "game_id": 10205,
+    "away_team_id": 23,
+    "home_team_id": 18,
+    "game_date": "2015-11-23"
+  },
+  {
+    "game_id": 10206,
+    "away_team_id": 24,
+    "home_team_id": 27,
+    "game_date": "2015-11-23"
+  },
+  {
+    "game_id": 10207,
+    "away_team_id": 21,
+    "home_team_id": 29,
+    "game_date": "2015-11-23"
+  },
+  {
+    "game_id": 10208,
+    "away_team_id": 3,
+    "home_team_id": 1,
+    "game_date": "2015-11-24"
+  },
+  {
+    "game_id": 10209,
+    "away_team_id": 13,
+    "home_team_id": 8,
+    "game_date": "2015-11-24"
+  },
+  {
+    "game_id": 10210,
+    "away_team_id": 14,
+    "home_team_id": 10,
+    "game_date": "2015-11-24"
+  },
+  {
+    "game_id": 10211,
+    "away_team_id": 7,
+    "home_team_id": 15,
+    "game_date": "2015-11-24"
+  },
+  {
+    "game_id": 10212,
+    "away_team_id": 5,
+    "home_team_id": 25,
+    "game_date": "2015-11-24"
+  },
+  {
+    "game_id": 10213,
+    "away_team_id": 12,
+    "home_team_id": 30,
+    "game_date": "2015-11-24"
+  },
+  {
+    "game_id": 10214,
+    "away_team_id": 23,
+    "home_team_id": 3,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10215,
+    "away_team_id": 30,
+    "home_team_id": 4,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10216,
+    "away_team_id": 16,
+    "home_team_id": 9,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10217,
+    "away_team_id": 15,
+    "home_team_id": 11,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10218,
+    "away_team_id": 29,
+    "home_team_id": 13,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10219,
+    "away_team_id": 26,
+    "home_team_id": 17,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10220,
+    "away_team_id": 1,
+    "home_team_id": 18,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10221,
+    "away_team_id": 2,
+    "home_team_id": 21,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10222,
+    "away_team_id": 20,
+    "home_team_id": 22,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10223,
+    "away_team_id": 19,
+    "home_team_id": 24,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10224,
+    "away_team_id": 7,
+    "home_team_id": 27,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10225,
+    "away_team_id": 6,
+    "home_team_id": 28,
+    "game_date": "2015-11-25"
+  },
+  {
+    "game_id": 10226,
+    "away_team_id": 30,
+    "home_team_id": 3,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10227,
+    "away_team_id": 6,
+    "home_team_id": 4,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10228,
+    "away_team_id": 27,
+    "home_team_id": 8,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10229,
+    "away_team_id": 23,
+    "home_team_id": 11,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10230,
+    "away_team_id": 5,
+    "home_team_id": 12,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10231,
+    "away_team_id": 19,
+    "home_team_id": 13,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10232,
+    "away_team_id": 1,
+    "home_team_id": 15,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10233,
+    "away_team_id": 16,
+    "home_team_id": 20,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10234,
+    "away_team_id": 9,
+    "home_team_id": 21,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10235,
+    "away_team_id": 17,
+    "home_team_id": 22,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10236,
+    "away_team_id": 10,
+    "home_team_id": 24,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10237,
+    "away_team_id": 18,
+    "home_team_id": 26,
+    "game_date": "2015-11-27"
+  },
+  {
+    "game_id": 10238,
+    "away_team_id": 2,
+    "home_team_id": 6,
+    "game_date": "2015-11-28"
+  },
+  {
+    "game_id": 10239,
+    "away_team_id": 8,
+    "home_team_id": 7,
+    "game_date": "2015-11-28"
+  },
+  {
+    "game_id": 10240,
+    "away_team_id": 26,
+    "home_team_id": 10,
+    "game_date": "2015-11-28"
+  },
+  {
+    "game_id": 10241,
+    "away_team_id": 14,
+    "home_team_id": 25,
+    "game_date": "2015-11-28"
+  },
+  {
+    "game_id": 10242,
+    "away_team_id": 1,
+    "home_team_id": 27,
+    "game_date": "2015-11-28"
+  },
+  {
+    "game_id": 10243,
+    "away_team_id": 19,
+    "home_team_id": 29,
+    "game_date": "2015-11-28"
+  },
+  {
+    "game_id": 10244,
+    "away_team_id": 28,
+    "home_team_id": 30,
+    "game_date": "2015-11-28"
+  },
+  {
+    "game_id": 10245,
+    "away_team_id": 9,
+    "home_team_id": 2,
+    "game_date": "2015-11-29"
+  },
+  {
+    "game_id": 10246,
+    "away_team_id": 17,
+    "home_team_id": 4,
+    "game_date": "2015-11-29"
+  },
+  {
+    "game_id": 10247,
+    "away_team_id": 18,
+    "home_team_id": 13,
+    "game_date": "2015-11-29"
+  },
+  {
+    "game_id": 10248,
+    "away_team_id": 12,
+    "home_team_id": 14,
+    "game_date": "2015-11-29"
+  },
+  {
+    "game_id": 10249,
+    "away_team_id": 23,
+    "home_team_id": 15,
+    "game_date": "2015-11-29"
+  },
+  {
+    "game_id": 10250,
+    "away_team_id": 11,
+    "home_team_id": 20,
+    "game_date": "2015-11-29"
+  },
+  {
+    "game_id": 10251,
+    "away_team_id": 3,
+    "home_team_id": 22,
+    "game_date": "2015-11-29"
+  },
+  {
+    "game_id": 10252,
+    "away_team_id": 24,
+    "home_team_id": 28,
+    "game_date": "2015-11-29"
+  },
+  {
+    "game_id": 10253,
+    "away_team_id": 21,
+    "home_team_id": 1,
+    "game_date": "2015-11-30"
+  },
+  {
+    "game_id": 10254,
+    "away_team_id": 27,
+    "home_team_id": 5,
+    "game_date": "2015-11-30"
+  },
+  {
+    "game_id": 10255,
+    "away_team_id": 11,
+    "home_team_id": 9,
+    "game_date": "2015-11-30"
+  },
+  {
+    "game_id": 10256,
+    "away_team_id": 25,
+    "home_team_id": 13,
+    "game_date": "2015-11-30"
+  },
+  {
+    "game_id": 10257,
+    "away_team_id": 3,
+    "home_team_id": 16,
+    "game_date": "2015-11-30"
+  },
+  {
+    "game_id": 10258,
+    "away_team_id": 8,
+    "home_team_id": 17,
+    "game_date": "2015-11-30"
+  },
+  {
+    "game_id": 10259,
+    "away_team_id": 7,
+    "home_team_id": 26,
+    "game_date": "2015-11-30"
+  },
+  {
+    "game_id": 10260,
+    "away_team_id": 10,
+    "home_team_id": 29,
+    "game_date": "2015-11-30"
+  },
+  {
+    "game_id": 10261,
+    "away_team_id": 24,
+    "home_team_id": 2,
+    "game_date": "2015-12-01"
+  },
+  {
+    "game_id": 10262,
+    "away_team_id": 30,
+    "home_team_id": 6,
+    "game_date": "2015-12-01"
+  },
+  {
+    "game_id": 10263,
+    "away_team_id": 22,
+    "home_team_id": 18,
+    "game_date": "2015-12-01"
+  },
+  {
+    "game_id": 10264,
+    "away_team_id": 15,
+    "home_team_id": 19,
+    "game_date": "2015-12-01"
+  },
+  {
+    "game_id": 10265,
+    "away_team_id": 14,
+    "home_team_id": 23,
+    "game_date": "2015-12-01"
+  },
+  {
+    "game_id": 10266,
+    "away_team_id": 7,
+    "home_team_id": 25,
+    "game_date": "2015-12-01"
+  },
+  {
+    "game_id": 10267,
+    "away_team_id": 28,
+    "home_team_id": 1,
+    "game_date": "2015-12-02"
+  },
+  {
+    "game_id": 10268,
+    "away_team_id": 8,
+    "home_team_id": 5,
+    "game_date": "2015-12-02"
+  },
+  {
+    "game_id": 10269,
+    "away_team_id": 10,
+    "home_team_id": 4,
+    "game_date": "2015-12-02"
+  },
+  {
+    "game_id": 10270,
+    "away_team_id": 24,
+    "home_team_id": 9,
+    "game_date": "2015-12-02"
+  },
+  {
+    "game_id": 10271,
+    "away_team_id": 19,
+    "home_team_id": 11,
+    "game_date": "2015-12-02"
+  },
+  {
+    "game_id": 10272,
+    "away_team_id": 12,
+    "home_team_id": 13,
+    "game_date": "2015-12-02"
+  },
+  {
+    "game_id": 10273,
+    "away_team_id": 23,
+    "home_team_id": 20,
+    "game_date": "2015-12-02"
+  },
+  {
+    "game_id": 10274,
+    "away_team_id": 17,
+    "home_team_id": 27,
+    "game_date": "2015-12-02"
+  },
+  {
+    "game_id": 10275,
+    "away_team_id": 14,
+    "home_team_id": 30,
+    "game_date": "2015-12-02"
+  },
+  {
+    "game_id": 10276,
+    "away_team_id": 27,
+    "home_team_id": 15,
+    "game_date": "2015-12-03"
+  },
+  {
+    "game_id": 10277,
+    "away_team_id": 21,
+    "home_team_id": 16,
+    "game_date": "2015-12-03"
+  },
+  {
+    "game_id": 10278,
+    "away_team_id": 12,
+    "home_team_id": 25,
+    "game_date": "2015-12-03"
+  },
+  {
+    "game_id": 10279,
+    "away_team_id": 3,
+    "home_team_id": 26,
+    "game_date": "2015-12-03"
+  },
+  {
+    "game_id": 10280,
+    "away_team_id": 8,
+    "home_team_id": 28,
+    "game_date": "2015-12-03"
+  },
+  {
+    "game_id": 10281,
+    "away_team_id": 22,
+    "home_team_id": 29,
+    "game_date": "2015-12-03"
+  },
+  {
+    "game_id": 10282,
+    "away_team_id": 14,
+    "home_team_id": 1,
+    "game_date": "2015-12-04"
+  },
+  {
+    "game_id": 10283,
+    "away_team_id": 11,
+    "home_team_id": 7,
+    "game_date": "2015-12-04"
+  },
+  {
+    "game_id": 10284,
+    "away_team_id": 17,
+    "home_team_id": 9,
+    "game_date": "2015-12-04"
+  },
+  {
+    "game_id": 10285,
+    "away_team_id": 6,
+    "home_team_id": 19,
+    "game_date": "2015-12-04"
+  },
+  {
+    "game_id": 10286,
+    "away_team_id": 2,
+    "home_team_id": 20,
+    "game_date": "2015-12-04"
+  },
+  {
+    "game_id": 10287,
+    "away_team_id": 24,
+    "home_team_id": 30,
+    "game_date": "2015-12-04"
+  },
+  {
+    "game_id": 10288,
+    "away_team_id": 4,
+    "home_team_id": 5,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10289,
+    "away_team_id": 26,
+    "home_team_id": 11,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10290,
+    "away_team_id": 22,
+    "home_team_id": 13,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10291,
+    "away_team_id": 6,
+    "home_team_id": 16,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10292,
+    "away_team_id": 20,
+    "home_team_id": 17,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10293,
+    "away_team_id": 25,
+    "home_team_id": 18,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10294,
+    "away_team_id": 8,
+    "home_team_id": 23,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10295,
+    "away_team_id": 3,
+    "home_team_id": 27,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10296,
+    "away_team_id": 10,
+    "home_team_id": 28,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10297,
+    "away_team_id": 12,
+    "home_team_id": 29,
+    "game_date": "2015-12-05"
+  },
+  {
+    "game_id": 10298,
+    "away_team_id": 10,
+    "home_team_id": 2,
+    "game_date": "2015-12-06"
+  },
+  {
+    "game_id": 10299,
+    "away_team_id": 14,
+    "home_team_id": 9,
+    "game_date": "2015-12-06"
+  },
+  {
+    "game_id": 10300,
+    "away_team_id": 24,
+    "home_team_id": 15,
+    "game_date": "2015-12-06"
+  },
+  {
+    "game_id": 10301,
+    "away_team_id": 26,
+    "home_team_id": 21,
+    "game_date": "2015-12-06"
+  },
+  {
+    "game_id": 10302,
+    "away_team_id": 7,
+    "home_team_id": 30,
+    "game_date": "2015-12-06"
+  },
+  {
+    "game_id": 10303,
+    "away_team_id": 24,
+    "home_team_id": 5,
+    "game_date": "2015-12-07"
+  },
+  {
+    "game_id": 10304,
+    "away_team_id": 9,
+    "home_team_id": 4,
+    "game_date": "2015-12-07"
+  },
+  {
+    "game_id": 10305,
+    "away_team_id": 30,
+    "home_team_id": 16,
+    "game_date": "2015-12-07"
+  },
+  {
+    "game_id": 10306,
+    "away_team_id": 25,
+    "home_team_id": 17,
+    "game_date": "2015-12-07"
+  },
+  {
+    "game_id": 10307,
+    "away_team_id": 13,
+    "home_team_id": 18,
+    "game_date": "2015-12-07"
+  },
+  {
+    "game_id": 10308,
+    "away_team_id": 3,
+    "home_team_id": 19,
+    "game_date": "2015-12-07"
+  },
+  {
+    "game_id": 10309,
+    "away_team_id": 7,
+    "home_team_id": 20,
+    "game_date": "2015-12-07"
+  },
+  {
+    "game_id": 10310,
+    "away_team_id": 27,
+    "home_team_id": 23,
+    "game_date": "2015-12-07"
+  },
+  {
+    "game_id": 10311,
+    "away_team_id": 14,
+    "home_team_id": 28,
+    "game_date": "2015-12-07"
+  },
+  {
+    "game_id": 10312,
+    "away_team_id": 11,
+    "home_team_id": 2,
+    "game_date": "2015-12-08"
+  },
+  {
+    "game_id": 10313,
+    "away_team_id": 25,
+    "home_team_id": 6,
+    "game_date": "2015-12-08"
+  },
+  {
+    "game_id": 10314,
+    "away_team_id": 22,
+    "home_team_id": 8,
+    "game_date": "2015-12-08"
+  },
+  {
+    "game_id": 10315,
+    "away_team_id": 10,
+    "home_team_id": 12,
+    "game_date": "2015-12-08"
+  },
+  {
+    "game_id": 10316,
+    "away_team_id": 21,
+    "home_team_id": 15,
+    "game_date": "2015-12-08"
+  },
+  {
+    "game_id": 10317,
+    "away_team_id": 29,
+    "home_team_id": 26,
+    "game_date": "2015-12-08"
+  },
+  {
+    "game_id": 10318,
+    "away_team_id": 5,
+    "home_team_id": 3,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10319,
+    "away_team_id": 16,
+    "home_team_id": 4,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10320,
+    "away_team_id": 1,
+    "home_team_id": 7,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10321,
+    "away_team_id": 15,
+    "home_team_id": 9,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10322,
+    "away_team_id": 13,
+    "home_team_id": 17,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10323,
+    "away_team_id": 14,
+    "home_team_id": 18,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10324,
+    "away_team_id": 22,
+    "home_team_id": 24,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10325,
+    "away_team_id": 27,
+    "home_team_id": 28,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10326,
+    "away_team_id": 20,
+    "home_team_id": 29,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10327,
+    "away_team_id": 11,
+    "home_team_id": 30,
+    "game_date": "2015-12-09"
+  },
+  {
+    "game_id": 10328,
+    "away_team_id": 23,
+    "home_team_id": 2,
+    "game_date": "2015-12-10"
+  },
+  {
+    "game_id": 10329,
+    "away_team_id": 13,
+    "home_team_id": 5,
+    "game_date": "2015-12-10"
+  },
+  {
+    "game_id": 10330,
+    "away_team_id": 1,
+    "home_team_id": 21,
+    "game_date": "2015-12-10"
+  },
+  {
+    "game_id": 10331,
+    "away_team_id": 20,
+    "home_team_id": 26,
+    "game_date": "2015-12-10"
+  },
+  {
+    "game_id": 10332,
+    "away_team_id": 10,
+    "home_team_id": 3,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10333,
+    "away_team_id": 18,
+    "home_team_id": 8,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10334,
+    "away_team_id": 16,
+    "home_team_id": 12,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10335,
+    "away_team_id": 4,
+    "home_team_id": 15,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10336,
+    "away_team_id": 30,
+    "home_team_id": 19,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10337,
+    "away_team_id": 6,
+    "home_team_id": 22,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10338,
+    "away_team_id": 9,
+    "home_team_id": 23,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10339,
+    "away_team_id": 25,
+    "home_team_id": 24,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10340,
+    "away_team_id": 14,
+    "home_team_id": 27,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10341,
+    "away_team_id": 17,
+    "home_team_id": 28,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10342,
+    "away_team_id": 21,
+    "home_team_id": 29,
+    "game_date": "2015-12-11"
+  },
+  {
+    "game_id": 10343,
+    "away_team_id": 27,
+    "home_team_id": 1,
+    "game_date": "2015-12-12"
+  },
+  {
+    "game_id": 10344,
+    "away_team_id": 13,
+    "home_team_id": 2,
+    "game_date": "2015-12-12"
+  },
+  {
+    "game_id": 10345,
+    "away_team_id": 19,
+    "home_team_id": 5,
+    "game_date": "2015-12-12"
+  },
+  {
+    "game_id": 10346,
+    "away_team_id": 3,
+    "home_team_id": 4,
+    "game_date": "2015-12-12"
+  },
+  {
+    "game_id": 10347,
+    "away_team_id": 30,
+    "home_team_id": 7,
+    "game_date": "2015-12-12"
+  },
+  {
+    "game_id": 10348,
+    "away_team_id": 12,
+    "home_team_id": 9,
+    "game_date": "2015-12-12"
+  },
+  {
+    "game_id": 10349,
+    "away_team_id": 14,
+    "home_team_id": 11,
+    "game_date": "2015-12-12"
+  },
+  {
+    "game_id": 10350,
+    "away_team_id": 10,
+    "home_team_id": 17,
+    "game_date": "2015-12-12"
+  },
+  {
+    "game_id": 10351,
+    "away_team_id": 20,
+    "home_team_id": 25,
+    "game_date": "2015-12-12"
+  },
+  {
+    "game_id": 10352,
+    "away_team_id": 15,
+    "home_team_id": 16,
+    "game_date": "2015-12-13"
+  },
+  {
+    "game_id": 10353,
+    "away_team_id": 29,
+    "home_team_id": 21,
+    "game_date": "2015-12-13"
+  },
+  {
+    "game_id": 10354,
+    "away_team_id": 18,
+    "home_team_id": 24,
+    "game_date": "2015-12-13"
+  },
+  {
+    "game_id": 10355,
+    "away_team_id": 23,
+    "home_team_id": 28,
+    "game_date": "2015-12-13"
+  },
+  {
+    "game_id": 10356,
+    "away_team_id": 16,
+    "home_team_id": 1,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10357,
+    "away_team_id": 22,
+    "home_team_id": 2,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10358,
+    "away_team_id": 23,
+    "home_team_id": 5,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10359,
+    "away_team_id": 24,
+    "home_team_id": 7,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10360,
+    "away_team_id": 11,
+    "home_team_id": 8,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10361,
+    "away_team_id": 13,
+    "home_team_id": 9,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10362,
+    "away_team_id": 28,
+    "home_team_id": 12,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10363,
+    "away_team_id": 30,
+    "home_team_id": 15,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10364,
+    "away_team_id": 19,
+    "home_team_id": 25,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10365,
+    "away_team_id": 29,
+    "home_team_id": 27,
+    "game_date": "2015-12-14"
+  },
+  {
+    "game_id": 10366,
+    "away_team_id": 6,
+    "home_team_id": 3,
+    "game_date": "2015-12-15"
+  },
+  {
+    "game_id": 10367,
+    "away_team_id": 17,
+    "home_team_id": 14,
+    "game_date": "2015-12-15"
+  },
+  {
+    "game_id": 10368,
+    "away_team_id": 8,
+    "home_team_id": 18,
+    "game_date": "2015-12-15"
+  },
+  {
+    "game_id": 10369,
+    "away_team_id": 11,
+    "home_team_id": 26,
+    "game_date": "2015-12-15"
+  },
+  {
+    "game_id": 10370,
+    "away_team_id": 23,
+    "home_team_id": 1,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10371,
+    "away_team_id": 16,
+    "home_team_id": 2,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10372,
+    "away_team_id": 15,
+    "home_team_id": 5,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10373,
+    "away_team_id": 3,
+    "home_team_id": 9,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10374,
+    "away_team_id": 24,
+    "home_team_id": 10,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10375,
+    "away_team_id": 7,
+    "home_team_id": 12,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10376,
+    "away_team_id": 17,
+    "home_team_id": 13,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10377,
+    "away_team_id": 18,
+    "home_team_id": 20,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10378,
+    "away_team_id": 25,
+    "home_team_id": 21,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10379,
+    "away_team_id": 4,
+    "home_team_id": 22,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10380,
+    "away_team_id": 30,
+    "home_team_id": 27,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10381,
+    "away_team_id": 19,
+    "home_team_id": 29,
+    "game_date": "2015-12-16"
+  },
+  {
+    "game_id": 10382,
+    "away_team_id": 28,
+    "home_team_id": 4,
+    "game_date": "2015-12-17"
+  },
+  {
+    "game_id": 10383,
+    "away_team_id": 21,
+    "home_team_id": 6,
+    "game_date": "2015-12-17"
+  },
+  {
+    "game_id": 10384,
+    "away_team_id": 11,
+    "home_team_id": 14,
+    "game_date": "2015-12-17"
+  },
+  {
+    "game_id": 10385,
+    "away_team_id": 1,
+    "home_team_id": 3,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10386,
+    "away_team_id": 9,
+    "home_team_id": 5,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10387,
+    "away_team_id": 15,
+    "home_team_id": 7,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10388,
+    "away_team_id": 17,
+    "home_team_id": 10,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10389,
+    "away_team_id": 2,
+    "home_team_id": 12,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10390,
+    "away_team_id": 28,
+    "home_team_id": 16,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10391,
+    "away_team_id": 26,
+    "home_team_id": 18,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10392,
+    "away_team_id": 25,
+    "home_team_id": 22,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10393,
+    "away_team_id": 20,
+    "home_team_id": 23,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10394,
+    "away_team_id": 19,
+    "home_team_id": 24,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10395,
+    "away_team_id": 13,
+    "home_team_id": 27,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10396,
+    "away_team_id": 8,
+    "home_team_id": 29,
+    "game_date": "2015-12-18"
+  },
+  {
+    "game_id": 10397,
+    "away_team_id": 13,
+    "home_team_id": 11,
+    "game_date": "2015-12-19"
+  },
+  {
+    "game_id": 10398,
+    "away_team_id": 12,
+    "home_team_id": 15,
+    "game_date": "2015-12-19"
+  },
+  {
+    "game_id": 10399,
+    "away_team_id": 5,
+    "home_team_id": 20,
+    "game_date": "2015-12-19"
+  },
+  {
+    "game_id": 10400,
+    "away_team_id": 14,
+    "home_team_id": 21,
+    "game_date": "2015-12-19"
+  },
+  {
+    "game_id": 10401,
+    "away_team_id": 4,
+    "home_team_id": 30,
+    "game_date": "2015-12-19"
+  },
+  {
+    "game_id": 10402,
+    "away_team_id": 18,
+    "home_team_id": 2,
+    "game_date": "2015-12-20"
+  },
+  {
+    "game_id": 10403,
+    "away_team_id": 23,
+    "home_team_id": 6,
+    "game_date": "2015-12-20"
+  },
+  {
+    "game_id": 10404,
+    "away_team_id": 19,
+    "home_team_id": 8,
+    "game_date": "2015-12-20"
+  },
+  {
+    "game_id": 10405,
+    "away_team_id": 25,
+    "home_team_id": 16,
+    "game_date": "2015-12-20"
+  },
+  {
+    "game_id": 10406,
+    "away_team_id": 1,
+    "home_team_id": 22,
+    "game_date": "2015-12-20"
+  },
+  {
+    "game_id": 10407,
+    "away_team_id": 17,
+    "home_team_id": 24,
+    "game_date": "2015-12-20"
+  },
+  {
+    "game_id": 10408,
+    "away_team_id": 26,
+    "home_team_id": 28,
+    "game_date": "2015-12-20"
+  },
+  {
+    "game_id": 10409,
+    "away_team_id": 25,
+    "home_team_id": 1,
+    "game_date": "2015-12-21"
+  },
+  {
+    "game_id": 10410,
+    "away_team_id": 18,
+    "home_team_id": 3,
+    "game_date": "2015-12-21"
+  },
+  {
+    "game_id": 10411,
+    "away_team_id": 2,
+    "home_team_id": 5,
+    "game_date": "2015-12-21"
+  },
+  {
+    "game_id": 10412,
+    "away_team_id": 4,
+    "home_team_id": 11,
+    "game_date": "2015-12-21"
+  },
+  {
+    "game_id": 10413,
+    "away_team_id": 21,
+    "home_team_id": 13,
+    "game_date": "2015-12-21"
+  },
+  {
+    "game_id": 10414,
+    "away_team_id": 22,
+    "home_team_id": 20,
+    "game_date": "2015-12-21"
+  },
+  {
+    "game_id": 10415,
+    "away_team_id": 12,
+    "home_team_id": 27,
+    "game_date": "2015-12-21"
+  },
+  {
+    "game_id": 10416,
+    "away_team_id": 24,
+    "home_team_id": 29,
+    "game_date": "2015-12-21"
+  },
+  {
+    "game_id": 10417,
+    "away_team_id": 26,
+    "home_team_id": 30,
+    "game_date": "2015-12-21"
+  },
+  {
+    "game_id": 10418,
+    "away_team_id": 14,
+    "home_team_id": 8,
+    "game_date": "2015-12-22"
+  },
+  {
+    "game_id": 10419,
+    "away_team_id": 9,
+    "home_team_id": 16,
+    "game_date": "2015-12-22"
+  },
+  {
+    "game_id": 10420,
+    "away_team_id": 15,
+    "home_team_id": 23,
+    "game_date": "2015-12-22"
+  },
+  {
+    "game_id": 10421,
+    "away_team_id": 7,
+    "home_team_id": 28,
+    "game_date": "2015-12-22"
+  },
+  {
+    "game_id": 10422,
+    "away_team_id": 9,
+    "home_team_id": 1,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10423,
+    "away_team_id": 7,
+    "home_team_id": 2,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10424,
+    "away_team_id": 3,
+    "home_team_id": 4,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10425,
+    "away_team_id": 20,
+    "home_team_id": 6,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10426,
+    "away_team_id": 29,
+    "home_team_id": 10,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10427,
+    "away_team_id": 26,
+    "home_team_id": 12,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10428,
+    "away_team_id": 21,
+    "home_team_id": 14,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10429,
+    "away_team_id": 23,
+    "home_team_id": 17,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10430,
+    "away_team_id": 27,
+    "home_team_id": 18,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10431,
+    "away_team_id": 25,
+    "home_team_id": 19,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10432,
+    "away_team_id": 11,
+    "home_team_id": 22,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10433,
+    "away_team_id": 8,
+    "home_team_id": 24,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10434,
+    "away_team_id": 15,
+    "home_team_id": 30,
+    "game_date": "2015-12-23"
+  },
+  {
+    "game_id": 10435,
+    "away_team_id": 6,
+    "home_team_id": 10,
+    "game_date": "2015-12-25"
+  },
+  {
+    "game_id": 10436,
+    "away_team_id": 27,
+    "home_team_id": 11,
+    "game_date": "2015-12-25"
+  },
+  {
+    "game_id": 10437,
+    "away_team_id": 13,
+    "home_team_id": 14,
+    "game_date": "2015-12-25"
+  },
+  {
+    "game_id": 10438,
+    "away_team_id": 19,
+    "home_team_id": 16,
+    "game_date": "2015-12-25"
+  },
+  {
+    "game_id": 10439,
+    "away_team_id": 5,
+    "home_team_id": 21,
+    "game_date": "2015-12-25"
+  },
+  {
+    "game_id": 10440,
+    "away_team_id": 20,
+    "home_team_id": 1,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10441,
+    "away_team_id": 30,
+    "home_team_id": 2,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10442,
+    "away_team_id": 15,
+    "home_team_id": 4,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10443,
+    "away_team_id": 5,
+    "home_team_id": 7,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10444,
+    "away_team_id": 3,
+    "home_team_id": 9,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10445,
+    "away_team_id": 28,
+    "home_team_id": 17,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10446,
+    "away_team_id": 12,
+    "home_team_id": 18,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10447,
+    "away_team_id": 11,
+    "home_team_id": 19,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10448,
+    "away_team_id": 16,
+    "home_team_id": 22,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10449,
+    "away_team_id": 23,
+    "home_team_id": 24,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10450,
+    "away_team_id": 6,
+    "home_team_id": 25,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10451,
+    "away_team_id": 8,
+    "home_team_id": 27,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10452,
+    "away_team_id": 13,
+    "home_team_id": 29,
+    "game_date": "2015-12-26"
+  },
+  {
+    "game_id": 10453,
+    "away_team_id": 20,
+    "home_team_id": 3,
+    "game_date": "2015-12-27"
+  },
+  {
+    "game_id": 10454,
+    "away_team_id": 14,
+    "home_team_id": 15,
+    "game_date": "2015-12-27"
+  },
+  {
+    "game_id": 10455,
+    "away_team_id": 8,
+    "home_team_id": 21,
+    "game_date": "2015-12-27"
+  },
+  {
+    "game_id": 10456,
+    "away_team_id": 25,
+    "home_team_id": 26,
+    "game_date": "2015-12-27"
+  },
+  {
+    "game_id": 10457,
+    "away_team_id": 28,
+    "home_team_id": 5,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10458,
+    "away_team_id": 14,
+    "home_team_id": 4,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10459,
+    "away_team_id": 17,
+    "home_team_id": 7,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10460,
+    "away_team_id": 26,
+    "home_team_id": 10,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10461,
+    "away_team_id": 1,
+    "home_team_id": 12,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10462,
+    "away_team_id": 2,
+    "home_team_id": 16,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10463,
+    "away_team_id": 19,
+    "home_team_id": 22,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10464,
+    "away_team_id": 6,
+    "home_team_id": 24,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10465,
+    "away_team_id": 18,
+    "home_team_id": 27,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10466,
+    "away_team_id": 23,
+    "home_team_id": 29,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10467,
+    "away_team_id": 13,
+    "home_team_id": 30,
+    "game_date": "2015-12-28"
+  },
+  {
+    "game_id": 10468,
+    "away_team_id": 6,
+    "home_team_id": 8,
+    "game_date": "2015-12-29"
+  },
+  {
+    "game_id": 10469,
+    "away_team_id": 1,
+    "home_team_id": 11,
+    "game_date": "2015-12-29"
+  },
+  {
+    "game_id": 10470,
+    "away_team_id": 16,
+    "home_team_id": 15,
+    "game_date": "2015-12-29"
+  },
+  {
+    "game_id": 10471,
+    "away_team_id": 9,
+    "home_team_id": 20,
+    "game_date": "2015-12-29"
+  },
+  {
+    "game_id": 10472,
+    "away_team_id": 17,
+    "home_team_id": 21,
+    "game_date": "2015-12-29"
+  },
+  {
+    "game_id": 10473,
+    "away_team_id": 14,
+    "home_team_id": 3,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10474,
+    "away_team_id": 12,
+    "home_team_id": 5,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10475,
+    "away_team_id": 13,
+    "home_team_id": 4,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10476,
+    "away_team_id": 10,
+    "home_team_id": 7,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10477,
+    "away_team_id": 29,
+    "home_team_id": 18,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10478,
+    "away_team_id": 2,
+    "home_team_id": 22,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10479,
+    "away_team_id": 8,
+    "home_team_id": 25,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10480,
+    "away_team_id": 23,
+    "home_team_id": 26,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10481,
+    "away_team_id": 24,
+    "home_team_id": 27,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10482,
+    "away_team_id": 30,
+    "home_team_id": 28,
+    "game_date": "2015-12-30"
+  },
+  {
+    "game_id": 10483,
+    "away_team_id": 18,
+    "home_team_id": 9,
+    "game_date": "2015-12-31"
+  },
+  {
+    "game_id": 10484,
+    "away_team_id": 10,
+    "home_team_id": 11,
+    "game_date": "2015-12-31"
+  },
+  {
+    "game_id": 10485,
+    "away_team_id": 17,
+    "home_team_id": 12,
+    "game_date": "2015-12-31"
+  },
+  {
+    "game_id": 10486,
+    "away_team_id": 13,
+    "home_team_id": 19,
+    "game_date": "2015-12-31"
+  },
+  {
+    "game_id": 10487,
+    "away_team_id": 24,
+    "home_team_id": 21,
+    "game_date": "2015-12-31"
+  },
+  {
+    "game_id": 10488,
+    "away_team_id": 25,
+    "home_team_id": 29,
+    "game_date": "2015-12-31"
+  },
+  {
+    "game_id": 10489,
+    "away_team_id": 20,
+    "home_team_id": 5,
+    "game_date": "2016-01-01"
+  },
+  {
+    "game_id": 10490,
+    "away_team_id": 23,
+    "home_team_id": 14,
+    "game_date": "2016-01-01"
+  },
+  {
+    "game_id": 10491,
+    "away_team_id": 7,
+    "home_team_id": 16,
+    "game_date": "2016-01-01"
+  },
+  {
+    "game_id": 10492,
+    "away_team_id": 4,
+    "home_team_id": 28,
+    "game_date": "2016-01-01"
+  },
+  {
+    "game_id": 10493,
+    "away_team_id": 22,
+    "home_team_id": 30,
+    "game_date": "2016-01-01"
+  },
+  {
+    "game_id": 10494,
+    "away_team_id": 2,
+    "home_team_id": 3,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10495,
+    "away_team_id": 21,
+    "home_team_id": 4,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10496,
+    "away_team_id": 22,
+    "home_team_id": 6,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10497,
+    "away_team_id": 19,
+    "home_team_id": 7,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10498,
+    "away_team_id": 8,
+    "home_team_id": 10,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10499,
+    "away_team_id": 9,
+    "home_team_id": 12,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10500,
+    "away_team_id": 23,
+    "home_team_id": 13,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10501,
+    "away_team_id": 17,
+    "home_team_id": 18,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10502,
+    "away_team_id": 24,
+    "home_team_id": 26,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10503,
+    "away_team_id": 11,
+    "home_team_id": 27,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10504,
+    "away_team_id": 15,
+    "home_team_id": 29,
+    "game_date": "2016-01-02"
+  },
+  {
+    "game_id": 10505,
+    "away_team_id": 25,
+    "home_team_id": 8,
+    "game_date": "2016-01-03"
+  },
+  {
+    "game_id": 10506,
+    "away_team_id": 24,
+    "home_team_id": 14,
+    "game_date": "2016-01-03"
+  },
+  {
+    "game_id": 10507,
+    "away_team_id": 1,
+    "home_team_id": 20,
+    "game_date": "2016-01-03"
+  },
+  {
+    "game_id": 10508,
+    "away_team_id": 5,
+    "home_team_id": 28,
+    "game_date": "2016-01-03"
+  },
+  {
+    "game_id": 10509,
+    "away_team_id": 16,
+    "home_team_id": 30,
+    "game_date": "2016-01-03"
+  },
+  {
+    "game_id": 10510,
+    "away_team_id": 3,
+    "home_team_id": 2,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10511,
+    "away_team_id": 28,
+    "home_team_id": 6,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10512,
+    "away_team_id": 22,
+    "home_team_id": 9,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10513,
+    "away_team_id": 4,
+    "home_team_id": 10,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10514,
+    "away_team_id": 12,
+    "home_team_id": 16,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10515,
+    "away_team_id": 27,
+    "home_team_id": 17,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10516,
+    "away_team_id": 26,
+    "home_team_id": 21,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10517,
+    "away_team_id": 18,
+    "home_team_id": 23,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10518,
+    "away_team_id": 15,
+    "home_team_id": 25,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10519,
+    "away_team_id": 11,
+    "home_team_id": 29,
+    "game_date": "2016-01-04"
+  },
+  {
+    "game_id": 10520,
+    "away_team_id": 20,
+    "home_team_id": 1,
+    "game_date": "2016-01-05"
+  },
+  {
+    "game_id": 10521,
+    "away_team_id": 17,
+    "home_team_id": 5,
+    "game_date": "2016-01-05"
+  },
+  {
+    "game_id": 10522,
+    "away_team_id": 26,
+    "home_team_id": 7,
+    "game_date": "2016-01-05"
+  },
+  {
+    "game_id": 10523,
+    "away_team_id": 10,
+    "home_team_id": 14,
+    "game_date": "2016-01-05"
+  },
+  {
+    "game_id": 10524,
+    "away_team_id": 9,
+    "home_team_id": 3,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10525,
+    "away_team_id": 28,
+    "home_team_id": 2,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10526,
+    "away_team_id": 20,
+    "home_team_id": 16,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10527,
+    "away_team_id": 8,
+    "home_team_id": 18,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10528,
+    "away_team_id": 7,
+    "home_team_id": 19,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10529,
+    "away_team_id": 15,
+    "home_team_id": 21,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10530,
+    "away_team_id": 12,
+    "home_team_id": 22,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10531,
+    "away_team_id": 4,
+    "home_team_id": 24,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10532,
+    "away_team_id": 13,
+    "home_team_id": 25,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10533,
+    "away_team_id": 29,
+    "home_team_id": 27,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10534,
+    "away_team_id": 6,
+    "home_team_id": 30,
+    "game_date": "2016-01-06"
+  },
+  {
+    "game_id": 10535,
+    "away_team_id": 3,
+    "home_team_id": 5,
+    "game_date": "2016-01-07"
+  },
+  {
+    "game_id": 10536,
+    "away_team_id": 29,
+    "home_team_id": 11,
+    "game_date": "2016-01-07"
+  },
+  {
+    "game_id": 10537,
+    "away_team_id": 1,
+    "home_team_id": 23,
+    "game_date": "2016-01-07"
+  },
+  {
+    "game_id": 10538,
+    "away_team_id": 14,
+    "home_team_id": 26,
+    "game_date": "2016-01-07"
+  },
+  {
+    "game_id": 10539,
+    "away_team_id": 22,
+    "home_team_id": 2,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10540,
+    "away_team_id": 21,
+    "home_team_id": 14,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10541,
+    "away_team_id": 8,
+    "home_team_id": 15,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10542,
+    "away_team_id": 7,
+    "home_team_id": 17,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10543,
+    "away_team_id": 6,
+    "home_team_id": 18,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10544,
+    "away_team_id": 12,
+    "home_team_id": 19,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10545,
+    "away_team_id": 16,
+    "home_team_id": 24,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10546,
+    "away_team_id": 10,
+    "home_team_id": 25,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10547,
+    "away_team_id": 20,
+    "home_team_id": 27,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10548,
+    "away_team_id": 28,
+    "home_team_id": 30,
+    "game_date": "2016-01-08"
+  },
+  {
+    "game_id": 10549,
+    "away_team_id": 5,
+    "home_team_id": 1,
+    "game_date": "2016-01-09"
+  },
+  {
+    "game_id": 10550,
+    "away_team_id": 2,
+    "home_team_id": 9,
+    "game_date": "2016-01-09"
+  },
+  {
+    "game_id": 10551,
+    "away_team_id": 4,
+    "home_team_id": 13,
+    "game_date": "2016-01-09"
+  },
+  {
+    "game_id": 10552,
+    "away_team_id": 30,
+    "home_team_id": 22,
+    "game_date": "2016-01-09"
+  },
+  {
+    "game_id": 10553,
+    "away_team_id": 28,
+    "home_team_id": 23,
+    "game_date": "2016-01-09"
+  },
+  {
+    "game_id": 10554,
+    "away_team_id": 10,
+    "home_team_id": 26,
+    "game_date": "2016-01-09"
+  },
+  {
+    "game_id": 10555,
+    "away_team_id": 16,
+    "home_team_id": 29,
+    "game_date": "2016-01-09"
+  },
+  {
+    "game_id": 10556,
+    "away_team_id": 4,
+    "home_team_id": 8,
+    "game_date": "2016-01-10"
+  },
+  {
+    "game_id": 10557,
+    "away_team_id": 12,
+    "home_team_id": 11,
+    "game_date": "2016-01-10"
+  },
+  {
+    "game_id": 10558,
+    "away_team_id": 19,
+    "home_team_id": 13,
+    "game_date": "2016-01-10"
+  },
+  {
+    "game_id": 10559,
+    "away_team_id": 29,
+    "home_team_id": 14,
+    "game_date": "2016-01-10"
+  },
+  {
+    "game_id": 10560,
+    "away_team_id": 3,
+    "home_team_id": 15,
+    "game_date": "2016-01-10"
+  },
+  {
+    "game_id": 10561,
+    "away_team_id": 7,
+    "home_team_id": 18,
+    "game_date": "2016-01-10"
+  },
+  {
+    "game_id": 10562,
+    "away_team_id": 17,
+    "home_team_id": 20,
+    "game_date": "2016-01-10"
+  },
+  {
+    "game_id": 10563,
+    "away_team_id": 6,
+    "home_team_id": 23,
+    "game_date": "2016-01-10"
+  },
+  {
+    "game_id": 10564,
+    "away_team_id": 21,
+    "home_team_id": 25,
+    "game_date": "2016-01-10"
+  },
+  {
+    "game_id": 10565,
+    "away_team_id": 27,
+    "home_team_id": 2,
+    "game_date": "2016-01-11"
+  },
+  {
+    "game_id": 10566,
+    "away_team_id": 30,
+    "home_team_id": 5,
+    "game_date": "2016-01-11"
+  },
+  {
+    "game_id": 10567,
+    "away_team_id": 16,
+    "home_team_id": 10,
+    "game_date": "2016-01-11"
+  },
+  {
+    "game_id": 10568,
+    "away_team_id": 6,
+    "home_team_id": 7,
+    "game_date": "2016-01-12"
+  },
+  {
+    "game_id": 10569,
+    "away_team_id": 27,
+    "home_team_id": 9,
+    "game_date": "2016-01-12"
+  },
+  {
+    "game_id": 10570,
+    "away_team_id": 24,
+    "home_team_id": 12,
+    "game_date": "2016-01-12"
+  },
+  {
+    "game_id": 10571,
+    "away_team_id": 19,
+    "home_team_id": 14,
+    "game_date": "2016-01-12"
+  },
+  {
+    "game_id": 10572,
+    "away_team_id": 11,
+    "home_team_id": 15,
+    "game_date": "2016-01-12"
+  },
+  {
+    "game_id": 10573,
+    "away_team_id": 5,
+    "home_team_id": 17,
+    "game_date": "2016-01-12"
+  },
+  {
+    "game_id": 10574,
+    "away_team_id": 21,
+    "home_team_id": 18,
+    "game_date": "2016-01-12"
+  },
+  {
+    "game_id": 10575,
+    "away_team_id": 3,
+    "home_team_id": 20,
+    "game_date": "2016-01-12"
+  },
+  {
+    "game_id": 10576,
+    "away_team_id": 12,
+    "home_team_id": 3,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10577,
+    "away_team_id": 20,
+    "home_team_id": 2,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10578,
+    "away_team_id": 1,
+    "home_team_id": 4,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10579,
+    "away_team_id": 10,
+    "home_team_id": 8,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10580,
+    "away_team_id": 18,
+    "home_team_id": 11,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10581,
+    "away_team_id": 16,
+    "home_team_id": 13,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10582,
+    "away_team_id": 7,
+    "home_team_id": 21,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10583,
+    "away_team_id": 29,
+    "home_team_id": 25,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10584,
+    "away_team_id": 19,
+    "home_team_id": 26,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10585,
+    "away_team_id": 17,
+    "home_team_id": 30,
+    "game_date": "2016-01-13"
+  },
+  {
+    "game_id": 10586,
+    "away_team_id": 14,
+    "home_team_id": 10,
+    "game_date": "2016-01-14"
+  },
+  {
+    "game_id": 10587,
+    "away_team_id": 9,
+    "home_team_id": 15,
+    "game_date": "2016-01-14"
+  },
+  {
+    "game_id": 10588,
+    "away_team_id": 28,
+    "home_team_id": 22,
+    "game_date": "2016-01-14"
+  },
+  {
+    "game_id": 10589,
+    "away_team_id": 5,
+    "home_team_id": 23,
+    "game_date": "2016-01-14"
+  },
+  {
+    "game_id": 10590,
+    "away_team_id": 6,
+    "home_team_id": 27,
+    "game_date": "2016-01-14"
+  },
+  {
+    "game_id": 10591,
+    "away_team_id": 26,
+    "home_team_id": 29,
+    "game_date": "2016-01-14"
+  },
+  {
+    "game_id": 10592,
+    "away_team_id": 24,
+    "home_team_id": 3,
+    "game_date": "2016-01-15"
+  },
+  {
+    "game_id": 10593,
+    "away_team_id": 25,
+    "home_team_id": 2,
+    "game_date": "2016-01-15"
+  },
+  {
+    "game_id": 10594,
+    "away_team_id": 7,
+    "home_team_id": 5,
+    "game_date": "2016-01-15"
+  },
+  {
+    "game_id": 10595,
+    "away_team_id": 16,
+    "home_team_id": 8,
+    "game_date": "2016-01-15"
+  },
+  {
+    "game_id": 10596,
+    "away_team_id": 6,
+    "home_team_id": 11,
+    "game_date": "2016-01-15"
+  },
+  {
+    "game_id": 10597,
+    "away_team_id": 30,
+    "home_team_id": 12,
+    "game_date": "2016-01-15"
+  },
+  {
+    "game_id": 10598,
+    "away_team_id": 1,
+    "home_team_id": 17,
+    "game_date": "2016-01-15"
+  },
+  {
+    "game_id": 10599,
+    "away_team_id": 4,
+    "home_team_id": 19,
+    "game_date": "2016-01-15"
+  },
+  {
+    "game_id": 10600,
+    "away_team_id": 18,
+    "home_team_id": 21,
+    "game_date": "2016-01-15"
+  },
+  {
+    "game_id": 10601,
+    "away_team_id": 2,
+    "home_team_id": 1,
+    "game_date": "2016-01-16"
+  },
+  {
+    "game_id": 10602,
+    "away_team_id": 17,
+    "home_team_id": 4,
+    "game_date": "2016-01-16"
+  },
+  {
+    "game_id": 10603,
+    "away_team_id": 10,
+    "home_team_id": 9,
+    "game_date": "2016-01-16"
+  },
+  {
+    "game_id": 10604,
+    "away_team_id": 26,
+    "home_team_id": 13,
+    "game_date": "2016-01-16"
+  },
+  {
+    "game_id": 10605,
+    "away_team_id": 20,
+    "home_team_id": 15,
+    "game_date": "2016-01-16"
+  },
+  {
+    "game_id": 10606,
+    "away_team_id": 25,
+    "home_team_id": 23,
+    "game_date": "2016-01-16"
+  },
+  {
+    "game_id": 10607,
+    "away_team_id": 14,
+    "home_team_id": 29,
+    "game_date": "2016-01-16"
+  },
+  {
+    "game_id": 10608,
+    "away_team_id": 3,
+    "home_team_id": 30,
+    "game_date": "2016-01-16"
+  },
+  {
+    "game_id": 10609,
+    "away_team_id": 12,
+    "home_team_id": 8,
+    "game_date": "2016-01-17"
+  },
+  {
+    "game_id": 10610,
+    "away_team_id": 11,
+    "home_team_id": 14,
+    "game_date": "2016-01-17"
+  },
+  {
+    "game_id": 10611,
+    "away_team_id": 24,
+    "home_team_id": 18,
+    "game_date": "2016-01-17"
+  },
+  {
+    "game_id": 10612,
+    "away_team_id": 16,
+    "home_team_id": 21,
+    "game_date": "2016-01-17"
+  },
+  {
+    "game_id": 10613,
+    "away_team_id": 7,
+    "home_team_id": 27,
+    "game_date": "2016-01-17"
+  },
+  {
+    "game_id": 10614,
+    "away_team_id": 22,
+    "home_team_id": 1,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10615,
+    "away_team_id": 29,
+    "home_team_id": 4,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10616,
+    "away_team_id": 10,
+    "home_team_id": 6,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10617,
+    "away_team_id": 3,
+    "home_team_id": 7,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10618,
+    "away_team_id": 5,
+    "home_team_id": 9,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10619,
+    "away_team_id": 11,
+    "home_team_id": 13,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10620,
+    "away_team_id": 19,
+    "home_team_id": 15,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10621,
+    "away_team_id": 23,
+    "home_team_id": 20,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10622,
+    "away_team_id": 2,
+    "home_team_id": 28,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10623,
+    "away_team_id": 25,
+    "home_team_id": 30,
+    "game_date": "2016-01-18"
+  },
+  {
+    "game_id": 10624,
+    "away_team_id": 21,
+    "home_team_id": 8,
+    "game_date": "2016-01-19"
+  },
+  {
+    "game_id": 10625,
+    "away_team_id": 17,
+    "home_team_id": 16,
+    "game_date": "2016-01-19"
+  },
+  {
+    "game_id": 10626,
+    "away_team_id": 18,
+    "home_team_id": 19,
+    "game_date": "2016-01-19"
+  },
+  {
+    "game_id": 10627,
+    "away_team_id": 12,
+    "home_team_id": 24,
+    "game_date": "2016-01-19"
+  },
+  {
+    "game_id": 10628,
+    "away_team_id": 6,
+    "home_team_id": 2,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10629,
+    "away_team_id": 10,
+    "home_team_id": 5,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10630,
+    "away_team_id": 18,
+    "home_team_id": 7,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10631,
+    "away_team_id": 9,
+    "home_team_id": 11,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10632,
+    "away_team_id": 26,
+    "home_team_id": 14,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10633,
+    "away_team_id": 29,
+    "home_team_id": 20,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10634,
+    "away_team_id": 4,
+    "home_team_id": 21,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10635,
+    "away_team_id": 23,
+    "home_team_id": 22,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10636,
+    "away_team_id": 1,
+    "home_team_id": 25,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10637,
+    "away_team_id": 3,
+    "home_team_id": 28,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10638,
+    "away_team_id": 16,
+    "home_team_id": 30,
+    "game_date": "2016-01-20"
+  },
+  {
+    "game_id": 10639,
+    "away_team_id": 13,
+    "home_team_id": 6,
+    "game_date": "2016-01-21"
+  },
+  {
+    "game_id": 10640,
+    "away_team_id": 15,
+    "home_team_id": 8,
+    "game_date": "2016-01-21"
+  },
+  {
+    "game_id": 10641,
+    "away_team_id": 9,
+    "home_team_id": 19,
+    "game_date": "2016-01-21"
+  },
+  {
+    "game_id": 10642,
+    "away_team_id": 27,
+    "home_team_id": 24,
+    "game_date": "2016-01-21"
+  },
+  {
+    "game_id": 10643,
+    "away_team_id": 1,
+    "home_team_id": 26,
+    "game_date": "2016-01-21"
+  },
+  {
+    "game_id": 10644,
+    "away_team_id": 5,
+    "home_team_id": 3,
+    "game_date": "2016-01-22"
+  },
+  {
+    "game_id": 10645,
+    "away_team_id": 29,
+    "home_team_id": 2,
+    "game_date": "2016-01-22"
+  },
+  {
+    "game_id": 10646,
+    "away_team_id": 21,
+    "home_team_id": 7,
+    "game_date": "2016-01-22"
+  },
+  {
+    "game_id": 10647,
+    "away_team_id": 12,
+    "home_team_id": 10,
+    "game_date": "2016-01-22"
+  },
+  {
+    "game_id": 10648,
+    "away_team_id": 17,
+    "home_team_id": 11,
+    "game_date": "2016-01-22"
+  },
+  {
+    "game_id": 10649,
+    "away_team_id": 27,
+    "home_team_id": 14,
+    "game_date": "2016-01-22"
+  },
+  {
+    "game_id": 10650,
+    "away_team_id": 13,
+    "home_team_id": 20,
+    "game_date": "2016-01-22"
+  },
+  {
+    "game_id": 10651,
+    "away_team_id": 4,
+    "home_team_id": 22,
+    "game_date": "2016-01-22"
+  },
+  {
+    "game_id": 10652,
+    "away_team_id": 16,
+    "home_team_id": 28,
+    "game_date": "2016-01-22"
+  },
+  {
+    "game_id": 10653,
+    "away_team_id": 20,
+    "home_team_id": 4,
+    "game_date": "2016-01-23"
+  },
+  {
+    "game_id": 10654,
+    "away_team_id": 5,
+    "home_team_id": 6,
+    "game_date": "2016-01-23"
+  },
+  {
+    "game_id": 10655,
+    "away_team_id": 9,
+    "home_team_id": 8,
+    "game_date": "2016-01-23"
+  },
+  {
+    "game_id": 10656,
+    "away_team_id": 15,
+    "home_team_id": 18,
+    "game_date": "2016-01-23"
+  },
+  {
+    "game_id": 10657,
+    "away_team_id": 17,
+    "home_team_id": 19,
+    "game_date": "2016-01-23"
+  },
+  {
+    "game_id": 10658,
+    "away_team_id": 1,
+    "home_team_id": 24,
+    "game_date": "2016-01-23"
+  },
+  {
+    "game_id": 10659,
+    "away_team_id": 14,
+    "home_team_id": 25,
+    "game_date": "2016-01-23"
+  },
+  {
+    "game_id": 10660,
+    "away_team_id": 12,
+    "home_team_id": 26,
+    "game_date": "2016-01-23"
+  },
+  {
+    "game_id": 10661,
+    "away_team_id": 21,
+    "home_team_id": 2,
+    "game_date": "2016-01-24"
+  },
+  {
+    "game_id": 10662,
+    "away_team_id": 7,
+    "home_team_id": 11,
+    "game_date": "2016-01-24"
+  },
+  {
+    "game_id": 10663,
+    "away_team_id": 3,
+    "home_team_id": 23,
+    "game_date": "2016-01-24"
+  },
+  {
+    "game_id": 10664,
+    "away_team_id": 13,
+    "home_team_id": 28,
+    "game_date": "2016-01-24"
+  },
+  {
+    "game_id": 10665,
+    "away_team_id": 16,
+    "home_team_id": 5,
+    "game_date": "2016-01-25"
+  },
+  {
+    "game_id": 10666,
+    "away_team_id": 18,
+    "home_team_id": 6,
+    "game_date": "2016-01-25"
+  },
+  {
+    "game_id": 10667,
+    "away_team_id": 1,
+    "home_team_id": 8,
+    "game_date": "2016-01-25"
+  },
+  {
+    "game_id": 10668,
+    "away_team_id": 27,
+    "home_team_id": 10,
+    "game_date": "2016-01-25"
+  },
+  {
+    "game_id": 10669,
+    "away_team_id": 22,
+    "home_team_id": 15,
+    "game_date": "2016-01-25"
+  },
+  {
+    "game_id": 10670,
+    "away_team_id": 11,
+    "home_team_id": 19,
+    "game_date": "2016-01-25"
+  },
+  {
+    "game_id": 10671,
+    "away_team_id": 4,
+    "home_team_id": 26,
+    "game_date": "2016-01-25"
+  },
+  {
+    "game_id": 10672,
+    "away_team_id": 9,
+    "home_team_id": 29,
+    "game_date": "2016-01-25"
+  },
+  {
+    "game_id": 10673,
+    "away_team_id": 3,
+    "home_team_id": 30,
+    "game_date": "2016-01-25"
+  },
+  {
+    "game_id": 10674,
+    "away_team_id": 16,
+    "home_team_id": 2,
+    "game_date": "2016-01-26"
+  },
+  {
+    "game_id": 10675,
+    "away_team_id": 13,
+    "home_team_id": 12,
+    "game_date": "2016-01-26"
+  },
+  {
+    "game_id": 10676,
+    "away_team_id": 7,
+    "home_team_id": 14,
+    "game_date": "2016-01-26"
+  },
+  {
+    "game_id": 10677,
+    "away_team_id": 22,
+    "home_team_id": 17,
+    "game_date": "2016-01-26"
+  },
+  {
+    "game_id": 10678,
+    "away_team_id": 21,
+    "home_team_id": 20,
+    "game_date": "2016-01-26"
+  },
+  {
+    "game_id": 10679,
+    "away_team_id": 24,
+    "home_team_id": 23,
+    "game_date": "2016-01-26"
+  },
+  {
+    "game_id": 10680,
+    "away_team_id": 26,
+    "home_team_id": 25,
+    "game_date": "2016-01-26"
+  },
+  {
+    "game_id": 10681,
+    "away_team_id": 30,
+    "home_team_id": 28,
+    "game_date": "2016-01-26"
+  },
+  {
+    "game_id": 10682,
+    "away_team_id": 13,
+    "home_team_id": 1,
+    "game_date": "2016-01-27"
+  },
+  {
+    "game_id": 10683,
+    "away_team_id": 8,
+    "home_team_id": 3,
+    "game_date": "2016-01-27"
+  },
+  {
+    "game_id": 10684,
+    "away_team_id": 24,
+    "home_team_id": 6,
+    "game_date": "2016-01-27"
+  },
+  {
+    "game_id": 10685,
+    "away_team_id": 23,
+    "home_team_id": 9,
+    "game_date": "2016-01-27"
+  },
+  {
+    "game_id": 10686,
+    "away_team_id": 7,
+    "home_team_id": 10,
+    "game_date": "2016-01-27"
+  },
+  {
+    "game_id": 10687,
+    "away_team_id": 21,
+    "home_team_id": 18,
+    "game_date": "2016-01-27"
+  },
+  {
+    "game_id": 10688,
+    "away_team_id": 11,
+    "home_team_id": 27,
+    "game_date": "2016-01-27"
+  },
+  {
+    "game_id": 10689,
+    "away_team_id": 4,
+    "home_team_id": 29,
+    "game_date": "2016-01-27"
+  },
+  {
+    "game_id": 10690,
+    "away_team_id": 1,
+    "home_team_id": 12,
+    "game_date": "2016-01-28"
+  },
+  {
+    "game_id": 10691,
+    "away_team_id": 5,
+    "home_team_id": 14,
+    "game_date": "2016-01-28"
+  },
+  {
+    "game_id": 10692,
+    "away_team_id": 17,
+    "home_team_id": 15,
+    "game_date": "2016-01-28"
+  },
+  {
+    "game_id": 10693,
+    "away_team_id": 26,
+    "home_team_id": 19,
+    "game_date": "2016-01-28"
+  },
+  {
+    "game_id": 10694,
+    "away_team_id": 20,
+    "home_team_id": 28,
+    "game_date": "2016-01-28"
+  },
+  {
+    "game_id": 10695,
+    "away_team_id": 8,
+    "home_team_id": 30,
+    "game_date": "2016-01-28"
+  },
+  {
+    "game_id": 10696,
+    "away_team_id": 22,
+    "home_team_id": 3,
+    "game_date": "2016-01-29"
+  },
+  {
+    "game_id": 10697,
+    "away_team_id": 2,
+    "home_team_id": 7,
+    "game_date": "2016-01-29"
+  },
+  {
+    "game_id": 10698,
+    "away_team_id": 6,
+    "home_team_id": 9,
+    "game_date": "2016-01-29"
+  },
+  {
+    "game_id": 10699,
+    "away_team_id": 14,
+    "home_team_id": 13,
+    "game_date": "2016-01-29"
+  },
+  {
+    "game_id": 10700,
+    "away_team_id": 16,
+    "home_team_id": 17,
+    "game_date": "2016-01-29"
+  },
+  {
+    "game_id": 10701,
+    "away_team_id": 24,
+    "home_team_id": 20,
+    "game_date": "2016-01-29"
+  },
+  {
+    "game_id": 10702,
+    "away_team_id": 11,
+    "home_team_id": 21,
+    "game_date": "2016-01-29"
+  },
+  {
+    "game_id": 10703,
+    "away_team_id": 4,
+    "home_team_id": 25,
+    "game_date": "2016-01-29"
+  },
+  {
+    "game_id": 10704,
+    "away_team_id": 18,
+    "home_team_id": 29,
+    "game_date": "2016-01-29"
+  },
+  {
+    "game_id": 10705,
+    "away_team_id": 27,
+    "home_team_id": 6,
+    "game_date": "2016-01-30"
+  },
+  {
+    "game_id": 10706,
+    "away_team_id": 30,
+    "home_team_id": 11,
+    "game_date": "2016-01-30"
+  },
+  {
+    "game_id": 10707,
+    "away_team_id": 8,
+    "home_team_id": 12,
+    "game_date": "2016-01-30"
+  },
+  {
+    "game_id": 10708,
+    "away_team_id": 26,
+    "home_team_id": 15,
+    "game_date": "2016-01-30"
+  },
+  {
+    "game_id": 10709,
+    "away_team_id": 2,
+    "home_team_id": 19,
+    "game_date": "2016-01-30"
+  },
+  {
+    "game_id": 10710,
+    "away_team_id": 10,
+    "home_team_id": 23,
+    "game_date": "2016-01-30"
+  },
+  {
+    "game_id": 10711,
+    "away_team_id": 9,
+    "home_team_id": 28,
+    "game_date": "2016-01-30"
+  },
+  {
+    "game_id": 10712,
+    "away_team_id": 24,
+    "home_team_id": 7,
+    "game_date": "2016-01-31"
+  },
+  {
+    "game_id": 10713,
+    "away_team_id": 5,
+    "home_team_id": 13,
+    "game_date": "2016-01-31"
+  },
+  {
+    "game_id": 10714,
+    "away_team_id": 4,
+    "home_team_id": 14,
+    "game_date": "2016-01-31"
+  },
+  {
+    "game_id": 10715,
+    "away_team_id": 1,
+    "home_team_id": 16,
+    "game_date": "2016-01-31"
+  },
+  {
+    "game_id": 10716,
+    "away_team_id": 10,
+    "home_team_id": 20,
+    "game_date": "2016-01-31"
+  },
+  {
+    "game_id": 10717,
+    "away_team_id": 3,
+    "home_team_id": 22,
+    "game_date": "2016-01-31"
+  },
+  {
+    "game_id": 10718,
+    "away_team_id": 18,
+    "home_team_id": 25,
+    "game_date": "2016-01-31"
+  },
+  {
+    "game_id": 10719,
+    "away_team_id": 7,
+    "home_team_id": 1,
+    "game_date": "2016-02-01"
+  },
+  {
+    "game_id": 10720,
+    "away_team_id": 9,
+    "home_team_id": 2,
+    "game_date": "2016-02-01"
+  },
+  {
+    "game_id": 10721,
+    "away_team_id": 28,
+    "home_team_id": 8,
+    "game_date": "2016-02-01"
+  },
+  {
+    "game_id": 10722,
+    "away_team_id": 6,
+    "home_team_id": 12,
+    "game_date": "2016-02-01"
+  },
+  {
+    "game_id": 10723,
+    "away_team_id": 15,
+    "home_team_id": 19,
+    "game_date": "2016-02-01"
+  },
+  {
+    "game_id": 10724,
+    "away_team_id": 30,
+    "home_team_id": 21,
+    "game_date": "2016-02-01"
+  },
+  {
+    "game_id": 10725,
+    "away_team_id": 17,
+    "home_team_id": 26,
+    "game_date": "2016-02-01"
+  },
+  {
+    "game_id": 10726,
+    "away_team_id": 22,
+    "home_team_id": 27,
+    "game_date": "2016-02-01"
+  },
+  {
+    "game_id": 10727,
+    "away_team_id": 5,
+    "home_team_id": 29,
+    "game_date": "2016-02-01"
+  },
+  {
+    "game_id": 10728,
+    "away_team_id": 16,
+    "home_team_id": 11,
+    "game_date": "2016-02-02"
+  },
+  {
+    "game_id": 10729,
+    "away_team_id": 18,
+    "home_team_id": 14,
+    "game_date": "2016-02-02"
+  },
+  {
+    "game_id": 10730,
+    "away_team_id": 3,
+    "home_team_id": 20,
+    "game_date": "2016-02-02"
+  },
+  {
+    "game_id": 10731,
+    "away_team_id": 28,
+    "home_team_id": 24,
+    "game_date": "2016-02-02"
+  },
+  {
+    "game_id": 10732,
+    "away_team_id": 17,
+    "home_team_id": 25,
+    "game_date": "2016-02-02"
+  },
+  {
+    "game_id": 10733,
+    "away_team_id": 9,
+    "home_team_id": 3,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10734,
+    "away_team_id": 12,
+    "home_team_id": 2,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10735,
+    "away_team_id": 6,
+    "home_team_id": 4,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10736,
+    "away_team_id": 16,
+    "home_team_id": 7,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10737,
+    "away_team_id": 18,
+    "home_team_id": 13,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10738,
+    "away_team_id": 22,
+    "home_team_id": 21,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10739,
+    "away_team_id": 1,
+    "home_team_id": 23,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10740,
+    "away_team_id": 5,
+    "home_team_id": 26,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10741,
+    "away_team_id": 19,
+    "home_team_id": 27,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10742,
+    "away_team_id": 8,
+    "home_team_id": 29,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10743,
+    "away_team_id": 10,
+    "home_team_id": 30,
+    "game_date": "2016-02-03"
+  },
+  {
+    "game_id": 10744,
+    "away_team_id": 20,
+    "home_team_id": 9,
+    "game_date": "2016-02-04"
+  },
+  {
+    "game_id": 10745,
+    "away_team_id": 14,
+    "home_team_id": 19,
+    "game_date": "2016-02-04"
+  },
+  {
+    "game_id": 10746,
+    "away_team_id": 11,
+    "home_team_id": 24,
+    "game_date": "2016-02-04"
+  },
+  {
+    "game_id": 10747,
+    "away_team_id": 28,
+    "home_team_id": 25,
+    "game_date": "2016-02-04"
+  },
+  {
+    "game_id": 10748,
+    "away_team_id": 12,
+    "home_team_id": 1,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10749,
+    "away_team_id": 26,
+    "home_team_id": 2,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10750,
+    "away_team_id": 16,
+    "home_team_id": 4,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10751,
+    "away_team_id": 3,
+    "home_team_id": 6,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10752,
+    "away_team_id": 27,
+    "home_team_id": 7,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10753,
+    "away_team_id": 5,
+    "home_team_id": 8,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10754,
+    "away_team_id": 15,
+    "home_team_id": 20,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10755,
+    "away_team_id": 13,
+    "home_team_id": 22,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10756,
+    "away_team_id": 17,
+    "home_team_id": 29,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10757,
+    "away_team_id": 23,
+    "home_team_id": 30,
+    "game_date": "2016-02-05"
+  },
+  {
+    "game_id": 10758,
+    "away_team_id": 30,
+    "home_team_id": 4,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10759,
+    "away_team_id": 19,
+    "home_team_id": 6,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10760,
+    "away_team_id": 21,
+    "home_team_id": 10,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10761,
+    "away_team_id": 25,
+    "home_team_id": 11,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10762,
+    "away_team_id": 9,
+    "home_team_id": 12,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10763,
+    "away_team_id": 7,
+    "home_team_id": 15,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10764,
+    "away_team_id": 5,
+    "home_team_id": 18,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10765,
+    "away_team_id": 2,
+    "home_team_id": 23,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10766,
+    "away_team_id": 29,
+    "home_team_id": 24,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10767,
+    "away_team_id": 14,
+    "home_team_id": 27,
+    "game_date": "2016-02-06"
+  },
+  {
+    "game_id": 10768,
+    "away_team_id": 26,
+    "home_team_id": 3,
+    "game_date": "2016-02-07"
+  },
+  {
+    "game_id": 10769,
+    "away_team_id": 13,
+    "home_team_id": 16,
+    "game_date": "2016-02-07"
+  },
+  {
+    "game_id": 10770,
+    "away_team_id": 8,
+    "home_team_id": 20,
+    "game_date": "2016-02-07"
+  },
+  {
+    "game_id": 10771,
+    "away_team_id": 1,
+    "home_team_id": 22,
+    "game_date": "2016-02-07"
+  },
+  {
+    "game_id": 10772,
+    "away_team_id": 22,
+    "home_team_id": 1,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10773,
+    "away_team_id": 8,
+    "home_team_id": 2,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10774,
+    "away_team_id": 5,
+    "home_team_id": 4,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10775,
+    "away_team_id": 26,
+    "home_team_id": 6,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10776,
+    "away_team_id": 28,
+    "home_team_id": 9,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10777,
+    "away_team_id": 14,
+    "home_team_id": 12,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10778,
+    "away_team_id": 25,
+    "home_team_id": 15,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10779,
+    "away_team_id": 19,
+    "home_team_id": 18,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10780,
+    "away_team_id": 13,
+    "home_team_id": 23,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10781,
+    "away_team_id": 21,
+    "home_team_id": 24,
+    "game_date": "2016-02-08"
+  },
+  {
+    "game_id": 10782,
+    "away_team_id": 29,
+    "home_team_id": 7,
+    "game_date": "2016-02-09"
+  },
+  {
+    "game_id": 10783,
+    "away_team_id": 11,
+    "home_team_id": 10,
+    "game_date": "2016-02-09"
+  },
+  {
+    "game_id": 10784,
+    "away_team_id": 27,
+    "home_team_id": 16,
+    "game_date": "2016-02-09"
+  },
+  {
+    "game_id": 10785,
+    "away_team_id": 3,
+    "home_team_id": 17,
+    "game_date": "2016-02-09"
+  },
+  {
+    "game_id": 10786,
+    "away_team_id": 30,
+    "home_team_id": 20,
+    "game_date": "2016-02-09"
+  },
+  {
+    "game_id": 10787,
+    "away_team_id": 13,
+    "home_team_id": 3,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10788,
+    "away_team_id": 15,
+    "home_team_id": 2,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10789,
+    "away_team_id": 1,
+    "home_team_id": 5,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10790,
+    "away_team_id": 14,
+    "home_team_id": 6,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10791,
+    "away_team_id": 8,
+    "home_team_id": 9,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10792,
+    "away_team_id": 4,
+    "home_team_id": 12,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10793,
+    "away_team_id": 28,
+    "home_team_id": 18,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10794,
+    "away_team_id": 29,
+    "home_team_id": 19,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10795,
+    "away_team_id": 27,
+    "home_team_id": 22,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10796,
+    "away_team_id": 26,
+    "home_team_id": 23,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10797,
+    "away_team_id": 10,
+    "home_team_id": 24,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10798,
+    "away_team_id": 11,
+    "home_team_id": 25,
+    "game_date": "2016-02-10"
+  },
+  {
+    "game_id": 10799,
+    "away_team_id": 30,
+    "home_team_id": 17,
+    "game_date": "2016-02-11"
+  },
+  {
+    "game_id": 10800,
+    "away_team_id": 19,
+    "home_team_id": 21,
+    "game_date": "2016-02-11"
+  },
+  {
+    "game_id": 10801,
+    "away_team_id": 5,
+    "home_team_id": 6,
+    "game_date": "2016-02-18"
+  },
+  {
+    "game_id": 10802,
+    "away_team_id": 27,
+    "home_team_id": 13,
+    "game_date": "2016-02-18"
+  },
+  {
+    "game_id": 10803,
+    "away_team_id": 29,
+    "home_team_id": 30,
+    "game_date": "2016-02-18"
+  },
+  {
+    "game_id": 10804,
+    "away_team_id": 16,
+    "home_team_id": 1,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10805,
+    "away_team_id": 20,
+    "home_team_id": 2,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10806,
+    "away_team_id": 28,
+    "home_team_id": 5,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10807,
+    "away_team_id": 27,
+    "home_team_id": 14,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10808,
+    "away_team_id": 18,
+    "home_team_id": 15,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10809,
+    "away_team_id": 4,
+    "home_team_id": 17,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10810,
+    "away_team_id": 23,
+    "home_team_id": 19,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10811,
+    "away_team_id": 12,
+    "home_team_id": 21,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10812,
+    "away_team_id": 7,
+    "home_team_id": 22,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10813,
+    "away_team_id": 11,
+    "home_team_id": 24,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10814,
+    "away_team_id": 10,
+    "home_team_id": 25,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10815,
+    "away_team_id": 8,
+    "home_team_id": 26,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10816,
+    "away_team_id": 3,
+    "home_team_id": 29,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10817,
+    "away_team_id": 9,
+    "home_team_id": 30,
+    "game_date": "2016-02-19"
+  },
+  {
+    "game_id": 10818,
+    "away_team_id": 17,
+    "home_team_id": 1,
+    "game_date": "2016-02-20"
+  },
+  {
+    "game_id": 10819,
+    "away_team_id": 10,
+    "home_team_id": 13,
+    "game_date": "2016-02-20"
+  },
+  {
+    "game_id": 10820,
+    "away_team_id": 30,
+    "home_team_id": 16,
+    "game_date": "2016-02-20"
+  },
+  {
+    "game_id": 10821,
+    "away_team_id": 20,
+    "home_team_id": 18,
+    "game_date": "2016-02-20"
+  },
+  {
+    "game_id": 10822,
+    "away_team_id": 4,
+    "home_team_id": 2,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10823,
+    "away_team_id": 14,
+    "home_team_id": 5,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10824,
+    "away_team_id": 23,
+    "home_team_id": 7,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10825,
+    "away_team_id": 3,
+    "home_team_id": 8,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10826,
+    "away_team_id": 19,
+    "home_team_id": 9,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10827,
+    "away_team_id": 6,
+    "home_team_id": 21,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10828,
+    "away_team_id": 12,
+    "home_team_id": 22,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10829,
+    "away_team_id": 27,
+    "home_team_id": 24,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10830,
+    "away_team_id": 29,
+    "home_team_id": 25,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10831,
+    "away_team_id": 15,
+    "home_team_id": 28,
+    "game_date": "2016-02-21"
+  },
+  {
+    "game_id": 10832,
+    "away_team_id": 10,
+    "home_team_id": 1,
+    "game_date": "2016-02-22"
+  },
+  {
+    "game_id": 10833,
+    "away_team_id": 9,
+    "home_team_id": 6,
+    "game_date": "2016-02-22"
+  },
+  {
+    "game_id": 10834,
+    "away_team_id": 24,
+    "home_team_id": 13,
+    "game_date": "2016-02-22"
+  },
+  {
+    "game_id": 10835,
+    "away_team_id": 12,
+    "home_team_id": 16,
+    "game_date": "2016-02-22"
+  },
+  {
+    "game_id": 10836,
+    "away_team_id": 14,
+    "home_team_id": 17,
+    "game_date": "2016-02-22"
+  },
+  {
+    "game_id": 10837,
+    "away_team_id": 3,
+    "home_team_id": 18,
+    "game_date": "2016-02-22"
+  },
+  {
+    "game_id": 10838,
+    "away_team_id": 28,
+    "home_team_id": 20,
+    "game_date": "2016-02-22"
+  },
+  {
+    "game_id": 10839,
+    "away_team_id": 26,
+    "home_team_id": 8,
+    "game_date": "2016-02-23"
+  },
+  {
+    "game_id": 10840,
+    "away_team_id": 22,
+    "home_team_id": 23,
+    "game_date": "2016-02-23"
+  },
+  {
+    "game_id": 10841,
+    "away_team_id": 2,
+    "home_team_id": 25,
+    "game_date": "2016-02-23"
+  },
+  {
+    "game_id": 10842,
+    "away_team_id": 11,
+    "home_team_id": 29,
+    "game_date": "2016-02-23"
+  },
+  {
+    "game_id": 10843,
+    "away_team_id": 19,
+    "home_team_id": 30,
+    "game_date": "2016-02-23"
+  },
+  {
+    "game_id": 10844,
+    "away_team_id": 30,
+    "home_team_id": 5,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10845,
+    "away_team_id": 4,
+    "home_team_id": 6,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10846,
+    "away_team_id": 21,
+    "home_team_id": 7,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10847,
+    "away_team_id": 23,
+    "home_team_id": 9,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10848,
+    "away_team_id": 20,
+    "home_team_id": 12,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10849,
+    "away_team_id": 8,
+    "home_team_id": 13,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10850,
+    "away_team_id": 14,
+    "home_team_id": 15,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10851,
+    "away_team_id": 10,
+    "home_team_id": 16,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10852,
+    "away_team_id": 27,
+    "home_team_id": 26,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10853,
+    "away_team_id": 18,
+    "home_team_id": 28,
+    "game_date": "2016-02-24"
+  },
+  {
+    "game_id": 10854,
+    "away_team_id": 17,
+    "home_team_id": 3,
+    "game_date": "2016-02-25"
+  },
+  {
+    "game_id": 10855,
+    "away_team_id": 21,
+    "home_team_id": 19,
+    "game_date": "2016-02-25"
+  },
+  {
+    "game_id": 10856,
+    "away_team_id": 10,
+    "home_team_id": 22,
+    "game_date": "2016-02-25"
+  },
+  {
+    "game_id": 10857,
+    "away_team_id": 2,
+    "home_team_id": 24,
+    "game_date": "2016-02-25"
+  },
+  {
+    "game_id": 10858,
+    "away_team_id": 11,
+    "home_team_id": 25,
+    "game_date": "2016-02-25"
+  },
+  {
+    "game_id": 10859,
+    "away_team_id": 27,
+    "home_team_id": 29,
+    "game_date": "2016-02-25"
+  },
+  {
+    "game_id": 10860,
+    "away_team_id": 5,
+    "home_team_id": 1,
+    "game_date": "2016-02-26"
+  },
+  {
+    "game_id": 10861,
+    "away_team_id": 8,
+    "home_team_id": 7,
+    "game_date": "2016-02-26"
+  },
+  {
+    "game_id": 10862,
+    "away_team_id": 4,
+    "home_team_id": 12,
+    "game_date": "2016-02-26"
+  },
+  {
+    "game_id": 10863,
+    "away_team_id": 15,
+    "home_team_id": 14,
+    "game_date": "2016-02-26"
+  },
+  {
+    "game_id": 10864,
+    "away_team_id": 22,
+    "home_team_id": 20,
+    "game_date": "2016-02-26"
+  },
+  {
+    "game_id": 10865,
+    "away_team_id": 30,
+    "home_team_id": 23,
+    "game_date": "2016-02-26"
+  },
+  {
+    "game_id": 10866,
+    "away_team_id": 13,
+    "home_team_id": 26,
+    "game_date": "2016-02-26"
+  },
+  {
+    "game_id": 10867,
+    "away_team_id": 6,
+    "home_team_id": 28,
+    "game_date": "2016-02-26"
+  },
+  {
+    "game_id": 10868,
+    "away_team_id": 16,
+    "home_team_id": 3,
+    "game_date": "2016-02-27"
+  },
+  {
+    "game_id": 10869,
+    "away_team_id": 25,
+    "home_team_id": 5,
+    "game_date": "2016-02-27"
+  },
+  {
+    "game_id": 10870,
+    "away_team_id": 27,
+    "home_team_id": 11,
+    "game_date": "2016-02-27"
+  },
+  {
+    "game_id": 10871,
+    "away_team_id": 9,
+    "home_team_id": 17,
+    "game_date": "2016-02-27"
+  },
+  {
+    "game_id": 10872,
+    "away_team_id": 18,
+    "home_team_id": 19,
+    "game_date": "2016-02-27"
+  },
+  {
+    "game_id": 10873,
+    "away_team_id": 10,
+    "home_team_id": 21,
+    "game_date": "2016-02-27"
+  },
+  {
+    "game_id": 10874,
+    "away_team_id": 15,
+    "home_team_id": 24,
+    "game_date": "2016-02-27"
+  },
+  {
+    "game_id": 10875,
+    "away_team_id": 2,
+    "home_team_id": 29,
+    "game_date": "2016-02-27"
+  },
+  {
+    "game_id": 10876,
+    "away_team_id": 4,
+    "home_team_id": 1,
+    "game_date": "2016-02-28"
+  },
+  {
+    "game_id": 10877,
+    "away_team_id": 18,
+    "home_team_id": 7,
+    "game_date": "2016-02-28"
+  },
+  {
+    "game_id": 10878,
+    "away_team_id": 28,
+    "home_team_id": 9,
+    "game_date": "2016-02-28"
+  },
+  {
+    "game_id": 10879,
+    "away_team_id": 25,
+    "home_team_id": 12,
+    "game_date": "2016-02-28"
+  },
+  {
+    "game_id": 10880,
+    "away_team_id": 16,
+    "home_team_id": 20,
+    "game_date": "2016-02-28"
+  },
+  {
+    "game_id": 10881,
+    "away_team_id": 23,
+    "home_team_id": 22,
+    "game_date": "2016-02-28"
+  },
+  {
+    "game_id": 10882,
+    "away_team_id": 6,
+    "home_team_id": 30,
+    "game_date": "2016-02-28"
+  },
+  {
+    "game_id": 10883,
+    "away_team_id": 29,
+    "home_team_id": 3,
+    "game_date": "2016-02-29"
+  },
+  {
+    "game_id": 10884,
+    "away_team_id": 12,
+    "home_team_id": 6,
+    "game_date": "2016-02-29"
+  },
+  {
+    "game_id": 10885,
+    "away_team_id": 15,
+    "home_team_id": 8,
+    "game_date": "2016-02-29"
+  },
+  {
+    "game_id": 10886,
+    "away_team_id": 2,
+    "home_team_id": 13,
+    "game_date": "2016-02-29"
+  },
+  {
+    "game_id": 10887,
+    "away_team_id": 11,
+    "home_team_id": 17,
+    "game_date": "2016-02-29"
+  },
+  {
+    "game_id": 10888,
+    "away_team_id": 21,
+    "home_team_id": 26,
+    "game_date": "2016-02-29"
+  },
+  {
+    "game_id": 10889,
+    "away_team_id": 23,
+    "home_team_id": 30,
+    "game_date": "2016-02-29"
+  },
+  {
+    "game_id": 10890,
+    "away_team_id": 24,
+    "home_team_id": 4,
+    "game_date": "2016-03-01"
+  },
+  {
+    "game_id": 10891,
+    "away_team_id": 22,
+    "home_team_id": 7,
+    "game_date": "2016-03-01"
+  },
+  {
+    "game_id": 10892,
+    "away_team_id": 1,
+    "home_team_id": 10,
+    "game_date": "2016-03-01"
+  },
+  {
+    "game_id": 10893,
+    "away_team_id": 2,
+    "home_team_id": 14,
+    "game_date": "2016-03-01"
+  },
+  {
+    "game_id": 10894,
+    "away_team_id": 5,
+    "home_team_id": 16,
+    "game_date": "2016-03-01"
+  },
+  {
+    "game_id": 10895,
+    "away_team_id": 25,
+    "home_team_id": 20,
+    "game_date": "2016-03-01"
+  },
+  {
+    "game_id": 10896,
+    "away_team_id": 25,
+    "home_team_id": 3,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10897,
+    "away_team_id": 14,
+    "home_team_id": 8,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10898,
+    "away_team_id": 19,
+    "home_team_id": 11,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10899,
+    "away_team_id": 21,
+    "home_team_id": 13,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10900,
+    "away_team_id": 26,
+    "home_team_id": 15,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10901,
+    "away_team_id": 12,
+    "home_team_id": 17,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10902,
+    "away_team_id": 30,
+    "home_team_id": 18,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10903,
+    "away_team_id": 5,
+    "home_team_id": 22,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10904,
+    "away_team_id": 4,
+    "home_team_id": 23,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10905,
+    "away_team_id": 9,
+    "home_team_id": 27,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10906,
+    "away_team_id": 29,
+    "home_team_id": 28,
+    "game_date": "2016-03-02"
+  },
+  {
+    "game_id": 10907,
+    "away_team_id": 26,
+    "home_team_id": 7,
+    "game_date": "2016-03-03"
+  },
+  {
+    "game_id": 10908,
+    "away_team_id": 21,
+    "home_team_id": 10,
+    "game_date": "2016-03-03"
+  },
+  {
+    "game_id": 10909,
+    "away_team_id": 24,
+    "home_team_id": 16,
+    "game_date": "2016-03-03"
+  },
+  {
+    "game_id": 10910,
+    "away_team_id": 27,
+    "home_team_id": 19,
+    "game_date": "2016-03-03"
+  },
+  {
+    "game_id": 10911,
+    "away_team_id": 20,
+    "home_team_id": 3,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10912,
+    "away_team_id": 12,
+    "home_team_id": 4,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10913,
+    "away_team_id": 30,
+    "home_team_id": 6,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10914,
+    "away_team_id": 2,
+    "home_team_id": 8,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10915,
+    "away_team_id": 1,
+    "home_team_id": 14,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10916,
+    "away_team_id": 29,
+    "home_team_id": 15,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10917,
+    "away_team_id": 18,
+    "home_team_id": 17,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10918,
+    "away_team_id": 24,
+    "home_team_id": 22,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10919,
+    "away_team_id": 16,
+    "home_team_id": 23,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10920,
+    "away_team_id": 25,
+    "home_team_id": 28,
+    "game_date": "2016-03-04"
+  },
+  {
+    "game_id": 10921,
+    "away_team_id": 11,
+    "home_team_id": 5,
+    "game_date": "2016-03-05"
+  },
+  {
+    "game_id": 10922,
+    "away_team_id": 3,
+    "home_team_id": 6,
+    "game_date": "2016-03-05"
+  },
+  {
+    "game_id": 10923,
+    "away_team_id": 1,
+    "home_team_id": 13,
+    "game_date": "2016-03-05"
+  },
+  {
+    "game_id": 10924,
+    "away_team_id": 2,
+    "home_team_id": 18,
+    "game_date": "2016-03-05"
+  },
+  {
+    "game_id": 10925,
+    "away_team_id": 29,
+    "home_team_id": 19,
+    "game_date": "2016-03-05"
+  },
+  {
+    "game_id": 10926,
+    "away_team_id": 9,
+    "home_team_id": 20,
+    "game_date": "2016-03-05"
+  },
+  {
+    "game_id": 10927,
+    "away_team_id": 26,
+    "home_team_id": 27,
+    "game_date": "2016-03-05"
+  },
+  {
+    "game_id": 10928,
+    "away_team_id": 12,
+    "home_team_id": 30,
+    "game_date": "2016-03-05"
+  },
+  {
+    "game_id": 10929,
+    "away_team_id": 7,
+    "home_team_id": 8,
+    "game_date": "2016-03-06"
+  },
+  {
+    "game_id": 10930,
+    "away_team_id": 25,
+    "home_team_id": 9,
+    "game_date": "2016-03-06"
+  },
+  {
+    "game_id": 10931,
+    "away_team_id": 10,
+    "home_team_id": 14,
+    "game_date": "2016-03-06"
+  },
+  {
+    "game_id": 10932,
+    "away_team_id": 24,
+    "home_team_id": 15,
+    "game_date": "2016-03-06"
+  },
+  {
+    "game_id": 10933,
+    "away_team_id": 23,
+    "home_team_id": 16,
+    "game_date": "2016-03-06"
+  },
+  {
+    "game_id": 10934,
+    "away_team_id": 21,
+    "home_team_id": 17,
+    "game_date": "2016-03-06"
+  },
+  {
+    "game_id": 10935,
+    "away_team_id": 11,
+    "home_team_id": 28,
+    "game_date": "2016-03-06"
+  },
+  {
+    "game_id": 10936,
+    "away_team_id": 17,
+    "home_team_id": 5,
+    "game_date": "2016-03-07"
+  },
+  {
+    "game_id": 10937,
+    "away_team_id": 18,
+    "home_team_id": 4,
+    "game_date": "2016-03-07"
+  },
+  {
+    "game_id": 10938,
+    "away_team_id": 15,
+    "home_team_id": 6,
+    "game_date": "2016-03-07"
+  },
+  {
+    "game_id": 10939,
+    "away_team_id": 13,
+    "home_team_id": 7,
+    "game_date": "2016-03-07"
+  },
+  {
+    "game_id": 10940,
+    "away_team_id": 22,
+    "home_team_id": 10,
+    "game_date": "2016-03-07"
+  },
+  {
+    "game_id": 10941,
+    "away_team_id": 27,
+    "home_team_id": 12,
+    "game_date": "2016-03-07"
+  },
+  {
+    "game_id": 10942,
+    "away_team_id": 26,
+    "home_team_id": 19,
+    "game_date": "2016-03-07"
+  },
+  {
+    "game_id": 10943,
+    "away_team_id": 20,
+    "home_team_id": 8,
+    "game_date": "2016-03-08"
+  },
+  {
+    "game_id": 10944,
+    "away_team_id": 22,
+    "home_team_id": 14,
+    "game_date": "2016-03-08"
+  },
+  {
+    "game_id": 10945,
+    "away_team_id": 27,
+    "home_team_id": 18,
+    "game_date": "2016-03-08"
+  },
+  {
+    "game_id": 10946,
+    "away_team_id": 30,
+    "home_team_id": 25,
+    "game_date": "2016-03-08"
+  },
+  {
+    "game_id": 10947,
+    "away_team_id": 2,
+    "home_team_id": 28,
+    "game_date": "2016-03-08"
+  },
+  {
+    "game_id": 10948,
+    "away_team_id": 1,
+    "home_team_id": 29,
+    "game_date": "2016-03-08"
+  },
+  {
+    "game_id": 10949,
+    "away_team_id": 15,
+    "home_team_id": 3,
+    "game_date": "2016-03-09"
+  },
+  {
+    "game_id": 10950,
+    "away_team_id": 19,
+    "home_team_id": 4,
+    "game_date": "2016-03-09"
+  },
+  {
+    "game_id": 10951,
+    "away_team_id": 9,
+    "home_team_id": 7,
+    "game_date": "2016-03-09"
+  },
+  {
+    "game_id": 10952,
+    "away_team_id": 29,
+    "home_team_id": 10,
+    "game_date": "2016-03-09"
+  },
+  {
+    "game_id": 10953,
+    "away_team_id": 16,
+    "home_team_id": 17,
+    "game_date": "2016-03-09"
+  },
+  {
+    "game_id": 10954,
+    "away_team_id": 13,
+    "home_team_id": 21,
+    "game_date": "2016-03-09"
+  },
+  {
+    "game_id": 10955,
+    "away_team_id": 11,
+    "home_team_id": 23,
+    "game_date": "2016-03-09"
+  },
+  {
+    "game_id": 10956,
+    "away_team_id": 20,
+    "home_team_id": 24,
+    "game_date": "2016-03-09"
+  },
+  {
+    "game_id": 10957,
+    "away_team_id": 6,
+    "home_team_id": 26,
+    "game_date": "2016-03-09"
+  },
+  {
+    "game_id": 10958,
+    "away_team_id": 24,
+    "home_team_id": 8,
+    "game_date": "2016-03-10"
+  },
+  {
+    "game_id": 10959,
+    "away_team_id": 6,
+    "home_team_id": 14,
+    "game_date": "2016-03-10"
+  },
+  {
+    "game_id": 10960,
+    "away_team_id": 5,
+    "home_team_id": 27,
+    "game_date": "2016-03-10"
+  },
+  {
+    "game_id": 10961,
+    "away_team_id": 1,
+    "home_team_id": 28,
+    "game_date": "2016-03-10"
+  },
+  {
+    "game_id": 10962,
+    "away_team_id": 11,
+    "home_team_id": 3,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10963,
+    "away_team_id": 16,
+    "home_team_id": 5,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10964,
+    "away_team_id": 9,
+    "home_team_id": 4,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10965,
+    "away_team_id": 25,
+    "home_team_id": 10,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10966,
+    "away_team_id": 20,
+    "home_team_id": 13,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10967,
+    "away_team_id": 19,
+    "home_team_id": 15,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10968,
+    "away_team_id": 18,
+    "home_team_id": 21,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10969,
+    "away_team_id": 2,
+    "home_team_id": 23,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10970,
+    "away_team_id": 22,
+    "home_team_id": 26,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10971,
+    "away_team_id": 30,
+    "home_team_id": 29,
+    "game_date": "2016-03-11"
+  },
+  {
+    "game_id": 10972,
+    "away_team_id": 15,
+    "home_team_id": 1,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10973,
+    "away_team_id": 11,
+    "home_team_id": 4,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10974,
+    "away_team_id": 12,
+    "home_team_id": 7,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10975,
+    "away_team_id": 30,
+    "home_team_id": 8,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10976,
+    "away_team_id": 24,
+    "home_team_id": 10,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10977,
+    "away_team_id": 19,
+    "home_team_id": 17,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10978,
+    "away_team_id": 9,
+    "home_team_id": 23,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10979,
+    "away_team_id": 22,
+    "home_team_id": 25,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10980,
+    "away_team_id": 21,
+    "home_team_id": 27,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10981,
+    "away_team_id": 16,
+    "home_team_id": 28,
+    "game_date": "2016-03-12"
+  },
+  {
+    "game_id": 10982,
+    "away_team_id": 12,
+    "home_team_id": 1,
+    "game_date": "2016-03-13"
+  },
+  {
+    "game_id": 10983,
+    "away_team_id": 17,
+    "home_team_id": 2,
+    "game_date": "2016-03-13"
+  },
+  {
+    "game_id": 10984,
+    "away_team_id": 6,
+    "home_team_id": 13,
+    "game_date": "2016-03-13"
+  },
+  {
+    "game_id": 10985,
+    "away_team_id": 20,
+    "home_team_id": 14,
+    "game_date": "2016-03-13"
+  },
+  {
+    "game_id": 10986,
+    "away_team_id": 29,
+    "home_team_id": 26,
+    "game_date": "2016-03-13"
+  },
+  {
+    "game_id": 10987,
+    "away_team_id": 7,
+    "home_team_id": 4,
+    "game_date": "2016-03-14"
+  },
+  {
+    "game_id": 10988,
+    "away_team_id": 19,
+    "home_team_id": 10,
+    "game_date": "2016-03-14"
+  },
+  {
+    "game_id": 10989,
+    "away_team_id": 15,
+    "home_team_id": 11,
+    "game_date": "2016-03-14"
+  },
+  {
+    "game_id": 10990,
+    "away_team_id": 8,
+    "home_team_id": 16,
+    "game_date": "2016-03-14"
+  },
+  {
+    "game_id": 10991,
+    "away_team_id": 25,
+    "home_team_id": 21,
+    "game_date": "2016-03-14"
+  },
+  {
+    "game_id": 10992,
+    "away_team_id": 18,
+    "home_team_id": 24,
+    "game_date": "2016-03-14"
+  },
+  {
+    "game_id": 10993,
+    "away_team_id": 5,
+    "home_team_id": 28,
+    "game_date": "2016-03-14"
+  },
+  {
+    "game_id": 10994,
+    "away_team_id": 6,
+    "home_team_id": 29,
+    "game_date": "2016-03-14"
+  },
+  {
+    "game_id": 10995,
+    "away_team_id": 9,
+    "home_team_id": 30,
+    "game_date": "2016-03-14"
+  },
+  {
+    "game_id": 10996,
+    "away_team_id": 23,
+    "home_team_id": 2,
+    "game_date": "2016-03-15"
+  },
+  {
+    "game_id": 10997,
+    "away_team_id": 3,
+    "home_team_id": 12,
+    "game_date": "2016-03-15"
+  },
+  {
+    "game_id": 10998,
+    "away_team_id": 26,
+    "home_team_id": 14,
+    "game_date": "2016-03-15"
+  },
+  {
+    "game_id": 10999,
+    "away_team_id": 28,
+    "home_team_id": 17,
+    "game_date": "2016-03-15"
+  },
+  {
+    "game_id": 11000,
+    "away_team_id": 8,
+    "home_team_id": 22,
+    "game_date": "2016-03-15"
+  },
+  {
+    "game_id": 11001,
+    "away_team_id": 13,
+    "home_team_id": 27,
+    "game_date": "2016-03-15"
+  },
+  {
+    "game_id": 11002,
+    "away_team_id": 21,
+    "home_team_id": 3,
+    "game_date": "2016-03-16"
+  },
+  {
+    "game_id": 11003,
+    "away_team_id": 22,
+    "home_team_id": 4,
+    "game_date": "2016-03-16"
+  },
+  {
+    "game_id": 11004,
+    "away_team_id": 7,
+    "home_team_id": 6,
+    "game_date": "2016-03-16"
+  },
+  {
+    "game_id": 11005,
+    "away_team_id": 1,
+    "home_team_id": 9,
+    "game_date": "2016-03-16"
+  },
+  {
+    "game_id": 11006,
+    "away_team_id": 20,
+    "home_team_id": 10,
+    "game_date": "2016-03-16"
+  },
+  {
+    "game_id": 11007,
+    "away_team_id": 13,
+    "home_team_id": 11,
+    "game_date": "2016-03-16"
+  },
+  {
+    "game_id": 11008,
+    "away_team_id": 18,
+    "home_team_id": 15,
+    "game_date": "2016-03-16"
+  },
+  {
+    "game_id": 11009,
+    "away_team_id": 19,
+    "home_team_id": 26,
+    "game_date": "2016-03-16"
+  },
+  {
+    "game_id": 11010,
+    "away_team_id": 5,
+    "home_team_id": 30,
+    "game_date": "2016-03-16"
+  },
+  {
+    "game_id": 11011,
+    "away_team_id": 8,
+    "home_team_id": 1,
+    "game_date": "2016-03-17"
+  },
+  {
+    "game_id": 11012,
+    "away_team_id": 2,
+    "home_team_id": 5,
+    "game_date": "2016-03-17"
+  },
+  {
+    "game_id": 11013,
+    "away_team_id": 28,
+    "home_team_id": 12,
+    "game_date": "2016-03-17"
+  },
+  {
+    "game_id": 11014,
+    "away_team_id": 4,
+    "home_team_id": 16,
+    "game_date": "2016-03-17"
+  },
+  {
+    "game_id": 11015,
+    "away_team_id": 15,
+    "home_team_id": 17,
+    "game_date": "2016-03-17"
+  },
+  {
+    "game_id": 11016,
+    "away_team_id": 30,
+    "home_team_id": 23,
+    "game_date": "2016-03-17"
+  },
+  {
+    "game_id": 11017,
+    "away_team_id": 25,
+    "home_team_id": 27,
+    "game_date": "2016-03-17"
+  },
+  {
+    "game_id": 11018,
+    "away_team_id": 24,
+    "home_team_id": 29,
+    "game_date": "2016-03-17"
+  },
+  {
+    "game_id": 11019,
+    "away_team_id": 10,
+    "home_team_id": 7,
+    "game_date": "2016-03-18"
+  },
+  {
+    "game_id": 11020,
+    "away_team_id": 26,
+    "home_team_id": 9,
+    "game_date": "2016-03-18"
+  },
+  {
+    "game_id": 11021,
+    "away_team_id": 18,
+    "home_team_id": 11,
+    "game_date": "2016-03-18"
+  },
+  {
+    "game_id": 11022,
+    "away_team_id": 24,
+    "home_team_id": 14,
+    "game_date": "2016-03-18"
+  },
+  {
+    "game_id": 11023,
+    "away_team_id": 25,
+    "home_team_id": 19,
+    "game_date": "2016-03-18"
+  },
+  {
+    "game_id": 11024,
+    "away_team_id": 6,
+    "home_team_id": 22,
+    "game_date": "2016-03-18"
+  },
+  {
+    "game_id": 11025,
+    "away_team_id": 21,
+    "home_team_id": 23,
+    "game_date": "2016-03-18"
+  },
+  {
+    "game_id": 11026,
+    "away_team_id": 3,
+    "home_team_id": 28,
+    "game_date": "2016-03-18"
+  },
+  {
+    "game_id": 11027,
+    "away_team_id": 11,
+    "home_team_id": 1,
+    "game_date": "2016-03-19"
+  },
+  {
+    "game_id": 11028,
+    "away_team_id": 29,
+    "home_team_id": 5,
+    "game_date": "2016-03-19"
+  },
+  {
+    "game_id": 11029,
+    "away_team_id": 8,
+    "home_team_id": 4,
+    "game_date": "2016-03-19"
+  },
+  {
+    "game_id": 11030,
+    "away_team_id": 2,
+    "home_team_id": 9,
+    "game_date": "2016-03-19"
+  },
+  {
+    "game_id": 11031,
+    "away_team_id": 21,
+    "home_team_id": 12,
+    "game_date": "2016-03-19"
+  },
+  {
+    "game_id": 11032,
+    "away_team_id": 13,
+    "home_team_id": 15,
+    "game_date": "2016-03-19"
+  },
+  {
+    "game_id": 11033,
+    "away_team_id": 6,
+    "home_team_id": 16,
+    "game_date": "2016-03-19"
+  },
+  {
+    "game_id": 11034,
+    "away_team_id": 10,
+    "home_team_id": 27,
+    "game_date": "2016-03-19"
+  },
+  {
+    "game_id": 11035,
+    "away_team_id": 20,
+    "home_team_id": 30,
+    "game_date": "2016-03-19"
+  },
+  {
+    "game_id": 11036,
+    "away_team_id": 25,
+    "home_team_id": 7,
+    "game_date": "2016-03-20"
+  },
+  {
+    "game_id": 11037,
+    "away_team_id": 29,
+    "home_team_id": 17,
+    "game_date": "2016-03-20"
+  },
+  {
+    "game_id": 11038,
+    "away_team_id": 13,
+    "home_team_id": 19,
+    "game_date": "2016-03-20"
+  },
+  {
+    "game_id": 11039,
+    "away_team_id": 26,
+    "home_team_id": 20,
+    "game_date": "2016-03-20"
+  },
+  {
+    "game_id": 11040,
+    "away_team_id": 3,
+    "home_team_id": 23,
+    "game_date": "2016-03-20"
+  },
+  {
+    "game_id": 11041,
+    "away_team_id": 22,
+    "home_team_id": 28,
+    "game_date": "2016-03-20"
+  },
+  {
+    "game_id": 11042,
+    "away_team_id": 30,
+    "home_team_id": 1,
+    "game_date": "2016-03-21"
+  },
+  {
+    "game_id": 11043,
+    "away_team_id": 22,
+    "home_team_id": 3,
+    "game_date": "2016-03-21"
+  },
+  {
+    "game_id": 11044,
+    "away_team_id": 26,
+    "home_team_id": 5,
+    "game_date": "2016-03-21"
+  },
+  {
+    "game_id": 11045,
+    "away_team_id": 27,
+    "home_team_id": 4,
+    "game_date": "2016-03-21"
+  },
+  {
+    "game_id": 11046,
+    "away_team_id": 8,
+    "home_team_id": 6,
+    "game_date": "2016-03-21"
+  },
+  {
+    "game_id": 11047,
+    "away_team_id": 17,
+    "home_team_id": 9,
+    "game_date": "2016-03-21"
+  },
+  {
+    "game_id": 11048,
+    "away_team_id": 23,
+    "home_team_id": 12,
+    "game_date": "2016-03-21"
+  },
+  {
+    "game_id": 11049,
+    "away_team_id": 10,
+    "home_team_id": 18,
+    "game_date": "2016-03-21"
+  },
+  {
+    "game_id": 11050,
+    "away_team_id": 15,
+    "home_team_id": 24,
+    "game_date": "2016-03-21"
+  },
+  {
+    "game_id": 11051,
+    "away_team_id": 4,
+    "home_team_id": 2,
+    "game_date": "2016-03-22"
+  },
+  {
+    "game_id": 11052,
+    "away_team_id": 15,
+    "home_team_id": 14,
+    "game_date": "2016-03-22"
+  },
+  {
+    "game_id": 11053,
+    "away_team_id": 16,
+    "home_team_id": 19,
+    "game_date": "2016-03-22"
+  },
+  {
+    "game_id": 11054,
+    "away_team_id": 11,
+    "home_team_id": 21,
+    "game_date": "2016-03-22"
+  },
+  {
+    "game_id": 11055,
+    "away_team_id": 28,
+    "home_team_id": 3,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11056,
+    "away_team_id": 20,
+    "home_team_id": 5,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11057,
+    "away_team_id": 17,
+    "home_team_id": 6,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11058,
+    "away_team_id": 23,
+    "home_team_id": 8,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11059,
+    "away_team_id": 22,
+    "home_team_id": 9,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11060,
+    "away_team_id": 13,
+    "home_team_id": 10,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11061,
+    "away_team_id": 29,
+    "home_team_id": 11,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11062,
+    "away_team_id": 26,
+    "home_team_id": 18,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11063,
+    "away_team_id": 14,
+    "home_team_id": 24,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11064,
+    "away_team_id": 7,
+    "home_team_id": 25,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11065,
+    "away_team_id": 16,
+    "home_team_id": 27,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11066,
+    "away_team_id": 1,
+    "home_team_id": 30,
+    "game_date": "2016-03-23"
+  },
+  {
+    "game_id": 11067,
+    "away_team_id": 6,
+    "home_team_id": 2,
+    "game_date": "2016-03-24"
+  },
+  {
+    "game_id": 11068,
+    "away_team_id": 19,
+    "home_team_id": 12,
+    "game_date": "2016-03-24"
+  },
+  {
+    "game_id": 11069,
+    "away_team_id": 25,
+    "home_team_id": 13,
+    "game_date": "2016-03-24"
+  },
+  {
+    "game_id": 11070,
+    "away_team_id": 5,
+    "home_team_id": 20,
+    "game_date": "2016-03-24"
+  },
+  {
+    "game_id": 11071,
+    "away_team_id": 29,
+    "home_team_id": 21,
+    "game_date": "2016-03-24"
+  },
+  {
+    "game_id": 11072,
+    "away_team_id": 17,
+    "home_team_id": 1,
+    "game_date": "2016-03-25"
+  },
+  {
+    "game_id": 11073,
+    "away_team_id": 4,
+    "home_team_id": 9,
+    "game_date": "2016-03-25"
+  },
+  {
+    "game_id": 11074,
+    "away_team_id": 7,
+    "home_team_id": 10,
+    "game_date": "2016-03-25"
+  },
+  {
+    "game_id": 11075,
+    "away_team_id": 28,
+    "home_team_id": 11,
+    "game_date": "2016-03-25"
+  },
+  {
+    "game_id": 11076,
+    "away_team_id": 8,
+    "home_team_id": 14,
+    "game_date": "2016-03-25"
+  },
+  {
+    "game_id": 11077,
+    "away_team_id": 22,
+    "home_team_id": 16,
+    "game_date": "2016-03-25"
+  },
+  {
+    "game_id": 11078,
+    "away_team_id": 24,
+    "home_team_id": 26,
+    "game_date": "2016-03-25"
+  },
+  {
+    "game_id": 11079,
+    "away_team_id": 15,
+    "home_team_id": 27,
+    "game_date": "2016-03-25"
+  },
+  {
+    "game_id": 11080,
+    "away_team_id": 18,
+    "home_team_id": 30,
+    "game_date": "2016-03-25"
+  },
+  {
+    "game_id": 11081,
+    "away_team_id": 12,
+    "home_team_id": 2,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11082,
+    "away_team_id": 1,
+    "home_team_id": 9,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11083,
+    "away_team_id": 4,
+    "home_team_id": 17,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11084,
+    "away_team_id": 29,
+    "home_team_id": 18,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11085,
+    "away_team_id": 28,
+    "home_team_id": 19,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11086,
+    "away_team_id": 6,
+    "home_team_id": 20,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11087,
+    "away_team_id": 27,
+    "home_team_id": 21,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11088,
+    "away_team_id": 5,
+    "home_team_id": 22,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11089,
+    "away_team_id": 3,
+    "home_team_id": 24,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11090,
+    "away_team_id": 23,
+    "home_team_id": 25,
+    "game_date": "2016-03-26"
+  },
+  {
+    "game_id": 11091,
+    "away_team_id": 23,
+    "home_team_id": 10,
+    "game_date": "2016-03-27"
+  },
+  {
+    "game_id": 11092,
+    "away_team_id": 11,
+    "home_team_id": 12,
+    "game_date": "2016-03-27"
+  },
+  {
+    "game_id": 11093,
+    "away_team_id": 8,
+    "home_team_id": 13,
+    "game_date": "2016-03-27"
+  },
+  {
+    "game_id": 11094,
+    "away_team_id": 30,
+    "home_team_id": 14,
+    "game_date": "2016-03-27"
+  },
+  {
+    "game_id": 11095,
+    "away_team_id": 7,
+    "home_team_id": 26,
+    "game_date": "2016-03-27"
+  },
+  {
+    "game_id": 11096,
+    "away_team_id": 1,
+    "home_team_id": 5,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11097,
+    "away_team_id": 7,
+    "home_team_id": 8,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11098,
+    "away_team_id": 3,
+    "home_team_id": 13,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11099,
+    "away_team_id": 27,
+    "home_team_id": 15,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11100,
+    "away_team_id": 2,
+    "home_team_id": 16,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11101,
+    "away_team_id": 24,
+    "home_team_id": 18,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11102,
+    "away_team_id": 20,
+    "home_team_id": 19,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11103,
+    "away_team_id": 26,
+    "home_team_id": 25,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11104,
+    "away_team_id": 21,
+    "home_team_id": 28,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11105,
+    "away_team_id": 14,
+    "home_team_id": 29,
+    "game_date": "2016-03-28"
+  },
+  {
+    "game_id": 11106,
+    "away_team_id": 11,
+    "home_team_id": 6,
+    "game_date": "2016-03-29"
+  },
+  {
+    "game_id": 11107,
+    "away_team_id": 21,
+    "home_team_id": 9,
+    "game_date": "2016-03-29"
+  },
+  {
+    "game_id": 11108,
+    "away_team_id": 30,
+    "home_team_id": 10,
+    "game_date": "2016-03-29"
+  },
+  {
+    "game_id": 11109,
+    "away_team_id": 5,
+    "home_team_id": 12,
+    "game_date": "2016-03-29"
+  },
+  {
+    "game_id": 11110,
+    "away_team_id": 2,
+    "home_team_id": 22,
+    "game_date": "2016-03-29"
+  },
+  {
+    "game_id": 11111,
+    "away_team_id": 4,
+    "home_team_id": 23,
+    "game_date": "2016-03-29"
+  },
+  {
+    "game_id": 11112,
+    "away_team_id": 20,
+    "home_team_id": 7,
+    "game_date": "2016-03-30"
+  },
+  {
+    "game_id": 11113,
+    "away_team_id": 16,
+    "home_team_id": 14,
+    "game_date": "2016-03-30"
+  },
+  {
+    "game_id": 11114,
+    "away_team_id": 8,
+    "home_team_id": 15,
+    "game_date": "2016-03-30"
+  },
+  {
+    "game_id": 11115,
+    "away_team_id": 24,
+    "home_team_id": 17,
+    "game_date": "2016-03-30"
+  },
+  {
+    "game_id": 11116,
+    "away_team_id": 13,
+    "home_team_id": 18,
+    "game_date": "2016-03-30"
+  },
+  {
+    "game_id": 11117,
+    "away_team_id": 30,
+    "home_team_id": 26,
+    "game_date": "2016-03-30"
+  },
+  {
+    "game_id": 11118,
+    "away_team_id": 19,
+    "home_team_id": 27,
+    "game_date": "2016-03-30"
+  },
+  {
+    "game_id": 11119,
+    "away_team_id": 1,
+    "home_team_id": 28,
+    "game_date": "2016-03-30"
+  },
+  {
+    "game_id": 11120,
+    "away_team_id": 10,
+    "home_team_id": 29,
+    "game_date": "2016-03-30"
+  },
+  {
+    "game_id": 11121,
+    "away_team_id": 2,
+    "home_team_id": 6,
+    "game_date": "2016-03-31"
+  },
+  {
+    "game_id": 11122,
+    "away_team_id": 5,
+    "home_team_id": 11,
+    "game_date": "2016-03-31"
+  },
+  {
+    "game_id": 11123,
+    "away_team_id": 22,
+    "home_team_id": 12,
+    "game_date": "2016-03-31"
+  },
+  {
+    "game_id": 11124,
+    "away_team_id": 8,
+    "home_team_id": 19,
+    "game_date": "2016-03-31"
+  },
+  {
+    "game_id": 11125,
+    "away_team_id": 13,
+    "home_team_id": 21,
+    "game_date": "2016-03-31"
+  },
+  {
+    "game_id": 11126,
+    "away_team_id": 3,
+    "home_team_id": 25,
+    "game_date": "2016-03-31"
+  },
+  {
+    "game_id": 11127,
+    "away_team_id": 6,
+    "home_team_id": 1,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11128,
+    "away_team_id": 23,
+    "home_team_id": 4,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11129,
+    "away_team_id": 7,
+    "home_team_id": 9,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11130,
+    "away_team_id": 3,
+    "home_team_id": 10,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11131,
+    "away_team_id": 28,
+    "home_team_id": 15,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11132,
+    "away_team_id": 22,
+    "home_team_id": 17,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11133,
+    "away_team_id": 2,
+    "home_team_id": 20,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11134,
+    "away_team_id": 30,
+    "home_team_id": 24,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11135,
+    "away_team_id": 16,
+    "home_team_id": 26,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11136,
+    "away_team_id": 18,
+    "home_team_id": 29,
+    "game_date": "2016-04-01"
+  },
+  {
+    "game_id": 11137,
+    "away_team_id": 9,
+    "home_team_id": 5,
+    "game_date": "2016-04-02"
+  },
+  {
+    "game_id": 11138,
+    "away_team_id": 26,
+    "home_team_id": 8,
+    "game_date": "2016-04-02"
+  },
+  {
+    "game_id": 11139,
+    "away_team_id": 12,
+    "home_team_id": 23,
+    "game_date": "2016-04-02"
+  },
+  {
+    "game_id": 11140,
+    "away_team_id": 16,
+    "home_team_id": 25,
+    "game_date": "2016-04-02"
+  },
+  {
+    "game_id": 11141,
+    "away_team_id": 28,
+    "home_team_id": 27,
+    "game_date": "2016-04-02"
+  },
+  {
+    "game_id": 11142,
+    "away_team_id": 19,
+    "home_team_id": 2,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11143,
+    "away_team_id": 4,
+    "home_team_id": 6,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11144,
+    "away_team_id": 25,
+    "home_team_id": 10,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11145,
+    "away_team_id": 21,
+    "home_team_id": 11,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11146,
+    "away_team_id": 30,
+    "home_team_id": 13,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11147,
+    "away_team_id": 3,
+    "home_team_id": 14,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11148,
+    "away_team_id": 5,
+    "home_team_id": 17,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11149,
+    "away_team_id": 7,
+    "home_team_id": 18,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11150,
+    "away_team_id": 12,
+    "home_team_id": 20,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11151,
+    "away_team_id": 15,
+    "home_team_id": 22,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11152,
+    "away_team_id": 29,
+    "home_team_id": 24,
+    "game_date": "2016-04-03"
+  },
+  {
+    "game_id": 11153,
+    "away_team_id": 24,
+    "home_team_id": 1,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11154,
+    "away_team_id": 21,
+    "home_team_id": 8,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11155,
+    "away_team_id": 18,
+    "home_team_id": 10,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11156,
+    "away_team_id": 14,
+    "home_team_id": 13,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11157,
+    "away_team_id": 5,
+    "home_team_id": 15,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11158,
+    "away_team_id": 9,
+    "home_team_id": 16,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11159,
+    "away_team_id": 6,
+    "home_team_id": 17,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11160,
+    "away_team_id": 19,
+    "home_team_id": 23,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11161,
+    "away_team_id": 25,
+    "home_team_id": 26,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11162,
+    "away_team_id": 4,
+    "home_team_id": 28,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11163,
+    "away_team_id": 27,
+    "home_team_id": 29,
+    "game_date": "2016-04-05"
+  },
+  {
+    "game_id": 11164,
+    "away_team_id": 19,
+    "home_team_id": 3,
+    "game_date": "2016-04-06"
+  },
+  {
+    "game_id": 11165,
+    "away_team_id": 11,
+    "home_team_id": 7,
+    "game_date": "2016-04-06"
+  },
+  {
+    "game_id": 11166,
+    "away_team_id": 6,
+    "home_team_id": 12,
+    "game_date": "2016-04-06"
+  },
+  {
+    "game_id": 11167,
+    "away_team_id": 13,
+    "home_team_id": 14,
+    "game_date": "2016-04-06"
+  },
+  {
+    "game_id": 11168,
+    "away_team_id": 4,
+    "home_team_id": 20,
+    "game_date": "2016-04-06"
+  },
+  {
+    "game_id": 11169,
+    "away_team_id": 9,
+    "home_team_id": 22,
+    "game_date": "2016-04-06"
+  },
+  {
+    "game_id": 11170,
+    "away_team_id": 21,
+    "home_team_id": 25,
+    "game_date": "2016-04-06"
+  },
+  {
+    "game_id": 11171,
+    "away_team_id": 2,
+    "home_team_id": 30,
+    "game_date": "2016-04-06"
+  },
+  {
+    "game_id": 11172,
+    "away_team_id": 28,
+    "home_team_id": 1,
+    "game_date": "2016-04-07"
+  },
+  {
+    "game_id": 11173,
+    "away_team_id": 27,
+    "home_team_id": 10,
+    "game_date": "2016-04-07"
+  },
+  {
+    "game_id": 11174,
+    "away_team_id": 24,
+    "home_team_id": 11,
+    "game_date": "2016-04-07"
+  },
+  {
+    "game_id": 11175,
+    "away_team_id": 5,
+    "home_team_id": 16,
+    "game_date": "2016-04-07"
+  },
+  {
+    "game_id": 11176,
+    "away_team_id": 18,
+    "home_team_id": 26,
+    "game_date": "2016-04-07"
+  },
+  {
+    "game_id": 11177,
+    "away_team_id": 17,
+    "home_team_id": 3,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11178,
+    "away_team_id": 2,
+    "home_team_id": 4,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11179,
+    "away_team_id": 15,
+    "home_team_id": 7,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11180,
+    "away_team_id": 27,
+    "home_team_id": 8,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11181,
+    "away_team_id": 30,
+    "home_team_id": 9,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11182,
+    "away_team_id": 14,
+    "home_team_id": 19,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11183,
+    "away_team_id": 16,
+    "home_team_id": 22,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11184,
+    "away_team_id": 20,
+    "home_team_id": 23,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11185,
+    "away_team_id": 12,
+    "home_team_id": 28,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11186,
+    "away_team_id": 13,
+    "home_team_id": 29,
+    "game_date": "2016-04-08"
+  },
+  {
+    "game_id": 11187,
+    "away_team_id": 3,
+    "home_team_id": 1,
+    "game_date": "2016-04-09"
+  },
+  {
+    "game_id": 11188,
+    "away_team_id": 6,
+    "home_team_id": 5,
+    "game_date": "2016-04-09"
+  },
+  {
+    "game_id": 11189,
+    "away_team_id": 10,
+    "home_team_id": 15,
+    "game_date": "2016-04-09"
+  },
+  {
+    "game_id": 11190,
+    "away_team_id": 24,
+    "home_team_id": 19,
+    "game_date": "2016-04-09"
+  },
+  {
+    "game_id": 11191,
+    "away_team_id": 18,
+    "home_team_id": 25,
+    "game_date": "2016-04-09"
+  },
+  {
+    "game_id": 11192,
+    "away_team_id": 21,
+    "home_team_id": 26,
+    "game_date": "2016-04-09"
+  },
+  {
+    "game_id": 11193,
+    "away_team_id": 29,
+    "home_team_id": 8,
+    "game_date": "2016-04-10"
+  },
+  {
+    "game_id": 11194,
+    "away_team_id": 14,
+    "home_team_id": 11,
+    "game_date": "2016-04-10"
+  },
+  {
+    "game_id": 11195,
+    "away_team_id": 2,
+    "home_team_id": 12,
+    "game_date": "2016-04-10"
+  },
+  {
+    "game_id": 11196,
+    "away_team_id": 7,
+    "home_team_id": 13,
+    "game_date": "2016-04-10"
+  },
+  {
+    "game_id": 11197,
+    "away_team_id": 22,
+    "home_team_id": 16,
+    "game_date": "2016-04-10"
+  },
+  {
+    "game_id": 11198,
+    "away_team_id": 28,
+    "home_team_id": 20,
+    "game_date": "2016-04-10"
+  },
+  {
+    "game_id": 11199,
+    "away_team_id": 17,
+    "home_team_id": 23,
+    "game_date": "2016-04-10"
+  },
+  {
+    "game_id": 11200,
+    "away_team_id": 10,
+    "home_team_id": 27,
+    "game_date": "2016-04-10"
+  },
+  {
+    "game_id": 11201,
+    "away_team_id": 4,
+    "home_team_id": 30,
+    "game_date": "2016-04-10"
+  },
+  {
+    "game_id": 11202,
+    "away_team_id": 4,
+    "home_team_id": 3,
+    "game_date": "2016-04-11"
+  },
+  {
+    "game_id": 11203,
+    "away_team_id": 30,
+    "home_team_id": 2,
+    "game_date": "2016-04-11"
+  },
+  {
+    "game_id": 11204,
+    "away_team_id": 1,
+    "home_team_id": 6,
+    "game_date": "2016-04-11"
+  },
+  {
+    "game_id": 11205,
+    "away_team_id": 11,
+    "home_team_id": 18,
+    "game_date": "2016-04-11"
+  },
+  {
+    "game_id": 11206,
+    "away_team_id": 5,
+    "home_team_id": 19,
+    "game_date": "2016-04-11"
+  },
+  {
+    "game_id": 11207,
+    "away_team_id": 14,
+    "home_team_id": 21,
+    "game_date": "2016-04-11"
+  },
+  {
+    "game_id": 11208,
+    "away_team_id": 17,
+    "home_team_id": 22,
+    "game_date": "2016-04-11"
+  },
+  {
+    "game_id": 11209,
+    "away_team_id": 26,
+    "home_team_id": 24,
+    "game_date": "2016-04-11"
+  },
+  {
+    "game_id": 11210,
+    "away_team_id": 7,
+    "home_team_id": 29,
+    "game_date": "2016-04-11"
+  },
+  {
+    "game_id": 11211,
+    "away_team_id": 16,
+    "home_team_id": 9,
+    "game_date": "2016-04-12"
+  },
+  {
+    "game_id": 11212,
+    "away_team_id": 20,
+    "home_team_id": 12,
+    "game_date": "2016-04-12"
+  },
+  {
+    "game_id": 11213,
+    "away_team_id": 15,
+    "home_team_id": 13,
+    "game_date": "2016-04-12"
+  },
+  {
+    "game_id": 11214,
+    "away_team_id": 21,
+    "home_team_id": 27,
+    "game_date": "2016-04-12"
+  },
+  {
+    "game_id": 11215,
+    "away_team_id": 23,
+    "home_team_id": 28,
+    "game_date": "2016-04-12"
+  },
+  {
+    "game_id": 11216,
+    "away_team_id": 16,
+    "home_team_id": 3,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11217,
+    "away_team_id": 28,
+    "home_team_id": 2,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11218,
+    "away_team_id": 23,
+    "home_team_id": 5,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11219,
+    "away_team_id": 22,
+    "home_team_id": 4,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11220,
+    "away_team_id": 9,
+    "home_team_id": 6,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11221,
+    "away_team_id": 27,
+    "home_team_id": 7,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11222,
+    "away_team_id": 15,
+    "home_team_id": 10,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11223,
+    "away_team_id": 26,
+    "home_team_id": 11,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11224,
+    "away_team_id": 29,
+    "home_team_id": 14,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11225,
+    "away_team_id": 12,
+    "home_team_id": 17,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11226,
+    "away_team_id": 19,
+    "home_team_id": 18,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11227,
+    "away_team_id": 13,
+    "home_team_id": 24,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11228,
+    "away_team_id": 8,
+    "home_team_id": 25,
+    "game_date": "2016-04-13"
+  },
+  {
+    "game_id": 11229,
+    "away_team_id": 1,
+    "home_team_id": 30,
+    "game_date": "2016-04-13"
+  }
+]
