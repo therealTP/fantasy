@@ -1,91 +1,78 @@
-from pyvirtualdisplay import Display
-from selenium import webdriver
+import json
 from lxml import html
-import DataSuite as ds
-import PlayerSuite as ps
-import linksFilesCreds as lfc
 
-def getHtmlTreeFromPage(login_url, user, pw, page_url):
+from nba.classes.NbaProjection import NbaProjection
+from nba.classes.MissingPlayer import MissingPlayer
+
+# import config file
+with open('./../config.json') as config_file:
+    config = json.load(config_file)
+
+def getRawHtml(driver):
     """
-    Takes in params, sets up selenium browser
-    Gets data via browser, closes browser
-    Returns HTML tree w/ data
+    Takes in active selenium driver
+    Logs in to FP
+    Returns raw html w/ data to scrape
     """
-    # open a virtual display to run on python anywhere
-    display = Display(visible=0, size=(800, 600))
-    display.start()
+    # go to login page
+    driver.get(config["FP_LOGIN_URL"])
 
-    # create selenium browser
-    browser = webdriver.Firefox()
-    browser.get(login_url)
+    # log in
+    username = driver.find_element_by_id('id_username')
+    password = driver.find_element_by_id('id_password')
 
-    # pass
-    username = browser.find_element_by_id('id_username')
-    password = browser.find_element_by_id('id_password')
+    username.send_keys(config["FP_USERNAME"])
+    password.send_keys(config["FP_PW"])
 
-    username.send_keys(user)
-    password.send_keys(pw)
-
-    form = browser.find_element_by_class_name('form-horizontal')
+    form = driver.find_element_by_class_name('form-horizontal')
     form.submit()
 
-    browser.get(page_url)
+    # go to scrape page
+    driver.get(config["FP_SCRAPE_URL"])
 
-    print (browser.page_source)
+    # return scrape page html
+    return driver.page_source
 
-    tree = html.fromstring(browser.page_source)
-
-    # clean up
-    browser.quit()
-    display.stop()
-
-    return tree
-
-
-def extractProjectedStats(tree):
+def extractProjections(rawHtml, currentPlayers):
     """
     Create tree of HTML from page
     Extract relevant data from tree
     Compile/ return projection dict
     """
-    # create dict to hold projections
-    projection_dict = {}
+    tree = html.fromstring(rawHtml)
+    projSourceId = 4
+
+    projectionData = {
+        'projections': [],
+        'missingPlayers': []
+    }
 
     # create array of all rows in table body
     for data in tree.cssselect('table#data tbody tr'):
-        # print (data)
-        # get name and slug values (slug is ID for fp)
-        name_cell = data.cssselect('a')[0]
-        slug = str(name_cell.get('href'))[13:].replace('.php', '')
-        name = str(name_cell.text_content())
+        # extract fpId
+        name_link = data.cssselect('td.player-label a.player-name')[0]
+        fpId = str(name_link.get('href')).split("/")[3].replace('.php', '')
 
-        # extract values of relevant tds in row
-        pts = float(data[2].text_content())
-        reb = float(data[3].text_content())
-        ast = float(data[4].text_content())
-        stl = float(data[6].text_content())
-        blk = float(data[5].text_content())
-        tpt = float(data[9].text_content())
-        tov = float(data[12].text_content())
-        mins = float(data[11].text_content())
+        # match player w/ rw id
+        playerObj = next((player for player in currentPlayers if player["fp_id"] == fpId), None)
 
-        # get player id for player, or add new entry to player dict with info
-        player_id = ps.getPlayerId(slug, 4, name) # "4" is source id
+        # if no match for fpId:
+        if playerObj is None:
+            name = str(name_link.text_content())
+            missingPlayer = MissingPlayer(projSourceId, fpId, name)
+            projectionData['missingPlayers'].append(missingPlayer.__dict__)
+        else:
+            # extract values of relevant tds in row
+            mins = float(data[11].text_content())
+            pts = float(data[2].text_content())
+            reb = float(data[3].text_content())
+            ast = float(data[4].text_content())
+            stl = float(data[6].text_content())
+            blk = float(data[5].text_content())
+            tpt = float(data[9].text_content())
+            tov = float(data[12].text_content())
 
-        # if no player id:
-        if player_id is None:
-            # pass on data entry, do not add proj data for this player
-            pass
-            # entry for the unfound id added to queue
+            projection = NbaProjection(playerObj["player_id"], projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)
+            projectionData['projections'].append(projection.__dict__)
 
-        entry = ds.createEntry(pts, reb, ast, stl, blk, tov, tpt, mins)
-
-        # print (slug + ": " + str(entry))
-
-        ds.addEntryToProjectionDict(projection_dict, player_id, entry)
-
-    return projection_dict
-
-tree = getHtmlTreeFromPage(lfc.FP_LOGIN_URL, lfc.FP_USER, lfc.FP_PW, lfc.FP_SCRAPE_URL)
-# print(tree)
-print(extractProjectedStats(tree))
+    return projectionData

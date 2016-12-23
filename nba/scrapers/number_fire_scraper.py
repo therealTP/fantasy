@@ -1,57 +1,88 @@
-import requests
 from lxml import html
-import DataSuite as ds
-import linksFilesCreds as lfc
-import PlayerSuite as ps
+import json
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+from nba.classes.NbaProjection import NbaProjection
+from nba.classes.MissingPlayer import MissingPlayer
 
 """
 NUMBERFIRE
 """
 
-URL = lfc.NF_SCRAPE_URL
-AUTH = lfc.NF_CREDS
+# import config file
+with open('./../config.json') as config_file:
+    config = json.load(config_file)
 
+def getRawHtml(driver):
+    driver.get(config["NF_LOGIN_URL"])
 
-def getFinalData(url, creds):
+    loginModalLink = driver.find_element_by_css_selector("li.login > a")
+    loginModalLink.click()
+
+    googleLoginButton = driver.find_element_by_css_selector(".modal-container > ul > li > a.button--google")
+    googleLoginButton.click()
+
+    googleEmailField = driver.find_element_by_id("Email")
+    googleEmailField.send_keys(config["NF_USERNAME"])
+
+    nextButton = driver.find_element_by_id("next")
+    nextButton.click()
+
+    googlePwField = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.ID, "Passwd"))
+    )
+
+    googlePwField.send_keys(config["NF_PW"])
+
+    signInButton = driver.find_element_by_id("signIn")
+    signInButton.click()
+
+    driver.get(config["NF_SCRAPE_URL"])
+
+    return driver.page_source
+
+def extractProjections(rawHtml, currentPlayers):
     """
-    Takes in scrape_url, creds, search param
-    Returns raw data in json format
+    Takes in raw html, extracts projections
+    Returns arr of projections, ready to post to api
     """
+    tree = html.fromstring(rawHtml)
+    projSourceId = 1
 
-    # use requests module to hit URL
-    r = requests.get(url, auth=creds)
+    projectionData = {
+        'projections': [],
+        'missingPlayers': []
+    }
 
-    # get raw html from url
-    raw_html = r.text
+    # player links to get player id is in separate table, so get those links
+    playerLinks = tree.cssselect('.projection-table--fixed tbody tr td span a.full')
 
-    tree = html.fromstring(raw_html)
+    # loop w/ index for looking up playerId in playerLinks
+    for idx, dataRow in enumerate(tree.cssselect('.projection-table.no-fix .projection-table__body tr')):
+        player_link = playerLinks[idx]
+        nfId = player_link.get('href').split('/')[-1]
+        playerObj = next((player for player in currentPlayers if player["nf_id"] == nfId), None)
 
-    projection_dict = {}
+        # if no playerId for nfId:
+        if playerObj is None:
+            name = player_link.text_content().strip()
+            missingPlayer = MissingPlayer(projSourceId, nfId, name)
+            projectionData['missingPlayers'].append(missingPlayer.__dict__)
+        else:
+            # get stats
+            mins = float(dataRow[3].text_content())
+            pts = float(dataRow[4].text_content())
+            reb = float(dataRow[5].text_content())
+            ast = float(dataRow[6].text_content())
+            stl = float(dataRow[7].text_content())
+            blk = float(dataRow[8].text_content())
+            tpt = None
+            tov = float(dataRow[9].text_content())
 
-    for dataRow in tree.cssselect('#projection-data tr'):
-        # print (dataRow[0].cssselect('button')[0].get('rel'))
-        player_link = dataRow.cssselect('td.player a')[0]
-        slug = player_link.get('href').split('/')[-1]
-        name = player_link.cssselect('span.full')[0].text_content().split(' (')[0]
+            # init projection obj for each
+            projection = NbaProjection(playerObj["player_id"], projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)
+            projectionData['projections'].append(projection.__dict__)
 
-        pts = float(dataRow[4].text_content())
-        reb = float(dataRow[5].text_content())
-        ast = float(dataRow[6].text_content())
-        stl = float(dataRow[7].text_content())
-        blk = float(dataRow[8].text_content())
-        tpt = None
-        tov = float(dataRow[9].text_content())
-        mins = float(dataRow[3].text_content())
-
-        player_id = ps.getPlayerId(slug, 1, name)
-
-        if player_id is None:
-            pass
-
-        entry = ds.createEntry(pts, reb, ast, stl, blk, tov, tpt, mins)
-
-        ds.addEntryToProjectionDict(projection_dict, player_id, entry)
-
-    return projection_dict
-
-# print(getRawData(URL, AUTH))
+    return projectionData

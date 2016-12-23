@@ -1,0 +1,116 @@
+import json
+import nba.scrapers.rw_depth_scraper as rw
+import nba.scrapers.player_info_scraper as pl
+import nba.ops.apiCalls as api
+
+# import config file
+with open('./../config.json') as config_file:
+    config = json.load(config_file)
+
+# function to check if relevant player data has changed
+def hasPlayerDataChanged(playerDbData, playerUpdateData):
+    needsUpdate = (playerDbData["current_depth_pos"] != playerUpdateData["currentDepth"] or
+                    playerDbData["usual_depth_pos"] != playerUpdateData["depthPos"] or
+                    playerDbData["status"] != playerUpdateData["status"] or
+                    playerDbData["current_team"] != playerUpdateData["team"] or
+                    playerDbData["is_starter"] != playerUpdateData["isStarting"] or
+                    playerDbData["inactive"] != playerUpdateData["inactive"])
+
+    return needsUpdate
+
+def getDepthChartData(sessionObj):
+    '''
+    Calls rw depth scraper fcns
+    Parses data into dict based on new/current players 
+    Returns dict
+    '''
+    # import player id as dict
+    with open('./../local-data/team-abbrev-to-id.json') as data_file:
+        teamDict = json.load(data_file)
+
+    # get 
+    currPlayerData = api.getCurrentPlayerData()
+
+    # scrape current depth chart data & starting lineup data from rw
+    htmlTree = rw.getRawDepthChartTree(sessionObj, config)
+    currentDepths = rw.getPlayerDataFromTree(htmlTree, teamDict)
+
+    playerIdsOnRosters = []
+    
+    playerDataUpdates = {
+        "rwIdInDbUpdates": [],
+        "rwIdNotInDbPosts": []
+    }
+
+    # for each player in current depths, check if they are in DB:
+    for rwId, rwData in currentDepths.items():
+        try:
+            matchedPlayer = next((player for player in currPlayerData if player["rw_id"] == rwId), None)
+            rwData["playerId"] = matchedPlayer["player_id"]
+
+            # if player is already incomplete in DB, don't override w new status
+            if matchedPlayer["status"] == 'INCOMPLETE':
+                rwData["status"] = 'INCOMPLETE'
+
+            # add player id to arr for later check
+            playerIdsOnRosters.append(matchedPlayer["player_id"])
+
+            # only update data if player data has changed to save api calls/ db writes
+            if hasPlayerDataChanged(matchedPlayer, rwData):
+                playerDataUpdates["rwIdInDbUpdates"].append(rwData)
+        except: # if no match for rw_id, add player to rwNotInDbArr
+            rwData["rw_id"] = rwId
+            playerDataUpdates["rwIdNotInDbPosts"].append(rwData)
+    
+    # create arr of playerIds not on a roster 
+    playerDataUpdates["playersNotOnRoster"] = [player["player_id"] for player in currPlayerData if player["player_id"] not in playerIdsOnRosters and player["status"] != 'NOT_ON_ROSTER']
+
+    return playerDataUpdates
+
+def getNewPlayerData(sessionObj, newPlayerArr):
+    newPlayers = {
+        'complete': [],
+        'incomplete': []
+    }
+    # for all players w/o a rw_id:
+    for newPlayer in newPlayerArr:
+        # go to rw page
+        playerName = pl.getRwInfoForPlayer(newPlayer["rw_id"], sessionObj)
+        newPlayer["playerName"] = playerName
+
+        # try to get brefId for name:
+        brefId = pl.getBrefIdFromName(playerName, sessionObj)
+
+        # if brefId found for name:
+        if brefId != None:
+            # get all bref info for player:
+            newPlayer["bref_id"] = brefId
+            playerInfo = pl.getPlayerInfo(brefId, sessionObj)
+            for key, val in playerInfo.items():
+                newPlayer[key] = val
+            newPlayers["complete"].append(newPlayer)
+        
+        # or, if brefId not found for player
+        elif brefId is None:
+            newPlayer["status"] = 'INCOMPLETE'
+            newPlayers["incomplete"].append(newPlayer)
+    
+    return newPlayers
+
+def getBiosForIncompletePlayers(sessionObj, incPlayersArr):
+    playerBios = []
+
+    for player in incPlayersArr:
+        playerBio = {"playerId": player["player_id"]}
+        playerBrefId = input("What is the BREF_ID for " + player["player_name"] + "? ")
+        try:
+            playerInfo = pl.getPlayerInfo(playerBrefId, sessionObj)
+            for key, val in playerInfo.items():
+                playerBio[key] = val
+            playerBios.append(playerBio)
+        except:
+            print("Can't pull player info for player with bref_id of ", playerBrefId)
+            continue
+    
+    return playerBios
+

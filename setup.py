@@ -1,5 +1,5 @@
 from setuptools import setup
 
 setup(
-    packages=['nba', 'nba.classes', 'nba.scrapers']
+    packages=['nba', 'nba.classes', 'nba.scrapers', 'nba.ops']
 )

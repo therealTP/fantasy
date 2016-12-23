@@ -1,11 +1,13 @@
-import requests
 import json
-import csv
 from lxml import html
 from dateutil import parser
 from nba.classes.NbaGamePre import NbaGamePre
 
-def getTeamIdFromAbbrev(teamAbbrev, teamIdDict):
+# import team json as dict
+with open('./../local-data/team-abbrev-to-id.json') as data_file:    
+    teamIdDict = json.load(data_file)
+
+def getTeamIdFromAbbrev(teamAbbrev):
 
     # look up team id in dict from abbrev
     try:
@@ -19,21 +21,21 @@ def parseGameTime(rawTime):
     if timeList[2] == "3":
         timeList[2] = "5"
 
-    return "".join(timeList)
+    return int("".join(timeList))
 
 def getTeamAbbrFromTd(tdElem):
     homeTeamLink = tdElem.cssselect('a')[0].get('href')
     teamAbbr = homeTeamLink.split('/')[2]
     return teamAbbr
 
-def getGamesFromMonth(month, sesObj, teamIdDict):
+def getGamesFromMonth(month, sesObj, baseUrl, urlExt, tableId):
     """
     Takes in month str and requests session object
     """
-    monthUrl = BASE_URL + month + URL_EXT
+    monthUrl = baseUrl + month + urlExt
     page = sesObj.get(monthUrl)
     tree = html.fromstring(page.text)
-    selector = 'table' + TABLE_ID + ' tbody tr'
+    selector = 'table' + tableId + ' tbody tr'
     gameRows = tree.cssselect(selector)
 
     games = []
@@ -53,48 +55,26 @@ def getGamesFromMonth(month, sesObj, teamIdDict):
         awayTeamAbbr = getTeamAbbrFromTd(gameRow[2])
         homeTeamAbbr = getTeamAbbrFromTd(gameRow[4])
 
-        awayTeamId = getTeamIdFromAbbrev(homeTeamAbbr, teamIdDict)
-        homeTeamId = getTeamIdFromAbbrev(awayTeamAbbr, teamIdDict)
+        awayTeamId = getTeamIdFromAbbrev(awayTeamAbbr)
+        homeTeamId = getTeamIdFromAbbrev(homeTeamAbbr)
 
-        gameObj = NbaGamePre(date, day, gameTime, homeTeamId, awayTeamId)
+        gameSlug = date + "_" + str(awayTeamId) + "_" + str(homeTeamId)
+
+        gameObj = NbaGamePre(date, gameTime, day, awayTeamId, homeTeamId, gameSlug)
         games.append(gameObj.getCsvRow())
     
     return games
 
-def getAllGames(sessionObj, monthArr, teamIdDict):
+def getAllGames(sessionObj, monthArr, baseUrl, urlExt, tableId):
     allGames = []
     for month in monthArr:
         print("SCRAPING", month)
-        monthGames = getGamesFromMonth(month, sessionObj, teamIdDict)
+        monthGames = getGamesFromMonth(month, sessionObj, baseUrl, urlExt, tableId)
         allGames.extend(monthGames)
 
     print("Games scraped:", len(allGames))
     
     return allGames
-
-# constants
-BASE_URL = 'http://www.basketball-reference.com/leagues/NBA_2016_games-'
-URL_EXT = '.html'
-MONTHS = ['october', 'november', 'december', 'january', 'february', 'march', 'april']
-TABLE_ID = '#schedule'
-
-# import team json as dict
-with open('./../local-data/team-abbrev-to-id.json') as data_file:    
-    teamIdDict = json.load(data_file)
-
-# start session
-session = requests.Session()
-
-# get all games
-allGames = getAllGames(session, MONTHS, teamIdDict)
-
-# write all games to csv
-with open('./../local-data/games.csv', 'w') as csvfile:
-    writer = csv.writer(csvfile, delimiter=",")
-    writer.writerows(allGames)
-
-
-# print(getTeamIdFromAbbrev('SAS'))
 
 
 

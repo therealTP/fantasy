@@ -10,28 +10,30 @@ class NbaGamePre:
     -away_team_id
     """
 
-    def __init__(self, gameDate, dayOfWeek, startTime, awayTeamId, homeTeamId):
+    def __init__(self, gameDate, startTime, dayOfWeek, awayTeamId, homeTeamId, gameSlug):
         self.gameDate = gameDate
-        self.dayOfWeek = dayOfWeek
         self.startTime = startTime
+        self.dayOfWeek = dayOfWeek
         self.awayTeamId = awayTeamId
-        self.homeTeamId = homeTeamId
-
+        self.homeTeamId = homeTeamId,
+        self.gameSlug = gameSlug
 
     def getCsvRow(self):
         return [
             self.gameDate,
-            self.dayOfWeek,
             self.startTime,
+            self.dayOfWeek,
+            self.awayTeamId,
             self.homeTeamId,
-            self.awayTeamId
+            self.gameSlug
         ]
 
     def getTuple(self):
         return (
             self.gameDate,
-            self.dayOfWeek,
             self.startTime,
+            self.dayOfWeek,
+            self.awayTeamId,
             self.homeTeamId,
-            self.awayTeamId
+            self.gameSlug
         )

@@ -1,6 +1,7 @@
 import requests
 import json
 import csv
+import re
 from lxml import html
 import datetime
 
@@ -11,11 +12,32 @@ def getBrefIdToPlayerIdDict():
 
     return playerIdDict
 
+BASE_URL = 'http://www.basketball-reference.com/players/'
+URL_EXT = '.html'
+
 def getPlayerInfo(brefId, sessionObj):
     firstLetter = brefId[0]
     playerUrl = BASE_URL + firstLetter + "/" + brefId + URL_EXT
     page = sessionObj.get(playerUrl)
     tree = html.fromstring(page.text)
+    # try to get pos w/ no nickname row, i.e. 2nd p elem
+    metaPs = tree.cssselect("#meta p")
+    for p in metaPs:
+        try:
+            if p.cssselect('strong')[0].text_content().strip() == 'Position:':
+                rawPlayerPosition = p.xpath("child::node()")[2].split("and")[0]
+                break
+        except:
+            pass
+
+    # get pos based on capital letters in text node
+    playerPosition = re.sub('[^A-Z]', '', rawPlayerPosition)
+
+    # account for weird positions, e.g. 'Forward/Center'
+    if playerPosition == 'FC':
+        playerPosition = 'PF'
+    elif playerPosition == 'GF':
+        playerPosition = 'SG'
 
     height_arr = tree.cssselect('[itemprop="height"]')[0].text_content().split("-")
     height = int(height_arr[0]) * 12 + int(height_arr[1])
@@ -51,12 +73,31 @@ def getPlayerInfo(brefId, sessionObj):
     except UnboundLocalError:
         debutDate = '2016-10-26'
 
-    salarytree = html.fromstring(str(tree.cssselect('#all_all_salaries')[0].getchildren()[2]).replace("<!--", "").replace("-->", ""))
-    salary = int(salarytree.cssselect('table tbody tr')[-1].cssselect('td')[-1].text_content().replace(',','').replace('$',''))
-    playerArr = [brefId, height, weight, birthdate, debutDate, drafted, gamesPlayed, salary]
-    print(playerArr)
+    # salarytree = html.fromstring(str(tree.cssselect('#all_all_salaries')[0].getchildren()[2]).replace("<!--", "").replace("-->", ""))
+    # salary = int(contractTree.cssselect('table tbody tr')[0].cssselect('td')[1].text_content().replace(',','').replace('$',''))
 
-    return playerArr
+    contractCommentStr = str(tree.cssselect('#all_all_contracts')[0].getchildren()[2]).replace("<!--", "").replace("-->", "").replace("</tbody>", "")
+    contractTree = html.fromstring(contractCommentStr)
+    salary = int(contractTree.cssselect('table tr td span')[0].text_content().replace(',','').replace('$',''))
+
+    # salary = int(salarytree.cssselect('table tbody tr')[-1].cssselect('td')[-1].text_content().replace(',','').replace('$',''))
+    # playerArr = [brefId, height, weight, birthdate, debutDate, drafted, gamesPlayed, salary]
+    # print(playerArr)
+    playerInfo = {
+        'brefId': brefId,
+        'playerPosition': playerPosition,
+        'height': height,
+        'weight': weight,
+        'birthdate': birthdate,
+        'debutDate': debutDate,
+        'drafted': drafted,
+        'gamesPlayed': gamesPlayed,
+        'salary': salary
+    }
+
+    return playerInfo
+
+    # return playerArr
 
 def getInfoForAllPlayers(playerIdDict, sessionObj):
     allPlayerData = []
@@ -66,20 +107,39 @@ def getInfoForAllPlayers(playerIdDict, sessionObj):
         allPlayerData.append(playerInfo)
 
     return allPlayerData
-    
 
-BASE_URL = 'http://www.basketball-reference.com/players/'
-URL_EXT = '.html'
+def getRwInfoForPlayer(rwId, sessionObj):
+    RW_URL = 'http://www.rotowire.com/basketball/player.htm?id='
+    rwPlayerUrl = RW_URL + str(rwId)
+    page = sessionObj.get(rwPlayerUrl)
+    tree = html.fromstring(page.text)
 
-# start session
-session = requests.Session()
+    name = tree.cssselect('.mlb-player-nameteam h1')[0].text_content().strip().replace("'", "")
+    return name
 
-# get player dict
-playerDict = getBrefIdToPlayerIdDict()
+def getBrefIdFromName(playerName, sessionObj):
+    PLAYER_LIST_URL = 'http://www.basketball-reference.com/players/'
+    firstLetterOfLastName = playerName.strip().split(" ")[-1][0].lower()
+    urlToSearch = PLAYER_LIST_URL + firstLetterOfLastName + '/'
+    page = sessionObj.get(urlToSearch)
+    tree = html.fromstring(page.text)
 
-# getPlayerInfo('cottobr01', session)
-playerData = getInfoForAllPlayers(playerDict, session)
+    playerThs = tree.cssselect('[data-stat="player"]')
+    # print(playerThs)
 
-with open("./../scraped-data/player-update-data.csv", "w") as f:
-    writer = csv.writer(f)
-    writer.writerows(playerData)
+    for playerTh in playerThs:
+        playerBrefId = playerTh.get("data-append-csv")
+        
+        #skip if bref id is none/ first row
+        if playerBrefId is None:
+            continue
+
+        # if player has a strong element, i.e. he is active:
+        if(len(playerTh.cssselect('strong')) == 1):
+            # check if that active player matches the name
+            playerNameToCheck = playerTh.text_content()
+            if playerNameToCheck.lower() == playerName.lower():
+                return playerBrefId
+
+    # no exact match? return none
+    return None
