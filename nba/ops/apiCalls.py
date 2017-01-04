@@ -1,6 +1,7 @@
 import requests
 import json
 import time
+import nba.ops.logger as logger
 
 # import config file
 with open('./../config.json') as config_file:
@@ -13,12 +14,15 @@ apiHeaders = {
 
 baseApiUrl = config["API_URL"] + ":" + str(config["API_PORT"])
 
+def ifApiErrorLog(call, responseObj):
+    if responseObj.status_code != 200:
+        logger.logApiError(call)
+
 # GET current player data from db
 def getCurrentPlayerData():
     getPlayersUrl = baseApiUrl + "/players"
     getPlayers = requests.get(getPlayersUrl, headers=apiHeaders)
-    # if getPlayers.code !== 200:
-    
+    ifApiErrorLog('GET_PLAYERS', getPlayers)
     playerData = getPlayers.json()
     return playerData
 
@@ -105,3 +109,4 @@ def getActualStats(date=None):
 def postActualStats(statsArr):
     postStatsUrl = baseApiUrl + "/stats"
     postResponse = requests.post(postStatsUrl, headers=apiHeaders, data=json.dumps(statsArr))
+
