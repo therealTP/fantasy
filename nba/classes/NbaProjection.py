@@ -5,8 +5,9 @@ class NbaProjection:
     ctd: playerId, gameId, sourceId, mins, pts, reb, ast, stl, blk, tov, tpt 
     """
 
-    def __init__(self, playerId, sourceId, mins, pts, reb, ast, stl, blk, tov, tpt):
+    def __init__(self, playerId, gameId, sourceId, mins, pts, reb, ast, stl, blk, tov, tpt):
         self.playerId = playerId
+        self.gameId = gameId
         self.sourceId = sourceId
         self.mins = mins
         self.pts = pts

@@ -73,16 +73,18 @@ def getPlayerInfo(brefId, sessionObj):
     except UnboundLocalError:
         debutDate = '2016-10-26'
 
-    # salarytree = html.fromstring(str(tree.cssselect('#all_all_salaries')[0].getchildren()[2]).replace("<!--", "").replace("-->", ""))
-    # salary = int(contractTree.cssselect('table tbody tr')[0].cssselect('td')[1].text_content().replace(',','').replace('$',''))
+    # get contract data, either from contract div or salary div:
+    try:
+        contractCommentStr = str(tree.cssselect('#all_all_contracts')[0].getchildren()[2]).replace("<!--", "").replace("-->", "").replace("</tbody>", "")
+        contractTree = html.fromstring(contractCommentStr)
+        salary = int(contractTree.cssselect('table tr td span')[0].text_content().replace(',','').replace('$',''))
+    except IndexError:
+        salaryCommentStr = str(tree.cssselect('#all_all_salaries')[0].getchildren()[2]).replace("<!--", "").replace("-->", "")
+        salaryTree = html.fromstring(salaryCommentStr)
+        salary = int(salaryTree.cssselect('table tbody tr')[-1].cssselect('td')[-1].text_content().replace(',','').replace('$',''))
+    except Exception as e:
+        salary = None
 
-    contractCommentStr = str(tree.cssselect('#all_all_contracts')[0].getchildren()[2]).replace("<!--", "").replace("-->", "").replace("</tbody>", "")
-    contractTree = html.fromstring(contractCommentStr)
-    salary = int(contractTree.cssselect('table tr td span')[0].text_content().replace(',','').replace('$',''))
-
-    # salary = int(salarytree.cssselect('table tbody tr')[-1].cssselect('td')[-1].text_content().replace(',','').replace('$',''))
-    # playerArr = [brefId, height, weight, birthdate, debutDate, drafted, gamesPlayed, salary]
-    # print(playerArr)
     playerInfo = {
         'brefId': brefId,
         'playerPosition': playerPosition,
@@ -96,8 +98,6 @@ def getPlayerInfo(brefId, sessionObj):
     }
 
     return playerInfo
-
-    # return playerArr
 
 def getInfoForAllPlayers(playerIdDict, sessionObj):
     allPlayerData = []

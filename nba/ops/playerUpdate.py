@@ -80,6 +80,7 @@ def getNewPlayerData(sessionObj, newPlayerArr):
 
         # try to get brefId for name:
         brefId = pl.getBrefIdFromName(playerName, sessionObj)
+        print(brefId)
 
         # if brefId found for name:
         if brefId != None:

@@ -2,7 +2,7 @@ from lxml import html
 import json
 
 from nba.classes.NbaProjection import NbaProjection
-from nba.classes.MissingPlayer import MissingPlayer
+from nba.classes.NewPlayerId import NewPlayerId
 
 # import config file
 with open('./../config.json') as config_file:
@@ -26,7 +26,7 @@ def getRawHtml(driver):
 
     return driver.page_source
 
-def extractProjections(rawHtml, currentPlayers):
+def extractProjections(rawHtml, currentPlayers, games):
     """
     Create tree of HTML from page
     Extract relevant data from tree
@@ -37,7 +37,7 @@ def extractProjections(rawHtml, currentPlayers):
 
     projectionData = {
         'projections': [],
-        'missingPlayers': []
+        'newPlayerIds': []
     }
 
     # create array of all rows in table body
@@ -52,8 +52,11 @@ def extractProjections(rawHtml, currentPlayers):
             # get raw name in array from span
             name_arr = str(data.cssselect('span')[0].text_content()).split('\xa0')
             name = str(name_arr[1]) + " " + str(name_arr[0]).strip().replace("  ", " ")
-            missingPlayer = MissingPlayer(projSourceId, rwId, name)
-            projectionData['missingPlayers'].append(missingPlayer.__dict__)
+            newPlayerId = NewPlayerId(projSourceId, rwId, name)
+            projectionData['newPlayerIds'].append(newPlayerId.__dict__)
+        # if player is not on a team, skip/don't post projections
+        elif playerObj["current_team"] is None:
+            continue
         else:
             mins = float(data[4].text_content())
             pts = float(data[5].text_content())
@@ -64,7 +67,10 @@ def extractProjections(rawHtml, currentPlayers):
             tpt = float(data[10].text_content())
             tov = float(data[13].text_content())
 
-            projection = NbaProjection(playerObj["player_id"], projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)
+            game = next(game for game in games if game["away_team_id"] == playerObj["current_team"] or game["home_team_id"] == playerObj["current_team"])
+            gameId = game["game_id"]
+
+            projection = NbaProjection(playerObj["player_id"], gameId, projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)
             projectionData['projections'].append(projection.__dict__)
 
     return projectionData

@@ -6,22 +6,23 @@ from selenium.webdriver.support import expected_conditions as EC
 import json
 
 from nba.classes.NbaProjection import NbaProjection
+from nba.classes.NewPlayerId import NewPlayerId
 
 # import config file
 with open('./../config.json') as config_file:
     config = json.load(config_file)
 
 def checkForElement(browsObj, elemName):
-    """
-    """
+    '''
+    '''
     elem = WebDriverWait(browsObj, 10).until(
         EC.presence_of_element_located((By.NAME, elemName)))
 
     return elem
 
 def getRawHtml(driver):
-    """
-    """
+    '''
+    '''
     driver.get(config["BM_LOGIN_URL"])
 
     # get user/pass elements
@@ -39,26 +40,32 @@ def getRawHtml(driver):
     # go to scrape url
     driver.get(config["BM_SCRAPE_URL"])
 
-    refresh_button = checkForElement(driver, 'UPDATEDATE')
+    update_date = checkForElement(driver, 'UPDATEDATE')
 
     date_input = checkForElement(driver, 'ctl00$ContentPlaceHolder1$StartDateTextBox')
     date_input.clear()
     todays_date = time.strftime('%m/%d/%Y')
     date_input.send_keys(todays_date)
-    refresh_button.click()
+    update_date.click()
 
     # find select all game box (when loaded) and click
     select_all = checkForElement(driver, 'SELECTALL')
     select_all.click()
 
+    # wait until first checkbox is selected, i.e. all games selected
+    WebDriverWait(driver, 10).until(
+        EC.element_located_to_be_selected(
+            (By.CSS_SELECTOR, "table.dailygamesT tbody tr:first-child td:nth-child(2) input")
+        )
+    )
+
     # find refresh data button (when loaded) and click
-    refresh_button = checkForElement(driver, 'UPDATEDATE')
+    refresh_button = checkForElement(driver, 'REFRESH')
     refresh_button.click()
 
     return driver.page_source
 
-
-def extractProjections(rawHtml, currentPlayers):
+def extractProjections(rawHtml, currentPlayers, games):
     '''
     Create html tree from raw html
     Find & loop through rows of projections, matching w/ currentPlayers
@@ -69,30 +76,31 @@ def extractProjections(rawHtml, currentPlayers):
 
     projectionData = {
         'projections': [],
-        'missingPlayers': []
+        'newPlayerIds': []
     }
 
     # for each row of player data in data table
-    for data in tree.cssselect('table.gridThighlight tr'):
+    for data in tree.cssselect('table.gridThighlight tbody tr'):
+        # if row is a header row, skip it
+        if data[2].text_content() == "Rank":
+            continue
+
         # get data from each row's td's
-        bmId = str(name_row[0].get('href')).split('=')[1]
-        # match player w/ rw id
+        name_link = data.cssselect('td.tdl a')[0]
+        bmId = str(name_link.get('href')).split('=')[1]
+        # match player w/ bm id
         playerObj = next((player for player in currentPlayers if player["bm_id"] == bmId), None)
 
-        if playerObj is None:
-            
-        # if row is a header row, skip it
-        if (data[2].text_content()) == "Rank":
-            pass
-        # if not, extract data from row
+        # if player not in DB:
+        if playerObj is None: 
+            name = name_link.text_content()
+            newPlayerId = NewPlayerId(projSourceId, bmId, name)
+            projectionData['newPlayerIds'].append(newPlayerId.__dict__)
+        # if player is not on a team, skip/don't post projections
+        elif playerObj["current_team"] is None:
+            continue
         else:
-            # select name row
-            name_row = data.cssselect('td.tdl a')
-            # print (name_row)
-
-
-            # print (source_id)
-            name = name_row[0].text_content()
+            mins = float(data[11].text_content())
             pts = float(data[13].text_content())
             reb = float(data[15].text_content())
             ast = float(data[16].text_content())
@@ -100,19 +108,12 @@ def extractProjections(rawHtml, currentPlayers):
             blk = float(data[18].text_content())
             tpt = float(data[14].text_content())
             tov = float(data[21].text_content())
-            mins = float(data[11].text_content())
 
-            # get universal player id from player_data
-            player_id = ps.getPlayerId(source_id, 3, name)
+            game = next(game for game in games if game["away_team_id"] == playerObj["current_team"] or game["home_team_id"] == playerObj["current_team"])
+            gameId = game["game_id"]
 
-            # if no player_id found, player will be added to queue
-            if player_id is None:
-                # pass on data entry, do not add proj data for this player
-                pass
+            projection = NbaProjection(playerObj["player_id"], gameId, projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)
+            projectionData['projections'].append(projection.__dict__)
 
-            entry = ds.createEntry(pts, reb, ast, stl, blk, tov, tpt, mins)
-
-            ds.addEntryToProjectionDict(projection_dict, player_id, entry)
-
-    return projection_dict
+    return projectionData
 

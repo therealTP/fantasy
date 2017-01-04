@@ -1,4 +1,4 @@
-class MissingPlayer:
+class NewPlayerId:
     """
     Players that are in projection scrapes but no matching playerId
     Includes source id, id for that source, and player name to match
@@ -7,3 +7,4 @@ class MissingPlayer:
         self.sourceId = sourceId
         self.playerId = playerId
         self.playerName = playerName
+        self.uniqueId = str(sourceId) + "-" + str(playerId)

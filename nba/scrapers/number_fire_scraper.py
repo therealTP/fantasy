@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from nba.classes.NbaProjection import NbaProjection
-from nba.classes.MissingPlayer import MissingPlayer
+from nba.classes.NewPlayerId import NewPlayerId
 
 """
 NUMBERFIRE
@@ -24,7 +24,10 @@ def getRawHtml(driver):
     googleLoginButton = driver.find_element_by_css_selector(".modal-container > ul > li > a.button--google")
     googleLoginButton.click()
 
-    googleEmailField = driver.find_element_by_id("Email")
+    googleEmailField = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.ID, "Email"))
+    )
+    
     googleEmailField.send_keys(config["NF_USERNAME"])
 
     nextButton = driver.find_element_by_id("next")
@@ -43,7 +46,7 @@ def getRawHtml(driver):
 
     return driver.page_source
 
-def extractProjections(rawHtml, currentPlayers):
+def extractProjections(rawHtml, currentPlayers, games):
     """
     Takes in raw html, extracts projections
     Returns arr of projections, ready to post to api
@@ -53,7 +56,7 @@ def extractProjections(rawHtml, currentPlayers):
 
     projectionData = {
         'projections': [],
-        'missingPlayers': []
+        'newPlayerIds': []
     }
 
     # player links to get player id is in separate table, so get those links
@@ -68,8 +71,11 @@ def extractProjections(rawHtml, currentPlayers):
         # if no playerId for nfId:
         if playerObj is None:
             name = player_link.text_content().strip()
-            missingPlayer = MissingPlayer(projSourceId, nfId, name)
-            projectionData['missingPlayers'].append(missingPlayer.__dict__)
+            newPlayerId = NewPlayerId(projSourceId, nfId, name)
+            projectionData['newPlayerIds'].append(newPlayerId.__dict__)
+        # if player is not on a team, skip/don't post projections
+        elif playerObj["current_team"] is None:
+            continue
         else:
             # get stats
             mins = float(dataRow[3].text_content())
@@ -81,8 +87,11 @@ def extractProjections(rawHtml, currentPlayers):
             tpt = None
             tov = float(dataRow[9].text_content())
 
+            game = next(game for game in games if game["away_team_id"] == playerObj["current_team"] or game["home_team_id"] == playerObj["current_team"])
+            gameId = game["game_id"]
+
             # init projection obj for each
-            projection = NbaProjection(playerObj["player_id"], projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)
+            projection = NbaProjection(playerObj["player_id"], gameId, projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)
             projectionData['projections'].append(projection.__dict__)
 
     return projectionData

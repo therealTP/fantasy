@@ -1,8 +1,11 @@
 import json
 from lxml import html
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 from nba.classes.NbaProjection import NbaProjection
-from nba.classes.MissingPlayer import MissingPlayer
+from nba.classes.NewPlayerId import NewPlayerId
 
 # import config file
 with open('./../config.json') as config_file:
@@ -17,8 +20,11 @@ def getRawHtml(driver):
     # go to login page
     driver.get(config["FP_LOGIN_URL"])
 
-    # log in
-    username = driver.find_element_by_id('id_username')
+    # log in, wait until elem ready
+    username = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.ID, "id_username"))
+    )
+
     password = driver.find_element_by_id('id_password')
 
     username.send_keys(config["FP_USERNAME"])
@@ -33,7 +39,7 @@ def getRawHtml(driver):
     # return scrape page html
     return driver.page_source
 
-def extractProjections(rawHtml, currentPlayers):
+def extractProjections(rawHtml, currentPlayers, games):
     """
     Create tree of HTML from page
     Extract relevant data from tree
@@ -44,7 +50,7 @@ def extractProjections(rawHtml, currentPlayers):
 
     projectionData = {
         'projections': [],
-        'missingPlayers': []
+        'newPlayerIds': []
     }
 
     # create array of all rows in table body
@@ -59,8 +65,11 @@ def extractProjections(rawHtml, currentPlayers):
         # if no match for fpId:
         if playerObj is None:
             name = str(name_link.text_content())
-            missingPlayer = MissingPlayer(projSourceId, fpId, name)
-            projectionData['missingPlayers'].append(missingPlayer.__dict__)
+            newPlayerId = NewPlayerId(projSourceId, fpId, name)
+            projectionData['newPlayerIds'].append(newPlayerId.__dict__)
+        # if player is not on a team, skip/don't post projections
+        elif playerObj["current_team"] is None:
+            continue
         else:
             # extract values of relevant tds in row
             mins = float(data[11].text_content())
@@ -72,7 +81,10 @@ def extractProjections(rawHtml, currentPlayers):
             tpt = float(data[9].text_content())
             tov = float(data[12].text_content())
 
-            projection = NbaProjection(playerObj["player_id"], projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)
+            game = next(game for game in games if game["away_team_id"] == playerObj["current_team"] or game["home_team_id"] == playerObj["current_team"])
+            gameId = game["game_id"]
+
+            projection = NbaProjection(playerObj["player_id"], gameId, projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)
             projectionData['projections'].append(projection.__dict__)
 
     return projectionData

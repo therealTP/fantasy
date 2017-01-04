@@ -18,9 +18,6 @@ def createVirtualScreen():
 def startDriver():
     return webdriver.Firefox()
 
-def getPlayerList():
-    return api.getCurrentPlayerData()
-
 def getAllRawHtml():
     rawHtmlDict = {}
 
@@ -31,9 +28,9 @@ def getAllRawHtml():
     driver = startDriver()
 
     try:
-        # rawHtmlDict["nf"] = nf.getRawHtml(driver)
-        # rawHtmlDict["rw"] = rw.getRawHtml(driver)
-        # rawHtmlDict["fp"] = fp.getRawHtml(driver)
+        rawHtmlDict["nf"] = nf.getRawHtml(driver)
+        rawHtmlDict["rw"] = rw.getRawHtml(driver)
+        rawHtmlDict["fp"] = fp.getRawHtml(driver)
         rawHtmlDict["bm"] = bm.getRawHtml(driver)
     except Exception as error:
         # TODO: handle this err. Log? Throw?
@@ -46,28 +43,30 @@ def getAllRawHtml():
     return rawHtmlDict
 
 def parseProjsFromHtml(htmlDict):
-    parsedProjs = []
-    missingPlayers = []
-
     # get list of curr players from API
-    playerList = getPlayerList()
+    playerList = api.getCurrentPlayerData()
+    gamesToday = api.getTodaysGames()
+    parsedProjs = []
+    newIds = []
 
     try:
-        # nfData = nf.extractProjections(htmlDict["nf"], playerList)
-        # rwData = rw.extractProjections(htmlDict["rw"], playerList)
-        # fpData = fp.extractProjections(htmlDict["fp"], playerList)
-        bmData = bm.extractProjections(htmlDict["bm"], playerList)
-        parsedProjs.extend(bmData["projections"])
-        missingPlayers.extend(bmData["missingPlayers"])
+        # get all projection data from all raw html
+        nfData = nf.extractProjections(htmlDict["nf"], playerList, gamesToday)
+        rwData = rw.extractProjections(htmlDict["rw"], playerList, gamesToday)
+        fpData = fp.extractProjections(htmlDict["fp"], playerList, gamesToday)
+        bmData = bm.extractProjections(htmlDict["bm"], playerList, gamesToday)
+
+        # concat all projs & missing players into single arrays
+        parsedProjs = nfData["projections"] + rwData["projections"] + fpData["projections"] + bmData["projections"]
+        newIds = nfData["newPlayerIds"] + rwData["newPlayerIds"] + fpData["newPlayerIds"] + bmData["newPlayerIds"]
+        # parsedProjs = bmData["projections"]
+        # newIds = bmData["newPlayerIds"]
+
     except Exception as error:
         # TODO: handle this err. Log? Throw?
         print("COULDN'T GET RAW HTML DATA FOR PROJECTIONS, ERROR:", error)
 
-    return {'projections': parsedProjs, 'missingPlayers': missingPlayers}
-
-rawProjHtml = getAllRawHtml()
-projectionDict = parseProjsFromHtml(rawProjHtml)
-print(projectionDict)
+    return {'projections': parsedProjs, 'newPlayerIds': newIds}
 
 
 

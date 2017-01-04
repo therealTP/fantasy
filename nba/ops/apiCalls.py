@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 
 # import config file
 with open('./../config.json') as config_file:
@@ -15,7 +16,10 @@ baseApiUrl = config["API_URL"] + ":" + str(config["API_PORT"])
 # GET current player data from db
 def getCurrentPlayerData():
     getPlayersUrl = baseApiUrl + "/players"
-    playerData = requests.get(getPlayersUrl, headers=apiHeaders).json()
+    getPlayers = requests.get(getPlayersUrl, headers=apiHeaders)
+    # if getPlayers.code !== 200:
+    
+    playerData = getPlayers.json()
     return playerData
 
 def getIncompletePlayers():
@@ -69,3 +73,35 @@ def postPlayersNotOnRosters(idArr):
             post = requests.post(notOnRosterUrl, headers=apiHeaders, data=json.dumps(idArr))
         except:
             print("COULDN'T POST PLAYERS NOT ON ROSTERS")
+
+# ---- GAMES ---- #
+def getTodaysGames():
+    today = time.strftime('%Y-%m-%d')
+    getGamesUrl = baseApiUrl + "/games?game_date=" + today
+    gameData = requests.get(getGamesUrl, headers=apiHeaders).json()
+    return gameData
+
+# --- PROJECTIONS --- #
+def postProjections(projectionArr):
+    postProjsUrl = baseApiUrl + "/projections"
+    postResponse = requests.post(postProjsUrl, headers=apiHeaders, data=json.dumps(projectionArr))
+    return postResponse
+
+def postNewIds(newIdArr):
+    postNewIdsUrl = baseApiUrl + "/newIds"
+    postResponse = requests.post(postNewIdsUrl, headers=apiHeaders, data=json.dumps(newIdArr))
+    return postResponse
+
+# --- ACTUAL STATS --- #
+def getActualStats(date=None):
+    if date != None:
+        getStatsUrl = baseApiUrl + "/stats?game_date=" + date
+    else:
+        getStatsUrl = baseApiUrl + "/stats"
+
+    statsData = requests.get(getStatsUrl, headers=apiHeaders).json()
+    return statsData
+
+def postActualStats(statsArr):
+    postStatsUrl = baseApiUrl + "/stats"
+    postResponse = requests.post(postStatsUrl, headers=apiHeaders, data=json.dumps(statsArr))
