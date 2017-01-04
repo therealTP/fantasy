@@ -1,1 +1,3 @@
 nba/config.json
+nba/__pycache__
+*.pyc

@@ -28,7 +28,7 @@ def getAllRawHtml():
     driver = startDriver()
 
     try:
-        rawHtmlDict["nf"] = nf.getRawHtml(driver)
+        # rawHtmlDict["nf"] = nf.getRawHtml(driver)
         rawHtmlDict["rw"] = rw.getRawHtml(driver)
         rawHtmlDict["fp"] = fp.getRawHtml(driver)
         rawHtmlDict["bm"] = bm.getRawHtml(driver)
@@ -51,14 +51,16 @@ def parseProjsFromHtml(htmlDict):
 
     try:
         # get all projection data from all raw html
-        nfData = nf.extractProjections(htmlDict["nf"], playerList, gamesToday)
+        # nfData = nf.extractProjections(htmlDict["nf"], playerList, gamesToday)
         rwData = rw.extractProjections(htmlDict["rw"], playerList, gamesToday)
         fpData = fp.extractProjections(htmlDict["fp"], playerList, gamesToday)
         bmData = bm.extractProjections(htmlDict["bm"], playerList, gamesToday)
 
         # concat all projs & missing players into single arrays
-        parsedProjs = nfData["projections"] + rwData["projections"] + fpData["projections"] + bmData["projections"]
-        newIds = nfData["newPlayerIds"] + rwData["newPlayerIds"] + fpData["newPlayerIds"] + bmData["newPlayerIds"]
+        # parsedProjs = nfData["projections"] + rwData["projections"] + fpData["projections"] + bmData["projections"]
+        # newIds = nfData["newPlayerIds"] + rwData["newPlayerIds"] + fpData["newPlayerIds"] + bmData["newPlayerIds"]
+        parsedProjs = rwData["projections"] + fpData["projections"] + bmData["projections"]
+        newIds = rwData["newPlayerIds"] + fpData["newPlayerIds"] + bmData["newPlayerIds"]
         # parsedProjs = bmData["projections"]
         # newIds = bmData["newPlayerIds"]
 
