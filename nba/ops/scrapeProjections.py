@@ -1,5 +1,6 @@
 from pyvirtualdisplay import Display
 from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
 import nba.scrapers.number_fire_scraper as nf
 import nba.scrapers.rotowire_scraper as rw
@@ -16,6 +17,10 @@ def createVirtualScreen():
     return display
 
 def startDriver():
+    caps = DesiredCapabilities.FIREFOX
+    caps["marionette"] = True
+
+    browser = webdriver.Firefox(capabilities=caps)
     return webdriver.Firefox()
 
 def getAllRawHtml():
