@@ -1,96 +1,5 @@
-# create FinalProjection class in separate file
-import PlayerSuite as ps
-import DataSuite as ds
-import s3
-import linksFilesCreds as lfc
-from FinalProjection import FinalProjection
-
-def addSourceProjsToDict(source, sourceProjs, dict):
-    """
-    takes source projs for day from one source (nf, bm, etc)
-    check if id in dict already & add, or add id & proj
-    calculates final points proj & optimizes
-    """
-    for player_id, proj in sourceProjs.items():
-        pointsProj = round(ds.getFinalPoints(proj, 'fanduel'), 3) # only do dk for now
-        # try to add point projections to
-        try:
-            dict[player_id][source] = pointsProj
-        except KeyError:
-            dict[player_id] = {source: pointsProj}
-
-def getFinalProjsForDay(dateStr):
-    """
-    will take in date str in YYYY-MM-DD format and pull raw projs for that date
-    will go through each projection, calculate final points projection
-    return dict of all players final point projs
-    """
-
-    # get raw projections for date
-    rawProjs = s3.getObjectS3(lfc.AWS_BUCKET_NAME, lfc.PROJECTIONS_FOLDER + dateStr + '.json')
-
-    # blank dict to hold final projs
-    playerProjs = {} # id: {fp_proj: 20.40, bm_proj: 21.95, rw_proj: 22.19, nf_proj: 20.32}
-
-    # add player projected points from each source to playerProjs
-    nfProjs = rawProjs["number_fire"]["projections"]
-    addSourceProjsToDict("nf", nfProjs, playerProjs)
-
-    bmProjs = rawProjs["basketball_monster"]["projections"]
-    addSourceProjsToDict("bm", bmProjs, playerProjs)
-
-    fpProjs = rawProjs["fantasy_pros"]["projections"]
-    addSourceProjsToDict("fp", fpProjs, playerProjs)
-
-    rwProjs = rawProjs["roto_wire"]["projections"]
-    addSourceProjsToDict("rw", rwProjs, playerProjs)
-
-    # weighted/ averaged player projs
-    finalProjs = {}
-
-    # get average projection for each set of projections in playerProjs
-    for player_id, projObj in playerProjs.items():
-        projCount = 0
-        projTotal = 0
-        for source, proj in projObj.items():
-            projCount += 1
-            projTotal += proj
-
-        # calculate average projection for each projObj, round to 3 digits
-        finalProjs[player_id] = round(projTotal / projCount, 3)
-
-    return finalProjs
-
-
-
-def addPosAndSalaryData(playerProjsDict, dateStr):
-    """
-    Take in dict of final player projs
-    Add pos and salary data for each player
-    Return arr with pos, salary, name data, ready for knapsack problem
-    """
-    # get player data for ids and positions
-    playerData = ps.getPlayerList()
-
-    # get salary data for date
-    salaries = s3.getObjectS3(lfc.AWS_BUCKET_NAME, lfc.SALARIES_FOLDER + 'fanduel_salaries.json')[dateStr]
-
-    # create empty arr for final player projs
-    finalProjs = []
-
-    for player_id, proj in playerProjsDict.items():
-        try:
-            salary = int(salaries[player_id]["fanduel"])
-            name = playerData[player_id]["name"]
-            pos = playerData[player_id]["pos"]
-            finalProj = FinalProjection(player_id, pos, name, salary, proj)
-            finalProjs.append(finalProj)
-        except KeyError:
-            pass
-
-    return finalProjs
-
-
+import nba.ops.apiCalls as api
+import nba.ops.mlDataPrep as ml
 
 # function to get optimal lineup from arr of player objects
 def getOptimalLineup(playerData, salaryCap):
@@ -122,19 +31,18 @@ def getOptimalLineup(playerData, salaryCap):
         # 'UTIL': 0
         }
 
-    playerData.sort(key=lambda x: x.value, reverse=True)
+    playerData.sort(key=lambda x: x["value"], reverse=True)
     team = []
 
     for player in playerData:
-        nam = player.name
-        pos = player.position
-        sal = player.salary
-        pts = player.points
+        nam = player["player_bref_id"]
+        pos = player["player_position"]
+        sal = player["salary"]
+        pts = player["pred_pts"]
         if counts[pos] < constraints[pos] and current_team_salary + sal <= salaryCap:
             team.append(player)
             counts[pos] = counts[pos] + 1
             current_team_salary += sal
-            continue
         # if counts['G'] < constraints['G'] and current_team_salary + sal <= salaryCap and pos in ['PG','SG']:
         #     team.append(player)
         #     counts['G'] = counts['G'] + 1
@@ -148,68 +56,76 @@ def getOptimalLineup(playerData, salaryCap):
         #     counts['UTIL'] = counts['UTIL'] + 1
         #     current_team_salary += sal
 
-    playerData.sort(key=lambda x: x.points, reverse=True)
+    playerData.sort(key=lambda x: x["pred_pts"], reverse=True)
     for player in playerData:
-        nam = player.name
-        pos = player.position
-        sal = player.salary
-        pts = player.points
+        nam = player["player_bref_id"]
+        pos = player["player_position"]
+        sal = player["salary"]
+        pts = player["pred_pts"]
         if player not in team:
-            pos_players = [ x for x in team if x.position == pos]
-            pos_players.sort(key=lambda x: x.points)
+            pos_players = [ x for x in team if x["player_position"] == pos]
+            pos_players.sort(key=lambda x: x["pred_pts"])
             for pos_player in pos_players:
-                if (current_team_salary + sal - pos_player.salary) <= salaryCap and pts > pos_player.points:
+                if (current_team_salary + sal - pos_player["salary"]) <= salaryCap and pts > pos_player["pred_pts"]:
                     team[team.index(pos_player)] = player
-                    current_team_salary = current_team_salary + sal - pos_player.salary
+                    current_team_salary = current_team_salary + sal - pos_player["salary"]
                     break
     return team
 
-def getActualPointsForTeam(teamArr, dateStr):
+def getActualPointsForTeam(teamArr):
     """
     Takes in team arr, which is arr of finalProjection objects
     Gets actual stats for each player on team & calculates points scored
     Returns points scored
     """
-    # get raw projections for date
-    actualStats = s3.getObjectS3(lfc.AWS_BUCKET_NAME, lfc.STATS_FOLDER + dateStr + '_actual.json')
+
     actualTeamPoints = 0
     for playerObj in teamArr:
-        actualPlayerStats = actualStats[playerObj.player_id]
-        actualPlayerPoints = ds.getFinalPoints(actualPlayerStats, 'fanduel')
-        actualTeamPoints += actualPlayerPoints
+        actualTeamPoints += playerObj["actual_pts"]
 
     return actualTeamPoints
 
-datesToTest = ds.getDateRangeArr('2015-11-04', '2016-04-05')
+def getFinalAnalysisForDates(datesToTest, source, salaryCap, threshold):
+    totalTested = 0
+    totalOver = 0
 
-totalTested = 0
-totalOver265 = 0
-totalUnder275 = 0
+    # for dates in range:
+    for dateToTest in datesToTest:
+        try:
+            # get the predictions for the date
+            playerProjs = api.getPredictions(source, dateToTest)
+            # print(playerProjs[0].value)
+            
+            # calculate optimal lineup from predictions
+            team = getOptimalLineup(playerProjs, salaryCap)
+            
+            predicted_points = 0
+            team_salary = 0
 
-for dateToTest in datesToTest:
+            for player in team:
+                predicted_points += player["pred_pts"]
+                team_salary += player["salary"]
 
-    try:
-        playerProjs = getFinalProjsForDay(dateToTest)
-        finalProjs = addPosAndSalaryData(playerProjs, dateToTest)
-        team = getOptimalLineup(finalProjs, 60000)
-        points = 0
-        salary = 0
-        for player in team:
-            points += player.points
-            salary += player.salary
-        actualPoints = getActualPointsForTeam(team, dateToTest)
-        totalTested += 1
-        if actualPoints > 275:
-            totalOver265 += 1
+            # calculate actual pts for team
+            actualPoints = getActualPointsForTeam(team)
+            
+            # inc totalOver count if team is over threshold
+            if predicted_points > 0 and actualPoints > 0:
+                print("DATE", dateToTest, "PREDICTED", predicted_points, "ACTUAL", actualPoints, "SALARY", team_salary)
+                totalTested += 1
+                if actualPoints > threshold:
+                    totalOver += 1
 
-        print(points, actualPoints)
-    except (KeyError, TypeError):
-        pass
+            
+        except (KeyError, TypeError):
+            pass
 
-print(totalOver265 / totalTested)
+    return float(totalOver / totalTested)
 
+dates = ml.getDateRangeArr('2016-01-26', '2016-04-05')
+source = 'AZURE'
+cap = 60000
+minimum = 285
 
+print(getFinalAnalysisForDates(dates, source, cap, minimum))
 
-#     print (player)
-# print ("\nPoints: {}".format(points))
-# print ("Salary: {}".format(salary))

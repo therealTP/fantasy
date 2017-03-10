@@ -1,8 +1,7 @@
 from lxml import html
 import json
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
+import nba.ops.driverWaits as waits
 
 from nba.classes.NbaProjection import NbaProjection
 from nba.classes.NewPlayerId import NewPlayerId
@@ -18,31 +17,28 @@ with open('./../config.json') as config_file:
 def getRawHtml(driver):
     driver.get(config["NF_LOGIN_URL"])
 
-    loginModalLink = driver.find_element_by_css_selector("li.login > a")
+    loginModalLink = waits.byCssClickable("li.login > a", driver)
     loginModalLink.click()
 
-    googleLoginButton = driver.find_element_by_css_selector(".modal-container > ul > li > a.button--google")
+    googleLoginButton = waits.byCssClickable(".modal-container > ul > li > a.button--google", driver)
     googleLoginButton.click()
 
-    googleEmailField = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.ID, "Email"))
-    )
-    
+    googleEmailField = waits.byIdVisible("Email", driver)
     googleEmailField.send_keys(config["NF_USERNAME"])
 
-    nextButton = driver.find_element_by_id("next")
+    nextButton = waits.byIdVisible("next", driver)
     nextButton.click()
 
-    googlePwField = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.ID, "Passwd"))
-    )
-
+    googlePwField = waits.byIdVisible("Passwd", driver)
     googlePwField.send_keys(config["NF_PW"])
 
-    signInButton = driver.find_element_by_id("signIn")
+    signInButton = waits.byIdVisible("signIn", driver)
     signInButton.click()
 
     driver.get(config["NF_SCRAPE_URL"])
+
+    # wait for first projection to load
+    waits.byCssVisible("tbody.stat-table__body", driver)
 
     return driver.page_source
 
@@ -54,23 +50,24 @@ def extractProjections(rawHtml, currentPlayers, games):
     tree = html.fromstring(rawHtml)
     projSourceId = 1
 
+    # get all rows
+    rows = tree.cssselect('tbody.stat-table__body tr')
+
     projectionData = {
         'projections': [],
-        'newPlayerIds': []
+        'newPlayerIds': [],
+        'totalNumRows': len(rows)
     }
 
-    # player links to get player id is in separate table, so get those links
-    playerLinks = tree.cssselect('.projection-table--fixed tbody tr td span a.full')
-
-    # loop w/ index for looking up playerId in playerLinks
-    for idx, dataRow in enumerate(tree.cssselect('.projection-table.no-fix .projection-table__body tr')):
-        player_link = playerLinks[idx]
-        nfId = player_link.get('href').split('/')[-1]
-        playerObj = next((player for player in currentPlayers if player["nf_id"] == nfId), None)
+    for row in rows:
+        player_link = row[0].cssselect('span.player-info a.full')[0]
+        nfSlug = player_link.get('href').split('/')[-1]
+        nfId = row.get('data-player-id')
+        playerObj = next((player for player in currentPlayers if player["nf_id"] == nfId or player["nf_id"] == nfSlug), None)
 
         # if no playerId for nfId:
         if playerObj is None:
-            name = player_link.text_content().strip()
+            name = player_link.text_content().replace('"', '').strip()
             newPlayerId = NewPlayerId(projSourceId, nfId, name)
             projectionData['newPlayerIds'].append(newPlayerId.__dict__)
         # if player is not on a team, skip/don't post projections
@@ -78,17 +75,24 @@ def extractProjections(rawHtml, currentPlayers, games):
             continue
         else:
             # get stats
-            mins = float(dataRow[3].text_content())
-            pts = float(dataRow[4].text_content())
-            reb = float(dataRow[5].text_content())
-            ast = float(dataRow[6].text_content())
-            stl = float(dataRow[7].text_content())
-            blk = float(dataRow[8].text_content())
+            mins = float(row[4].text_content())
+            pts = float(row[5].text_content())
+            reb = float(row[6].text_content())
+            ast = float(row[7].text_content())
+            stl = float(row[8].text_content())
+            blk = float(row[9].text_content())
+            tov = float(row[10].text_content())
+            # NF doesn't do tpt projs
             tpt = None
-            tov = float(dataRow[9].text_content())
 
-            game = next(game for game in games if game["away_team_id"] == playerObj["current_team"] or game["home_team_id"] == playerObj["current_team"])
-            gameId = game["game_id"]
+            game = next((game for game in games if game["away_team_id"] == playerObj["current_team"] or game["home_team_id"] == playerObj["current_team"]), None)
+
+            if game is None:
+                # this only happens rarely, when there's a mismatched player in source data
+                # or, if pulling from
+                continue 
+            else:
+                gameId = game["game_id"]
 
             # init projection obj for each
             projection = NbaProjection(playerObj["player_id"], gameId, projSourceId, mins, pts, reb, ast, stl, blk, tov, tpt)

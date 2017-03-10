@@ -74,16 +74,41 @@ def getPlayerInfo(brefId, sessionObj):
         debutDate = '2016-10-26'
 
     # get contract data, either from contract div or salary div:
-    try:
-        contractCommentStr = str(tree.cssselect('#all_all_contracts')[0].getchildren()[2]).replace("<!--", "").replace("-->", "").replace("</tbody>", "")
+    contractSource = tree.cssselect('#all_all_contracts')
+    salarySource = tree.cssselect('#all_all_salaries')
+    tableSource = tree.cssselect('#all_transactions ~ .table_wrapper')
+
+    if len(contractSource) > 0:
+        contractCommentStr = str(contractSource[0].getchildren()[2]).replace("<!--", "").replace("-->", "").replace("</tbody>", "")
         contractTree = html.fromstring(contractCommentStr)
         salary = int(contractTree.cssselect('table tr td span')[0].text_content().replace(',','').replace('$',''))
-    except IndexError:
-        salaryCommentStr = str(tree.cssselect('#all_all_salaries')[0].getchildren()[2]).replace("<!--", "").replace("-->", "")
+    elif len(salarySource) > 0:
+        salaryCommentStr = str(salarySource[0].getchildren()[2]).replace("<!--", "").replace("-->", "")
         salaryTree = html.fromstring(salaryCommentStr)
         salary = int(salaryTree.cssselect('table tbody tr')[-1].cssselect('td')[-1].text_content().replace(',','').replace('$',''))
-    except Exception as e:
+    elif len(tableSource) > 0:
+        tableCommentStr = str(tableSource[0].getchildren()[2]).replace("<!--", "").replace("-->", "").replace("</tbody>", "")
+        tableTree = html.fromstring(tableCommentStr)
+        salary = int(tableTree.cssselect('table tr')[-1].cssselect('td')[-1].text_content().replace(',','').replace('$',''))
+    else:
         salary = None
+    
+    # try:
+    #     contractCommentStr = str(tree.cssselect('#all_all_contracts')[0].getchildren()[2]).replace("<!--", "").replace("-->", "").replace("</tbody>", "")
+    #     contractTree = html.fromstring(contractCommentStr)
+    #     salary = int(contractTree.cssselect('table tr td span')[0].text_content().replace(',','').replace('$',''))
+    # except IndexError:
+    #     try:
+    #         salaryCommentStr = str(tree.cssselect('#all_all_salaries')[0].getchildren()[2]).replace("<!--", "").replace("-->", "")
+    #         salaryTree = html.fromstring(salaryCommentStr)
+    #         salary = int(salaryTree.cssselect('table tbody tr')[-1].cssselect('td')[-1].text_content().replace(',','').replace('$',''))
+    #     except IndexError:
+    #         try: 
+    #             tableCommentStr = str(tree.cssselect('#all_transactions ~ .table_wrapper')[0].getchildren()[2]).replace("<!--", "").replace("-->", "").replace("</tbody>", "")
+    #             tableTree = html.fromstring(tableCommentStr)
+    #             salary = int(tableTree.cssselect('table tbody tr')[-1].cssselect('td')[-1].text_content().replace(',','').replace('$',''))
+    #         except Exception as e:
+    #             salary = None
 
     playerInfo = {
         'brefId': brefId,
@@ -94,7 +119,7 @@ def getPlayerInfo(brefId, sessionObj):
         'debutDate': debutDate,
         'drafted': drafted,
         'gamesPlayed': gamesPlayed,
-        'salary': salary
+        'salary': max(salary, 874636) # http://hoopshype.com/2015/10/12/whats-the-minimum-nba-salary/
     }
 
     return playerInfo
@@ -143,3 +168,7 @@ def getBrefIdFromName(playerName, sessionObj):
 
     # no exact match? return none
     return None
+
+# session = requests.Session()
+# info = getPlayerInfo('cookqu01', session)
+# print(info)

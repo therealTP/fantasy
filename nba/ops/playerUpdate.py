@@ -115,3 +115,82 @@ def getBiosForIncompletePlayers(sessionObj, incPlayersArr):
     
     return playerBios
 
+def getSourceIdUpdatesForPlayersAuto():
+    '''
+    Will auto update all players w/ source ids that have an exact name match
+    NOTE: will override all existing source ids for any player that matches
+    '''
+    # get new source ids
+    newSourceIdsByPlayer = api.getNewSourceIds()
+
+    # get list of current players
+    currentPlayers = api.getCurrentPlayerData()
+
+    # arr to hold update
+    sourceIdUpdates = {}
+
+    for idsByPlayer in newSourceIdsByPlayer:
+        currentPlayerMatch = next((player for player in currentPlayers if player["player_name"] == idsByPlayer["player_name"]), None)
+
+        # if name does not EXACTLY match any existing player:
+        if currentPlayerMatch is None:
+            continue
+        # if there is a match:
+        else:
+            sourceIds = {}
+            options = ["nf_id", "rw_id", "bm_id", "fp_id"]
+
+            for id in options:
+                # if new source id exists for player:
+                if idsByPlayer[id] is not None:
+                    # attach it
+                    sourceIds[id] = idsByPlayer[id]
+                # if source id already exists for player:
+                elif currentPlayerMatch[id] is not None:
+                    # attach it:
+                    sourceIds[id] = currentPlayerMatch[id]
+                # else if no current id or new id exists:
+                else:
+                    sourceIds[id] = None
+                                                            
+        # add ids to player dict
+        sourceIdUpdates[currentPlayerMatch["player_id"]] = sourceIds
+
+    return sourceIdUpdates
+
+def updateSourceIdsForPlayersManual():
+    '''
+    Requires manual input from user to match player name/ brefId
+    '''
+    # get new source ids
+    newSourceIdsByPlayer = api.getNewSourceIds()
+
+    # get list of current players
+    currentPlayers = api.getCurrentPlayerData()
+
+    # arr to hold update
+    sourceIdUpdates = {}
+
+    for idsByPlayer in newSourceIdsByPlayer:
+        currentPlayerMatch = next((player for player in currentPlayers if player["player_name"] == idsByPlayer["player_name"]), None)
+
+        # if name does not EXACTLY match any existing player:
+        if currentPlayerMatch is None:
+            # TODO: figure out what to do when no player matches exact name. 
+            # check similar name matches
+
+            # if match, add to sourceIdUpdates
+
+            # if none, 
+            
+            playerBrefId = input("What is the BREF_ID for " + idsByPlayer["player_name"] + "? ")
+        # if there is a match:
+        else:
+            # add ids to player dict
+            sourceIdUpdates[currentPlayerMatch["player_id"]] = idsByPlayer
+
+            # NOTE: will override all existing source ids for these players
+
+    return sourceIdUpdates
+
+# print(updateSourceIdsForPlayersAuto())
