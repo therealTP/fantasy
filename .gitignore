@@ -1,5 +1,5 @@
 nba/config.json
-nba/__pycache__
+*__pycache__*
 nba/local-data
 nba/json-data
 nba/.idea
