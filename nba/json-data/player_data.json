@@ -1,0 +1,4867 @@
+{
+    "1158": {
+        "fc_id": "701",
+        "pos": "SF",
+        "nf_id": "trevor-ariza",
+        "name": "Trevor Ariza",
+        "fp_id": "trevor-ariza",
+        "bref_id": "arizatr01",
+        "bm_id": "2370",
+        "rw_id": "2461"
+    },
+    "1401": {
+        "fc_id": "1193454",
+        "pos": "PG",
+        "nf_id": "aaron-harrison",
+        "name": "Aaron Harrison",
+        "fp_id": "aaron-harrison",
+        "bref_id": "harriaa01",
+        "bm_id": "5075",
+        "rw_id": "3620"
+    },
+    "1311": {
+        "fc_id": "2644",
+        "pos": "SF",
+        "nf_id": "2176",
+        "name": "Reggie Bullock",
+        "fp_id": "reggie-bullock",
+        "bref_id": "bullore01",
+        "bm_id": "3696",
+        "rw_id": "3458"
+    },
+    "1371": {
+        "nf_id": "2322",
+        "name": "Jabari Brown",
+        "fp_id": "jabari-brown"
+    },
+    "1374": {
+        "nf_id": "103",
+        "name": "Gerald Wallace",
+        "fp_id": "gerald-wallace"
+    },
+    "1301": {
+        "fc_id": "1193558",
+        "pos": "SG",
+        "nf_id": "devin-booker",
+        "name": "Devin Booker",
+        "fp_id": "devin-booker",
+        "bref_id": "bookede01",
+        "bm_id": "5002",
+        "rw_id": "3711"
+    },
+    "1518": {
+        "fc_id": "742",
+        "bref_id": "hamiljo02",
+        "bm_id": "3363",
+        "name": "Jordan Hamilton",
+        "pos": "SF"
+    },
+    "1281": {
+        "fc_id": "1929",
+        "pos": "SF",
+        "nf_id": "mirza-teletovic",
+        "name": "Mirza Teletovic",
+        "fp_id": "mirza-teletovic",
+        "bref_id": "teletmi01",
+        "bm_id": "3642",
+        "rw_id": "3398"
+    },
+    "1424": {
+        "fc_id": "2615",
+        "pos": "SG",
+        "nf_id": "mike-miller",
+        "name": "Mike Miller",
+        "fp_id": "mike-miller",
+        "bref_id": "millemi01",
+        "bm_id": "2084",
+        "rw_id": "2071"
+    },
+    "1322": {
+        "fc_id": "3274",
+        "pos": "SG",
+        "nf_id": "joe-ingles",
+        "name": "Joe Ingles",
+        "fp_id": "joe-ingles",
+        "bref_id": "inglejo01",
+        "bm_id": "3242",
+        "rw_id": "3689"
+    },
+    "1451": {
+        "nf_id": "291",
+        "name": "Ben Gordon",
+        "fp_id": "ben-gordon"
+    },
+    "1238": {
+        "fc_id": "1874",
+        "pos": "PG",
+        "nf_id": "jerryd-bayless",
+        "name": "Jerryd Bayless",
+        "fp_id": "jerryd-bayless",
+        "bref_id": "bayleje01",
+        "bm_id": "2811",
+        "rw_id": "2924"
+    },
+    "1344": {
+        "fc_id": "718",
+        "pos": "PF",
+        "nf_id": "donatas-motiejunas",
+        "name": "Donatas Motiejunas",
+        "fp_id": "donatas-motiejunas",
+        "bref_id": "motiedo01",
+        "bm_id": "3389",
+        "rw_id": "3193"
+    },
+    "1369": {
+        "fc_id": "759",
+        "pos": "PG",
+        "nf_id": "ronnie-price",
+        "name": "Ronnie Price",
+        "fp_id": "ronnie-price",
+        "bref_id": "pricero01",
+        "bm_id": "2467",
+        "rw_id": "2661"
+    },
+    "1055": {
+        "fc_id": "1193435",
+        "pos": "SG",
+        "nf_id": "lamar-patterson",
+        "name": "Lamar Patterson",
+        "fp_id": "lamar-patterson",
+        "bref_id": "pattela01",
+        "bm_id": "3942",
+        "rw_id": "3635"
+    },
+    "1082": {
+        "fc_id": "17233",
+        "pos": "C",
+        "nf_id": "shayne-whittington",
+        "name": "Shayne Whittington",
+        "fp_id": "shayne-whittington",
+        "bref_id": "whittsh01",
+        "bm_id": "4103",
+        "rw_id": "3676"
+    },
+    "1277": {
+        "fc_id": "2034",
+        "pos": "SF",
+        "nf_id": "doug-mcdermott",
+        "name": "Doug McDermott",
+        "fp_id": "doug-mcdermott",
+        "bref_id": "mcderdo01",
+        "bm_id": "3934",
+        "rw_id": "3579"
+    },
+    "1047": {
+        "fc_id": "1193468",
+        "pos": "C",
+        "nf_id": "salah-mejri",
+        "name": "Salah Mejri",
+        "fp_id": "salah-mejri",
+        "bref_id": "mejrisa01",
+        "bm_id": "3549",
+        "rw_id": "3799"
+    },
+    "1032": {
+        "fc_id": "3803",
+        "pos": "PG",
+        "nf_id": "george-hill",
+        "name": "George Hill",
+        "fp_id": "george-hill",
+        "bref_id": "hillge01",
+        "bm_id": "2836",
+        "rw_id": "2963"
+    },
+    "1165": {
+        "fc_id": "1193554",
+        "pos": "C",
+        "nf_id": "jahlil-okafor",
+        "name": "Jahlil Okafor",
+        "fp_id": "jahlil-okafor",
+        "bref_id": "okafoja01",
+        "bm_id": "5037",
+        "rw_id": "3742"
+    },
+    "1252": {
+        "fc_id": "1193570",
+        "pos": "C",
+        "nf_id": "willie-cauley-stein",
+        "name": "Willie Cauley-Stein",
+        "fp_id": "willie-cauley-stein",
+        "bref_id": "caulewi01",
+        "bm_id": "5004",
+        "rw_id": "3740"
+    },
+    "1101": {
+        "fc_id": "2551",
+        "pos": "SF",
+        "nf_id": "lebron-james",
+        "name": "LeBron James",
+        "fp_id": "lebron-james",
+        "bref_id": "jamesle01",
+        "bm_id": "2011",
+        "rw_id": "2344"
+    },
+    "1320": {
+        "fc_id": "1910",
+        "pos": "PF",
+        "nf_id": "anthony-tolliver",
+        "name": "Anthony Tolliver",
+        "fp_id": "anthony-tolliver",
+        "bref_id": "tollian01",
+        "bm_id": "2774",
+        "rw_id": "2912"
+    },
+    "1078": {
+        "fc_id": "1193494",
+        "pos": "C",
+        "nf_id": "myles-turner",
+        "name": "Myles Turner",
+        "fp_id": "myles-turner",
+        "bref_id": "turnemy01",
+        "bm_id": "5053",
+        "rw_id": "3725"
+    },
+    "1497": {
+        "bm_id": "5107",
+        "nf_id": "j-j-o-brien",
+        "name": "JJ O'Brien",
+        "rw_id": "3819"
+    },
+    "1077": {
+        "fc_id": "2017",
+        "pos": "SF",
+        "nf_id": "lance-thomas",
+        "name": "Lance Thomas",
+        "fp_id": "lance-thomas",
+        "bref_id": "thomala01",
+        "bm_id": "3413",
+        "rw_id": "3280"
+    },
+    "1051": {
+        "fc_id": "682",
+        "pos": "PF",
+        "nf_id": "dirk-nowitzki",
+        "name": "Dirk Nowitzki",
+        "fp_id": "dirk-nowitzki",
+        "bref_id": "nowitdi01",
+        "bm_id": "1831",
+        "rw_id": "1895"
+    },
+    "1407": {
+        "fc_id": "2559",
+        "pos": "PG",
+        "nf_id": "kyrie-irving",
+        "name": "Kyrie Irving",
+        "fp_id": "kyrie-irving",
+        "bref_id": "irvinky01",
+        "bm_id": "3369",
+        "rw_id": "3186"
+    },
+    "1391": {
+        "nf_id": "2343",
+        "name": "Sam Dekker",
+        "fp_id": "sam-dekker",
+        "bref_id": "dekkesa01",
+        "bm_id": "5008",
+        "rw_id": "3734"
+    },
+    "1428": {
+        "fc_id": "10110",
+        "pos": "C",
+        "nf_id": "lucas-nogueira",
+        "name": "Lucas Nogueira",
+        "fp_id": "lucas-nogueira",
+        "bref_id": "noguelu01",
+        "bm_id": "3673",
+        "rw_id": "3208"
+    },
+    "1323": {
+        "fc_id": "737",
+        "pos": "PG",
+        "nf_id": "troy-daniels",
+        "name": "Troy Daniels",
+        "fp_id": "troy-daniels",
+        "bref_id": "danietr01",
+        "bm_id": "3771",
+        "rw_id": "3562"
+    },
+    "1006": {
+        "fc_id": "2661",
+        "pos": "PF",
+        "nf_id": "louis-amundson",
+        "name": "Louis Amundson",
+        "fp_id": "lou-amundson",
+        "bref_id": "amundlo01",
+        "bm_id": "2574",
+        "rw_id": "2761"
+    },
+    "1395": {
+        "fc_id": "10098",
+        "pos": "SG",
+        "nf_id": "james-ennis",
+        "name": "James Ennis",
+        "fp_id": "james-ennis",
+        "bref_id": "ennisja01",
+        "bm_id": "3700",
+        "rw_id": "3481"
+    },
+    "1002": {
+        "fc_id": "1830",
+        "pos": "SG",
+        "nf_id": "arron-afflalo",
+        "name": "Arron Afflalo",
+        "fp_id": "arron-afflalo",
+        "bref_id": "afflaar01",
+        "bm_id": "2702",
+        "rw_id": "2833"
+    },
+    "1208": {
+        "fc_id": "1866",
+        "pos": "C",
+        "nf_id": "331",
+        "name": "Joakim Noah",
+        "fp_id": "joakim-noah",
+        "bref_id": "noahjo01",
+        "bm_id": "2745",
+        "rw_id": "2822"
+    },
+    "1359": {
+        "fc_id": "769",
+        "pos": "C",
+        "nf_id": "dewayne-dedmon",
+        "name": "Dewayne Dedmon",
+        "fp_id": "dewayne-dedmon",
+        "bref_id": "dedmode01",
+        "bm_id": "3774",
+        "rw_id": "3486"
+    },
+    "1448": {
+        "fc_id": "2003",
+        "pos": "C",
+        "nf_id": "kendrick-perkins",
+        "name": "Kendrick Perkins",
+        "fp_id": "kendrick-perkins",
+        "bref_id": "perkike01",
+        "bm_id": "2189",
+        "rw_id": "2376"
+    },
+    "1218": {
+        "fc_id": "1991",
+        "pos": "C",
+        "nf_id": "tyler-zeller",
+        "name": "Tyler Zeller",
+        "fp_id": "tyler-zeller",
+        "bref_id": "zellety01",
+        "bm_id": "3639",
+        "rw_id": "3309"
+    },
+    "1063": {
+        "fc_id": "710",
+        "pos": "SG",
+        "nf_id": "austin-rivers",
+        "name": "Austin Rivers",
+        "fp_id": "austin-rivers",
+        "bref_id": "riverau01",
+        "bm_id": "3575",
+        "rw_id": "3311"
+    },
+    "1117": {
+        "fc_id": "693",
+        "pos": "SG",
+        "nf_id": "kobe-bryant",
+        "name": "Kobe Bryant",
+        "fp_id": "kobe-bryant",
+        "bref_id": "bryanko01",
+        "bm_id": "2113",
+        "rw_id": "1373"
+    },
+    "1362": {
+        "fc_id": "10487",
+        "pos": "SF",
+        "nf_id": "sergey-karasev",
+        "name": "Sergey Karasev",
+        "fp_id": "sergey-karasev",
+        "bref_id": "karasse01",
+        "bm_id": "3683",
+        "rw_id": "3447"
+    },
+    "1439": {
+        "fc_id": "2033",
+        "pos": "SG",
+        "nf_id": "brandon-rush",
+        "name": "Brandon Rush",
+        "fp_id": "brandon-rush",
+        "bref_id": "rushbr01",
+        "bm_id": "2858",
+        "rw_id": "2867"
+    },
+    "1106": {
+        "fc_id": "696",
+        "pos": "C",
+        "nf_id": "nikola-vucevic",
+        "name": "Nikola Vucevic",
+        "fp_id": "nikola-vucevic",
+        "bref_id": "vucevni01",
+        "bm_id": "3404",
+        "rw_id": "3212"
+    },
+    "1303": {
+        "fc_id": "1898",
+        "pos": "PF",
+        "nf_id": "jason-smith",
+        "name": "Jason Smith",
+        "fp_id": "jason-smith",
+        "bref_id": "smithja02",
+        "bm_id": "2755",
+        "rw_id": "2837"
+    },
+    "1156": {
+        "fc_id": "1817",
+        "pos": "PG",
+        "nf_id": "derrick-rose",
+        "name": "Derrick Rose",
+        "fp_id": "derrick-rose",
+        "bref_id": "rosede01",
+        "bm_id": "2857",
+        "rw_id": "2921"
+    },
+    "1409": {
+        "fc_id": "1849",
+        "pos": "PG",
+        "nf_id": "brandon-jennings",
+        "name": "Brandon Jennings",
+        "fp_id": "brandon-jennings",
+        "bref_id": "jennibr01",
+        "bm_id": "3002",
+        "rw_id": "2997"
+    },
+    "1400": {
+        "fc_id": "2660",
+        "pos": "SG",
+        "nf_id": "joe-harris",
+        "name": "Joe Harris",
+        "fp_id": "joe-harris",
+        "bref_id": "harrijo01",
+        "bm_id": "3924",
+        "rw_id": "3636"
+    },
+    "1390": {
+        "fc_id": "1193568",
+        "pos": "PG",
+        "nf_id": "seth-curry",
+        "name": "Seth Curry",
+        "fp_id": "seth-curry",
+        "bref_id": "curryse01",
+        "bm_id": "3863",
+        "rw_id": "3498"
+    },
+    "1372": {
+        "fc_id": "1193585",
+        "pos": "PG",
+        "nf_id": "2320",
+        "name": "Bryce Cotton",
+        "fp_id": "bryce-cotton",
+        "bref_id": "cottobr01",
+        "bm_id": "4036",
+        "rw_id": "3653"
+    },
+    "1242": {
+        "fc_id": "1924",
+        "pos": "SF",
+        "nf_id": "bojan-bogdanovic",
+        "name": "Bojan Bogdanovic",
+        "fp_id": "bojan-bogdanovic",
+        "bref_id": "bogdabo02",
+        "bm_id": "3354",
+        "rw_id": "3236"
+    },
+    "1145": {
+        "fc_id": "1193525",
+        "pos": "C",
+        "nf_id": "karl-anthony-towns",
+        "name": "Karl-Anthony Towns",
+        "fp_id": "karl-anthony-towns",
+        "bref_id": "townska01",
+        "bm_id": "5052",
+        "rw_id": "3741"
+    },
+    "1143": {
+        "fc_id": "697",
+        "pos": "PF",
+        "nf_id": "terrence-jones",
+        "name": "Terrence Jones",
+        "fp_id": "terrence-jones",
+        "bref_id": "joneste01",
+        "bm_id": "3527",
+        "rw_id": "3307"
+    },
+    "1262": {
+        "fc_id": "1193521",
+        "pos": "SG",
+        "nf_id": "rashad-vaughn",
+        "name": "Rashad Vaughn",
+        "fp_id": "rashad-vaughn",
+        "bref_id": "vaughra01",
+        "bm_id": "5054",
+        "rw_id": "3731"
+    },
+    "1116": {
+        "fc_id": "1833",
+        "pos": "PG",
+        "nf_id": "brandon-knight",
+        "name": "Brandon Knight",
+        "fp_id": "brandon-knight",
+        "bref_id": "knighbr03",
+        "bm_id": "3375",
+        "rw_id": "3184"
+    },
+    "1260": {
+        "fc_id": "1928",
+        "pos": "SG",
+        "nf_id": "terrence-ross",
+        "name": "Terrence Ross",
+        "fp_id": "terrence-ross",
+        "bref_id": "rosste01",
+        "bm_id": "3581",
+        "rw_id": "3313"
+    },
+    "1284": {
+        "fc_id": "2520",
+        "pos": "SG",
+        "nf_id": "gary-neal",
+        "name": "Gary Neal",
+        "fp_id": "gary-neal",
+        "bref_id": "nealga01",
+        "bm_id": "3287",
+        "rw_id": "3170"
+    },
+    "1181": {
+        "fc_id": "1873",
+        "pos": "PF",
+        "nf_id": "ersan-ilyasova",
+        "name": "Ersan Ilyasova",
+        "fp_id": "ersan-ilyasova",
+        "bref_id": "ilyaser01",
+        "bm_id": "2445",
+        "rw_id": "2607"
+    },
+    "1193": {
+        "fc_id": "711",
+        "pos": "C",
+        "nf_id": "tyson-chandler",
+        "name": "Tyson Chandler",
+        "fp_id": "tyson-chandler",
+        "bref_id": "chandty01",
+        "bm_id": "2083",
+        "rw_id": "2158"
+    },
+    "1239": {
+        "fc_id": "731",
+        "pos": "PG",
+        "nf_id": "cory-joseph",
+        "name": "Cory Joseph",
+        "fp_id": "cory-joseph",
+        "bref_id": "josepco01",
+        "bm_id": "3373",
+        "rw_id": "3226"
+    },
+    "1162": {
+        "fc_id": "730",
+        "pos": "PF",
+        "nf_id": "julius-randle",
+        "name": "Julius Randle",
+        "fp_id": "julius-randle",
+        "bref_id": "randlju01",
+        "bm_id": "3946",
+        "rw_id": "3574"
+    },
+    "1064": {
+        "fc_id": "2648",
+        "pos": "SF",
+        "nf_id": "glenn-robinson-iii",
+        "name": "Glenn Robinson III",
+        "fp_id": "glenn-robinson",
+        "bref_id": "robingl02",
+        "bm_id": "3947",
+        "rw_id": "3604"
+    },
+    "1384": {
+        "fc_id": "3882",
+        "pos": "PF",
+        "nf_id": "cameron-bairstow",
+        "name": "Cameron Bairstow",
+        "fp_id": "cameron-bairstow",
+        "bref_id": "bairsca01",
+        "bm_id": "3903",
+        "rw_id": "3662"
+    },
+    "1085": {
+        "fc_id": "3885",
+        "pos": "SF",
+        "nf_id": "derrick-williams",
+        "name": "Derrick Williams",
+        "fp_id": "derrick-williams",
+        "bref_id": "willide02",
+        "bm_id": "3406",
+        "rw_id": "3187"
+    },
+    "1338": {
+        "bm_id": "2710",
+        "nf_id": "125",
+        "name": "Wilson Chandler",
+        "rw_id": "2880",
+        "fp_id": "wilson-chandler"
+    },
+    "1293": {
+        "fc_id": "1193556",
+        "pos": "PG",
+        "nf_id": "t-j-mcconnell",
+        "name": "TJ McConnell",
+        "fp_id": "t.j.-mcconnell",
+        "bref_id": "mccontj01",
+        "bm_id": "5098",
+        "rw_id": "3760"
+    },
+    "1516": {
+        "fc_id": "1204692",
+        "bref_id": "munfoxa02",
+        "pos": "PG",
+        "name": "Xavier Munford",
+        "fp_id": "xavier-munford"
+    },
+    "1192": {
+        "fc_id": "1998",
+        "pos": "PG",
+        "nf_id": "marcus-smart",
+        "name": "Marcus Smart",
+        "fp_id": "marcus-smart",
+        "bref_id": "smartma01",
+        "bm_id": "3949",
+        "rw_id": "3575"
+    },
+    "1475": {
+        "nf_id": "perry-jones-iii",
+        "name": "Perry Jones III",
+        "fp_id": "perry-jones"
+    },
+    "1215": {
+        "fc_id": "1902",
+        "pos": "C",
+        "nf_id": "kelly-olynyk",
+        "name": "Kelly Olynyk",
+        "fp_id": "kelly-olynyk",
+        "bref_id": "olynyke01",
+        "bm_id": "3677",
+        "rw_id": "3443"
+    },
+    "1109": {
+        "fc_id": "1856",
+        "pos": "C",
+        "nf_id": "andre-drummond",
+        "name": "Andre Drummond",
+        "fp_id": "andre-drummond",
+        "bref_id": "drumman01",
+        "bm_id": "3464",
+        "rw_id": "3300"
+    },
+    "1341": {
+        "fc_id": "2578",
+        "pos": "SG",
+        "nf_id": "jodie-meeks",
+        "name": "Jodie Meeks",
+        "fp_id": "jodie-meeks",
+        "bm_id": "3030",
+        "rw_id": "3069"
+    },
+    "1057": {
+        "fc_id": "1838",
+        "pos": "SF",
+        "nf_id": "paul-pierce",
+        "name": "Paul Pierce",
+        "fp_id": "paul-pierce",
+        "bref_id": "piercpa01",
+        "bm_id": "1852",
+        "rw_id": "1896"
+    },
+    "1036": {
+        "fc_id": "1827",
+        "pos": "C",
+        "nf_id": "al-horford",
+        "name": "Al Horford",
+        "fp_id": "al-horford",
+        "bref_id": "horfoal01",
+        "bm_id": "2730",
+        "rw_id": "2816"
+    },
+    "1081": {
+        "fc_id": "1193533",
+        "pos": "SG",
+        "nf_id": "sasha-vujacic",
+        "name": "Sasha Vujacic",
+        "fp_id": "sasha-vujacic",
+        "bref_id": "vujacsa01",
+        "bm_id": "2301",
+        "rw_id": "2547"
+    },
+    "1088": {
+        "nf_id": "475",
+        "name": "Samuel Dalembert",
+        "fp_id": "samuel-dalembert"
+    },
+    "1230": {
+        "fc_id": "1937",
+        "pos": "PF",
+        "nf_id": "patrick-patterson",
+        "name": "Patrick Patterson",
+        "fp_id": "patrick-patterson",
+        "bref_id": "pattepa01",
+        "bm_id": "3110",
+        "rw_id": "3116"
+    },
+    "1216": {
+        "fc_id": "2603",
+        "pos": "SG",
+        "nf_id": "jeremy-lamb",
+        "name": "Jeremy Lamb",
+        "fp_id": "jeremy-lamb",
+        "bref_id": "lambje01",
+        "bm_id": "3537",
+        "rw_id": "3319"
+    },
+    "1514": {
+        "fc_id": "3875",
+        "pos": "PG",
+        "nf_id": "c-j-mccollum",
+        "name": "C.J. McCollum",
+        "fp_id": "cj-mccollum",
+        "bref_id": "mccolcj01",
+        "rw_id": "3437"
+    },
+    "1037": {
+        "fc_id": "8252",
+        "pos": "SG",
+        "nf_id": "john-jenkins",
+        "name": "John Jenkins",
+        "fp_id": "john-jenkins",
+        "bref_id": "jenkijo01",
+        "bm_id": "3516",
+        "rw_id": "3331"
+    },
+    "1414": {
+        "fc_id": "1193526",
+        "pos": "PG",
+        "nf_id": "tyus-jones",
+        "name": "Tyus Jones",
+        "fp_id": "tyus-jones",
+        "bref_id": "jonesty01",
+        "bm_id": "5025",
+        "rw_id": "3739"
+    },
+    "1347": {
+        "fc_id": "2031",
+        "pos": "SG",
+        "nf_id": "oj-mayo",
+        "name": "O.J. Mayo",
+        "fp_id": "oj-mayo",
+        "bref_id": "mayooj01",
+        "bm_id": "2849",
+        "rw_id": "2922"
+    },
+    "1178": {
+        "fc_id": "1904",
+        "pos": "PF",
+        "nf_id": "kris-humphries",
+        "name": "Kris Humphries",
+        "fp_id": "kris-humphries",
+        "bref_id": "humphkr01",
+        "bm_id": "2378",
+        "rw_id": "2472"
+    },
+    "1357": {
+        "fc_id": "1885",
+        "pos": "PG",
+        "nf_id": "kirk-hinrich",
+        "name": "Kirk Hinrich",
+        "fp_id": "kirk-hinrich",
+        "bref_id": "hinriki01",
+        "bm_id": "2132",
+        "rw_id": "2353"
+    },
+    "1483": {
+        "nf_id": "2383",
+        "name": "J.P. Tokoto"
+    },
+    "1155": {
+        "fc_id": "1954",
+        "pos": "PF",
+        "nf_id": "nerlens-noel",
+        "name": "Nerlens Noel",
+        "fp_id": "nerlens-noel",
+        "bref_id": "noelne01",
+        "bm_id": "3718",
+        "rw_id": "3431"
+    },
+    "1318": {
+        "fc_id": "3903",
+        "pos": "SF",
+        "nf_id": "tayshaun-prince",
+        "name": "Tayshaun Prince",
+        "fp_id": "tayshaun-prince",
+        "bref_id": "princta01",
+        "bm_id": "1894",
+        "rw_id": "2270"
+    },
+    "1012": {
+        "fc_id": "2026",
+        "pos": "SF",
+        "nf_id": "chase-budinger",
+        "name": "Chase Budinger",
+        "fp_id": "chase-budinger",
+        "bref_id": "budinch01",
+        "bm_id": "3034",
+        "rw_id": "2925"
+    },
+    "1261": {
+        "fc_id": "2027",
+        "pos": "C",
+        "nf_id": "alex-len",
+        "name": "Alex Len",
+        "fp_id": "alex-len",
+        "bref_id": "lenal01",
+        "bm_id": "3720",
+        "rw_id": "3436"
+    },
+    "1073": {
+        "fc_id": "3886",
+        "pos": "PF",
+        "nf_id": "jarnell-stokes",
+        "name": "Jarnell Stokes",
+        "fp_id": "jarnell-stokes",
+        "bref_id": "stokeja01",
+        "bm_id": "3952",
+        "rw_id": "3622"
+    },
+    "1172": {
+        "fc_id": "1851",
+        "pos": "PG",
+        "nf_id": "trey-burke",
+        "name": "Trey Burke",
+        "fp_id": "trey-burke",
+        "bref_id": "burketr01",
+        "bm_id": "3728",
+        "rw_id": "3434"
+    },
+    "1308": {
+        "fc_id": "772",
+        "pos": "PF",
+        "nf_id": "channing-frye",
+        "name": "Channing Frye",
+        "fp_id": "channing-frye",
+        "bref_id": "fryech01",
+        "bm_id": "2430",
+        "rw_id": "2595"
+    },
+    "1358": {
+        "fc_id": "527879",
+        "pos": "SG",
+        "nf_id": "tyler-johnson",
+        "name": "Tyler Johnson",
+        "fp_id": "tyler-johnson",
+        "bref_id": "johnsty01",
+        "bm_id": "3993",
+        "rw_id": "3685"
+    },
+    "1016": {
+        "fc_id": "1836",
+        "pos": "PG",
+        "nf_id": "mike-conley",
+        "name": "Mike Conley",
+        "fp_id": "mike-conley",
+        "bref_id": "conlemi01",
+        "bm_id": "2711",
+        "rw_id": "2813"
+    },
+    "1490": {
+        "fc_id": "1193501",
+        "pos": "SF",
+        "nf_id": "metta-world-peace",
+        "name": "Metta World Peace",
+        "fp_id": "metta-world-peace",
+        "bref_id": "artesro01",
+        "bm_id": "1883",
+        "rw_id": "1998"
+    },
+    "1345": {
+        "fc_id": "1967",
+        "pos": "PF",
+        "nf_id": "carl-landry",
+        "name": "Carl Landry",
+        "fp_id": "carl-landry",
+        "bref_id": "landrca01",
+        "bm_id": "2735",
+        "rw_id": "2844"
+    },
+    "1257": {
+        "fc_id": "2681",
+        "pos": "SG",
+        "nf_id": "anthony-morrow",
+        "name": "Anthony Morrow",
+        "fp_id": "anthony-morrow",
+        "bref_id": "morroan01",
+        "bm_id": "2853",
+        "rw_id": "2998"
+    },
+    "1103": {
+        "fc_id": "1811",
+        "pos": "PG",
+        "nf_id": "stephen-curry",
+        "name": "Stephen Curry",
+        "fp_id": "stephen-curry",
+        "bref_id": "curryst01",
+        "bm_id": "2999",
+        "rw_id": "3014"
+    },
+    "1421": {
+        "fc_id": "938778",
+        "pos": "PF",
+        "nf_id": "james-michael-mcadoo",
+        "name": "James McAdoo",
+        "fp_id": "james-michael-mcadoo",
+        "bref_id": "mcadoja01",
+        "bm_id": "4023",
+        "rw_id": "3631"
+    },
+    "1232": {
+        "fc_id": "1968",
+        "pos": "SG",
+        "nf_id": "hollis-thompson",
+        "name": "Hollis Thompson",
+        "fp_id": "hollis-thompson",
+        "bref_id": "thompho01",
+        "bm_id": "3659",
+        "rw_id": "3353"
+    },
+    "1170": {
+        "fc_id": "3896",
+        "pos": "C",
+        "nf_id": "meyers-leonard",
+        "name": "Meyers Leonard",
+        "fp_id": "meyers-leonard",
+        "bref_id": "leoname01",
+        "bm_id": "3540",
+        "rw_id": "3322"
+    },
+    "1206": {
+        "fc_id": "3871",
+        "pos": "SF",
+        "nf_id": "jerami-grant",
+        "name": "Jerami Grant",
+        "fp_id": "jerami-grant",
+        "bref_id": "grantje01",
+        "bm_id": "3921",
+        "rw_id": "3588"
+    },
+    "1175": {
+        "fc_id": "726",
+        "pos": "PG",
+        "nf_id": "isaiah-canaan",
+        "name": "Isaiah Canaan",
+        "fp_id": "isaiah-canaan",
+        "bref_id": "canaais01",
+        "bm_id": "3693",
+        "rw_id": "3470"
+    },
+    "1124": {
+        "fc_id": "3845",
+        "pos": "PG",
+        "nf_id": "michael-carter-williams",
+        "name": "Michael Carter-Williams",
+        "fp_id": "michael-carter-williams",
+        "bref_id": "cartemi01",
+        "bm_id": "3716",
+        "rw_id": "3441"
+    },
+    "1445": {
+        "fc_id": "1193559",
+        "pos": "SG",
+        "nf_id": "sonny-weems",
+        "name": "Sonny Weems",
+        "fp_id": "sonny-weems",
+        "bref_id": "weemsso01",
+        "bm_id": "2871",
+        "rw_id": "2982"
+    },
+    "1059": {
+        "fc_id": "2044",
+        "pos": "PF",
+        "nf_id": "dwight-powell",
+        "name": "Dwight Powell",
+        "fp_id": "dwight-powell",
+        "bref_id": "poweldw01",
+        "bm_id": "3945",
+        "rw_id": "3610"
+    },
+    "1321": {
+        "fc_id": "1193587",
+        "pos": "PF",
+        "nf_id": "trey-lyles",
+        "name": "Trey Lyles",
+        "fp_id": "trey-lyles",
+        "bref_id": "lylestr01",
+        "bm_id": "5029",
+        "rw_id": "3738"
+    },
+    "1328": {
+        "fc_id": "2575",
+        "pos": "C",
+        "nf_id": "spencer-hawes",
+        "name": "Spencer Hawes",
+        "fp_id": "spencer-hawes",
+        "bref_id": "hawessp01",
+        "bm_id": "2728",
+        "rw_id": "2824"
+    },
+    "1319": {
+        "fc_id": "1193557",
+        "pos": "PF",
+        "nf_id": "richaun-holmes",
+        "name": "Richaun Holmes",
+        "fp_id": "richaun-holmes",
+        "bref_id": "holmeri01",
+        "bm_id": "5021",
+        "rw_id": "3755"
+    },
+    "1160": {
+        "fc_id": "1973",
+        "pos": "SF",
+        "nf_id": "giannis-antetokounmpo",
+        "name": "Giannis Antetokounmpo",
+        "fp_id": "giannis-antetokounmpo",
+        "bref_id": "antetgi01",
+        "bm_id": "3701",
+        "rw_id": "3456"
+    },
+    "1166": {
+        "fc_id": "934856",
+        "pos": "C",
+        "nf_id": "joffrey-lauvergne",
+        "name": "Joffrey Lauvergne",
+        "fp_id": "joffrey-lauvergne",
+        "bref_id": "lauvejo01",
+        "bm_id": "3688",
+        "rw_id": "3489"
+    },
+    "1004": {
+        "fc_id": "3894",
+        "pos": "C",
+        "nf_id": "lavoy-allen",
+        "name": "Lavoy Allen",
+        "fp_id": "lavoy-allen",
+        "bref_id": "allenla01",
+        "bm_id": "3350",
+        "rw_id": "3261"
+    },
+    "1011": {
+        "fc_id": "1956",
+        "pos": "SG",
+        "nf_id": "kent-bazemore",
+        "name": "Kent Bazemore",
+        "fp_id": "kent-bazemore",
+        "bref_id": "bazemke01",
+        "bm_id": "3438",
+        "rw_id": "3401"
+    },
+    "1444": {
+        "bm_id": "2488",
+        "nf_id": "121",
+        "name": "Martell Webster",
+        "rw_id": "2597",
+        "fp_id": "martell-webster"
+    },
+    "1403": {
+        "fc_id": "1193481",
+        "pos": "SG",
+        "nf_id": "darrun-hilliard",
+        "name": "Darrun Hilliard",
+        "fp_id": "darrun-hilliard",
+        "bref_id": "hillida01",
+        "bm_id": "5019",
+        "rw_id": "3779"
+    },
+    "1317": {
+        "fc_id": "19069",
+        "pos": "SG",
+        "nf_id": "etwaun-moore",
+        "name": "E'Twaun Moore",
+        "fp_id": "etwaun-moore",
+        "bref_id": "mooreet01",
+        "bm_id": "3385",
+        "rw_id": "3227"
+    },
+    "1305": {
+        "fc_id": "2500",
+        "pos": "C",
+        "nf_id": "bismack-biyombo",
+        "name": "Bismack Biyombo",
+        "fp_id": "bismack-biyombo",
+        "bref_id": "biyombi01",
+        "bm_id": "3353",
+        "rw_id": "3191"
+    },
+    "1487": {
+        "nf_id": "2356",
+        "name": "Cedi Osman",
+        "fp_id": "cedi-osman"
+    },
+    "1017": {
+        "fc_id": "2571",
+        "pos": "SG",
+        "nf_id": "jamal-crawford",
+        "name": "Jamal Crawford",
+        "fp_id": "jamal-crawford",
+        "bref_id": "crawfja01",
+        "bm_id": "1928",
+        "rw_id": "2067"
+    },
+    "1148": {
+        "fc_id": "6651",
+        "pos": "C",
+        "nf_id": "brook-lopez",
+        "name": "Brook Lopez",
+        "fp_id": "brook-lopez",
+        "bref_id": "lopezbr01",
+        "bm_id": "2846",
+        "rw_id": "2918"
+    },
+    "1138": {
+        "fc_id": "1810",
+        "pos": "SG",
+        "nf_id": "demar-derozan",
+        "name": "DeMar DeRozan",
+        "fp_id": "demar-derozan",
+        "bref_id": "derozde01",
+        "bm_id": "3006",
+        "rw_id": "3019"
+    },
+    "1241": {
+        "fc_id": "761",
+        "pos": "SG",
+        "nf_id": "nick-young",
+        "name": "Nick Young",
+        "fp_id": "nick-young",
+        "bref_id": "youngni01",
+        "bm_id": "2768",
+        "rw_id": "2829"
+    },
+    "1054": {
+        "fc_id": "692",
+        "pos": "SF",
+        "nf_id": "chandler-parsons",
+        "name": "Chandler Parsons",
+        "fp_id": "chandler-parsons",
+        "bref_id": "parsoch01",
+        "bm_id": "3391",
+        "rw_id": "3223"
+    },
+    "1164": {
+        "fc_id": "30148",
+        "pos": "C",
+        "nf_id": "hassan-whiteside",
+        "name": "Hassan Whiteside",
+        "fp_id": "hassan-whiteside",
+        "bref_id": "whiteha01",
+        "bm_id": "3154",
+        "rw_id": "3121"
+    },
+    "1350": {
+        "fc_id": "1193591",
+        "pos": "SF",
+        "nf_id": "kelly-oubre",
+        "name": "Kelly Oubre",
+        "fp_id": "kelly-oubre",
+        "bref_id": "oubreke01",
+        "bm_id": "5039",
+        "rw_id": "3721"
+    },
+    "1511": {
+        "bref_id": "willial03",
+        "bm_id": "5076",
+        "nf_id": "alan-williams",
+        "name": "Alan Williams",
+        "fp_id": "alan-williams"
+    },
+    "1478": {
+        "nf_id": "2301",
+        "name": "Andre Dawkins",
+        "fp_id": "andre-dawkins"
+    },
+    "1159": {
+        "fc_id": "2628",
+        "pos": "C",
+        "nf_id": "gorgui-dieng",
+        "name": "Gorgui Dieng",
+        "fp_id": "gorgui-dieng",
+        "bref_id": "dienggo01",
+        "bm_id": "3704",
+        "rw_id": "3446"
+    },
+    "1152": {
+        "fc_id": "1832",
+        "pos": "PF",
+        "nf_id": "chris-bosh",
+        "name": "Chris Bosh",
+        "fp_id": "chris-bosh",
+        "bref_id": "boshch01",
+        "bm_id": "1916",
+        "rw_id": "2352"
+    },
+    "1185": {
+        "fc_id": "1878",
+        "pos": "SG",
+        "nf_id": "khris-middleton",
+        "name": "Khris Middleton",
+        "fp_id": "khris-middleton",
+        "bref_id": "middlkh01",
+        "bm_id": "3551",
+        "rw_id": "3356"
+    },
+    "1243": {
+        "fc_id": "1193588",
+        "pos": "PG",
+        "nf_id": "raul-neto",
+        "name": "Raul Neto",
+        "fp_id": "raul-neto",
+        "bref_id": "netora01",
+        "bm_id": "3730",
+        "rw_id": "3526"
+    },
+    "1432": {
+        "fc_id": "1193544",
+        "pos": "PG",
+        "nf_id": "cameron-payne",
+        "name": "Cameron Payne",
+        "fp_id": "cameron-payne",
+        "bref_id": "payneca01",
+        "bm_id": "5040",
+        "rw_id": "3744"
+    },
+    "1084": {
+        "fc_id": "1843",
+        "pos": "PG",
+        "nf_id": "deron-williams",
+        "name": "Deron Williams",
+        "fp_id": "deron-williams",
+        "bref_id": "willide01",
+        "bm_id": "2490",
+        "rw_id": "2591"
+    },
+    "1291": {
+        "fc_id": "1882",
+        "pos": "PG",
+        "nf_id": "ramon-sessions",
+        "name": "Ramon Sessions",
+        "fp_id": "ramon-sessions",
+        "bref_id": "sessira01",
+        "bm_id": "2752",
+        "rw_id": "2884"
+    },
+    "1298": {
+        "fc_id": "1193500",
+        "pos": "PG",
+        "nf_id": "marcelo-huertas",
+        "name": "Marcelo Huertas",
+        "fp_id": "marcelo-huertas",
+        "bref_id": "huertma01",
+        "bm_id": "5197",
+        "rw_id": "3809"
+    },
+    "1223": {
+        "fc_id": "729",
+        "pos": "SF",
+        "nf_id": "aaron-gordon",
+        "name": "Aaron Gordon",
+        "fp_id": "aaron-gordon",
+        "bref_id": "gordoaa01",
+        "bm_id": "3920",
+        "rw_id": "3577"
+    },
+    "1412": {
+        "nf_id": "2373",
+        "name": "Dakari Johnson",
+        "rw_id": "3709",
+        "fp_id": "dakari-johnson"
+    },
+    "1265": {
+        "fc_id": "2599",
+        "pos": "C",
+        "nf_id": "anderson-varejao",
+        "name": "Anderson Varejao",
+        "fp_id": "anderson-varejao",
+        "bref_id": "varejan01",
+        "bm_id": "2339",
+        "rw_id": "2509"
+    },
+    "1337": {
+        "fc_id": "2016",
+        "pos": "C",
+        "nf_id": "jusuf-nurkic",
+        "name": "Jusuf Nurkic",
+        "fp_id": "jusuf-nurkic",
+        "bref_id": "nurkiju01",
+        "bm_id": "3939",
+        "rw_id": "3580"
+    },
+    "1515": {
+        "fc_id": "1946",
+        "bref_id": "simshe01",
+        "bm_id": "3597",
+        "name": "Henry Sims",
+        "pos": "C"
+    },
+    "1030": {
+        "fc_id": "1927",
+        "pos": "SG",
+        "nf_id": "tim-hardaway-jr",
+        "name": "Tim Hardaway Jr.",
+        "fp_id": "tim-hardaway-jr",
+        "bref_id": "hardati02",
+        "bm_id": "3709",
+        "rw_id": "3459"
+    },
+    "1212": {
+        "fc_id": "1951",
+        "pos": "SF",
+        "nf_id": "omri-casspi",
+        "name": "Omri Casspi",
+        "fp_id": "omri-casspi",
+        "bref_id": "casspom01",
+        "bm_id": "3018",
+        "rw_id": "2987"
+    },
+    "1258": {
+        "fc_id": "1893",
+        "pos": "C",
+        "nf_id": "207",
+        "name": "Andrea Bargnani",
+        "fp_id": "andrea-bargnani",
+        "bref_id": "bargnan01",
+        "bm_id": "2579",
+        "rw_id": "2709"
+    },
+    "1090": {
+        "fc_id": "2023",
+        "pos": "PF",
+        "nf_id": "chuck-hayes",
+        "name": "Chuck Hayes",
+        "fp_id": "chuck-hayes",
+        "bref_id": "hayesch01",
+        "bm_id": "2506",
+        "rw_id": "2688"
+    },
+    "1122": {
+        "fc_id": "1844",
+        "pos": "SF",
+        "nf_id": "gordon-hayward",
+        "name": "Gordon Hayward",
+        "fp_id": "gordon-hayward",
+        "bref_id": "haywago01",
+        "bm_id": "3162",
+        "rw_id": "3104"
+    },
+    "1472": {
+        "fc_id": "715",
+        "pos": "C",
+        "nf_id": "omer-asik",
+        "name": "Omer Asik",
+        "fp_id": "omer-asik",
+        "bref_id": "asikom01",
+        "bm_id": "2891",
+        "rw_id": "2951"
+    },
+    "1049": {
+        "fc_id": "1816",
+        "pos": "PF",
+        "nf_id": "paul-millsap",
+        "name": "Paul Millsap",
+        "fp_id": "paul-millsap",
+        "bref_id": "millspa01",
+        "bm_id": "2621",
+        "rw_id": "2705"
+    },
+    "1026": {
+        "fc_id": "1193538",
+        "pos": "PG",
+        "nf_id": "jerian-grant",
+        "name": "Jerian Grant",
+        "fp_id": "jerian-grant",
+        "bref_id": "grantje02",
+        "bm_id": "5011",
+        "rw_id": "3649"
+    },
+    "1340": {
+        "fc_id": "1962",
+        "pos": "C",
+        "nf_id": "andrew-bogut",
+        "name": "Andrew Bogut",
+        "fp_id": "andrew-bogut",
+        "bref_id": "bogutan01",
+        "bm_id": "2419",
+        "rw_id": "2590"
+    },
+    "1176": {
+        "fc_id": "1193504",
+        "pos": "PG",
+        "nf_id": "d-angelo-russell",
+        "name": "D'Angelo Russell",
+        "fp_id": "dangelo-russell",
+        "bref_id": "russeda01",
+        "bm_id": "5048",
+        "rw_id": "3708"
+    },
+    "1107": {
+        "fc_id": "1807",
+        "pos": "PF",
+        "nf_id": "lamarcus-aldridge",
+        "name": "LaMarcus Aldridge",
+        "fp_id": "lamarcus-aldridge",
+        "bref_id": "aldrila01",
+        "bm_id": "2572",
+        "rw_id": "2502"
+    },
+    "1453": {
+        "fc_id": "720",
+        "pos": "C",
+        "nf_id": "alexis-ajinca",
+        "name": "Alexis Ajinca",
+        "fp_id": "alexis-ajinca",
+        "bref_id": "ajincal01",
+        "bm_id": "2805",
+        "rw_id": "2949"
+    },
+    "1352": {
+        "fc_id": "3800",
+        "pos": "SF",
+        "nf_id": "p-j-tucker",
+        "name": "P.J. Tucker",
+        "fp_id": "pj-tucker",
+        "bref_id": "tuckepj01",
+        "bm_id": "2643",
+        "rw_id": "2708"
+    },
+    "1263": {
+        "fc_id": "10107",
+        "pos": "SF",
+        "nf_id": "p-j-hairston",
+        "name": "PJ Hairston",
+        "fp_id": "p.j.-hairston",
+        "bref_id": "hairspj02",
+        "bm_id": "3922",
+        "rw_id": "3592"
+    },
+    "1454": {
+        "nf_id": "284",
+        "name": "Dahntay Jones",
+        "fp_id": "dahntay-jones"
+    },
+    "1399": {
+        "fc_id": "10095",
+        "pos": "PF",
+        "nf_id": "tyler-hansbrough",
+        "name": "Tyler Hansbrough",
+        "fp_id": "tyler-hansbrough",
+        "bref_id": "hansbty01",
+        "bm_id": "3014",
+        "rw_id": "3032"
+    },
+    "1346": {
+        "fc_id": "1879",
+        "pos": "SG",
+        "nf_id": "jr-smith",
+        "name": "J.R. Smith",
+        "fp_id": "jr-smith",
+        "bref_id": "smithjr01",
+        "bm_id": "2308",
+        "rw_id": "2484"
+    },
+    "1015": {
+        "bm_id": "5005",
+        "nf_id": "2361",
+        "name": "Rakeem Christmas",
+        "rw_id": "3730",
+        "fp_id": "rakeem-christmas"
+    },
+    "1316": {
+        "fc_id": "2001",
+        "pos": "SG",
+        "nf_id": "andre-roberson",
+        "name": "Andre Roberson",
+        "fp_id": "andre-roberson",
+        "bref_id": "roberan03",
+        "bm_id": "3713",
+        "rw_id": "3494"
+    },
+    "1169": {
+        "fc_id": "1825",
+        "pos": "PF",
+        "nf_id": "thaddeus-young",
+        "name": "Thaddeus Young",
+        "fp_id": "thaddeus-young",
+        "bref_id": "youngth01",
+        "bm_id": "2769",
+        "rw_id": "2827"
+    },
+    "1397": {
+        "nf_id": "cristiano-felicio",
+        "name": "Cristiano Felicio",
+        "fp_id": "cristiano-felicio",
+        "bref_id": "feliccr01",
+        "bm_id": "5166",
+        "rw_id": "3651"
+    },
+    "1188": {
+        "fc_id": "1949",
+        "pos": "C",
+        "nf_id": "timofey-mozgov",
+        "name": "Timofey Mozgov",
+        "fp_id": "timofey-mozgov",
+        "bref_id": "mozgoti01",
+        "bm_id": "3335",
+        "rw_id": "3167"
+    },
+    "1292": {
+        "fc_id": "750",
+        "pos": "C",
+        "nf_id": "aron-baynes",
+        "name": "Aron Baynes",
+        "fp_id": "aron-baynes",
+        "bref_id": "baynear01",
+        "bm_id": "3669",
+        "rw_id": "3427"
+    },
+    "1396": {
+        "fc_id": "3870",
+        "pos": "PG",
+        "nf_id": "tyler-ennis",
+        "name": "Tyler Ennis",
+        "fp_id": "tyler-ennis",
+        "bref_id": "ennisty01",
+        "bm_id": "3917",
+        "rw_id": "3581"
+    },
+    "1076": {
+        "fc_id": "1823",
+        "pos": "PG",
+        "nf_id": "jeff-teague",
+        "name": "Jeff Teague",
+        "fp_id": "jeff-teague",
+        "bref_id": "teaguje01",
+        "bm_id": "3021",
+        "rw_id": "3025"
+    },
+    "1423": {
+        "fc_id": "1193448",
+        "pos": "PF",
+        "nf_id": "2358",
+        "name": "Jordan Mickey",
+        "fp_id": "jordan-mickey",
+        "bref_id": "mickejo01",
+        "bm_id": "5032",
+        "rw_id": "3716"
+    },
+    "1167": {
+        "fc_id": "1916",
+        "pos": "PG",
+        "nf_id": "20",
+        "name": "Jarrett Jack",
+        "fp_id": "jarrett-jack",
+        "bref_id": "jackja01",
+        "bm_id": "2446",
+        "rw_id": "2611"
+    },
+    "1299": {
+        "fc_id": "1923",
+        "pos": "PG",
+        "nf_id": "mario-chalmers",
+        "name": "Mario Chalmers",
+        "fp_id": "mario-chalmers",
+        "bref_id": "chalmma01",
+        "bm_id": "2814",
+        "rw_id": "2938"
+    },
+    "1102": {
+        "fc_id": "2642",
+        "pos": "SF",
+        "nf_id": "kevin-durant",
+        "name": "Kevin Durant",
+        "fp_id": "kevin-durant",
+        "bref_id": "duranke01",
+        "bm_id": "2718",
+        "rw_id": "2811"
+    },
+    "1024": {
+        "fc_id": "1863",
+        "pos": "C",
+        "nf_id": "marc-gasol",
+        "name": "Marc Gasol",
+        "fp_id": "marc-gasol",
+        "bref_id": "gasolma01",
+        "bm_id": "2722",
+        "rw_id": "2831"
+    },
+    "1113": {
+        "fc_id": "1848",
+        "pos": "PF",
+        "nf_id": "pau-gasol",
+        "name": "Pau Gasol",
+        "fp_id": "pau-gasol",
+        "bref_id": "gasolpa01",
+        "bm_id": "2086",
+        "rw_id": "2156"
+    },
+    "1377": {
+        "fc_id": "2401",
+        "pos": "PG",
+        "nf_id": "brian-roberts",
+        "name": "Brian Roberts",
+        "fp_id": "brian-roberts",
+        "bref_id": "roberbr01",
+        "bm_id": "3577",
+        "rw_id": "3421"
+    },
+    "1231": {
+        "fc_id": "1934",
+        "pos": "SG",
+        "nf_id": "ben-mclemore",
+        "name": "Ben McLemore",
+        "fp_id": "ben-mclemore",
+        "bref_id": "mclembe01",
+        "bm_id": "3725",
+        "rw_id": "3432"
+    },
+    "1195": {
+        "fc_id": "1854",
+        "pos": "SG",
+        "nf_id": "evan-turner",
+        "name": "Evan Turner",
+        "fp_id": "evan-turner",
+        "bref_id": "turneev01",
+        "bm_id": "3147",
+        "rw_id": "3096"
+    },
+    "1461": {
+        "fc_id": "30842",
+        "pos": "SF",
+        "nf_id": "dante-cunningham",
+        "name": "Dante Cunningham",
+        "fp_id": "dante-cunningham",
+        "bref_id": "cunnida01",
+        "bm_id": "3041",
+        "rw_id": "3043"
+    },
+    "1010": {
+        "fc_id": "2598",
+        "pos": "SF",
+        "nf_id": "matt-barnes",
+        "name": "Matt Barnes",
+        "fp_id": "matt-barnes",
+        "bref_id": "barnema02",
+        "bm_id": "2221",
+        "rw_id": "2289"
+    },
+    "1179": {
+        "fc_id": "1834",
+        "pos": "PG",
+        "nf_id": "ty-lawson",
+        "name": "Ty Lawson",
+        "fp_id": "ty-lawson",
+        "bref_id": "lawsoty01",
+        "bm_id": "3025",
+        "rw_id": "2946"
+    },
+    "1177": {
+        "fc_id": "1886",
+        "pos": "C",
+        "nf_id": "roy-hibbert",
+        "name": "Roy Hibbert",
+        "fp_id": "roy-hibbert",
+        "bref_id": "hibbero01",
+        "bm_id": "2834",
+        "rw_id": "2819"
+    },
+    "1486": {
+        "fc_id": "761456",
+        "pos": "PG",
+        "nf_id": "lorenzo-brown",
+        "name": "Lorenzo Brown",
+        "fp_id": "lorenzo-brown",
+        "bref_id": "brownlo01",
+        "bm_id": "3703",
+        "rw_id": "3462"
+    },
+    "1484": {
+        "nf_id": "2193",
+        "name": "Pierre Jackson",
+        "fp_id": "pierre-jackson"
+    },
+    "1508": {
+        "fc_id": "1193584",
+        "pos": "SF",
+        "nf_id": "axel-toupane",
+        "name": "Axel Toupane",
+        "fp_id": "axel-toupane",
+        "bref_id": "toupaax01",
+        "bm_id": "4012",
+        "rw_id": "3789"
+    },
+    "1120": {
+        "fc_id": "1989",
+        "pos": "C",
+        "nf_id": "rudy-gobert",
+        "name": "Rudy Gobert",
+        "fp_id": "rudy-gobert",
+        "bref_id": "goberru01",
+        "bm_id": "3729",
+        "rw_id": "3440"
+    },
+    "1480": {
+        "fc_id": "2671",
+        "pos": "SG",
+        "nf_id": "rasual-butler",
+        "name": "Rasual Butler",
+        "fp_id": "rasual-butler",
+        "bref_id": "butlera01",
+        "bm_id": "2192",
+        "rw_id": "2296"
+    },
+    "1233": {
+        "fc_id": "1901",
+        "pos": "PG",
+        "nf_id": "greivis-vasquez",
+        "name": "Greivis Vasquez",
+        "fp_id": "greivis-vasquez",
+        "bref_id": "vasqugr01",
+        "bm_id": "3119",
+        "rw_id": "3145"
+    },
+    "1210": {
+        "fc_id": "1842",
+        "pos": "SG",
+        "nf_id": "gerald-green",
+        "name": "Gerald Green",
+        "fp_id": "gerald-green",
+        "bref_id": "greenge01",
+        "bm_id": "2439",
+        "rw_id": "2588"
+    },
+    "1213": {
+        "fc_id": "1841",
+        "pos": "SF",
+        "nf_id": "joe-johnson",
+        "name": "Joe Johnson",
+        "fp_id": "joe-johnson",
+        "bref_id": "johnsjo02",
+        "bm_id": "1810",
+        "rw_id": "2163"
+    },
+    "1200": {
+        "fc_id": "2049",
+        "pos": "SF",
+        "nf_id": "rodney-hood",
+        "name": "Rodney Hood",
+        "fp_id": "rodney-hood",
+        "bref_id": "hoodro01",
+        "bm_id": "3925",
+        "rw_id": "3591"
+    },
+    "1378": {
+        "fc_id": "719",
+        "pos": "PF",
+        "nf_id": "andrew-nicholson",
+        "name": "Andrew Nicholson",
+        "fp_id": "andrew-nicholson",
+        "bref_id": "nichoan01",
+        "bm_id": "3561",
+        "rw_id": "3329"
+    },
+    "1027": {
+        "fc_id": "581955",
+        "pos": "PF",
+        "nf_id": "jamychal-green",
+        "name": "JaMychal Green",
+        "fp_id": "jamychal-green",
+        "bref_id": "greenja01",
+        "bm_id": "3490",
+        "rw_id": "3338"
+    },
+    "1161": {
+        "fc_id": "1880",
+        "pos": "C",
+        "nf_id": "marcin-gortat",
+        "name": "Marcin Gortat",
+        "fp_id": "marcin-gortat",
+        "bref_id": "gortama01",
+        "bm_id": "2436",
+        "rw_id": "2641"
+    },
+    "1227": {
+        "fc_id": "10489",
+        "pos": "SG",
+        "nf_id": "gary-harris",
+        "name": "Gary Harris",
+        "fp_id": "gary-harris",
+        "bref_id": "harriga01",
+        "bm_id": "3923",
+        "rw_id": "3582"
+    },
+    "1086": {
+        "fc_id": "724",
+        "pos": "PF",
+        "nf_id": "brandan-wright",
+        "name": "Brandan Wright",
+        "fp_id": "brandan-wright",
+        "bref_id": "wrighbr03",
+        "bm_id": "2766",
+        "rw_id": "2815"
+    },
+    "1114": {
+        "fc_id": "770",
+        "pos": "SG",
+        "nf_id": "victor-oladipo",
+        "name": "Victor Oladipo",
+        "fp_id": "victor-oladipo",
+        "bref_id": "oladivi01",
+        "bm_id": "3714",
+        "rw_id": "3433"
+    },
+    "1339": {
+        "fc_id": "1876",
+        "pos": "C",
+        "nf_id": "nikola-pekovic",
+        "name": "Nikola Pekovic",
+        "fp_id": "nikola-pekovic",
+        "bref_id": "pekovni01",
+        "bm_id": "3337",
+        "rw_id": "2974"
+    },
+    "1367": {
+        "fc_id": "2045",
+        "pos": "SG",
+        "nf_id": "james-young",
+        "name": "James Young",
+        "bref_id": "youngja01",
+        "bm_id": "3959",
+        "rw_id": "3584"
+    },
+    "1041": {
+        "fc_id": "1940",
+        "pos": "SG",
+        "nf_id": "courtney-lee",
+        "name": "Courtney Lee",
+        "fp_id": "courtney-lee",
+        "bref_id": "leeco01",
+        "bm_id": "2844",
+        "rw_id": "2970"
+    },
+    "1211": {
+        "fc_id": "1915",
+        "pos": "SG",
+        "nf_id": "kentavious-caldwell-pope",
+        "name": "Kentavious Caldwell-Pope",
+        "fp_id": "kentavious-caldwell-pope",
+        "bref_id": "caldwke01",
+        "bm_id": "3689",
+        "rw_id": "3450"
+    },
+    "1186": {
+        "fc_id": "685",
+        "pos": "PG",
+        "nf_id": "tony-parker",
+        "name": "Tony Parker",
+        "fp_id": "tony-parker",
+        "bref_id": "parketo01",
+        "bm_id": "2148",
+        "rw_id": "2181"
+    },
+    "1108": {
+        "fc_id": "1822",
+        "pos": "SF",
+        "nf_id": "rudy-gay",
+        "name": "Rudy Gay",
+        "fp_id": "rudy-gay",
+        "bref_id": "gayru01",
+        "bm_id": "2600",
+        "rw_id": "2691"
+    },
+    "1462": {
+        "fc_id": "2052",
+        "pos": "PG",
+        "nf_id": "phil-pressey",
+        "name": "Phil Pressey",
+        "fp_id": "phil-pressey",
+        "bref_id": "pressph01",
+        "bm_id": "3829",
+        "rw_id": "3477"
+    },
+    "1393": {
+        "bm_id": "5134",
+        "name": "Duje Dukan",
+        "rw_id": "3792"
+    },
+    "1394": {
+        "fc_id": "1906",
+        "pos": "SF",
+        "nf_id": "mike-dunleavy",
+        "name": "Mike Dunleavy",
+        "fp_id": "mike-dunleavy",
+        "bref_id": "dunlemi02",
+        "bm_id": "2032",
+        "rw_id": "2247"
+    },
+    "1485": {
+        "nf_id": "2309",
+        "name": "Furkan Aldemir",
+        "fp_id": "furkan-aldemir"
+    },
+    "1221": {
+        "fc_id": "1955",
+        "pos": "SF",
+        "nf_id": "andre-iguodala",
+        "name": "Andre Iguodala",
+        "fp_id": "andre-iguodala",
+        "bref_id": "iguodan01",
+        "bm_id": "2289",
+        "rw_id": "2527"
+    },
+    "1023": {
+        "fc_id": "316952",
+        "pos": "SG",
+        "nf_id": "langston-galloway",
+        "name": "Langston Galloway",
+        "fp_id": "langston-galloway",
+        "bref_id": "gallola01",
+        "bm_id": "4008",
+        "rw_id": "3702"
+    },
+    "1286": {
+        "fc_id": "1970",
+        "pos": "SF",
+        "nf_id": "jared-dudley",
+        "name": "Jared Dudley",
+        "fp_id": "jared-dudley",
+        "bref_id": "dudleja01",
+        "bm_id": "2717",
+        "rw_id": "2856"
+    },
+    "1253": {
+        "fc_id": "1922",
+        "pos": "PF",
+        "nf_id": "brandon-bass",
+        "name": "Brandon Bass",
+        "fp_id": "brandon-bass",
+        "bref_id": "bassbr01",
+        "bm_id": "2416",
+        "rw_id": "2462"
+    },
+    "1302": {
+        "fc_id": "10108",
+        "pos": "PF",
+        "nf_id": "noah-vonleh",
+        "name": "Noah Vonleh",
+        "fp_id": "noah-vonleh",
+        "bref_id": "vonleno01",
+        "bm_id": "3955",
+        "rw_id": "3576"
+    },
+    "1134": {
+        "fc_id": "2333",
+        "pos": "PG",
+        "nf_id": "kemba-walker",
+        "name": "Kemba Walker",
+        "fp_id": "kemba-walker",
+        "bref_id": "walkeke02",
+        "bm_id": "3405",
+        "rw_id": "3189"
+    },
+    "1142": {
+        "fc_id": "1813",
+        "pos": "SG",
+        "nf_id": "dwyane-wade",
+        "name": "Dwyane Wade",
+        "fp_id": "dwyane-wade",
+        "bref_id": "wadedw01",
+        "bm_id": "1787",
+        "rw_id": "2354"
+    },
+    "1058": {
+        "fc_id": "1193534",
+        "pos": "PF",
+        "nf_id": "kristaps-porzingis",
+        "name": "Kristaps Porzingis",
+        "fp_id": "kristaps-porzingis",
+        "bref_id": "porzikr01",
+        "bm_id": "5043",
+        "rw_id": "3669"
+    },
+    "1389": {
+        "fc_id": "1193562",
+        "pos": "SF",
+        "nf_id": "pat-connaughton",
+        "name": "Pat Connaughton",
+        "fp_id": "pat-connaughton",
+        "bref_id": "connapa01",
+        "bm_id": "5006",
+        "rw_id": "3727"
+    },
+    "1425": {
+        "fc_id": "301733",
+        "pos": "SG",
+        "nf_id": "elijah-millsap",
+        "name": "Elijah Millsap",
+        "fp_id": "elijah-millsap",
+        "bref_id": "millsel01",
+        "bm_id": "3248",
+        "rw_id": "3680"
+    },
+    "1100": {
+        "fc_id": "679",
+        "pos": "SG",
+        "nf_id": "james-harden",
+        "name": "James Harden",
+        "fp_id": "james-harden",
+        "bref_id": "hardeja01",
+        "bm_id": "3001",
+        "rw_id": "3018"
+    },
+    "1481": {
+        "fc_id": "2053",
+        "pos": "PG",
+        "nf_id": "jorge-gutierrez",
+        "name": "Jorge Gutierrez",
+        "fp_id": "jorge-gutierrez",
+        "bref_id": "gutiejo01",
+        "bm_id": "3492",
+        "rw_id": "3553"
+    },
+    "1205": {
+        "fc_id": "1881",
+        "pos": "SF",
+        "nf_id": "harrison-barnes",
+        "name": "Harrison Barnes",
+        "fp_id": "harrison-barnes",
+        "bref_id": "barneha02",
+        "bm_id": "3435",
+        "rw_id": "3305"
+    },
+    "1269": {
+        "fc_id": "2010",
+        "pos": "PF",
+        "nf_id": "thomas-robinson",
+        "name": "Thomas Robinson",
+        "fp_id": "thomas-robinson",
+        "bref_id": "robinth01",
+        "bm_id": "3579",
+        "rw_id": "3301"
+    },
+    "1121": {
+        "fc_id": "728",
+        "pos": "PG",
+        "nf_id": "elfrid-payton",
+        "name": "Elfrid Payton",
+        "fp_id": "elfrid-payton",
+        "bref_id": "paytoel01",
+        "bm_id": "3944",
+        "rw_id": "3594"
+    },
+    "1271": {
+        "fc_id": "8128",
+        "pos": "PF",
+        "nf_id": "josh-mcroberts",
+        "name": "Josh McRoberts",
+        "fp_id": "josh-mcroberts",
+        "bref_id": "mcrobjo01",
+        "bm_id": "2739",
+        "rw_id": "2832"
+    },
+    "1482": {
+        "fc_id": "740",
+        "pos": "PG",
+        "nf_id": "138",
+        "name": "Jimmer Fredette",
+        "fp_id": "jimmer-fredette",
+        "bref_id": "fredeji01",
+        "bm_id": "3361",
+        "rw_id": "3185"
+    },
+    "1072": {
+        "fc_id": "2384",
+        "pos": "SG",
+        "nf_id": "lance-stephenson",
+        "name": "Lance Stephenson",
+        "fp_id": "lance-stephenson",
+        "bref_id": "stephla01",
+        "bm_id": "3183",
+        "rw_id": "3127"
+    },
+    "1441": {
+        "fc_id": "1975",
+        "pos": "SG",
+        "nf_id": "iman-shumpert",
+        "name": "Iman Shumpert",
+        "fp_id": "iman-shumpert",
+        "bref_id": "shumpim01",
+        "bm_id": "3393",
+        "rw_id": "3213"
+    },
+    "1456": {
+        "fc_id": "687",
+        "pos": "SG",
+        "nf_id": "137",
+        "name": "Tyreke Evans",
+        "fp_id": "tyreke-evans",
+        "bref_id": "evansty01",
+        "bm_id": "3000",
+        "rw_id": "3024"
+    },
+    "1388": {
+        "fc_id": "10109",
+        "pos": "SF",
+        "nf_id": "bruno-caboclo",
+        "name": "Bruno Caboclo",
+        "fp_id": "bruno-caboclo",
+        "bref_id": "cabocbr01",
+        "bm_id": "3907",
+        "rw_id": "3673"
+    },
+    "1228": {
+        "fc_id": "2410",
+        "pos": "PF",
+        "nf_id": "marvin-williams",
+        "name": "Marvin Williams",
+        "fp_id": "marvin-williams",
+        "bref_id": "willima02",
+        "bm_id": "2492",
+        "rw_id": "2589"
+    },
+    "1150": {
+        "fc_id": "1919",
+        "pos": "PG",
+        "nf_id": "mo-williams",
+        "name": "Mo Williams",
+        "fp_id": "mo-williams",
+        "bref_id": "willima01",
+        "bm_id": "2097",
+        "rw_id": "2396"
+    },
+    "1307": {
+        "fc_id": "1933",
+        "pos": "SF",
+        "nf_id": "james-johnson",
+        "name": "James Johnson",
+        "fp_id": "james-johnson",
+        "bref_id": "johnsja01",
+        "bm_id": "3029",
+        "rw_id": "3021"
+    },
+    "1141": {
+        "fc_id": "1907",
+        "pos": "SF",
+        "nf_id": "128",
+        "name": "Danilo Gallinari",
+        "fp_id": "danilo-gallinari",
+        "bref_id": "gallida01",
+        "bm_id": "2824",
+        "rw_id": "2953"
+    },
+    "1313": {
+        "fc_id": "714",
+        "pos": "SF",
+        "nf_id": "richard-jefferson",
+        "name": "Richard Jefferson",
+        "fp_id": "richard-jefferson",
+        "bref_id": "jefferi01",
+        "bm_id": "1902",
+        "rw_id": "2166"
+    },
+    "1061": {
+        "fc_id": "1840",
+        "pos": "PF",
+        "nf_id": "zach-randolph",
+        "name": "Zach Randolph",
+        "fp_id": "zach-randolph",
+        "bref_id": "randoza01",
+        "bm_id": "1983",
+        "rw_id": "2172"
+    },
+    "1163": {
+        "fc_id": "1809",
+        "pos": "PG",
+        "nf_id": "goran-dragic",
+        "name": "Goran Dragic",
+        "fp_id": "goran-dragic",
+        "bref_id": "dragigo01",
+        "bm_id": "2819",
+        "rw_id": "2955"
+    },
+    "1364": {
+        "fc_id": "1994",
+        "pos": "C",
+        "nf_id": "nick-collison",
+        "name": "Nick Collison",
+        "fp_id": "nick-collison",
+        "bref_id": "collini01",
+        "bm_id": "2297",
+        "rw_id": "2360"
+    },
+    "1330": {
+        "fc_id": "1957",
+        "pos": "SF",
+        "nf_id": "k-j-mcdaniels",
+        "name": "KJ McDaniels",
+        "fp_id": "k.j.-mcdaniels",
+        "bref_id": "mcdankj01",
+        "bm_id": "3933",
+        "rw_id": "3589"
+    },
+    "1001": {
+        "fc_id": "2028",
+        "pos": "SG",
+        "nf_id": "jordan-adams",
+        "name": "Jordan Adams",
+        "fp_id": "jordan-adams",
+        "bref_id": "adamsjo01",
+        "bm_id": "3900",
+        "rw_id": "3670"
+    },
+    "1360": {
+        "fc_id": "1974",
+        "pos": "C",
+        "nf_id": "chris-andersen",
+        "name": "Chris Andersen",
+        "fp_id": "chris-andersen",
+        "bref_id": "anderch01",
+        "bm_id": "2007",
+        "rw_id": "2241"
+    },
+    "1300": {
+        "fc_id": "1193513",
+        "pos": "SF",
+        "nf_id": "justise-winslow",
+        "name": "Justise Winslow",
+        "fp_id": "justise-winslow",
+        "bref_id": "winslju01",
+        "bm_id": "5057",
+        "rw_id": "3719"
+    },
+    "1499": {
+        "fc_id": "1193529",
+        "pos": "SG",
+        "nf_id": "bryce-dejean-jones",
+        "name": "Bryce Dejean-Jones",
+        "fp_id": "bryce-dejean-jones",
+        "bref_id": "dejeabr01",
+        "bm_id": "5129",
+        "rw_id": "3804"
+    },
+    "1410": {
+        "fc_id": "2000",
+        "pos": "PF",
+        "nf_id": "jonas-jerebko",
+        "name": "Jonas Jerebko",
+        "fp_id": "jonas-jerebko",
+        "bref_id": "jerebjo01",
+        "bm_id": "3027",
+        "rw_id": "3041"
+    },
+    "1191": {
+        "fc_id": "1871",
+        "pos": "SG",
+        "nf_id": "avery-bradley",
+        "name": "Avery Bradley",
+        "fp_id": "avery-bradley",
+        "bref_id": "bradlav01",
+        "bm_id": "3104",
+        "rw_id": "3112"
+    },
+    "1140": {
+        "fc_id": "699",
+        "pos": "SF",
+        "nf_id": "tobias-harris",
+        "name": "Tobias Harris",
+        "fp_id": "tobias-harris",
+        "bref_id": "harrito02",
+        "bm_id": "3367",
+        "rw_id": "3211"
+    },
+    "1199": {
+        "fc_id": "1845",
+        "pos": "SG",
+        "nf_id": "kevin-martin",
+        "name": "Kevin Martin",
+        "fp_id": "kevin-martin",
+        "bref_id": "martike02",
+        "bm_id": "2262",
+        "rw_id": "2478"
+    },
+    "1408": {
+        "fc_id": "10468",
+        "pos": "PF",
+        "nf_id": "cory-jefferson",
+        "name": "Cory Jefferson",
+        "fp_id": "cory-jefferson",
+        "bref_id": "jeffeco01",
+        "bm_id": "3928",
+        "rw_id": "3625"
+    },
+    "1275": {
+        "fc_id": "6640",
+        "pos": "PG",
+        "nf_id": "shaun-livingston",
+        "name": "Shaun Livingston",
+        "fp_id": "shaun-livingston",
+        "bref_id": "livinsh01",
+        "bm_id": "2313",
+        "rw_id": "2477"
+    },
+    "1182": {
+        "fc_id": "10080",
+        "pos": "C",
+        "nf_id": "marreese-speights",
+        "name": "Marreese Speights",
+        "fp_id": "marreese-speights",
+        "bref_id": "speigma01",
+        "bm_id": "2862",
+        "rw_id": "2947"
+    },
+    "1060": {
+        "fc_id": "1992",
+        "pos": "PG",
+        "nf_id": "pablo-prigioni",
+        "name": "Pablo Prigioni",
+        "fp_id": "pablo-prigioni",
+        "bref_id": "prigipa01",
+        "bm_id": "3646",
+        "rw_id": "3399"
+    },
+    "1368": {
+        "fc_id": "727",
+        "pos": "SF",
+        "nf_id": "roy-devyn-marble",
+        "name": "Roy Devyn Marble",
+        "fp_id": "devyn-marble",
+        "bref_id": "marblde01",
+        "bm_id": "3913",
+        "rw_id": "3611"
+    },
+    "1254": {
+        "fc_id": "2018",
+        "pos": "SG",
+        "nf_id": "nik-stauskas",
+        "name": "Nik Stauskas",
+        "fp_id": "nik-stauskas",
+        "bref_id": "stausni01",
+        "bm_id": "3951",
+        "rw_id": "3583"
+    },
+    "1493": {
+        "fc_id": "3884",
+        "pos": "C",
+        "nf_id": "ryan-hollins",
+        "name": "Ryan Hollins",
+        "fp_id": "ryan-hollins",
+        "bref_id": "holliry01",
+        "bm_id": "2607",
+        "rw_id": "2748"
+    },
+    "1279": {
+        "fc_id": "2696",
+        "pos": "PF",
+        "nf_id": "nene-hilario",
+        "name": "Nene Hilario",
+        "fp_id": "nene-hilario",
+        "bref_id": "hilarne01",
+        "bm_id": "2002",
+        "rw_id": "2254"
+    },
+    "1365": {
+        "fc_id": "2002",
+        "pos": "PF",
+        "nf_id": "udonis-haslem",
+        "name": "Udonis Haslem",
+        "fp_id": "udonis-haslem",
+        "bref_id": "hasleud01",
+        "bm_id": "1789",
+        "rw_id": "2412"
+    },
+    "1469": {
+        "nf_id": "2319",
+        "name": "Jack Cooley",
+        "fp_id": "jack-cooley"
+    },
+    "1336": {
+        "fc_id": "2349",
+        "pos": "SG",
+        "nf_id": "gerald-henderson",
+        "name": "Gerald Henderson",
+        "fp_id": "gerald-henderson",
+        "bref_id": "hendege02",
+        "bm_id": "3013",
+        "rw_id": "3020"
+    },
+    "1503": {
+        "fc_id": "1193442",
+        "pos": "PF",
+        "name": "Justin Harper",
+        "bref_id": "harpeju01",
+        "bm_id": "3365",
+        "rw_id": "3214"
+    },
+    "1517": {
+        "fc_id": "2581",
+        "bref_id": "farmajo01",
+        "pos": "PG",
+        "name": "Jordan Farmar",
+        "fp_id": "jordan-farmar"
+    },
+    "1290": {
+        "fc_id": "1193545",
+        "pos": "SG",
+        "nf_id": "mario-hezonja",
+        "name": "Mario Hezonja",
+        "fp_id": "mario-hezonja",
+        "bref_id": "hezonma01",
+        "bm_id": "5018",
+        "rw_id": "3578"
+    },
+    "1296": {
+        "fc_id": "1193553",
+        "pos": "PF",
+        "nf_id": "christian-wood",
+        "name": "Christian Wood",
+        "fp_id": "christian-wood",
+        "bref_id": "woodch01",
+        "bm_id": "5145",
+        "rw_id": "3778"
+    },
+    "1149": {
+        "fc_id": "6528",
+        "pos": "PF",
+        "nf_id": "david-lee",
+        "name": "David Lee",
+        "fp_id": "david-lee",
+        "bref_id": "leeda02",
+        "bm_id": "2452",
+        "rw_id": "2624"
+    },
+    "1110": {
+        "fc_id": "1821",
+        "pos": "PG",
+        "nf_id": "john-wall",
+        "name": "John Wall",
+        "fp_id": "john-wall",
+        "bref_id": "walljo01",
+        "bm_id": "3166",
+        "rw_id": "3097"
+    },
+    "1236": {
+        "fc_id": "2649",
+        "pos": "PG",
+        "nf_id": "zach-lavine",
+        "name": "Zach LaVine",
+        "fp_id": "zach-lavine",
+        "bref_id": "lavinza01",
+        "bm_id": "3932",
+        "rw_id": "3597"
+    },
+    "1046": {
+        "fc_id": "2050",
+        "pos": "C",
+        "nf_id": "javale-mcgee",
+        "name": "JaVale McGee",
+        "fp_id": "javale-mcgee",
+        "bref_id": "mcgeeja01",
+        "bm_id": "2851",
+        "rw_id": "2930"
+    },
+    "1009": {
+        "fc_id": "2032",
+        "pos": "PG",
+        "nf_id": "jose-barea",
+        "name": "J.J. Barea",
+        "fp_id": "jose-barea",
+        "bref_id": "bareajo01",
+        "bm_id": "2578",
+        "rw_id": "2775"
+    },
+    "1189": {
+        "fc_id": "1908",
+        "pos": "PG",
+        "nf_id": "louis-williams",
+        "name": "Lou Williams",
+        "fp_id": "louis-williams",
+        "bref_id": "willilo02",
+        "bm_id": "2491",
+        "rw_id": "2633"
+    },
+    "1467": {
+        "fc_id": "2015",
+        "pos": "SG",
+        "nf_id": "ian-clark",
+        "name": "Ian Clark",
+        "fp_id": "ian-clark",
+        "bref_id": "clarkia01",
+        "bm_id": "3759",
+        "rw_id": "3537"
+    },
+    "1250": {
+        "fc_id": "1884",
+        "pos": "PF",
+        "nf_id": "taj-gibson",
+        "name": "Taj Gibson",
+        "fp_id": "taj-gibson",
+        "bref_id": "gibsota01",
+        "bm_id": "3011",
+        "rw_id": "3035"
+    },
+    "1427": {
+        "fc_id": "1193502",
+        "pos": "PF",
+        "nf_id": "larry-nance-jr",
+        "name": "Larry Nance",
+        "fp_id": "larry-nance",
+        "bref_id": "nancela02",
+        "bm_id": "5036",
+        "rw_id": "3723"
+    },
+    "1282": {
+        "fc_id": "2678",
+        "pos": "PG",
+        "nf_id": "shane-larkin",
+        "name": "Shane Larkin",
+        "fp_id": "shane-larkin",
+        "bref_id": "larkish01",
+        "bm_id": "3684",
+        "rw_id": "3452"
+    },
+    "1406": {
+        "fc_id": "3866",
+        "pos": "SF",
+        "nf_id": "damien-inglis",
+        "name": "Damien Inglis",
+        "fp_id": "damien-inglis",
+        "bref_id": "inglida01",
+        "bm_id": "3927",
+        "rw_id": "3608"
+    },
+    "1131": {
+        "fc_id": "683",
+        "pos": "PF",
+        "nf_id": "tim-duncan",
+        "name": "Tim Duncan",
+        "fp_id": "tim-duncan",
+        "bref_id": "duncati01",
+        "bm_id": "1822",
+        "rw_id": "1784"
+    },
+    "1202": {
+        "fc_id": "2006",
+        "pos": "C",
+        "nf_id": "festus-ezeli",
+        "name": "Festus Ezeli",
+        "fp_id": "festus-ezeli",
+        "bref_id": "ezelife01",
+        "bm_id": "3470",
+        "rw_id": "3330"
+    },
+    "1479": {
+        "nf_id": "nick-johnson",
+        "name": "Nick Johnson",
+        "fp_id": "nick-johnson"
+    },
+    "1069": {
+        "fc_id": "1831",
+        "pos": "PF",
+        "nf_id": "josh-smith",
+        "name": "Josh Smith",
+        "fp_id": "josh-smith",
+        "bref_id": "smithjo03",
+        "bm_id": "2332",
+        "rw_id": "2483"
+    },
+    "1222": {
+        "fc_id": "1913",
+        "pos": "SF",
+        "nf_id": "corey-brewer",
+        "name": "Corey Brewer",
+        "fp_id": "corey-brewer",
+        "bref_id": "breweco01",
+        "bm_id": "2706",
+        "rw_id": "1932"
+    },
+    "1465": {
+        "fc_id": "3860",
+        "pos": "SF",
+        "nf_id": "23",
+        "name": "Quincy Pondexter",
+        "fp_id": "quincy-pondexter",
+        "bm_id": "3137",
+        "rw_id": "3126"
+    },
+    "1334": {
+        "fc_id": "1961",
+        "pos": "SG",
+        "nf_id": "james-anderson",
+        "name": "James Anderson",
+        "fp_id": "james-anderson",
+        "bref_id": "anderja01",
+        "bm_id": "3155",
+        "rw_id": "3118"
+    },
+    "1326": {
+        "fc_id": "1193455",
+        "pos": "C",
+        "nf_id": "frank-kaminsky",
+        "name": "Frank Kaminsky",
+        "fp_id": "frank-kaminsky",
+        "bref_id": "kaminfr01",
+        "bm_id": "5026",
+        "rw_id": "3713"
+    },
+    "1370": {
+        "fc_id": "2663",
+        "pos": "PF",
+        "nf_id": "joel-anthony",
+        "name": "Joel Anthony",
+        "fp_id": "joel-anthony",
+        "bref_id": "anthojo01",
+        "bm_id": "2703",
+        "rw_id": "2899"
+    },
+    "1229": {
+        "fc_id": "744",
+        "pos": "PF",
+        "nf_id": "clint-capela",
+        "name": "Clint Capela",
+        "fp_id": "clint-capela",
+        "bref_id": "capelca01",
+        "bm_id": "3908",
+        "rw_id": "3587"
+    },
+    "1104": {
+        "fc_id": "1819",
+        "pos": "PG",
+        "nf_id": "damian-lillard",
+        "name": "Damian Lillard",
+        "fp_id": "damian-lillard",
+        "bref_id": "lillada01",
+        "bm_id": "3542",
+        "rw_id": "3304"
+    },
+    "1430": {
+        "fc_id": "158652",
+        "pos": "PF",
+        "nf_id": "johnny-o-bryant-iii",
+        "name": "Johnny O'Bryant",
+        "bref_id": "obryajo01",
+        "bm_id": "3940",
+        "rw_id": "3615"
+    },
+    "1174": {
+        "fc_id": "1972",
+        "pos": "C",
+        "nf_id": "mason-plumlee",
+        "name": "Mason Plumlee",
+        "fp_id": "mason-plumlee",
+        "bref_id": "plumlma01",
+        "bm_id": "3675",
+        "rw_id": "3442"
+    },
+    "1383": {
+        "fc_id": "1925",
+        "pos": "SG",
+        "nf_id": "alan-anderson",
+        "name": "Alan Anderson",
+        "fp_id": "alan-anderson",
+        "bref_id": "anderal01",
+        "bm_id": "2412",
+        "rw_id": "2686"
+    },
+    "1509": {
+        "fc_id": "935640",
+        "pos": "SF",
+        "nf_id": "michael-beasley",
+        "name": "Michael Beasley",
+        "fp_id": "michael-beasley",
+        "bref_id": "beaslmi01",
+        "bm_id": "2812",
+        "rw_id": "2935"
+    },
+    "1043": {
+        "fc_id": "14366",
+        "pos": "PG",
+        "nf_id": "shelvin-mack",
+        "name": "Shelvin Mack",
+        "fp_id": "shelvin-mack",
+        "bref_id": "macksh01",
+        "bm_id": "3381",
+        "rw_id": "3219"
+    },
+    "1008": {
+        "fc_id": "1812",
+        "pos": "SF",
+        "nf_id": "carmelo-anthony",
+        "name": "Carmelo Anthony",
+        "fp_id": "carmelo-anthony",
+        "bref_id": "anthoca01",
+        "bm_id": "2003",
+        "rw_id": "2351"
+    },
+    "1219": {
+        "fc_id": "698",
+        "pos": "SG",
+        "nf_id": "manu-ginobili",
+        "name": "Manu Ginobili",
+        "fp_id": "manu-ginobili",
+        "bref_id": "ginobma01",
+        "bm_id": "1821",
+        "rw_id": "2040"
+    },
+    "1464": {
+        "fc_id": "773",
+        "pos": "SF",
+        "nf_id": "luke-babbitt",
+        "name": "Luke Babbitt",
+        "fp_id": "luke-babbitt",
+        "bref_id": "babbilu01",
+        "bm_id": "3150",
+        "rw_id": "3106"
+    },
+    "1083": {
+        "fc_id": "2665",
+        "pos": "SG",
+        "nf_id": "c-j-wilcox",
+        "name": "C.J. Wilcox",
+        "fp_id": "c.j.-wilcox",
+        "bref_id": "wilcocj01",
+        "bm_id": "3958",
+        "rw_id": "3603"
+    },
+    "1146": {
+        "fc_id": "1896",
+        "pos": "C",
+        "nf_id": "jonas-valanciunas",
+        "name": "Jonas Valanciunas",
+        "fp_id": "jonas-valanciunas",
+        "bref_id": "valanjo01",
+        "bm_id": "3402",
+        "rw_id": "3190"
+    },
+    "1355": {
+        "fc_id": "765",
+        "bref_id": "millspa02",
+        "pos": "PG",
+        "nf_id": "patrick-mills",
+        "name": "Patrick Mills"
+    },
+    "1198": {
+        "fc_id": "1868",
+        "pos": "PG",
+        "nf_id": "darren-collison",
+        "name": "Darren Collison",
+        "fp_id": "darren-collison",
+        "bref_id": "collida01",
+        "bm_id": "3020",
+        "rw_id": "3038"
+    },
+    "1422": {
+        "fc_id": "1193443",
+        "pos": "PF",
+        "name": "Chris McCullough",
+        "fp_id": "chris-mccullough",
+        "bref_id": "mcculch01",
+        "bm_id": "5031",
+        "rw_id": "3761"
+    },
+    "1502": {
+        "fc_id": "1193552",
+        "pos": "SG",
+        "nf_id": "jordan-mcrae",
+        "name": "Jordan McRae",
+        "fp_id": "jordan-mcrae",
+        "bref_id": "mcraejo01",
+        "bm_id": "3936",
+        "rw_id": "3638"
+    },
+    "1079": {
+        "fc_id": "1976",
+        "pos": "PG",
+        "nf_id": "277",
+        "name": "Beno Udrih",
+        "fp_id": "beno-udrih",
+        "bref_id": "udrihbe01",
+        "bm_id": "2365",
+        "rw_id": "2523"
+    },
+    "1435": {
+        "fc_id": "1193582",
+        "pos": "SG",
+        "nf_id": "norman-powell",
+        "name": "Norman Powell",
+        "fp_id": "norman-powell",
+        "bref_id": "powelno01",
+        "bm_id": "5044",
+        "rw_id": "3726"
+    },
+    "1197": {
+        "fc_id": "3848",
+        "pos": "PF",
+        "nf_id": "john-henson",
+        "name": "John Henson",
+        "fp_id": "john-henson",
+        "bref_id": "hensojo01",
+        "bm_id": "3505",
+        "rw_id": "3308"
+    },
+    "1343": {
+        "fc_id": "757",
+        "pos": "SF",
+        "nf_id": "robert-covington",
+        "name": "Robert Covington",
+        "fp_id": "robert-covington",
+        "bref_id": "covinro01",
+        "bm_id": "3766",
+        "rw_id": "3495"
+    },
+    "1173": {
+        "fc_id": "1869",
+        "pos": "SG",
+        "nf_id": "alec-burks",
+        "name": "Alec Burks",
+        "fp_id": "alec-burks",
+        "bref_id": "burksal01",
+        "bm_id": "3356",
+        "rw_id": "3192"
+    },
+    "1153": {
+        "fc_id": "2572",
+        "pos": "SG",
+        "nf_id": "bradley-beal",
+        "name": "Bradley Beal",
+        "fp_id": "bradley-beal",
+        "bref_id": "bealbr01",
+        "bm_id": "3439",
+        "rw_id": "3303"
+    },
+    "1157": {
+        "fc_id": "1850",
+        "pos": "PF",
+        "nf_id": "markieff-morris",
+        "name": "Markieff Morris",
+        "fp_id": "markieff-morris",
+        "bref_id": "morrima02",
+        "bm_id": "3388",
+        "rw_id": "3200"
+    },
+    "1034": {
+        "fc_id": "3887",
+        "pos": "SF",
+        "nf_id": "solomon-hill",
+        "name": "Solomon Hill",
+        "fp_id": "solomon-hill",
+        "bref_id": "hillso01",
+        "bm_id": "3695",
+        "rw_id": "3483"
+    },
+    "1325": {
+        "fc_id": "1193573",
+        "pos": "C",
+        "nf_id": "boban-marjanovic",
+        "name": "Boban Marjanovic",
+        "fp_id": "boban-marjanovic",
+        "bref_id": "marjabo01",
+        "bm_id": "3812",
+        "rw_id": "3787"
+    },
+    "1418": {
+        "fc_id": "1193485",
+        "pos": "PF",
+        "nf_id": "2355",
+        "name": "Kevon Looney",
+        "fp_id": "kevon-looney",
+        "bref_id": "looneke01",
+        "bm_id": "5028",
+        "rw_id": "3722"
+    },
+    "1071": {
+        "fc_id": "767",
+        "pos": "C",
+        "nf_id": "tiago-splitter",
+        "name": "Tiago Splitter",
+        "fp_id": "tiago-splitter",
+        "bref_id": "splitti01",
+        "bm_id": "3334",
+        "rw_id": "2508"
+    },
+    "1125": {
+        "fc_id": "3878",
+        "pos": "PF",
+        "nf_id": "nikola-mirotic",
+        "name": "Nikola Mirotic",
+        "fp_id": "nikola-mirotic",
+        "bref_id": "mirotni01",
+        "bm_id": "3409",
+        "rw_id": "3218"
+    },
+    "1244": {
+        "fc_id": "1945",
+        "pos": "PF",
+        "nf_id": "jason-thompson",
+        "name": "Jason Thompson",
+        "fp_id": "jason-thompson",
+        "bref_id": "thompja02",
+        "bm_id": "2864",
+        "rw_id": "2979"
+    },
+    "1066": {
+        "fc_id": "1930",
+        "pos": "PF",
+        "nf_id": "mike-scott",
+        "name": "Mike Scott",
+        "fp_id": "mike-scott",
+        "bref_id": "scottmi01",
+        "bm_id": "3589",
+        "rw_id": "3350"
+    },
+    "1132": {
+        "fc_id": "1895",
+        "pos": "PG",
+        "nf_id": "ricky-rubio",
+        "name": "Ricky Rubio",
+        "fp_id": "ricky-rubio",
+        "bref_id": "rubiori01",
+        "bm_id": "3046",
+        "rw_id": "3012"
+    },
+    "1429": {
+        "fc_id": "2652",
+        "pos": "SF",
+        "nf_id": "steve-novak",
+        "name": "Steve Novak",
+        "fp_id": "steve-novak",
+        "bref_id": "novakst01",
+        "bm_id": "2624",
+        "rw_id": "2739"
+    },
+    "1440": {
+        "fc_id": "735",
+        "pos": "C",
+        "nf_id": "robert-sacre",
+        "name": "Robert Sacre",
+        "fp_id": "robert-sacre",
+        "bref_id": "sacrero01",
+        "bm_id": "3582",
+        "rw_id": "3374"
+    },
+    "1476": {
+        "nf_id": "203",
+        "name": "Reggie Williams",
+        "fp_id": "reggie-williams"
+    },
+    "1442": {
+        "fc_id": "2672",
+        "pos": "SG",
+        "nf_id": "garrett-temple",
+        "name": "Garrett Temple",
+        "fp_id": "garrett-temple",
+        "bref_id": "templga01",
+        "bm_id": "3076",
+        "rw_id": "3083"
+    },
+    "1052": {
+        "fc_id": "18779",
+        "pos": "PF",
+        "nf_id": "kyle-o-quinn",
+        "name": "Kyle O'Quinn",
+        "fp_id": "kyle-oquinn",
+        "bref_id": "oquinky01",
+        "bm_id": "3563",
+        "rw_id": "3341"
+    },
+    "1042": {
+        "fc_id": "1931",
+        "pos": "C",
+        "nf_id": "robin-lopez",
+        "name": "Robin Lopez",
+        "fp_id": "robin-lopez",
+        "bref_id": "lopezro01",
+        "bm_id": "2847",
+        "rw_id": "2919"
+    },
+    "1354": {
+        "fc_id": "10102",
+        "pos": "PG",
+        "nf_id": "shabazz-napier",
+        "name": "Shabazz Napier",
+        "fp_id": "shabazz-napier",
+        "bref_id": "napiesh01",
+        "bm_id": "3938",
+        "rw_id": "3598"
+    },
+    "1495": {
+        "fc_id": "8253",
+        "pos": "C",
+        "name": "Elton Brand",
+        "bref_id": "brandel01",
+        "bm_id": "2039",
+        "rw_id": "1983"
+    },
+    "1504": {
+        "fc_id": "1193511",
+        "pos": "SF",
+        "nf_id": "alex-stepheson",
+        "name": "Alex Stepheson",
+        "fp_id": "alex-stepheson",
+        "bref_id": "stephal01",
+        "bm_id": "4100",
+        "rw_id": "3840"
+    },
+    "1434": {
+        "fc_id": "1193460",
+        "pos": "PF",
+        "nf_id": "bobby-portis",
+        "name": "Bobby Portis",
+        "fp_id": "bobby-portis",
+        "bref_id": "portibo01",
+        "bm_id": "5042",
+        "rw_id": "3705"
+    },
+    "1033": {
+        "fc_id": "704",
+        "pos": "PF",
+        "nf_id": "jordan-hill",
+        "name": "Jordan Hill",
+        "fp_id": "jordan-hill",
+        "bref_id": "hilljo01",
+        "bm_id": "3005",
+        "rw_id": "3017"
+    },
+    "1488": {
+        "nf_id": "280",
+        "name": "Danny Granger",
+        "fp_id": "danny-granger"
+    },
+    "1135": {
+        "fc_id": "1903",
+        "pos": "PF",
+        "nf_id": "serge-ibaka",
+        "name": "Serge Ibaka",
+        "fp_id": "serge-ibaka",
+        "bref_id": "ibakase01",
+        "bm_id": "3015",
+        "rw_id": "2965"
+    },
+    "1029": {
+        "fc_id": "2550",
+        "pos": "PF",
+        "nf_id": "185",
+        "name": "Blake Griffin",
+        "fp_id": "blake-griffin",
+        "bref_id": "griffbl01",
+        "bm_id": "2997",
+        "rw_id": "3016"
+    },
+    "1306": {
+        "fc_id": "6723",
+        "pos": "C",
+        "nf_id": "tarik-black",
+        "name": "Tarik Black",
+        "fp_id": "tarik-black",
+        "bref_id": "blackta01",
+        "bm_id": "3980",
+        "rw_id": "3687"
+    },
+    "1256": {
+        "bm_id": "3040",
+        "name": "Patty Mills",
+        "rw_id": "3027",
+        "fp_id": "patty-mills"
+    },
+    "1356": {
+        "fc_id": "2029",
+        "pos": "SF",
+        "nf_id": "otto-porter",
+        "name": "Otto Porter",
+        "fp_id": "otto-porter",
+        "bref_id": "porteot01",
+        "bm_id": "3731",
+        "rw_id": "3435"
+    },
+    "1405": {
+        "fc_id": "1193452",
+        "pos": "SG",
+        "nf_id": "r-j-hunter",
+        "name": "R.J. Hunter",
+        "fp_id": "rj-hunter",
+        "bref_id": "hunterj01",
+        "bm_id": "5022",
+        "rw_id": "3728"
+    },
+    "1273": {
+        "fc_id": "1997",
+        "pos": "SG",
+        "nf_id": "tony-snell",
+        "name": "Tony Snell",
+        "fp_id": "tony-snell",
+        "bref_id": "snellto01",
+        "bm_id": "3680",
+        "rw_id": "3465"
+    },
+    "1443": {
+        "fc_id": "3869",
+        "pos": "PG",
+        "nf_id": "cj-watson",
+        "name": "C.J. Watson",
+        "fp_id": "cj-watson",
+        "bref_id": "watsocj01",
+        "bm_id": "2787",
+        "rw_id": "2915"
+    },
+    "1375": {
+        "fc_id": "1944",
+        "pos": "PG",
+        "nf_id": "donald-sloan",
+        "name": "Donald Sloan",
+        "fp_id": "donald-sloan",
+        "bref_id": "sloando01",
+        "bm_id": "3276",
+        "rw_id": "3288"
+    },
+    "1288": {
+        "fc_id": "3897",
+        "pos": "SG",
+        "nf_id": "archie-goodwin",
+        "name": "Archie Goodwin",
+        "fp_id": "archi-goodwin",
+        "bref_id": "goodwar01",
+        "bm_id": "3719",
+        "rw_id": "3457"
+    },
+    "1376": {
+        "nf_id": "2318",
+        "name": "David Stockton",
+        "fp_id": "david-stockton"
+    },
+    "1353": {
+        "fc_id": "3877",
+        "pos": "SF",
+        "nf_id": "t-j-warren",
+        "name": "T.J. Warren",
+        "fp_id": "t.j.-warren",
+        "bref_id": "warretj01",
+        "bm_id": "3956",
+        "rw_id": "3585"
+    },
+    "1018": {
+        "fc_id": "1193499",
+        "pos": "SF",
+        "nf_id": "branden-dawson",
+        "name": "Branden Dawson",
+        "fp_id": "branden-dawson",
+        "bref_id": "dawsobr01",
+        "bm_id": "5007",
+        "rw_id": "3748"
+    },
+    "1136": {
+        "fc_id": "1839",
+        "pos": "SF",
+        "nf_id": "nicolas-batum",
+        "name": "Nicolas Batum",
+        "fp_id": "nicolas-batum",
+        "bref_id": "batumni01",
+        "bm_id": "2810",
+        "rw_id": "2821"
+    },
+    "1056": {
+        "fc_id": "2557",
+        "pos": "PG",
+        "nf_id": "chris-paul",
+        "name": "Chris Paul",
+        "fp_id": "chris-paul",
+        "bref_id": "paulch01",
+        "bm_id": "2464",
+        "rw_id": "2584"
+    },
+    "1126": {
+        "fc_id": "1826",
+        "pos": "SG",
+        "nf_id": "klay-thompson",
+        "name": "Klay Thompson",
+        "fp_id": "klay-thompson",
+        "bref_id": "thompkl01",
+        "bm_id": "3399",
+        "rw_id": "3197"
+    },
+    "1268": {
+        "fc_id": "2043",
+        "pos": "PG",
+        "nf_id": "aaron-brooks",
+        "name": "Aaron Brooks",
+        "fp_id": "aaron-brooks",
+        "bref_id": "brookaa01",
+        "bm_id": "2707",
+        "rw_id": "2842"
+    },
+    "1272": {
+        "fc_id": "1952",
+        "pos": "PG",
+        "nf_id": "steve-blake",
+        "name": "Steve Blake",
+        "fp_id": "steve-blake",
+        "bref_id": "blakest01",
+        "bm_id": "1927",
+        "rw_id": "2387"
+    },
+    "1093": {
+        "fc_id": "3835",
+        "pos": "SF",
+        "nf_id": "luc-mbah-a-moute",
+        "name": "Luc Mbah a Moute",
+        "fp_id": "luc-mbah-a-moute",
+        "bref_id": "mbahalu01",
+        "bm_id": "2850",
+        "rw_id": "2971"
+    },
+    "1438": {
+        "fc_id": "3902",
+        "pos": "SF",
+        "nf_id": "damjan-rudez",
+        "name": "Damjan Rudez",
+        "fp_id": "damjan-rudez",
+        "bref_id": "rudezda01",
+        "bm_id": "3960",
+        "rw_id": "3675"
+    },
+    "1433": {
+        "fc_id": "1193590",
+        "pos": "C",
+        "nf_id": "tibor-pleiss",
+        "name": "Tibor Pleiss",
+        "fp_id": "tibor-pleiss",
+        "bref_id": "pleisti01",
+        "bm_id": "3142",
+        "rw_id": "3135"
+    },
+    "1264": {
+        "fc_id": "721",
+        "pos": "SF",
+        "nf_id": "maurice-harkless",
+        "name": "Maurice Harkless",
+        "fp_id": "moe-harkless",
+        "bref_id": "harklma01",
+        "bm_id": "3499",
+        "rw_id": "3314"
+    },
+    "1498": {
+        "fc_id": "1193546",
+        "pos": "PG",
+        "nf_id": "keith-appling",
+        "name": "Keith Appling",
+        "fp_id": "keith-appling",
+        "bref_id": "applike01",
+        "bm_id": "4095",
+        "rw_id": "3623"
+    },
+    "1003": {
+        "fc_id": "2040",
+        "pos": "C",
+        "nf_id": "cole-aldrich",
+        "name": "Cole Aldrich",
+        "fp_id": "cole-aldrich",
+        "bref_id": "aldrico01",
+        "bm_id": "3141",
+        "rw_id": "3094"
+    },
+    "1095": {
+        "nf_id": "2369",
+        "name": "Andrew Harrison",
+        "fp_id": "andrew-harrison"
+    },
+    "1510": {
+        "fc_id": "2038",
+        "pos": "C",
+        "nf_id": "nazr-mohammed",
+        "name": "Nazr Mohammed",
+        "fp_id": "nazr-mohammed",
+        "bref_id": "mohamna01",
+        "bm_id": "1965",
+        "rw_id": "1915"
+    },
+    "1333": {
+        "fc_id": "10476",
+        "pos": "SG",
+        "nf_id": "markel-brown",
+        "name": "Markel Brown",
+        "fp_id": "markel-brown",
+        "bref_id": "brownma02",
+        "bm_id": "3905",
+        "rw_id": "3632"
+    },
+    "1270": {
+        "fc_id": "2020",
+        "pos": "SG",
+        "nf_id": "will-barton",
+        "name": "Will Barton",
+        "fp_id": "will-barton",
+        "bref_id": "bartowi01",
+        "bm_id": "3436",
+        "rw_id": "3335"
+    },
+    "1386": {
+        "fc_id": "738",
+        "pos": "PF",
+        "nf_id": "matt-bonner",
+        "name": "Matt Bonner",
+        "fp_id": "matt-bonner",
+        "bref_id": "bonnema01",
+        "bm_id": "2357",
+        "rw_id": "2394"
+    },
+    "1111": {
+        "fc_id": "768",
+        "pos": "SF",
+        "nf_id": "kawhi-leonard",
+        "name": "Kawhi Leonard",
+        "fp_id": "kawhi-leonard",
+        "bref_id": "leonaka01",
+        "bm_id": "3377",
+        "rw_id": "3195"
+    },
+    "1417": {
+        "fc_id": "1978",
+        "pos": "PF",
+        "nf_id": "jon-leuer",
+        "name": "Jon Leuer",
+        "fp_id": "jon-leuer",
+        "bref_id": "leuerjo01",
+        "bm_id": "3379",
+        "rw_id": "3220"
+    },
+    "1373": {
+        "nf_id": "1285",
+        "name": "Cartier Martin",
+        "fp_id": "cartier-martin"
+    },
+    "1310": {
+        "fc_id": "1939",
+        "pos": "C",
+        "nf_id": "miles-plumlee",
+        "name": "Miles Plumlee",
+        "fp_id": "miles-plumlee",
+        "bref_id": "plumlmi01",
+        "bm_id": "3567",
+        "rw_id": "3357"
+    },
+    "1031": {
+        "fc_id": "708",
+        "pos": "PG",
+        "nf_id": "devin-harris",
+        "name": "Devin Harris",
+        "fp_id": "devin-harris",
+        "bref_id": "harride01",
+        "bm_id": "2307",
+        "rw_id": "2468"
+    },
+    "1392": {
+        "fc_id": "2669",
+        "pos": "PG",
+        "nf_id": "spencer-dinwiddie",
+        "name": "Spencer Dinwiddie",
+        "fp_id": "spencer-dinwiddie",
+        "bref_id": "dinwisp01",
+        "bm_id": "3914",
+        "rw_id": "3616"
+    },
+    "1329": {
+        "fc_id": "1909",
+        "pos": "SG",
+        "nf_id": "marcus-thornton",
+        "name": "Marcus Thornton",
+        "fp_id": "marcus-thornton",
+        "bref_id": "thornma01",
+        "bm_id": "3033",
+        "rw_id": "3039"
+    },
+    "1035": {
+        "fc_id": "10097",
+        "pos": "SG",
+        "nf_id": "justin-holiday",
+        "name": "Justin Holiday",
+        "fp_id": "justin-holiday",
+        "bref_id": "holidju01",
+        "bm_id": "3506",
+        "rw_id": "3242"
+    },
+    "1512": {
+        "fc_id": "1193447",
+        "pos": "SF",
+        "nf_id": "coty-clarke",
+        "name": "Coty Clarke",
+        "fp_id": "coty-clarke",
+        "bref_id": "clarkco01",
+        "bm_id": "5198",
+        "rw_id": "3803"
+    },
+    "1038": {
+        "fc_id": "705",
+        "pos": "SF",
+        "nf_id": "wesley-johnson",
+        "name": "Wesley Johnson",
+        "fp_id": "wesley-johnson",
+        "bref_id": "johnswe01",
+        "bm_id": "3129",
+        "rw_id": "3101"
+    },
+    "1416": {
+        "fc_id": "2444",
+        "pos": "SF",
+        "nf_id": "michael-kidd-gilchrist",
+        "name": "Michael Kidd-Gilchrist",
+        "fp_id": "michael-kidd-gilchrist",
+        "bref_id": "kiddgmi01",
+        "bm_id": "3532",
+        "rw_id": "3302"
+    },
+    "1005": {
+        "fc_id": "1932",
+        "pos": "SF",
+        "nf_id": "tony-allen",
+        "name": "Tony Allen",
+        "fp_id": "tony-allen",
+        "bref_id": "allento01",
+        "bm_id": "2284",
+        "rw_id": "2525"
+    },
+    "1087": {
+        "fc_id": "1193496",
+        "pos": "SG",
+        "nf_id": "joseph-young",
+        "name": "Joseph Young",
+        "fp_id": "joseph-young",
+        "bref_id": "youngjo01",
+        "bm_id": "5059",
+        "rw_id": "3717"
+    },
+    "1130": {
+        "fc_id": "1892",
+        "pos": "PF",
+        "nf_id": "kenneth-faried",
+        "name": "Kenneth Faried",
+        "fp_id": "kenneth-faried",
+        "bref_id": "farieke01",
+        "bm_id": "3360",
+        "rw_id": "3203"
+    },
+    "1287": {
+        "fc_id": "1828",
+        "pos": "PG",
+        "nf_id": "dj-augustin",
+        "name": "D.J. Augustin",
+        "fp_id": "dj-augustin",
+        "bref_id": "augusdj01",
+        "bm_id": "2809",
+        "rw_id": "2939"
+    },
+    "1380": {
+        "nf_id": "2078",
+        "name": "Quincy Miller",
+        "fp_id": "quincy-miller"
+    },
+    "1413": {
+        "fc_id": "2647",
+        "pos": "SG",
+        "nf_id": "james-jones",
+        "name": "James Jones",
+        "fp_id": "james-jones",
+        "bref_id": "jonesja02",
+        "bm_id": "2204",
+        "rw_id": "2398"
+    },
+    "1187": {
+        "fc_id": "706",
+        "pos": "SG",
+        "nf_id": "danny-green",
+        "name": "Danny Green",
+        "fp_id": "daniel-green",
+        "bref_id": "greenda02",
+        "bm_id": "3047",
+        "rw_id": "3051"
+    },
+    "1387": {
+        "fc_id": "1193505",
+        "pos": "SF",
+        "nf_id": "anthony-brown",
+        "name": "Anthony Brown",
+        "fp_id": "anthony-brown",
+        "bref_id": "brownan02",
+        "bm_id": "5003",
+        "rw_id": "3743"
+    },
+    "1505": {
+        "fc_id": "1200400",
+        "pos": "SF",
+        "nf_id": "orlando-johnson",
+        "name": "Orlando Johnson",
+        "fp_id": "orlando-johnson",
+        "bref_id": "johnsor01",
+        "bm_id": "3522",
+        "rw_id": "3328"
+    },
+    "1075": {
+        "fc_id": "1193437",
+        "pos": "C",
+        "nf_id": "2394",
+        "name": "Walter Tavares",
+        "fp_id": "walter-tavares",
+        "bref_id": "tavarwa01",
+        "bm_id": "3953",
+        "rw_id": "3525"
+    },
+    "1235": {
+        "fc_id": "1966",
+        "pos": "PF",
+        "nf_id": "kevin-garnett",
+        "name": "Kevin Garnett",
+        "fp_id": "kevin-garnett",
+        "bref_id": "garneke01",
+        "bm_id": "1874",
+        "rw_id": "1457"
+    },
+    "1513": {
+        "fc_id": "1200404",
+        "pos": "PG",
+        "nf_id": "briante-weber",
+        "name": "Briante Weber",
+        "fp_id": "briante-weber",
+        "bref_id": "weberbr01",
+        "bm_id": "5214",
+        "rw_id": "3811"
+    },
+    "1098": {
+        "fc_id": "1818",
+        "pos": "C",
+        "nf_id": "demarcus-cousins",
+        "name": "DeMarcus Cousins",
+        "fp_id": "demarcus-cousins",
+        "bref_id": "couside01",
+        "bm_id": "3153",
+        "rw_id": "3098"
+    },
+    "1147": {
+        "fc_id": "1820",
+        "pos": "PG",
+        "nf_id": "isaiah-thomas",
+        "name": "Isaiah Thomas",
+        "fp_id": "isaiah-thomas",
+        "bref_id": "thomais02",
+        "bm_id": "3397",
+        "rw_id": "3240"
+    },
+    "1123": {
+        "fc_id": "1965",
+        "pos": "PF",
+        "nf_id": "draymond-green",
+        "name": "Draymond Green",
+        "fp_id": "draymond-green",
+        "bref_id": "greendr01",
+        "bm_id": "3487",
+        "rw_id": "3299"
+    },
+    "1501": {
+        "fc_id": "22441",
+        "pos": "PF",
+        "name": "Jeff Ayres",
+        "bref_id": "pendeje02",
+        "bm_id": "3045",
+        "rw_id": "3046"
+    },
+    "1404": {
+        "fc_id": "1193543",
+        "pos": "SF",
+        "name": "Josh Huestis",
+        "fp_id": "josh-huestis",
+        "bref_id": "huestjo01",
+        "bm_id": "3926",
+        "rw_id": "3624"
+    },
+    "1426": {
+        "fc_id": "27695",
+        "pos": "PF",
+        "name": "Eric Moreland",
+        "bref_id": "moreler01",
+        "bm_id": "4073",
+        "rw_id": "3666"
+    },
+    "1295": {
+        "fc_id": "18653",
+        "pos": "PF",
+        "nf_id": "amare-stoudemire",
+        "name": "Amar'e Stoudemire",
+        "fp_id": "amare-stoudemire",
+        "bref_id": "stoudam01",
+        "bm_id": "1812",
+        "rw_id": "2255"
+    },
+    "1040": {
+        "fc_id": "1899",
+        "pos": "SG",
+        "nf_id": "kyle-korver",
+        "name": "Kyle Korver",
+        "fp_id": "kyle-korver",
+        "bref_id": "korveky01",
+        "bm_id": "1807",
+        "rw_id": "2400"
+    },
+    "1180": {
+        "fc_id": "754",
+        "pos": "SF",
+        "nf_id": "jae-crowder",
+        "name": "Jae Crowder",
+        "fp_id": "jae-crowder",
+        "bref_id": "crowdja01",
+        "bm_id": "3456",
+        "rw_id": "3324"
+    },
+    "1171": {
+        "fc_id": "1918",
+        "pos": "SF",
+        "nf_id": "demarre-carroll",
+        "name": "DeMarre Carroll",
+        "fp_id": "demarre-carroll",
+        "bref_id": "carrode01",
+        "bm_id": "3010",
+        "rw_id": "2942"
+    },
+    "1196": {
+        "fc_id": "700",
+        "pos": "PG",
+        "nf_id": "jeremy-lin",
+        "name": "Jeremy Lin",
+        "fp_id": "jeremy-lin",
+        "bref_id": "linje01",
+        "bm_id": "3218",
+        "rw_id": "3168"
+    },
+    "1309": {
+        "fc_id": "1193445",
+        "pos": "SF",
+        "nf_id": "rondae-hollis-jefferson",
+        "name": "Rondae Hollis-Jefferson",
+        "fp_id": "rondae-hollis-jefferson",
+        "bref_id": "holliro01",
+        "bm_id": "5020",
+        "rw_id": "3733"
+    },
+    "1494": {
+        "fc_id": "1193484",
+        "pos": "SG",
+        "nf_id": "jarell-eddie",
+        "name": "Jarell Eddie",
+        "fp_id": "jarell-eddie",
+        "bref_id": "eddieja01",
+        "bm_id": "4051",
+        "rw_id": "3699"
+    },
+    "1094": {
+        "nf_id": "2360",
+        "name": "Guillermo Hernangomez"
+    },
+    "1128": {
+        "fc_id": "1859",
+        "pos": "PF",
+        "nf_id": "greg-monroe",
+        "name": "Greg Monroe",
+        "fp_id": "greg-monroe",
+        "bref_id": "monrogr01",
+        "bm_id": "3107",
+        "rw_id": "3108"
+    },
+    "1452": {
+        "fc_id": "695",
+        "pos": "PG",
+        "nf_id": "jrue-holiday",
+        "name": "Jrue Holiday",
+        "fp_id": "jrue-holiday",
+        "bref_id": "holidjr01",
+        "bm_id": "3004",
+        "rw_id": "3029"
+    },
+    "1361": {
+        "fc_id": "1990",
+        "pos": "PG",
+        "nf_id": "andre-miller",
+        "name": "Andre Miller",
+        "fp_id": "andre-miller",
+        "bref_id": "millean02",
+        "bm_id": "2001",
+        "rw_id": "1991"
+    },
+    "1067": {
+        "fc_id": "1950",
+        "pos": "SF",
+        "nf_id": "thabo-sefolosha",
+        "name": "Thabo Sefolosha",
+        "fp_id": "thabo-sefolosha",
+        "bref_id": "sefolth01",
+        "bm_id": "2636",
+        "rw_id": "2732"
+    },
+    "1449": {
+        "fc_id": "937205",
+        "pos": "PG",
+        "nf_id": "toney-douglas",
+        "name": "Toney Douglas",
+        "fp_id": "toney-douglas",
+        "bref_id": "douglto01",
+        "bm_id": "3054",
+        "rw_id": "3047"
+    },
+    "1137": {
+        "fc_id": "1193476",
+        "pos": "PG",
+        "nf_id": "emmanuel-mudiay",
+        "name": "Emmanuel Mudiay",
+        "fp_id": "emmanuel-mudiay",
+        "bref_id": "mudiaem01",
+        "bm_id": "5035",
+        "rw_id": "3684"
+    },
+    "1266": {
+        "fc_id": "3785",
+        "pos": "PF",
+        "nf_id": "david-west",
+        "name": "David West",
+        "fp_id": "david-west",
+        "bref_id": "westda01",
+        "bm_id": "1977",
+        "rw_id": "2367"
+    },
+    "1507": {
+        "nf_id": "andrew-goudelock",
+        "name": "Andrew Goudelock",
+        "fp_id": "andrew-goudelock",
+        "bref_id": "goudean01",
+        "bm_id": "3362",
+        "rw_id": "3225"
+    },
+    "1398": {
+        "fc_id": "927808",
+        "pos": "PG",
+        "nf_id": "tim-frazier",
+        "name": "Tim Frazier",
+        "fp_id": "tim-frazier",
+        "bref_id": "fraziti01",
+        "bm_id": "4070",
+        "rw_id": "3695"
+    },
+    "1062": {
+        "fc_id": "2587",
+        "pos": "SG",
+        "nf_id": "jj-redick",
+        "name": "J.J. Redick",
+        "fp_id": "jj-redick",
+        "bref_id": "redicjj01",
+        "bm_id": "2631",
+        "rw_id": "2715"
+    },
+    "1314": {
+        "fc_id": "1900",
+        "pos": "PF",
+        "nf_id": "chris-copeland",
+        "name": "Chris Copeland",
+        "fp_id": "chris-copeland",
+        "bref_id": "copelch01",
+        "bm_id": "3455",
+        "rw_id": "3400"
+    },
+    "1463": {
+        "fc_id": "1193528",
+        "pos": "SG",
+        "nf_id": "sean-kilpatrick",
+        "name": "Sean Kilpatrick",
+        "fp_id": "sean-kilpatrick",
+        "bref_id": "kilpase01",
+        "bm_id": "4071",
+        "rw_id": "3656"
+    },
+    "1289": {
+        "fc_id": "748",
+        "pos": "SF",
+        "nf_id": "kyle-anderson",
+        "name": "Kyle Anderson",
+        "fp_id": "kyle-anderson",
+        "bref_id": "anderky01",
+        "bm_id": "3901",
+        "rw_id": "3586"
+    },
+    "1297": {
+        "fc_id": "2666",
+        "pos": "PF",
+        "nf_id": "mitch-mcgary",
+        "name": "Mitch McGary",
+        "fp_id": "mitch-mcgary",
+        "bref_id": "mcgarmi01",
+        "bm_id": "3935",
+        "rw_id": "3600"
+    },
+    "1331": {
+        "fc_id": "1894",
+        "pos": "SF",
+        "nf_id": "kyle-singler",
+        "name": "Kyle Singler",
+        "fp_id": "kyle-singler",
+        "bref_id": "singlky01",
+        "bm_id": "3394",
+        "rw_id": "3204"
+    },
+    "1304": {
+        "fc_id": "2035",
+        "pos": "PG",
+        "nf_id": "leandro-barbosa",
+        "name": "Leandro Barbosa",
+        "fp_id": "leandro-barbosa",
+        "bref_id": "barbole01",
+        "bm_id": "2151",
+        "rw_id": "2377"
+    },
+    "1203": {
+        "fc_id": "1889",
+        "pos": "PF",
+        "nf_id": "amir-johnson",
+        "name": "Amir Johnson",
+        "fp_id": "amir-johnson",
+        "bref_id": "johnsam01",
+        "bm_id": "2448",
+        "rw_id": "2638"
+    },
+    "1366": {
+        "fc_id": "10490",
+        "pos": "PG",
+        "nf_id": "erick-green",
+        "name": "Erick Green",
+        "fp_id": "erick-green",
+        "bref_id": "greener01",
+        "bm_id": "3687",
+        "rw_id": "3468"
+    },
+    "1025": {
+        "fc_id": "4077",
+        "pos": "SF",
+        "nf_id": "paul-george",
+        "name": "Paul George",
+        "fp_id": "paul-george",
+        "bref_id": "georgpa01",
+        "bm_id": "3111",
+        "rw_id": "3114"
+    },
+    "1053": {
+        "fc_id": "1981",
+        "pos": "C",
+        "nf_id": "zaza-pachulia",
+        "name": "Zaza Pachulia",
+        "fp_id": "zaza-pachulia",
+        "bref_id": "pachuza01",
+        "bm_id": "2129",
+        "rw_id": "2391"
+    },
+    "1207": {
+        "fc_id": "2454",
+        "pos": "PF",
+        "nf_id": "cody-zeller",
+        "name": "Cody Zeller",
+        "fp_id": "cody-zeller",
+        "bref_id": "zelleco01",
+        "bm_id": "3678",
+        "rw_id": "3438"
+    },
+    "1022": {
+        "fc_id": "766",
+        "pos": "PG",
+        "nf_id": "raymond-felton",
+        "name": "Raymond Felton",
+        "fp_id": "raymond-felton",
+        "bref_id": "feltora01",
+        "bm_id": "2428",
+        "rw_id": "2596"
+    },
+    "1048": {
+        "fc_id": "1917",
+        "pos": "SG",
+        "nf_id": "cj-miles",
+        "name": "C.J. Miles",
+        "fp_id": "cj-miles",
+        "bref_id": "milescj01",
+        "bm_id": "2461",
+        "rw_id": "2627"
+    },
+    "1151": {
+        "fc_id": "755",
+        "pos": "PG",
+        "nf_id": "jordan-clarkson",
+        "name": "Jordan Clarkson",
+        "fp_id": "jordan-clarkson",
+        "bref_id": "clarkjo01",
+        "bm_id": "3910",
+        "rw_id": "3614"
+    },
+    "1089": {
+        "nf_id": "2384",
+        "name": "Dimitrios Agravanis",
+        "fp_id": "dimitrios-agravanis"
+    },
+    "1447": {
+        "fc_id": "1857",
+        "pos": "PG",
+        "nf_id": "2095",
+        "name": "Tony Wroten",
+        "fp_id": "tony-wroten",
+        "bref_id": "wroteto01",
+        "bm_id": "3636",
+        "rw_id": "3327"
+    },
+    "1112": {
+        "fc_id": "2582",
+        "pos": "PG",
+        "nf_id": "reggie-jackson",
+        "name": "Reggie Jackson",
+        "fp_id": "reggie-jackson",
+        "bref_id": "jacksre01",
+        "bm_id": "3370",
+        "rw_id": "3217"
+    },
+    "1019": {
+        "fc_id": "2673",
+        "pos": "SF",
+        "nf_id": "cleanthony-early",
+        "name": "Cleanthony Early",
+        "fp_id": "cleanthony-early",
+        "bref_id": "earlycl01",
+        "bm_id": "3915",
+        "rw_id": "3595"
+    },
+    "1080": {
+        "fc_id": "747",
+        "pos": "PF",
+        "nf_id": "charlie-villanueva",
+        "name": "Charlie Villanueva",
+        "fp_id": "charlie-villanueva",
+        "bref_id": "villach01",
+        "bm_id": "2484",
+        "rw_id": "2349"
+    },
+    "1450": {
+        "nf_id": "2364",
+        "name": "Juan Vaulet",
+        "fp_id": "juan-vaulet"
+    },
+    "1349": {
+        "fc_id": "1870",
+        "pos": "SF",
+        "nf_id": "caron-butler",
+        "name": "Caron Butler",
+        "fp_id": "caron-butler",
+        "bref_id": "butleca01",
+        "bm_id": "2142",
+        "rw_id": "2251"
+    },
+    "1294": {
+        "fc_id": "758",
+        "pos": "SF",
+        "nf_id": "ryan-kelly",
+        "name": "Ryan Kelly",
+        "fp_id": "ryan-kelly",
+        "bref_id": "kellyry01",
+        "bm_id": "3697",
+        "rw_id": "3501"
+    },
+    "1139": {
+        "fc_id": "1964",
+        "pos": "SF",
+        "nf_id": "andrew-wiggins",
+        "name": "Andrew Wiggins",
+        "fp_id": "andrew-wiggins",
+        "bref_id": "wiggian01",
+        "bm_id": "3957",
+        "rw_id": "3571"
+    },
+    "1466": {
+        "fc_id": "1193563",
+        "pos": "SF",
+        "nf_id": "luis-montero",
+        "name": "Luis Montero",
+        "fp_id": "luis-montero",
+        "bref_id": "montelu01",
+        "bm_id": "5168",
+        "rw_id": "3790"
+    },
+    "1255": {
+        "fc_id": "1977",
+        "pos": "C",
+        "nf_id": "kosta-koufos",
+        "name": "Kosta Koufos",
+        "fp_id": "kosta-koufos",
+        "bref_id": "koufoko01",
+        "bm_id": "2842",
+        "rw_id": "2934"
+    },
+    "1028": {
+        "fc_id": "1846",
+        "pos": "SF",
+        "nf_id": "jeff-green",
+        "name": "Jeff Green",
+        "fp_id": "jeff-green",
+        "bref_id": "greenje02",
+        "bm_id": "2724",
+        "rw_id": "2818"
+    },
+    "1327": {
+        "fc_id": "2042",
+        "pos": "PF",
+        "nf_id": "darrell-arthur",
+        "name": "Darrell Arthur",
+        "fp_id": "darrell-arthur",
+        "bref_id": "arthuda01",
+        "bm_id": "2808",
+        "rw_id": "2933"
+    },
+    "1246": {
+        "fc_id": "1193478",
+        "pos": "C",
+        "nf_id": "nikola-jokic",
+        "name": "Nikola Jokic",
+        "fp_id": "nikola-jokic",
+        "bref_id": "jokicni01",
+        "bm_id": "3930",
+        "rw_id": "3612"
+    },
+    "1315": {
+        "fc_id": "1872",
+        "pos": "PF",
+        "nf_id": "jared-sullinger",
+        "name": "Jared Sullinger",
+        "fp_id": "jared-sullinger",
+        "bref_id": "sullija01",
+        "bm_id": "3605",
+        "rw_id": "3298"
+    },
+    "1225": {
+        "fc_id": "1193524",
+        "pos": "PF",
+        "nf_id": "nemanja-bjelica",
+        "name": "Nemanja Bjelica",
+        "fp_id": "nemanja-bjelica",
+        "bref_id": "bjeline01",
+        "bm_id": "3127",
+        "rw_id": "3155"
+    },
+    "1245": {
+        "fc_id": "702",
+        "pos": "PG",
+        "nf_id": "patrick-beverley",
+        "name": "Patrick Beverley",
+        "fp_id": "patrick-beverley",
+        "bref_id": "beverpa01",
+        "bm_id": "3032",
+        "rw_id": "3072"
+    },
+    "1013": {
+        "fc_id": "1897",
+        "pos": "PG",
+        "nf_id": "jose-calderon",
+        "name": "Jose Calderon",
+        "fp_id": "jose-calderon",
+        "bref_id": "caldejo01",
+        "bm_id": "2423",
+        "rw_id": "2653"
+    },
+    "1278": {
+        "fc_id": "2041",
+        "pos": "PF",
+        "nf_id": "drew-gooden",
+        "name": "Drew Gooden",
+        "fp_id": "drew-gooden",
+        "bref_id": "goodedr01",
+        "bm_id": "1941",
+        "rw_id": "2250"
+    },
+    "1194": {
+        "fc_id": "1193480",
+        "pos": "SF",
+        "nf_id": "stanley-johnson",
+        "name": "Stanley Johnson",
+        "fp_id": "stanley-johnson",
+        "bref_id": "johnsst04",
+        "bm_id": "5024",
+        "rw_id": "3735"
+    },
+    "1214": {
+        "fc_id": "1887",
+        "pos": "PG",
+        "nf_id": "randy-foye",
+        "name": "Randy Foye",
+        "fp_id": "randy-foye",
+        "bref_id": "foyera01",
+        "bm_id": "2596",
+        "rw_id": "2722"
+    },
+    "1039": {
+        "fc_id": "2592",
+        "pos": "C",
+        "nf_id": "deandre-jordan",
+        "name": "DeAndre Jordan",
+        "fp_id": "deandre-jordan",
+        "bref_id": "jordade01",
+        "bm_id": "2841",
+        "rw_id": "2929"
+    },
+    "1468": {
+        "nf_id": "2367",
+        "name": "Olivier Hanlan",
+        "fp_id": "olivier-hanlan"
+    },
+    "1127": {
+        "fc_id": "1852",
+        "pos": "PF",
+        "nf_id": "derrick-favors",
+        "name": "Derrick Favors",
+        "fp_id": "derrick-favors",
+        "bref_id": "favorde01",
+        "bm_id": "3132",
+        "rw_id": "3107"
+    },
+    "1477": {
+        "nf_id": "449",
+        "name": "Joey Dorsey",
+        "fp_id": "joey-dorsey"
+    },
+    "1007": {
+        "fc_id": "1193469",
+        "pos": "SF",
+        "nf_id": "justin-anderson",
+        "name": "Justin Anderson",
+        "fp_id": "justin-anderson",
+        "bref_id": "anderju01",
+        "bm_id": "5001",
+        "rw_id": "3718"
+    },
+    "1470": {
+        "fc_id": "746",
+        "pos": "PG",
+        "nf_id": "ishmael-smith",
+        "name": "Ish Smith",
+        "fp_id": "ish-smith",
+        "bref_id": "smithis01",
+        "bm_id": "3225",
+        "rw_id": "3175"
+    },
+    "1455": {
+        "fc_id": "2048",
+        "pos": "SF",
+        "nf_id": "alonzo-gee",
+        "name": "Alonzo Gee",
+        "fp_id": "alonzo-gee",
+        "bref_id": "geeal01",
+        "bm_id": "3080",
+        "rw_id": "3084"
+    },
+    "1133": {
+        "fc_id": "3766",
+        "pos": "SG",
+        "nf_id": "jimmy-butler",
+        "name": "Jimmy Butler",
+        "fp_id": "jimmy-butler",
+        "bref_id": "butleji01",
+        "bm_id": "3357",
+        "rw_id": "3231"
+    },
+    "1044": {
+        "fc_id": "2011",
+        "pos": "C",
+        "nf_id": "ian-mahinmi",
+        "name": "Ian Mahinmi",
+        "fp_id": "ian-mahinmi",
+        "bref_id": "mahinia01",
+        "bm_id": "2455",
+        "rw_id": "2623"
+    },
+    "1420": {
+        "fc_id": "3872",
+        "pos": "PG",
+        "nf_id": "kendall-marshall",
+        "name": "Kendall Marshall",
+        "fp_id": "kendall-marshall",
+        "bref_id": "marshke01",
+        "bm_id": "3544",
+        "rw_id": "3306"
+    },
+    "1209": {
+        "fc_id": "717",
+        "pos": "PF",
+        "nf_id": "ed-davis",
+        "name": "Ed Davis",
+        "fp_id": "ed-davis",
+        "bref_id": "davised01",
+        "bm_id": "3159",
+        "rw_id": "3111"
+    },
+    "1382": {
+        "fc_id": "1193567",
+        "pos": "PF",
+        "nf_id": "cliff-alexander",
+        "name": "Cliff Alexander",
+        "fp_id": "cliff-alexander",
+        "bref_id": "alexacl01",
+        "bm_id": "5083",
+        "rw_id": "3707"
+    },
+    "1324": {
+        "fc_id": "2007",
+        "pos": "SF",
+        "nf_id": "anthony-bennett",
+        "name": "Anthony Bennett",
+        "fp_id": "anthony-bennett",
+        "bref_id": "bennean01",
+        "bm_id": "3681",
+        "rw_id": "3429"
+    },
+    "1204": {
+        "bm_id": "3731",
+        "name": "Otto Porter Jr"
+    },
+    "1105": {
+        "fc_id": "1814",
+        "pos": "SG",
+        "nf_id": "180",
+        "name": "Eric Bledsoe",
+        "fp_id": "eric-bledsoe",
+        "bref_id": "bledser01",
+        "bm_id": "3114",
+        "rw_id": "3113"
+    },
+    "1226": {
+        "fc_id": "707",
+        "pos": "SG",
+        "nf_id": "evan-fournier",
+        "name": "Evan Fournier",
+        "fp_id": "evan-fournier",
+        "bref_id": "fournev01",
+        "bm_id": "3475",
+        "rw_id": "3317"
+    },
+    "1312": {
+        "fc_id": "762",
+        "pos": "SG",
+        "nf_id": "wayne-ellington",
+        "name": "Wayne Ellington",
+        "fp_id": "wayne-ellington",
+        "bref_id": "ellinwa01",
+        "bm_id": "3057",
+        "rw_id": "3015"
+    },
+    "1474": {
+        "nf_id": "2380",
+        "name": "Cady Lalanne",
+        "fp_id": "cady-lalanne"
+    },
+    "1506": {
+        "fc_id": "736",
+        "pos": "C",
+        "nf_id": "greg-smith",
+        "name": "Greg Smith",
+        "fp_id": "greg-smith",
+        "bref_id": "smithgr02",
+        "bm_id": "3421",
+        "rw_id": "3244"
+    },
+    "1014": {
+        "fc_id": "1862",
+        "pos": "SG",
+        "nf_id": "vince-carter",
+        "name": "Vince Carter",
+        "fp_id": "vince-carter",
+        "bref_id": "cartevi01",
+        "bm_id": "1909",
+        "rw_id": "1891"
+    },
+    "1458": {
+        "fc_id": "1953",
+        "pos": "PG",
+        "nf_id": "norris-cole",
+        "name": "Norris Cole",
+        "fp_id": "norris-cole",
+        "bref_id": "coleno01",
+        "bm_id": "3358",
+        "rw_id": "3221"
+    },
+    "1437": {
+        "fc_id": "1193451",
+        "pos": "PG",
+        "nf_id": "terry-rozier",
+        "name": "Terry Rozier",
+        "fp_id": "terry-rozier",
+        "bref_id": "roziete01",
+        "bm_id": "5047",
+        "rw_id": "3736"
+    },
+    "1118": {
+        "fc_id": "2554",
+        "pos": "PF",
+        "nf_id": "kevin-love",
+        "name": "Kevin Love",
+        "fp_id": "kevin-love",
+        "bref_id": "loveke01",
+        "bm_id": "2848",
+        "rw_id": "2931"
+    },
+    "1065": {
+        "fc_id": "2008",
+        "pos": "PG",
+        "nf_id": "dennis-schroder",
+        "name": "Dennis Schroder",
+        "fp_id": "dennis-schroder",
+        "bref_id": "schrode01",
+        "bm_id": "3674",
+        "rw_id": "3444"
+    },
+    "1491": {
+        "fc_id": "1193444",
+        "pos": "SF",
+        "name": "Willie Reed",
+        "fp_id": "willie-reed",
+        "bref_id": "reedwi02",
+        "bm_id": "3658",
+        "rw_id": "3415"
+    },
+    "1259": {
+        "fc_id": "3900",
+        "pos": "SF",
+        "nf_id": "jakarr-sampson",
+        "name": "JaKarr Sampson",
+        "fp_id": "jakarr-sampson",
+        "bref_id": "sampsja02",
+        "bm_id": "3976",
+        "rw_id": "3650"
+    },
+    "1154": {
+        "fc_id": "1864",
+        "pos": "PG",
+        "nf_id": "rajon-rondo",
+        "name": "Rajon Rondo",
+        "fp_id": "rajon-rondo",
+        "bref_id": "rondora01",
+        "bm_id": "2633",
+        "rw_id": "2703"
+    },
+    "1074": {
+        "fc_id": "1847",
+        "pos": "SG",
+        "nf_id": "rodney-stuckey",
+        "name": "Rodney Stuckey",
+        "fp_id": "rodney-stuckey",
+        "bref_id": "stuckro01",
+        "bm_id": "2757",
+        "rw_id": "2840"
+    },
+    "1247": {
+        "fc_id": "703",
+        "pos": "SG",
+        "nf_id": "marco-belinelli",
+        "name": "Marco Belinelli",
+        "fp_id": "marco-belinelli",
+        "bref_id": "belinma01",
+        "bm_id": "2705",
+        "rw_id": "2826"
+    },
+    "1129": {
+        "fc_id": "2325",
+        "pos": "C",
+        "nf_id": "al-jefferson",
+        "name": "Al Jefferson",
+        "fp_id": "al-jefferson",
+        "bref_id": "jeffeal01",
+        "bm_id": "2285",
+        "rw_id": "2475"
+    },
+    "1402": {
+        "nf_id": "2376",
+        "name": "Tyler Harvey",
+        "rw_id": "3752",
+        "fp_id": "tyler-harvey"
+    },
+    "1363": {
+        "fc_id": "741",
+        "pos": "C",
+        "nf_id": "jeff-withey",
+        "name": "Jeff Withey",
+        "fp_id": "jeff-withey",
+        "bref_id": "witheje01",
+        "bm_id": "3708",
+        "rw_id": "3454"
+    },
+    "1168": {
+        "fc_id": "1911",
+        "pos": "C",
+        "nf_id": "enes-kanter",
+        "name": "Enes Kanter",
+        "fp_id": "enes-kanter",
+        "bref_id": "kanteen01",
+        "bm_id": "3374",
+        "rw_id": "3188"
+    },
+    "1500": {
+        "fc_id": "1193535",
+        "pos": "SF",
+        "nf_id": "thanasis-antetokounmpo",
+        "name": "Thanasis Antetokounmpo",
+        "fp_id": "thanasis-antetokounmpo",
+        "bref_id": "antetth01",
+        "bm_id": "3902",
+        "rw_id": "3634"
+    },
+    "1332": {
+        "fc_id": "2680",
+        "pos": "PG",
+        "nf_id": "2083",
+        "name": "Jared Cunningham",
+        "fp_id": "jared-cunningham",
+        "bref_id": "cunnija01",
+        "bm_id": "3643",
+        "rw_id": "3345"
+    },
+    "1471": {
+        "fc_id": "684",
+        "pos": "PF",
+        "nf_id": "anthony-davis",
+        "name": "Anthony Davis",
+        "fp_id": "anthony-davis",
+        "bref_id": "davisan02",
+        "bm_id": "3640",
+        "rw_id": "3297"
+    },
+    "1237": {
+        "fc_id": "2595",
+        "pos": "PF",
+        "nf_id": "tristan-thompson",
+        "name": "Tristan Thompson",
+        "fp_id": "tristan-thompson",
+        "bref_id": "thomptr01",
+        "bm_id": "3400",
+        "rw_id": "3196"
+    },
+    "1096": {
+        "fc_id": "1193508",
+        "pos": "PF",
+        "nf_id": "jarell-martin",
+        "name": "Jarell Martin",
+        "fp_id": "jarell-martin",
+        "bref_id": "martija01",
+        "bm_id": "5030",
+        "rw_id": "3715"
+    },
+    "1460": {
+        "nf_id": "2239",
+        "name": "Chris Babb",
+        "fp_id": "chris-babb"
+    },
+    "1446": {
+        "fc_id": "1193579",
+        "pos": "PG",
+        "nf_id": "delon-wright",
+        "name": "Delon Wright",
+        "fp_id": "delon-wright",
+        "bref_id": "wrighde01",
+        "bm_id": "5058",
+        "rw_id": "3710"
+    },
+    "1436": {
+        "fc_id": "1193518",
+        "pos": "SG",
+        "nf_id": "josh-richardson",
+        "name": "Josh Richardson",
+        "fp_id": "josh-richardson",
+        "bref_id": "richajo01",
+        "bm_id": "5046",
+        "rw_id": "3770"
+    },
+    "1457": {
+        "fc_id": "691",
+        "pos": "SG",
+        "nf_id": "eric-gordon",
+        "name": "Eric Gordon",
+        "fp_id": "eric-gordon",
+        "bref_id": "gordoer01",
+        "bm_id": "2828",
+        "rw_id": "2926"
+    },
+    "1234": {
+        "fc_id": "2558",
+        "pos": "SG",
+        "nf_id": "dion-waiters",
+        "name": "Dion Waiters",
+        "fp_id": "dion-waiters",
+        "bref_id": "waitedi01",
+        "bm_id": "3620",
+        "rw_id": "3315"
+    },
+    "1381": {
+        "fc_id": "1995",
+        "pos": "PF",
+        "nf_id": "quincy-acy",
+        "name": "Quincy Acy",
+        "fp_id": "quincy-acy",
+        "bref_id": "acyqu01",
+        "bm_id": "3427",
+        "rw_id": "3372"
+    },
+    "1050": {
+        "fc_id": "13085",
+        "pos": "C",
+        "nf_id": "mike-muscala",
+        "name": "Mike Muscala",
+        "bref_id": "muscami01",
+        "bm_id": "3672",
+        "rw_id": "3463"
+    },
+    "1335": {
+        "fc_id": "1969",
+        "pos": "PF",
+        "nf_id": "jabari-parker",
+        "name": "Jabari Parker",
+        "fp_id": "jabari-parker",
+        "bref_id": "parkeja01",
+        "bm_id": "3941",
+        "rw_id": "3573"
+    },
+    "1285": {
+        "fc_id": "1877",
+        "pos": "PF",
+        "nf_id": "jj-hickson",
+        "name": "JJ Hickson",
+        "fp_id": "jj-hickson",
+        "bref_id": "hicksjj01",
+        "bm_id": "2835",
+        "rw_id": "2928"
+    },
+    "1248": {
+        "fc_id": "3895",
+        "pos": "SG",
+        "nf_id": "allen-crabbe",
+        "name": "Allen Crabbe",
+        "fp_id": "allen-crabbe",
+        "bref_id": "crabbal01",
+        "bm_id": "3722",
+        "rw_id": "3453"
+    },
+    "1473": {
+        "nf_id": "86",
+        "name": "Nate Robinson",
+        "fp_id": "nate-robinson"
+    },
+    "1119": {
+        "fc_id": "688",
+        "pos": "C",
+        "nf_id": "dwight-howard",
+        "name": "Dwight Howard",
+        "fp_id": "dwight-howard",
+        "bref_id": "howardw01",
+        "bm_id": "2293",
+        "rw_id": "2458"
+    },
+    "1021": {
+        "fc_id": "1963",
+        "pos": "SF",
+        "nf_id": "jeremy-evans",
+        "name": "Jeremy Evans",
+        "fp_id": "jeremy-evans",
+        "bref_id": "evansje01",
+        "bm_id": "3160",
+        "rw_id": "3162"
+    },
+    "1492": {
+        "fc_id": "1193577",
+        "pos": "SF",
+        "nf_id": "jonathon-simmons",
+        "name": "Jonathon Simmons",
+        "fp_id": "jonathon-simmons",
+        "bref_id": "simmojo02",
+        "bm_id": "5093",
+        "rw_id": "3788"
+    },
+    "1020": {
+        "fc_id": "686",
+        "pos": "SG",
+        "nf_id": "monta-ellis",
+        "name": "Monta Ellis",
+        "fp_id": "monta-ellis",
+        "bref_id": "ellismo01",
+        "bm_id": "2426",
+        "rw_id": "2613"
+    },
+    "1431": {
+        "fc_id": "14848",
+        "pos": "PF",
+        "nf_id": "adreian-payne",
+        "name": "Adreian Payne",
+        "fp_id": "adreian-payne",
+        "bref_id": "paynead01",
+        "bm_id": "3943",
+        "rw_id": "3590"
+    },
+    "1249": {
+        "fc_id": "2625",
+        "pos": "PG",
+        "nf_id": "matthew-dellavedova",
+        "name": "Matthew Dellavedova",
+        "fp_id": "matthew-dellavedova",
+        "bref_id": "dellama01",
+        "bm_id": "3775",
+        "rw_id": "3508"
+    },
+    "1348": {
+        "fc_id": "1865",
+        "pos": "C",
+        "nf_id": "chris-kaman",
+        "name": "Chris Kaman",
+        "fp_id": "chris-kaman",
+        "bref_id": "kamanch01",
+        "bm_id": "2046",
+        "rw_id": "2355"
+    },
+    "1385": {
+        "fc_id": "1984",
+        "pos": "C",
+        "nf_id": "dejuan-blair",
+        "name": "DeJuan Blair",
+        "fp_id": "dejuan-blair",
+        "bref_id": "blairde01",
+        "bm_id": "3024",
+        "rw_id": "3028"
+    },
+    "1183": {
+        "fc_id": "751",
+        "pos": "SF",
+        "nf_id": "al-farouq-aminu",
+        "name": "Al-Farouq Aminu",
+        "fp_id": "al-farouq-aminu",
+        "bref_id": "aminual01",
+        "bm_id": "3113",
+        "rw_id": "3110"
+    },
+    "1280": {
+        "fc_id": "709",
+        "pos": "PF",
+        "nf_id": "boris-diaw",
+        "name": "Boris Diaw",
+        "fp_id": "boris-diaw",
+        "bref_id": "diawbo01",
+        "bm_id": "1968",
+        "rw_id": "2370"
+    },
+    "1068": {
+        "fc_id": "2657",
+        "pos": "PF",
+        "nf_id": "kevin-seraphin",
+        "name": "Kevin Seraphin",
+        "fp_id": "kevin-seraphin",
+        "bref_id": "serapke01",
+        "bm_id": "3165",
+        "rw_id": "3123"
+    },
+    "1489": {
+        "fc_id": "10485",
+        "pos": "SF",
+        "nf_id": "2295",
+        "name": "Kostas Papanikolaou",
+        "fp_id": "kostas-papanikolaou",
+        "bref_id": "papanko01",
+        "bm_id": "3648",
+        "rw_id": "3339"
+    },
+    "1496": {
+        "fc_id": "343925",
+        "pos": "SG",
+        "name": "Elliot Williams",
+        "fp_id": "elliot-williams",
+        "bref_id": "williel01",
+        "bm_id": "3152",
+        "rw_id": "3131"
+    },
+    "1267": {
+        "fc_id": "1193492",
+        "pos": "PF",
+        "nf_id": "montrezl-harrell",
+        "name": "Montrezl Harrell",
+        "fp_id": "montrezl-harrell",
+        "bref_id": "harremo01",
+        "bm_id": "5014",
+        "rw_id": "3724"
+    },
+    "1251": {
+        "fc_id": "2012",
+        "pos": "C",
+        "nf_id": "steven-adams",
+        "name": "Steven Adams",
+        "fp_id": "steven-adams",
+        "bref_id": "adamsst01",
+        "bm_id": "3711",
+        "rw_id": "3445"
+    },
+    "1099": {
+        "fc_id": "1808",
+        "pos": "PG",
+        "nf_id": "russell-westbrook",
+        "name": "Russell Westbrook",
+        "fp_id": "russell-westbrook",
+        "bref_id": "westbru01",
+        "bm_id": "2872",
+        "rw_id": "2932"
+    },
+    "1351": {
+        "fc_id": "3874",
+        "pos": "PG",
+        "nf_id": "ray-mccallum",
+        "name": "Ray McCallum",
+        "fp_id": "ray-mccallum",
+        "bref_id": "mccalra01",
+        "bm_id": "3724",
+        "rw_id": "3466"
+    },
+    "1070": {
+        "fc_id": "732",
+        "pos": "PG",
+        "nf_id": "russ-smith",
+        "name": "Russ Smith",
+        "fp_id": "russ-smith",
+        "bref_id": "smithru01",
+        "bm_id": "3950",
+        "rw_id": "3617"
+    },
+    "1045": {
+        "fc_id": "1867",
+        "pos": "SG",
+        "nf_id": "wesley-matthews",
+        "name": "Wesley Matthews",
+        "fp_id": "wesley-matthews",
+        "bref_id": "matthwe02",
+        "bm_id": "3089",
+        "rw_id": "3057"
+    },
+    "1283": {
+        "fc_id": "1943",
+        "pos": "PF",
+        "nf_id": "trevor-booker",
+        "name": "Trevor Booker",
+        "fp_id": "trevor-booker",
+        "bref_id": "booketr01",
+        "bm_id": "3163",
+        "rw_id": "3142"
+    },
+    "1115": {
+        "fc_id": "1815",
+        "pos": "PG",
+        "nf_id": "kyle-lowry",
+        "name": "Kyle Lowry",
+        "fp_id": "kyle-lowry",
+        "bref_id": "lowryky01",
+        "bm_id": "2615",
+        "rw_id": "2720"
+    },
+    "1190": {
+        "fc_id": "1891",
+        "pos": "SF",
+        "nf_id": "marcus-morris",
+        "name": "Marcus Morris",
+        "fp_id": "marcus-morris",
+        "bref_id": "morrima03",
+        "bm_id": "3387",
+        "rw_id": "3198"
+    },
+    "1379": {
+        "fc_id": "723",
+        "pos": "PG",
+        "nf_id": "jason-terry",
+        "name": "Jason Terry",
+        "fp_id": "jason-terry",
+        "bref_id": "terryja01",
+        "bm_id": "1960",
+        "rw_id": "1992"
+    },
+    "1201": {
+        "fc_id": "1824",
+        "pos": "SF",
+        "nf_id": "luol-deng",
+        "name": "Luol Deng",
+        "fp_id": "luol-deng",
+        "bref_id": "denglu01",
+        "bm_id": "2280",
+        "rw_id": "2460"
+    },
+    "1459": {
+        "fc_id": "690",
+        "pos": "PF",
+        "nf_id": "ryan-anderson",
+        "name": "Ryan Anderson",
+        "fp_id": "ryan-anderson",
+        "bref_id": "anderry01",
+        "bm_id": "2807",
+        "rw_id": "2923"
+    },
+    "1415": {
+        "fc_id": "1193467",
+        "pos": "C",
+        "nf_id": "sasha-kaun",
+        "name": "Sasha Kaun",
+        "fp_id": "sasha-kaun",
+        "bref_id": "kaunsa01",
+        "bm_id": "5196",
+        "rw_id": "2969"
+    },
+    "1224": {
+        "fc_id": "694",
+        "pos": "PG",
+        "nf_id": "jameer-nelson",
+        "name": "Jameer Nelson",
+        "fp_id": "jameer-nelson",
+        "bref_id": "nelsoja01",
+        "bm_id": "2295",
+        "rw_id": "2493"
+    },
+    "1276": {
+        "fc_id": "1936",
+        "pos": "PF",
+        "nf_id": "luis-scola",
+        "name": "Luis Scola",
+        "fp_id": "luis-scola",
+        "bref_id": "scolalu01",
+        "bm_id": "2771",
+        "rw_id": "2299"
+    },
+    "1411": {
+        "fc_id": "1985",
+        "pos": "SF",
+        "nf_id": "chris-johnson-1",
+        "name": "Chris Johnson",
+        "fp_id": "chris-johnson",
+        "bref_id": "johnsch04",
+        "bm_id": "3518",
+        "rw_id": "3426"
+    },
+    "1217": {
+        "fc_id": "2025",
+        "pos": "SF",
+        "nf_id": "shabazz-muhammad",
+        "name": "Shabazz Muhammad",
+        "fp_id": "shabazz-muhammad",
+        "bref_id": "muhamsh01",
+        "bm_id": "3706",
+        "rw_id": "3439"
+    }
+}
