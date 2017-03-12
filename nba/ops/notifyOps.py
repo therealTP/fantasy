@@ -51,3 +51,8 @@ def notifyProjectionScrapeSuccess(scrapeStats, scrapeTime):
 def notifyProjectionScrapeError(errorMessage):
     subject = "PROJECTION SCRAPE FAILED"
     sendEmail(subject, errorMessage)
+
+def sendTestEmail():
+    subject = "TEST MESSAGE"
+    message = "This is a test."
+    sendEmail(subject, message)
