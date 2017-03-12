@@ -4,3 +4,4 @@ nba/local-data
 nba/json-data
 nba/.idea
 *.pyc
+*ghostdriver.log
