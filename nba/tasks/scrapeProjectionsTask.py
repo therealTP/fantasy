@@ -9,15 +9,15 @@ startTime = time.time()
 try:
     rawProjHtml = sc.getAllRawHtml()
     projectionDict = sc.parseProjsFromHtml(rawProjHtml)
-    print(projectionDict["counts"])
+    # print(projectionDict["counts"])
 
-    # postProjsResponse = api.postProjections(projectionDict["projections"])
-    # newIdsResponse = api.postNewIds(projectionDict["newPlayerIds"])
+    postProjsResponse = api.postProjections(projectionDict["projections"])
+    newIdsResponse = api.postNewIds(projectionDict["newPlayerIds"])
 
     endTime = time.time()
     timeToRun = endTime - startTime
     notify.notifyProjectionScrapeSuccess(projectionDict["counts"], timeToRun)
-    # logger.logProjectionScrapeSuccess(projectionDict, timeToRun)
+    logger.logProjectionScrapeSuccess(projectionDict, timeToRun)
     
 except Exception as error:
     endTime = time.time()
