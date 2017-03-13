@@ -1,28 +1,25 @@
-Traceback (most recent call last):
-  File "/root/nba/tasks/notifyTestTask.py", line 1, in <module>
-    import nba.ops.notifyOps as notify
-  File "/root/nba/ops/notifyOps.py", line 4, in <module>
-    from nba.ops.config import appConfig
-  File "/root/nba/ops/config.py", line 7, in <module>
-    with open(configLocation) as config_file:
-TypeError: invalid file: None
-python3: can't open file '/nba/tasks/notifyTestTask.py': [Errno 2] No such file or directory
-Traceback (most recent call last):
-  File "/root/nba/tasks/notifyTestTask.py", line 1, in <module>
-    import nba.ops.notifyOps as notify
-  File "/root/nba/ops/notifyOps.py", line 4, in <module>
-    from nba.ops.config import appConfig
-  File "/root/nba/ops/config.py", line 7, in <module>
-    with open(configLocation) as config_file:
-TypeError: invalid file: None
-Traceback (most recent call last):
-  File "/root/nba/tasks/notifyTestTask.py", line 1, in <module>
-    import nba.ops.notifyOps as notify
-  File "/root/nba/ops/notifyOps.py", line 4, in <module>
-    from nba.ops.config import appConfig
-  File "/root/nba/ops/config.py", line 8, in <module>
-    with open(configLocation) as config_file:
-FileNotFoundError: [Errno 2] No such file or directory: './../config.json'
-successfully sent the email
-successfully sent the email
-successfully sent the email
+13/03/2017 22:30:05 Exception ignored in: <bound method Service.__del__ of <selenium.webdriver.phantomjs.service.Service object at 0x7fa296ff4550>>
+13/03/2017 22:30:05 Traceback (most recent call last):
+13/03/2017 22:30:05 File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 173, in __del__
+13/03/2017 22:30:05 self.stop()
+13/03/2017 22:30:05 File "/usr/local/lib/python3.5/dist-packages/selenium/webdriver/common/service.py", line 145, in stop
+13/03/2017 22:30:05 if self.process is None:
+13/03/2017 22:30:05 AttributeError: 'Service' object has no attribute 'process'
+13/03/2017 22:30:05 COULDN'T GET RAW HTML DATA FOR PROJECTIONS, ERROR: Message: 'phantomjs' executable needs to be in PATH.
+13/03/2017 22:30:05 
+13/03/2017 22:30:05 successfully sent the email
+13/03/2017 22:30:06 Traceback (most recent call last):
+13/03/2017 22:30:06 File "/root/nba/tasks/scrapeProjectionsTask.py", line 10, in <module>
+13/03/2017 22:30:06 rawProjHtml = sc.getAllRawHtml()
+13/03/2017 22:30:06 File "/root/nba/ops/scrapeProjections.py", line 66, in getAllRawHtml
+13/03/2017 22:30:06 driver.quit()
+13/03/2017 22:30:06 UnboundLocalError: local variable 'driver' referenced before assignment
+13/03/2017 22:30:06 
+13/03/2017 22:30:06 During handling of the above exception, another exception occurred:
+13/03/2017 22:30:06 
+13/03/2017 22:30:06 Traceback (most recent call last):
+13/03/2017 22:30:06 File "/root/nba/tasks/scrapeProjectionsTask.py", line 26, in <module>
+13/03/2017 22:30:06 logger.logProjectionScrapeError(error, timeToRun)
+13/03/2017 22:30:06 File "/root/nba/ops/logger.py", line 24, in logProjectionScrapeError
+13/03/2017 22:30:06 logger.error('Scrape projections failed. Message: ' + errorMsg + '. Seconds ran: ' + timeToRun)
+13/03/2017 22:30:06 TypeError: Can't convert 'UnboundLocalError' object to str implicitly
