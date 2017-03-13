@@ -4,7 +4,7 @@ from dateutil import parser
 from nba.classes.NbaGamePre import NbaGamePre
 
 # import team json as dict
-with open('./../local-data/team-abbrev-to-id.json') as data_file:    
+with open('./../json-data/team-abbrev-to-id.json') as data_file:    
     teamIdDict = json.load(data_file)
 
 def getTeamIdFromAbbrev(teamAbbrev):

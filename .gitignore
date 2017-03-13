@@ -1,7 +1,6 @@
 nba/config.json
 *__pycache__*
-nba/local-data
-nba/json-data
+nba/local-data/
 nba/.idea
 *.pyc
 *ghostdriver.log

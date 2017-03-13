@@ -24,7 +24,7 @@ def getDepthChartData(sessionObj):
     Returns dict
     '''
     # import player id as dict
-    with open('./../local-data/team-abbrev-to-id.json') as data_file:
+    with open('./../json-data/team-abbrev-to-id.json') as data_file:
         teamDict = json.load(data_file)
 
     # get 

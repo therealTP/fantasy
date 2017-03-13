@@ -97,7 +97,7 @@ teamsToScrape = ["Atlanta", "Boston", "Brooklyn", "Charlotte", "Chicago", "Cleve
 # browser.quit()
 
 def getTeamAbbrevDict():
-    with open('./../local-data/team-abbrev-to-id.json') as data_file:
+    with open('./../json-data/team-abbrev-to-id.json') as data_file:
         teamAbbrevDict = json.load(data_file)
 
     return teamAbbrevDict
