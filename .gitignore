@@ -5,3 +5,5 @@ nba/json-data
 nba/.idea
 *.pyc
 *ghostdriver.log
+.*
+!/.gitignore
