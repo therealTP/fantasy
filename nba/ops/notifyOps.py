@@ -1,10 +1,13 @@
 import smtplib
 import json
 import time
+from nba.ops.config import appConfig
 
 # import config file
-with open('./../config.json') as config_file:
-    config = json.load(config_file)["NOTIFY"]
+# with open('./../config.json') as config_file:
+#     config = json.load(config_file)["NOTIFY"]
+
+config = appConfig["NOTIFY"]
 
 def sendEmail(subject, body):
 
