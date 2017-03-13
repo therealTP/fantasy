@@ -7,10 +7,9 @@ import json
 
 from nba.classes.NbaProjection import NbaProjection
 from nba.classes.NewPlayerId import NewPlayerId
+from nba.ops.config import APP_CONFIG
 
-# import config file
-with open('./../config.json') as config_file:
-    config = json.load(config_file)
+config = APP_CONFIG
 
 def checkForElement(browsObj, elemName):
     '''

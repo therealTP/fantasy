@@ -1,9 +1,9 @@
 import json
 import logging, logging.config
 import loggly.handlers
+from nba.ops.config import APP_CONFIG
 
-with open('./../config.json') as config_file:
-    config = json.load(config_file)
+config = APP_CONFIG
 
 # import loggly config
 logging.config.dictConfig(config["LOGGLY"])

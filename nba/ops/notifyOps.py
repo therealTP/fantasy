@@ -3,10 +3,6 @@ import json
 import time
 from nba.ops.config import APP_CONFIG
 
-# import config file
-# with open('./../config.json') as config_file:
-#     config = json.load(config_file)["NOTIFY"]
-
 config = APP_CONFIG["NOTIFY"]
 
 def sendEmail(subject, body):

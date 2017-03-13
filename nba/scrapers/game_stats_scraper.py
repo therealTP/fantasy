@@ -3,10 +3,9 @@ import json
 from lxml import html
 
 from nba.classes.NbaPlayerStat import NbaPlayerStat
+from nba.ops.config import APP_CONFIG
 
-# import config file
-with open('./../config.json') as config_file:
-    config = json.load(config_file)
+config = APP_CONFIG
 
 def getStatForRow(row, gameId, teamId, playerList):
 

@@ -2,10 +2,9 @@ import json
 import nba.scrapers.rw_depth_scraper as rw
 import nba.scrapers.player_info_scraper as pl
 import nba.ops.apiCalls as api
+from nba.ops.config import APP_CONFIG
 
-# import config file
-with open('./../config.json') as config_file:
-    config = json.load(config_file)
+config = APP_CONFIG
 
 # function to check if relevant player data has changed
 def hasPlayerDataChanged(playerDbData, playerUpdateData):

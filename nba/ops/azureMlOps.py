@@ -4,13 +4,12 @@ import json
 import time
 import urllib
 from azure.storage.blob import (BlockBlobService, ContentSettings)
+from nba.ops.config import APP_CONFIG
 
 import nba.ops.csvOps as csv
 import nba.ops.mlDataPrep as ml
 
-# import config file
-with open('./../config.json') as config_file:
-    config = json.load(config_file)["MS_AZURE"]
+config = APP_CONFIG["MS_AZURE"]
 
 apiHeaders = {
     "Content-Type": "application/json",

@@ -13,9 +13,9 @@ import time
 
 from gcloud import storage
 from apiclient.discovery import build
+from nba.ops.config import APP_CONFIG
 
-with open('./../config.json') as config_file:
-    config = json.load(config_file)["GOOGLE_CLOUD"]
+config = APP_CONFIG["GOOGLE_CLOUD"]
 
 def uploadCsvToGoogleStorage(filename, location):
     client = storage.Client(config["PROJECT_ID"])

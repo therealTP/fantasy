@@ -2,10 +2,10 @@ import requests
 import json
 import time
 import nba.ops.logger as logger
+from nba.ops.config import APP_CONFIG
 
 # import config file
-with open('./../config.json') as config_file:
-    config = json.load(config_file)
+config = APP_CONFIG
 
 apiHeaders = {
     "Content-Type": "application/json",

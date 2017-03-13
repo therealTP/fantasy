@@ -1,18 +1,15 @@
-[INFO  - 2017-03-12T07:30:58.707Z] GhostDriver - Main - running on port 50493
-[INFO  - 2017-03-12T07:30:59.700Z] Session [d6b352c0-06f5-11e7-bcd3-c11142c74d0b] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2017-03-12T07:30:59.700Z] Session [d6b352c0-06f5-11e7-bcd3-c11142c74d0b] - page.customHeaders:  - {}
-[INFO  - 2017-03-12T07:30:59.700Z] Session [d6b352c0-06f5-11e7-bcd3-c11142c74d0b] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2017-03-12T07:30:59.700Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d6b352c0-06f5-11e7-bcd3-c11142c74d0b
-[ERROR - 2017-03-12T07:31:10.611Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1489303870576
+[INFO  - 2017-03-13T19:08:35.046Z] GhostDriver - Main - running on port 62613
+[INFO  - 2017-03-13T19:08:36.012Z] Session [756b6e40-0820-11e7-9bfb-eb5d99e88e57] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-03-13T19:08:36.012Z] Session [756b6e40-0820-11e7-9bfb-eb5d99e88e57] - page.customHeaders:  - {}
+[INFO  - 2017-03-13T19:08:36.012Z] Session [756b6e40-0820-11e7-9bfb-eb5d99e88e57] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-03-13T19:08:36.012Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 756b6e40-0820-11e7-9bfb-eb5d99e88e57
+[ERROR - 2017-03-13T19:08:50.368Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1489432130337
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-03-12T07:31:13.619Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1489303873615
+[ERROR - 2017-03-13T19:09:12.205Z] Session [756b6e40-0820-11e7-9bfb-eb5d99e88e57] - page.onError - msg: Sys.WebForms.PageRequestManagerServerErrorException: Sys.WebForms.PageRequestManagerServerErrorException: An unknown error occurred while processing the request on the server. The status code returned from the server was: 0
 
   phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-03-12T07:31:38.027Z] Session [d6b352c0-06f5-11e7-bcd3-c11142c74d0b] - page.onError - msg: Sys.WebForms.PageRequestManagerServerErrorException: Sys.WebForms.PageRequestManagerServerErrorException: An unknown error occurred while processing the request on the server. The status code returned from the server was: 0
-
-  phantomjs://platform/console++.js:263 in error
-[ERROR - 2017-03-12T07:31:38.027Z] Session [d6b352c0-06f5-11e7-bcd3-c11142c74d0b] - page.onError - stack:
+[ERROR - 2017-03-13T19:09:12.212Z] Session [756b6e40-0820-11e7-9bfb-eb5d99e88e57] - page.onError - stack:
   PageRequestManager$_endPostBack (https://basketballmonster.com/ScriptResource.axd?d=K3zSh6lXcxuzfIbdYNZ7-vmFwsRO0Sgoeb0SislfN05WeNeZle0TEY03A1zN9uCKI9A05jgH-bxOMzGzLeKOtT0rW1tYyeAI_GlpgNlSVdzRdaKTT9XwhmvNUwyvUklLBJqLqvtHsT2dpGKkeZ9aGw2&t=7f16157c:939)
   PageRequestManager$_onFormSubmitCompleted (https://basketballmonster.com/ScriptResource.axd?d=K3zSh6lXcxuzfIbdYNZ7-vmFwsRO0Sgoeb0SislfN05WeNeZle0TEY03A1zN9uCKI9A05jgH-bxOMzGzLeKOtT0rW1tYyeAI_GlpgNlSVdzRdaKTT9XwhmvNUwyvUklLBJqLqvtHsT2dpGKkeZ9aGw2&t=7f16157c:1411)
   (anonymous function) (https://basketballmonster.com/ScriptResource.axd?d=jZDJ_1lnpSeoLiJ96XV5NybJxxmq9BvDHiZlIgfPvNY3WNMolrrB8ibYsHf5ltxJgX2NKT3geS3uhn0NbSYKaOqm9y834XwelYCVCMs_NOKtNRqpPzwqUHS22XAmbTHANHnAePMF0rfr-gdXVdUaBg2&t=7f16157c:628)

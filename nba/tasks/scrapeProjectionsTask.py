@@ -9,10 +9,10 @@ startTime = time.time()
 try:
     rawProjHtml = sc.getAllRawHtml()
     projectionDict = sc.parseProjsFromHtml(rawProjHtml)
-    # print(projectionDict)
+    print(projectionDict["counts"])
 
-    postProjsResponse = api.postProjections(projectionDict["projections"])
-    newIdsResponse = api.postNewIds(projectionDict["newPlayerIds"])
+    # postProjsResponse = api.postProjections(projectionDict["projections"])
+    # newIdsResponse = api.postNewIds(projectionDict["newPlayerIds"])
 
     endTime = time.time()
     timeToRun = endTime - startTime

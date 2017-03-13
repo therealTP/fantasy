@@ -2,8 +2,9 @@ import datetime
 import requests
 import json
 
-with open('./../config.json') as config_file:
-    config = json.load(config_file)
+from nba.ops.config import APP_CONFIG
+
+config = APP_CONFIG
 
 apiHeaders = {
     "Content-Type": "application/json",

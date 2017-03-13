@@ -1,3 +1,6 @@
+"""
+NUMBERFIRE
+"""
 from lxml import html
 import json
 
@@ -5,14 +8,9 @@ import nba.ops.driverWaits as waits
 
 from nba.classes.NbaProjection import NbaProjection
 from nba.classes.NewPlayerId import NewPlayerId
+from nba.ops.config import APP_CONFIG
 
-"""
-NUMBERFIRE
-"""
-
-# import config file
-with open('./../config.json') as config_file:
-    config = json.load(config_file)
+config = APP_CONFIG
 
 def getRawHtml(driver):
     driver.get(config["NF_LOGIN_URL"])
