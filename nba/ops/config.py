@@ -1,8 +1,7 @@
 import os
 import json
+import sys
+import definitions
 
-# this is set at the system level in ENV vars
-configLocation = os.environ.get('NBA_CONFIG')
-
-with open(configLocation) as config_file:
-    appConfig = json.load(config_file)
+with open(definitions.NBA_CONFIG_PATH) as config_file:
+    APP_CONFIG = json.load(config_file)
