@@ -2,10 +2,9 @@ import json
 from lxml import html
 from dateutil import parser
 from nba.classes.NbaGamePre import NbaGamePre
+import nba.ops.jsonData as jsonData
 
-# import team json as dict
-with open('./../json-data/team-abbrev-to-id.json') as data_file:    
-    teamIdDict = json.load(data_file)
+teamIdDict = jsonData.TEAM_ABBREV_TO_ID
 
 def getTeamIdFromAbbrev(teamAbbrev):
 

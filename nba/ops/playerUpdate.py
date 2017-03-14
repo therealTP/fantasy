@@ -2,6 +2,8 @@ import json
 import nba.scrapers.rw_depth_scraper as rw
 import nba.scrapers.player_info_scraper as pl
 import nba.ops.apiCalls as api
+import nba.ops.jsonData as jsonData
+
 from nba.ops.config import APP_CONFIG
 
 config = APP_CONFIG
@@ -23,9 +25,8 @@ def getDepthChartData(sessionObj):
     Parses data into dict based on new/current players 
     Returns dict
     '''
-    # import player id as dict
-    with open('./../json-data/team-abbrev-to-id.json') as data_file:
-        teamDict = json.load(data_file)
+    # import team ids as dict
+    teamDict = jsonData.TEAM_ABBREV_TO_ID
 
     # get 
     currPlayerData = api.getCurrentPlayerData()
@@ -79,7 +80,7 @@ def getNewPlayerData(sessionObj, newPlayerArr):
 
         # try to get brefId for name:
         brefId = pl.getBrefIdFromName(playerName, sessionObj)
-        print(brefId)
+        # print(brefId)
 
         # if brefId found for name:
         if brefId != None:
