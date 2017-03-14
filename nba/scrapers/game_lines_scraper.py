@@ -4,6 +4,7 @@ from lxml import html
 import datetime
 import csv
 import json
+import nba.ops.jsonData as jsonData
 
 def fillOutAndSubmitForm(teamName, month):
     # go to form url
@@ -97,8 +98,7 @@ teamsToScrape = ["Atlanta", "Boston", "Brooklyn", "Charlotte", "Chicago", "Cleve
 # browser.quit()
 
 def getTeamAbbrevDict():
-    with open('./../json-data/team-abbrev-to-id.json') as data_file:
-        teamAbbrevDict = json.load(data_file)
+    teamAbbrevDict = jsonData.TEAM_ABBREV_TO_ID
 
     return teamAbbrevDict
 

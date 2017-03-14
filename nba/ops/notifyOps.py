@@ -25,9 +25,9 @@ def sendEmail(subject, body):
         server.login(gmail_user, gmail_pwd)
         server.sendmail(FROM, TO, message)
         server.close()
-        print ('successfully sent the email')
+        print ('successfully sent the email with subject:', subject)
     except:
-        print ('failed to send email')
+        print ('failed to send email with subject:', subject)
 
 
 def createProjectionScrapeMessage(scrapeStats, scrapeTime):
