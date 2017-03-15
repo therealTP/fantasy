@@ -82,6 +82,12 @@ def postPlayersNotOnRosters(idArr):
         except:
             print("COULDN'T POST PLAYERS NOT ON ROSTERS")
 
+# get counts of pending manual updates 
+def getPendingManualUpdatesCounts():
+    getPendingUpdatesUrl = baseApiUrl + "/players/pending"
+    pendingUpdates = requests.get(getPendingUpdatesUrl, headers=apiHeaders).json()[0]
+    return pendingUpdates
+
 # --- SOURCE IDS --- #
 def getNewSourceIds():
     try:
