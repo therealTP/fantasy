@@ -43,7 +43,10 @@ def getRawHtml(driver):
 
     date_input = checkForElement(driver, 'ctl00$ContentPlaceHolder1$StartDateTextBox')
     date_input.clear()
-    todays_date = time.strftime('%m/%d/%Y')
+    # NOTE: date needs to always be in PST
+    DATE_FORMAT = '%m/%d/%Y'
+    utc_date = datetime.now(tz=pytz.utc)
+    todays_date = utc_date.astimezone(timezone('US/Pacific')).strftime(DATE_FORMAT)
     date_input.send_keys(todays_date)
     update_date.click()
 
