@@ -1,6 +1,9 @@
 import requests
 import json
 import time
+from datetime import datetime
+from pytz import timezone
+import pytz
 import nba.ops.logger as logger
 from nba.ops.config import APP_CONFIG
 
@@ -109,8 +112,11 @@ def updatePlayerSourceIds(updates):
 
 # ---- GAMES ---- #
 def getTodaysGames():
-    today = time.strftime('%Y-%m-%d')
-    getGamesUrl = baseApiUrl + "/games?game_date=" + today
+    # NOTE: This needs to be in PST
+    DATE_FORMAT = '%Y-%m-%d'
+    utc_date = datetime.now(tz=pytz.utc)
+    pst_date = utc_date.astimezone(timezone('US/Pacific')).strftime(DATE_FORMAT)
+    getGamesUrl = baseApiUrl + "/games?game_date=" + pst_date
     gameData = requests.get(getGamesUrl, headers=apiHeaders).json()
     return gameData
 

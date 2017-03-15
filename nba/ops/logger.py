@@ -21,7 +21,7 @@ def logProjectionScrapeSuccess(projectionDict, timeToRun):
     logger.info('Projections successfully scraped. Count: ' + str(len(projectionDict)) + '. Seconds to execute: ' + str(timeToRun))
 
 def logProjectionScrapeError(errorMsg, timeToRun):
-    logger.error('Scrape projections failed. Message: ' + str(errorMsg) + '. Seconds ran: ' + timeToRun)
+    logger.error('Scrape projections failed. Message: ' + str(errorMsg) + '. Seconds ran: ' + str(timeToRun))
 
 # -- PLAYER UPDATE LOGS -- #
 def logPlayerUpdateSuccess(playerUpdateDict, newPlayerData, playerNotOnRosterArr):
