@@ -42,6 +42,7 @@ def createProjectionScrapeMessage(scrapeStats, scrapeTime):
 
     return body
 
+# projection scrape
 def notifyProjectionScrapeSuccess(scrapeStats, scrapeTime):
     subject = "PROJECTION SCRAPE SUCCESSFUL"
     message = createProjectionScrapeMessage(scrapeStats, scrapeTime)
@@ -55,3 +56,18 @@ def sendTestEmail():
     subject = "TEST MESSAGE"
     message = "This is a test."
     sendEmail(subject, message)
+
+def notifyMorningUpdateSuccess():
+    subject = "Morning Update Successful"
+    message = "Initial morning update successful. Player update, auto update source ids, post game data."
+    sendEmail(subject, message)
+
+# new source ids update
+def notifySourceIdsUpdateSuccess(scrapeStats, scrapeTime):
+    subject = "SOURCE IDS AUTO UPDATE SUCCESSFUL"
+    message = createProjectionScrapeMessage(scrapeStats, scrapeTime)
+    sendEmail(subject, message)
+
+def notifySourceIdsUpdateError(errorMessage):
+    subject = "SOURCE IDS AUTO UPDATE SUCCESSFUL"
+    sendEmail(subject, errorMessage)

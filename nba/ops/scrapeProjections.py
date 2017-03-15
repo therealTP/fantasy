@@ -58,13 +58,13 @@ def getAllRawHtml():
         rawHtmlDict["rw"] = rw.getRawHtmlRequests(session)
         rawHtmlDict["fp"] = fp.getRawHtmlRequests(session)
 
+        # clean up
+        driver.quit()
+        # display.stop() 
+
     except Exception as error:
         # TODO: handle this err. Log? Throw?
         print("COULDN'T GET RAW HTML DATA FOR PROJECTIONS, ERROR:", error)
-
-    # clean up
-    driver.quit()
-    # display.stop() 
     
     return rawHtmlDict
 
