@@ -57,9 +57,20 @@ def sendTestEmail():
     message = "This is a test."
     sendEmail(subject, message)
 
-def notifyMorningUpdateSuccess():
+def notifyFirstOfDayUpdateTaskSuccess(pendingUpdates):
+    '''
+    pendingUpdates is a dict of pending manual updates required
+    '''
     subject = "Morning Update Successful"
-    message = "Initial morning update successful. Player update, auto update source ids, post game data."
+    message = "Initial morning update successful. Depth charts & source ids updated. Pending manual updates: " + str(pendingUpdates)
+    sendEmail(subject, message)
+
+def notifyFirstDayOfUpdateError(error):
+    '''
+    error is error/exception thrown from script failing
+    '''
+    subject = "Morning Update Successful"
+    message = ("Initial morning update failed with error: " + str(error))
     sendEmail(subject, message)
 
 # new source ids update

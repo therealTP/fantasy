@@ -1,8 +1,10 @@
 import json
+import requests
 import nba.scrapers.rw_depth_scraper as rw
 import nba.scrapers.player_info_scraper as pl
 import nba.ops.apiCalls as api
 import nba.ops.jsonData as jsonData
+import nba.ops.logger as logger
 
 from nba.ops.config import APP_CONFIG
 
@@ -192,5 +194,40 @@ def updateSourceIdsForPlayersManual():
             # NOTE: will override all existing source ids for these players
 
     return sourceIdUpdates
+
+def updatePlayerSourceIdsAutoAndLog():
+    # get all new source ids
+    sourceIdUpdates = getSourceIdUpdatesForPlayersAuto()
+
+    # make source id updates (will also delete the ones that were just updated)
+    api.updatePlayerSourceIds(sourceIdUpdates)
+
+    # TODO: write this log method
+    logger.logSourceIdsAutoUpdate(sourceIdUpdates)
+
+    return sourceIdUpdates
+
+def updateAllPlayerDataAndLog():
+    # create new requests session
+    session = requests.Session()
+
+    # get current depth chart data (updates for current players & new players)
+    depthChartData = getDepthChartData(session)
+
+    # update current players
+    api.updateCurrentPlayers(depthChartData["rwIdInDbUpdates"])
+
+    # get player info for all new players from depth chart data
+    newPlayerData = getNewPlayerData(session, depthChartData["rwIdNotInDbPosts"])
+
+    # post new players to api
+    api.postNewPlayers(newPlayerData["complete"])
+    api.postNewIncompletePlayers(newPlayerData["incomplete"])
+
+    # deactivate all players not on rosters (that aren't already deactivated')
+    api.postPlayersNotOnRosters(depthChartData["playersNotOnRoster"])
+
+    # log success
+    logger.logPlayerUpdateSuccess(depthChartData["rwIdInDbUpdates"], newPlayerData, depthChartData["playersNotOnRoster"])
 
 # print(updateSourceIdsForPlayersAuto())

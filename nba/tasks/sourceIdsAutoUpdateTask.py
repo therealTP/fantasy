@@ -8,8 +8,6 @@ try:
 
     # make source id updates
     api.updatePlayerSourceIds(sourceIdUpdates)
-
-    # TODO: delete the new source ids for players just added
     
 except Exception as e:
     print("COULDN'T AUTO UPDATE PLAYER SOURCE IDS")
