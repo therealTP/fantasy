@@ -108,10 +108,6 @@ def updatePlayerSourceIds(updates):
         updatePlayerSourceIdUrl = baseApiUrl + '/players/' + str(playerId) + '/sourceIds'
         try:
             response = requests.put(updatePlayerSourceIdUrl, headers=apiHeaders, data=json.dumps(newSourceIds))
-            # if successfully updated player, delete those new source ids:
-            if response.status_code == 200:
-                deletePlayerSourceIdsUrl = baseApiUrl + '/newIds/' + str(playerId)
-                delResponse = requests.delete(deletePlayerSourceIdsUrl, headers=apiHeaders)
         except:
             print("COULDN'T UPDATE ", str(playerId))
             continue

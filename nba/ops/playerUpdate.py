@@ -5,6 +5,7 @@ import nba.scrapers.player_info_scraper as pl
 import nba.ops.apiCalls as api
 import nba.ops.jsonData as jsonData
 import nba.ops.logger as logger
+from difflib import get_close_matches
 
 from nba.ops.config import APP_CONFIG
 
@@ -117,6 +118,38 @@ def getBiosForIncompletePlayers(sessionObj, incPlayersArr):
     
     return playerBios
 
+def mapNewSourceIdsToExistingPlayer(newIdsByPlayer, currentPlayerObj):
+    sourceIds = {}
+    options = ["nf_id", "rw_id", "bm_id", "fp_id"]
+
+    for id in options:
+        # if new source id exists for player:
+        if newIdsByPlayer[id] is not None:
+            # attach it
+            sourceIds[id] = newIdsByPlayer[id]
+        # if source id already exists for player:
+        elif currentPlayerObj[id] is not None:
+            # attach it:
+            sourceIds[id] = currentPlayerObj[id]
+        # else if no current id or new id exists:
+        else:
+            sourceIds[id] = None
+
+    return sourceIds
+
+# def getFinalNewPlayerObject(playerName, idsByPlayer, sessionObj):
+#     altBrefId = input("What is the BREF_ID for " + playerName + "? ")
+#     newPlayerInfo = pl.getPlayerInfo(altBrefId, sessionObj)
+#     finalNewPlayerObj = {**newPlayerInfo, **idsByPlayer}
+#     finalNewPlayerObj["bref_id"] = altBrefId
+#     finalNewPlayerObj["rw_id"] = input("What is the RW_ID for " + playerName + "? ")
+#                   status = 'NOT_ON_ROSTER',
+#               current_depth_pos = NULL,
+#               usual_depth_pos = NULL,
+#               current_team = NULL,
+#               is_starter = false,
+#               inactive = true
+
 def getSourceIdUpdatesForPlayersAuto():
     '''
     Will auto update all players w/ source ids that have an exact name match
@@ -139,28 +172,14 @@ def getSourceIdUpdatesForPlayersAuto():
             continue
         # if there is a match:
         else:
-            sourceIds = {}
-            options = ["nf_id", "rw_id", "bm_id", "fp_id"]
-
-            for id in options:
-                # if new source id exists for player:
-                if idsByPlayer[id] is not None:
-                    # attach it
-                    sourceIds[id] = idsByPlayer[id]
-                # if source id already exists for player:
-                elif currentPlayerMatch[id] is not None:
-                    # attach it:
-                    sourceIds[id] = currentPlayerMatch[id]
-                # else if no current id or new id exists:
-                else:
-                    sourceIds[id] = None
+            sourceIds = mapNewSourceIdsToExistingPlayer(idsByPlayer, currentPlayerMatch)
                                                             
         # add ids to player dict
         sourceIdUpdates[currentPlayerMatch["player_id"]] = sourceIds
 
     return sourceIdUpdates
 
-def updateSourceIdsForPlayersManual():
+def updateSourceIdsForPlayersManualAndLog():
     '''
     Requires manual input from user to match player name/ brefId
     '''
@@ -169,31 +188,54 @@ def updateSourceIdsForPlayersManual():
 
     # get list of current players
     currentPlayers = api.getCurrentPlayerData()
+    allPlayerNames = list((player["player_name"] for player in currentPlayers))
 
-    # arr to hold update
-    sourceIdUpdates = {}
+    # arr to hold updates
+    existingPlayerSourceIdUpdates = {}
 
     for idsByPlayer in newSourceIdsByPlayer:
-        currentPlayerMatch = next((player for player in currentPlayers if player["player_name"] == idsByPlayer["player_name"]), None)
+        playerName = idsByPlayer["player_name"]
+        # check to see if player matches exact name
+        currentPlayerMatch = next((player for player in currentPlayers if player["player_name"] == playerName), None)
 
         # if name does not EXACTLY match any existing player:
         if currentPlayerMatch is None:
-            # TODO: figure out what to do when no player matches exact name. 
             # check similar name matches
+            closestNameMatches = get_close_matches(playerName, allPlayerNames)
 
-            # if match, add to sourceIdUpdates
+            # if match, prompt user to determine which one:
+            if len(closestNameMatches) > 0:
+                indexMatch = int(input("Does " + playerName + " match any of these players? (Enter the number, or '0' for none.) " + str(closestNameMatches) + " "))
+                
+                # if no match by name of exisiting, continue/skip, don't need to add:
+                if indexMatch == 0:
+                    continue
+                    # finalNewPlayerObj = getFinalNewPlayerObject(playerName, idsByPlayer, sessionObj)
+                    # newPlayers.append(finalNewPlayerObj)
+                # if match, assign to current player & add to arr
+                elif indexMatch > 0 and indexMatch <= len(closestNameMatches):
+                    playerNameMatch = closestNameMatches[indexMatch - 1]
+                    currentPlayerMatch = next((player for player in currentPlayers if player["player_name"] == playerNameMatch), None)
+                    newSourceIds = mapNewSourceIdsToExistingPlayer(idsByPlayer, currentPlayerMatch)
+                    existingPlayerSourceIdUpdates[currentPlayerMatch["player_id"]] = newSourceIds
 
-            # if none, 
-            
-            playerBrefId = input("What is the BREF_ID for " + idsByPlayer["player_name"] + "? ")
-        # if there is a match:
+            # if no name matches, skip, no need to add (will be added if in lineup from RW)
+            elif len(closestNameMatches) == 0:
+                continue
+                # finalNewPlayerObj = getFinalNewPlayerObject(playerName, idsByPlayer, sessionObj)
+                # newPlayers.append(finalNewPlayerObj)
+        
+        # if there is an exact match:
         else:
-            # add ids to player dict
-            sourceIdUpdates[currentPlayerMatch["player_id"]] = idsByPlayer
+            # skip over auto match ones, save for later
+            continue
 
-            # NOTE: will override all existing source ids for these players
+    # make source id updates (will also delete the ones that were just updated)
+    api.updatePlayerSourceIds(existingPlayerSourceIdUpdates)
 
-    return sourceIdUpdates
+    logger.logSourceIdsUpdate(existingPlayerSourceIdUpdates, 'MANUAL')
+
+    return existingPlayerSourceIdUpdates
 
 def updatePlayerSourceIdsAutoAndLog():
     # get all new source ids
@@ -203,7 +245,7 @@ def updatePlayerSourceIdsAutoAndLog():
     api.updatePlayerSourceIds(sourceIdUpdates)
 
     # TODO: write this log method
-    logger.logSourceIdsAutoUpdate(sourceIdUpdates)
+    logger.logSourceIdsUpdate(sourceIdUpdates, 'AUTO')
 
     return sourceIdUpdates
 
@@ -229,5 +271,23 @@ def updateAllPlayerDataAndLog():
 
     # log success
     logger.logPlayerUpdateSuccess(depthChartData["rwIdInDbUpdates"], newPlayerData, depthChartData["playersNotOnRoster"])
+
+def manualUpdateIncompletePlayersAndLog():
+    # create new requests session
+    session = requests.Session()
+
+    # 1. Update incomplete players
+    # get all incomplete players
+    incompletePlayers = api.getIncompletePlayers()
+
+    # get bio data for all incomplete players (manually enter brefIds)
+    playerBios = getBiosForIncompletePlayers(session, incompletePlayers)
+
+    # make api call to update those players
+    api.updatePlayerBios(playerBios)
+
+    #log update
+    if len(playerBios) > 0:
+        logger.logIncompletePlayersUpdate(playerBios)
 
 # print(updateSourceIdsForPlayersAuto())

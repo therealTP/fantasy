@@ -37,8 +37,11 @@ def logPlayerUpdateSuccess(playerUpdateDict, newPlayerData, playerNotOnRosterArr
 def logPlayerUpdateError(error):
     logger.error('Failed to complete player update task. Error: ' + str(error))
 
-def logSourceIdsAutoUpdate(sourceIds):
-    logger.info('New player source IDs updated. Players updated: ' + str(len(sourceIds)))
+def logSourceIdsUpdate(sourceIds, method):
+    logger.info('New player source IDs updated. Players updated: ' + str(len(sourceIds)) + ". Method: " + method)
+
+def logIncompletePlayersUpdate(playerBios):
+    logger.info('Incomplete players updated. Players updated: ' + str(len(playerBios)))
 
 # -- TASK LOGS --- #
 def logFirstOfDayUpdateError(error):
