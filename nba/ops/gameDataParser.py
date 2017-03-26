@@ -88,16 +88,3 @@ def getProjectionDataFromGameLogs(gameLogs, gameIdDict):
          
     print("UPDATES FOR ", len(projectionData))
     return projectionData
-
-# gameLogDict = getGameLogData()
-# gameIdDict = getGameIdLookupDict()
-
-# projectionUpdateData = getProjectionDataFromGameLogs(gameLogDict, gameIdDict)
-
-with open("./../scraped-data/projection-update-data.csv", "w") as f:
-    writer = csv.writer(f)
-    writer.writerows(projectionUpdateData)
-
-
-
-# print(createGameIdDict())

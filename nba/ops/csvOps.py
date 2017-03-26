@@ -10,6 +10,6 @@ def writeToCsv(arrOfArrs, fileName, header=None):
         writer.writerows(arrOfArrs)
 
 def appendToCsv(arrOfArrs, filename):
-    with open(filename, "a", newline='') as f:
-        writer = csv.writer(f, delimiter=',',quoting=csv.QUOTE_NONNUMERIC)
+    with open(filename, "a") as f:
+        writer = csv.writer(f,quoting=csv.QUOTE_NONNUMERIC)
         writer.writerows(arrOfArrs)

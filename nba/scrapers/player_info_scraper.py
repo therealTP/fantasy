@@ -5,13 +5,6 @@ import re
 from lxml import html
 import datetime
 
-def getBrefIdToPlayerIdDict():
-    # import player id as dict
-    with open('./../local-data/bref-id-to-player-id.json') as data_file:
-        playerIdDict = json.load(data_file)
-
-    return playerIdDict
-
 BASE_URL = 'http://www.basketball-reference.com/players/'
 URL_EXT = '.html'
 

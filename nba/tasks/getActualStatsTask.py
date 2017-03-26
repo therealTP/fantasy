@@ -1,3 +1,8 @@
+###
+# ONE OFF: used for getting actual game stats for a period
+# of time, i.e. date range
+###
+
 from nba.ops.getActualStats import scrapeGameStats
 import nba.ops.apiCalls as api
 

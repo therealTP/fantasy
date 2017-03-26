@@ -81,6 +81,8 @@ def getActualPointsForTeam(teamArr):
 
     actualTeamPoints = 0
     for playerObj in teamArr:
+        if playerObj["actual_pts"] == 0:
+            print("NO POINTS FOR ", playerObj)
         actualTeamPoints += playerObj["actual_pts"]
 
     return actualTeamPoints
@@ -115,15 +117,14 @@ def getFinalAnalysisForDates(datesToTest, source, salaryCap, threshold):
                 totalTested += 1
                 if actualPoints > threshold:
                     totalOver += 1
-
             
         except (KeyError, TypeError):
             pass
 
     return float(totalOver / totalTested)
 
-dates = ml.getDateRangeArr('2016-01-26', '2016-04-05')
-source = 'AZURE'
+dates = ml.getDateRangeArr('2016-02-07', '2016-04-05')
+source = 'GOOGLE'
 cap = 60000
 minimum = 285
 

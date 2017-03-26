@@ -3,6 +3,10 @@ from statistics import mean
 from math import sin, cos, sqrt, atan2, radians
 import nba.ops.apiCalls as api
 import nba.ops.csvOps as csv
+import nba.ops.jsonData as jsonData
+
+from nba.ops.config import APP_CONFIG
+config = APP_CONFIG
 
 def getColumns():
     columns = [
@@ -18,7 +22,7 @@ def getColumns():
         # GAME DATA
         "is_home", "opponent_abbrev", "team_spread", "team_pred_pts", 
         # GAME TIME & DATE
-        "game_time_24_et", "game_tz", "day_of_week", "game_month",
+        "game_time_24_et", "game_tz", "day_of_week", # "game_month",
         # BASIC INJURY COUNT
         "num_teammates_injured", "num_opponents_injured",
         # STADIUM ATTENDANCE
@@ -273,7 +277,7 @@ def pullAzureTrainingDataAndWriteToCsv(dateArr, statType):
     '''
     Pulls in data for multiple dates, in an arr, for a specific stat type
     '''
-    folder = './../local-data/'
+    folder = jsonData.LOCAL_DATA_PATH
     filename = 'nba-' + statType + '-azure-initial-training-data.csv'
     location = folder + filename
 
@@ -293,8 +297,9 @@ def pullGoogleTrainingDataAndWriteToCsv(dateArr, statType):
     '''
     Pulls in data for multiple dates, in an arr, for a specific stat type
     '''
-    folder = './../local-data/'
-    filename = 'nba-' + statType + '-google-initial-training-data.csv'
+    folder = jsonData.LOCAL_DATA_PATH
+    # filename = 'nba-' + statType + '-google-initial-training-data.csv'
+    filename = config["GOOGLE_CLOUD"]["TRAINING_DATA_FILES"][statType]
     location = folder + filename
 
     print("Pulling factor data from API...")

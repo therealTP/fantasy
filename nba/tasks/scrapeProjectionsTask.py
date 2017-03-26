@@ -1,4 +1,4 @@
-import nba.ops.scrapeProjections as sc
+import nba.ops.projectionsOps as proj
 import nba.ops.apiCalls as api
 import nba.ops.logger as logger
 import nba.ops.notifyOps as notify
@@ -7,8 +7,8 @@ import time
 startTime = time.time()
 
 try:
-    rawProjHtml = sc.getAllRawHtml()
-    projectionDict = sc.parseProjsFromHtml(rawProjHtml)
+    rawProjHtml = proj.getAllRawHtml()
+    projectionDict = proj.parseProjsFromHtml(rawProjHtml)
     # print(projectionDict["counts"])
 
     postProjsResponse = api.postProjections(projectionDict["projections"])

@@ -1,4 +1,4 @@
-import nba.ops.playerUpdate as pl
+import nba.ops.playerOps as pl
 import nba.ops.apiCalls as api
 import nba.ops.logger as logger 
 
