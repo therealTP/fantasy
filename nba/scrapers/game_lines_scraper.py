@@ -1,3 +1,8 @@
+#####
+# USED TO SCRAPE GAME LINES (I.E. SPREAD/ OVER-UNDER)
+#
+#####
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from lxml import html
@@ -134,6 +139,9 @@ def finalizeLineData(lineData, teamAbbDict):
 
     print("TOTAL CLEANED", len(finalLineData))
     return finalLineData
+
+def getLinesForTodayPst():
+    
 
 with open("./../scraped-data/game-line-data.csv", "r") as f:
     reader = csv.reader(f)

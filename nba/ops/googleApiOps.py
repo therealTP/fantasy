@@ -6,13 +6,17 @@
 # Prediction API Python Ref: https://developers.google.com/resources/api-libraries/documentation/prediction/v1.6/python/latest/prediction_v1.6.trainedmodels.html#get
 import logging
 import os
+import sys
 import json
 import pprint
 import nba.ops.mlDataPrep as ml
 import time
+import csv
 
 from gcloud import storage
 from apiclient.discovery import build
+import nba.ops.csvOps as csvOps
+import nba.ops.jsonData as jsonData
 from nba.ops.config import APP_CONFIG
 
 config = APP_CONFIG["GOOGLE_CLOUD"]
@@ -28,7 +32,22 @@ def uploadCsvToGoogleStorage(filename, location):
     # return location of file: bucket + filename
     return config["STORAGE_BUCKET"] + "/" + filename
 
+def getCsvFromCloudStorageToFile(bucket, filename):
+    client = storage.Client(config["PROJECT_ID"])
+    bucket = client.get_bucket(bucket)
+    blob = bucket.get_blob(filename)
+
+    local_file = jsonData.LOCAL_DATA_PATH + filename
+
+    with open(local_file, 'wb') as file_obj:
+        blob.download_to_file(file_obj)
+
+    return local_file # return localfilename
+
 def createAndTrainNewModel(statType, trainDataLocation):
+    '''
+    Can also be used to re-insert model to retrain
+    '''
     service = build('prediction', 'v1.6')
     trainer = service.trainedmodels()
 
@@ -45,10 +64,12 @@ def createAndTrainNewModel(statType, trainDataLocation):
 
 def createAndTrainNewModelWithDateRange(dateRange, statType):
     trainingDataLoc = ml.pullGoogleTrainingDataAndWriteToCsv(dateRange, statType)
-    filename = 'nba-' + statType + '-google-initial-training-data.csv'
-    # uploadLocation = config["STORAGE_BUCKET"] + "/" + filename # TEST
+    filename = config["TRAINING_DATA_FILES"][statType]
     uploadLocation = uploadCsvToGoogleStorage(filename, trainingDataLoc)
     createModelResponse = createAndTrainNewModel(statType, uploadLocation)
+    
+    # cleanup
+    os.remove(trainingDataLoc)
     return createModelResponse
 
 def listPredictionModels():
@@ -98,7 +119,7 @@ def getPredictionsForDate(date, statType):
 
     predictionsForDate = []
 
-    print("Pulling predictions for", date)
+    print(" -- Now Pulling predictions for", date)
 
     for row in predictData:
         rowObj = {}
@@ -130,29 +151,69 @@ def retrainModel(statType, retrainRows):
 
     for row in retrainRows:
         body = {
-            "output": float(row[0]), # The generic output value - could be regression value or class label
+            "output": int(row[0]), # The generic output value - could be regression value or class label
             "csvInstance": row[1:]
         }
 
         retrainer.update(project=config["PROJECT_ID"], id=modelId, body=body).execute()
 
-    return "DONE RETRAINING"
+    return "RETRAIN FINISHED"
+
+def retrainModelWithNewCsv(statType, retrainRows):
+    # if no new rows, return:
+    if len(retrainRows) == 0:
+        print("NO NEW ROWS TO ADD")
+        return
+
+    service = build('prediction', 'v1.6')
+
+    # get initial training data for model + save to local csv
+    local_file = getCsvFromCloudStorageToFile(config["STORAGE_BUCKET"], config["TRAINING_DATA_FILES"][statType])
+
+    # append retrain rows to local csv
+    csvOps.appendToCsv(retrainRows, local_file)
+    
+    # reupload new csv to cloud, overwrite old file
+    upload_location = uploadCsvToGoogleStorage(config["TRAINING_DATA_FILES"][statType], local_file)
+
+    # re-insert model, which will re-train with new data, even though filename is the same
+    createAndTrainNewModel(statType, upload_location)
+
+    # cleanup: delete local version of file
+    os.remove(local_file)
+
+    return "NEW MODEL PUBLISHED"
 
 def retrainModelWithDate(gameDate, statType):
     retrainRows = ml.getAndPrepFinalData(gameDate, statType, True, 10)
-    return retrainModel(statType, retrainRows)
+    # return retrainModel(statType, retrainRows)
+    return retrainModelWithNewCsv(statType, retrainRows)
 
 def waitForModelToRetrain(statType):
+    startTime = time.time()
+    print("Waiting for model to retrain...")
     while True:
         trainingStatusRes = getTrainingStatusOfModel(statType)
         status = trainingStatusRes["trainingStatus"]
 
         if status == 'DONE':
+            endTime = time.time()
+            timeToRun = endTime - startTime
+            print("Retrain complete. Seconds to retrain: " + str(round(timeToRun, 1)))
+            # sys.stdout.flush()
             return 'DONE'
         else:
-            print("Model still training w/ status", status)
+            # sys.stdout.write("\rModel still training with status " + status)
+            # sys.stdout.flush()
             time.sleep(5)
             continue
+
+# retrainModelWithDate("2015-11-11", "pts")
+# waitForModelToRetrain("pts")
+# print(analyzePredictionModel("pts"))
+
+
+
     
 
 

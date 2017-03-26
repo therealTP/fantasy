@@ -183,6 +183,10 @@ def postPredictions(predSrc, gameDate, statType, predictionArr):
     '''
     predSrc = GOOGLE or AZURE
     '''
+    if len(predictionArr) == 0:
+        print("NO PREDICTIONS TO POST, BLOCK API CALL")
+        return None
+
     postPredictionsUrl = baseApiUrl + '/predictions'
 
     body = {

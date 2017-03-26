@@ -55,19 +55,17 @@ def createDictFromRow(row, columnsArr):
 
     return newDict
 
-trainDates = ml.getDateRangeArr('2015-11-04', '2016-01-04')
-stat = 'pts'
+trainDates = ml.getDateRangeArr('2015-11-04', '2015-11-05')
+stat = 'reb'
 isTraining = True
 numRecentGames = 10
 
-filename = 'nba-pts-initial-training-data.csv'
-location = './../local-data/nba-pts-initial-training-data.csv'
+filename = 'nba-pts-google-initial-training-data.csv'
+location = './../local-data/nba-pts-google-initial-training-data.csv'
 
-# pullTrainingDataAndWriteToCsv(trainDates, stat, numRecentGames)
-
-trainGoogleModelFromCsv(filename, location, stat)
-
-# print(google.getTrainingStatusOfModel(stat))
+# ml.pullGoogleTrainingDataAndWriteToCsv(trainDates, stat)
+# time.sleep(5)
+# trainGoogleModelFromCsv(filename, location, stat)
 
 # google.deletePredictionModel(stat)
 
@@ -75,6 +73,19 @@ trainGoogleModelFromCsv(filename, location, stat)
 
 # pullTrainingDataAndTrainModel(trainDates, stat, isTraining, numRecentGames)
 # predictDataForDates(predictDate, stat, isTraining, numRecentGames)
+
+# google.retrainModelWithDate('2015-11-07', stat)
+# google.waitForModelToRetrain(stat)
+
+# counttest = 0
+# num = 0
+analyzeData = google.analyzePredictionModel(stat)
+print(analyzeData)
+# for value in analyzeData["dataDescription"]["features"][4]["categorical"]["values"]:
+#     counttest += int(value["count"])
+#     num += 1
+
+# print("COUNT", counttest, "NUM", num)
 
 
 

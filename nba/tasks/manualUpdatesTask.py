@@ -4,7 +4,7 @@ Pull their bio data
 For players that couldn't be matched by exact name
 '''
 import requests
-import nba.ops.playerUpdate as pl
+import nba.ops.playerOps as pl
 import nba.ops.apiCalls as api
 
 try:

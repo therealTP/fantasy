@@ -3,7 +3,7 @@ This task is run continuously, starting an hr before the game.
 Will provide main updates of injuries, depth charts, etc.
 '''
 import requests
-import nba.ops.playerUpdate as pl
+import nba.ops.playerOps as pl
 import nba.ops.apiCalls as api
 import nba.ops.logger as logger 
 
