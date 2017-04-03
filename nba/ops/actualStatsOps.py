@@ -1,11 +1,11 @@
 import requests
 from datetime import datetime, timedelta, date
 import pytz
-import logger
 from pytz import timezone
 
 import nba.scrapers.actual_stats_scraper as actual
-import nba.ops.apiCalls as api 
+import nba.ops.apiCalls as api
+import nba.ops.logger as logger 
 
 def scrapeGameStats(gameOrMinDate, maxDate=None):
     
