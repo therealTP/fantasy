@@ -1,40 +1,61 @@
-import nba.ops.apiCalls as api
+import requests
 import json
+from selenium import webdriver
 
-def parseSalariesToArrOfObjs(site):
-    '''
-    Site: 'FAN_DUEL' or 'DRAFT_KINGS'
-    '''
-    with open('./../local-data/fanduel_salaries.json') as salaries:
-        salary_data = json.load(salaries)
+import nba.scrapers.rotowire_scraper as rw
+import nba.scrapers.fc_scraper as fc
 
-    salaries = []
-    missingPlayers = ['1355']
+import nba.ops.mlDataPrep as ml
+import nba.ops.logger as logger
+import nba.ops.apiCalls as api 
 
-    if site == 'FAN_DUEL':
-        siteKey = "fanduel"
-    elif site == 'DRAFT_KINGS':
-        siteKey = "draftkings"
+# this fcn used for automated task
+def getSalariesForTodayAndPostToApi():
+    session = requests.Session()
+    rawSalaryHtml = rw.getRawHtmlForSalaries(session)
+    players = api.getCurrentPlayerData()
+    salaryData = rw.extractSalaries(rawSalaryHtml, players)
 
-    for date, players in salary_data.items():
-        for playerId, salaryObj in players.items():
-            if playerId in missingPlayers:
-                continue
-            else:
-                try:
-                    salaryObj = {
-                        "playerId": int(playerId),
-                        "gameDate": date,
-                        "salary": int(salaryObj[siteKey]),
-                        "site": site
-                    }
+    salaries = salaryData["currentPlayerSalaries"]
+    newPlayerIds = salaryData["newPlayerIds"]
 
-                    salaries.append(salaryObj)
-                except ValueError:
-                    continue
+    # print(salaries)
 
-    print("# SALARIES", len(salaries))
-    return salaries
+    salaryResponse = api.postSalaries(salaries)
+    newIdsResponse = api.postNewIds(newPlayerIds)
 
-print(api.postSalaries(parseSalariesToArrOfObjs("FAN_DUEL")))
+    # log task
+    logger.logSalaryScrapeTaskSuccess(salaries)
+
+    return len(salaries)
+
+# this fcn used for manual bulk scraping
+def getSalariesForDatesAndPostToApi(dateArr):
+    driver = webdriver.PhantomJS()
+    driver.set_window_size(1124, 850)
+
+    playerData = api.getCurrentPlayerData()
+    
+    site = "fanduel" #fanduel or draftkings?
+
+    allData = {
+        'allSalaries': [],
+        'allNewIds': []
+    }
+
+    for date in dateArr:
+        salariesForDate = fc.getSalaryDataForDate(date, site, playerData, driver)
+        allData['allSalaries'].extend(salariesForDate['currentPlayerSalaries'])
+        allData['allNewIds'].extend(salariesForDate['missingPlayerIds'])
+
+    newSalariesResponse = api.postSalaries(allData['allSalaries'])
+    # UNCOMMENT LINE BELOW IF ALSO WANT TO ADD NEW FC IDS
+    # newIdsResponse = api.postNewIds(allData['allNewIds'])
+    
+    return "DONE"
+
+# salaryDates = ml.getDateRangeArr('2015-11-04', '2016-04-13')
+# getSalariesForDatesAndPostToApi(salaryDates)
+
+
         

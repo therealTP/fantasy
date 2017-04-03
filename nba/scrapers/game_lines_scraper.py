@@ -3,13 +3,21 @@
 #
 #####
 
+import requests
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from lxml import html
 import datetime
 import csv
 import json
+from datetime import datetime, timedelta, date
+import pytz
+
 import nba.ops.jsonData as jsonData
+
+###
+# These first functions will be used for scraping lines from the past
+###
 
 def fillOutAndSubmitForm(teamName, month):
     # go to form url
@@ -141,18 +149,36 @@ def finalizeLineData(lineData, teamAbbDict):
     return finalLineData
 
 def getLinesForTodayPst():
-    
+    DATE_FORMAT = '%Y-%m-%d'
+    today_pst = datetime.now(tz=pytz.utc).astimezone(pytz.timezone('US/Pacific')).strftime(DATE_FORMAT)
+    scoresUrl = 'http://www.oddsshark.com/nba/database'
 
-with open("./../scraped-data/game-line-data.csv", "r") as f:
-    reader = csv.reader(f)
-    lines = list(reader)
+    session = requests.Session()
 
-teamAbbrevs = getTeamAbbrevDict()
+    scoresPage = session.get(scoresUrl)
+    rawScoresHtml = scoresPage.content
 
-finalData = finalizeLineData(lines, teamAbbrevs)
+    tree = html.fromstring(rawScoresHtml)
+    # print(rawScoresHtml)
+    games = tree.cssselect('table.upcoming-matchups')
 
-with open("./../scraped-data/game-line-data.csv", "w") as f:
-    writer = csv.writer(f)
-    writer.writerows(finalData)
+    print("# GAMES", len(games))
+
+getLinesForTodayPst()
+
+
+
+
+# with open("./../scraped-data/game-line-data.csv", "r") as f:
+#     reader = csv.reader(f)
+#     lines = list(reader)
+
+# teamAbbrevs = getTeamAbbrevDict()
+
+# finalData = finalizeLineData(lines, teamAbbrevs)
+
+# with open("./../scraped-data/game-line-data.csv", "w") as f:
+#     writer = csv.writer(f)
+#     writer.writerows(finalData)
 
 

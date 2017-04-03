@@ -1,74 +1,78 @@
+####
+# NOTE: This scraper can only get salaries for >= 2 days in the past, as site does not update in real time
+# For real time, day-of salaires
+####
 import requests
 import json
 import os
-import s3
 from lxml import html
-import PlayerSuite as ps
-import DataSuite as ds
-import linksFilesCreds as lfc
+import nba.ops.driverWaits as waits
+from selenium.webdriver.support.ui import Select
 
-def getFcDataForDates(datesArr, site):
+from nba.classes.NewPlayerId import NewPlayerId
+import nba.ops.apiCalls as api
+from nba.ops.config import APP_CONFIG
+
+config = APP_CONFIG
+
+def getSalaryDataForDate(date, fantasySite, playerList, driver):
     """
-    Takes in array of YYYY-MM-DD format date strings
-    Each date string is used to build url
-    Scrapes/parses data from each URL & updates to S3 obj
+    date in YYYY-MM-DD format
+    session is a requests session
     """
-    salaries = {}
-    projections = {}
+    print("Getting salary data for", date)
+    baseUrl = config["FC_BASE_URL"]
+    projSourceId = 5
+    fullUrl = baseUrl + fantasySite + '/NBA/' + date
+    page = driver.get(fullUrl)
 
-    FC_BASE_URL = 'https://www.fantasycruncher.com/lineup-rewind/'
-    HEADER = {'User-agent': 'Mozilla/5.0'}
+    # close login popup
+    closeLogin = waits.byClass('close-login-alert', driver)
+    closeLogin.click()
 
-    with requests.Session() as c:
-        for date in datesArr:
-            url = FC_BASE_URL + site + '/NBA/' + date
-            page = c.get(url, headers=HEADER)
-            # print(page.text)
-            tree = html.fromstring(page.text)
-            rows = tree.cssselect('table#ff tbody tr')
-            salariesForDate = {}
-            projectionsForDate = {}
+    # make sure "ALL PLAYERS" is selected
+    selectElem = Select(waits.byName('ff_length', driver))
+    selectElem.select_by_visible_text("All players")
 
-            # will not go through this loop if the table has no data rows
-            for row in rows:
-                fcPlayerId = row.get('data-playerid')
-                name = row[0].cssselect('span.player-stats')[0].text_content()
-                pos = row[1].text_content()
-                salary = row[5].text_content().strip()
-                mins = row[9].text_content()
-                proj = row[10].text_content()
-                playerId = ps.getPlayerId(fcPlayerId, 6, name, pos)
+    # select all salary table rows
+    rawHtml = driver.page_source
 
-                # print(salary, mins, proj)
+    tableRowsSelector = 'table#ff tbody tr'
 
-                salariesForDate[playerId] = {}
-                salariesForDate[playerId][site] = salary
-                projectionsForDate[playerId] = proj
+    tree = html.fromstring(rawHtml)
+    rows = tree.cssselect(tableRowsSelector)
 
-            salaries[date] = salariesForDate
-            projections[date] = projectionsForDate
-            print("salary & proj data scraped for ", date)
+    salaryData = {
+        'currentPlayerSalaries': [],
+        'missingPlayerIds': []
+    }
 
-    return [salaries, projections]
+    for row in rows:
+        try:
+            fcId = row.get('data-playerid')
+            playerName = row[0].cssselect('span.player-stats')[0].text_content().strip()
+            playerObj = next((player for player in playerList if player["fc_id"] == fcId), None)
+            salary = int(row[5].text_content().strip())
+            
+            if playerObj is None:
+                # Add data for new source ids:
+                newPlayerId = NewPlayerId(projSourceId, fcId, playerName)
+                salaryData['missingPlayerIds'].append(newPlayerId.__dict__)
+            else:
+                if fantasySite == 'fanduel':
+                    site = 'FAN_DUEL'
+                elif fantasySite == 'draftkings':
+                    site = 'DRAFT_KINGS'
 
-datesArr = ds.getDateRangeArr('2015-11-02', '2016-04-06')
-fcData = getFcDataForDates(datesArr, 'fanduel')
+                salaryObj = {
+                    'playerId': playerObj["player_id"],
+                    'gameDate': date,
+                    'salary': salary,
+                    'site': site
+                }
 
-# create file name from today's date, inc. data folder
-salary_json_file = "./../local-data/fanduel_salaries.json"
-# proj_json_file = "fc_fanduel_projections.json"
+                salaryData['currentPlayerSalaries'].append(salaryObj)
+        except Exception as e:
+            continue
 
-# write final data_dict to json file w/ file name
-with open(salary_json_file, 'w') as write_json:
-    json.dump(fcData[0], write_json)
-
-# with open(proj_json_file, 'w') as write_json:
-#     json.dump(fcData[1], write_json)
-
-# put json file to s3 bucket
-# s3_result_salary = s3.putObjectS3(salary_json_file, lfc.AWS_BUCKET_NAME, lfc.SALARIES_FOLDER)
-# s3_result_proj = s3.putObjectS3(proj_json_file, lfc.AWS_BUCKET_NAME, lfc.PROJECTIONS_FOLDER)
-
-# delete json_file from local storage (s3 put complete)
-# os.remove(salary_json_file)
-# os.remove(proj_json_file)
+    return salaryData
