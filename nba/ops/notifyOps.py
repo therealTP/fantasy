@@ -82,3 +82,31 @@ def notifySourceIdsUpdateSuccess(scrapeStats, scrapeTime):
 def notifySourceIdsUpdateError(errorMessage):
     subject = "SOURCE IDS AUTO UPDATE SUCCESSFUL"
     sendEmail(subject, errorMessage)
+
+# salary scrape
+def notifySalaryScrapeSuccess(numSalaries):
+    subject = "Salary scrape successful"
+    message = ("Number of salaries: " + str(numSalaries))
+    sendEmail(subject, message)
+
+def notifySalaryScrapeError(error):
+    '''
+    error is error/exception thrown from script failing
+    '''
+    subject = "Salary scrape failed"
+    message = ("Salary scrape failed with error " + str(error))
+    sendEmail(subject, message)
+
+# game spreads
+def notifySpreadsScrapeSuccess(spreads):
+    subject = "Spreads scrape successful"
+    message = ("Game totals & spreads scraped for games.")
+    sendEmail(subject, message)
+
+def notifySpreadsScrapeError(error):
+    '''
+    error is error/exception thrown from script failing
+    '''
+    subject = "Spreads scrape failed"
+    message = ("Game spreads scrape failed with error " + str(error))
+    sendEmail(subject, message)

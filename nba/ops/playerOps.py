@@ -120,7 +120,7 @@ def getBiosForIncompletePlayers(sessionObj, incPlayersArr):
 
 def mapNewSourceIdsToExistingPlayer(newIdsByPlayer, currentPlayerObj):
     sourceIds = {}
-    options = ["nf_id", "rw_id", "bm_id", "fp_id"]
+    options = ["nf_id", "rw_id", "bm_id", "fp_id", "fc_id"]
 
     for id in options:
         # if new source id exists for player:

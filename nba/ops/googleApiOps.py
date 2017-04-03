@@ -204,9 +204,20 @@ def waitForModelToRetrain(statType):
             return 'DONE'
         else:
             # sys.stdout.write("\rModel still training with status " + status)
-            # sys.stdout.flush()
+            # sys.stdut.flush()
             time.sleep(5)
             continue
+
+def retrainAllModelsWithYesterdaysDataAndLog():
+    DATE_FORMAT = '%Y-%m-%d'
+    yesterday_utc = datetime.now(tz=pytz.utc) - timedelta(days=1)
+    yesterday_pst = yesterday_utc.astimezone(timezone('US/Pacific')).strftime(DATE_FORMAT)
+
+    stats = ['pts', 'reb', 'ast', 'stl', 'blk', 'tov', 'tpt']
+    retrainModelWithDate(yesterday_pst, stat)
+    waitForModelToRetrain(stat)
+    analyzeData = analyzePredictionModel(statType)
+    logger.logRetrainGoogleModelSuccess(stat, analyzeData["dataDescription"]["outputFeature"]["numeric"]["count"])
 
 # retrainModelWithDate("2015-11-11", "pts")
 # waitForModelToRetrain("pts")

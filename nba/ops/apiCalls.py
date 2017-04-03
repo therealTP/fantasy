@@ -98,9 +98,12 @@ def getNewSourceIds():
         print("COULDN'T POST PLAYERS NOT ON ROSTERS")
 
 def postNewIds(newIdArr):
-    postNewIdsUrl = baseApiUrl + "/newIds"
-    postResponse = requests.post(postNewIdsUrl, headers=apiHeaders, data=json.dumps(newIdArr))
-    return postResponse
+    if len(newIdArr) > 0:
+        postNewIdsUrl = baseApiUrl + "/newIds"
+        postResponse = requests.post(postNewIdsUrl, headers=apiHeaders, data=json.dumps(newIdArr))
+        return postResponse.json()
+    else:
+        return "NO NEW IDS IN ARR"
 
 # update current players w/ new source ids
 def updatePlayerSourceIds(updates):
@@ -132,6 +135,14 @@ def getGamesInRange(startDate, endDate):
     gameData = requests.get(getGamesUrl, headers=apiHeaders).json()
     return gameData
 
+def postGameSpreads(spreads):
+    if len(spreads) > 0:
+        postSpreadsUrl = baseApiUrl + "/games/lines"
+        postResponse = requests.post(postSpreadsUrl, headers=apiHeaders, data=json.dumps(spreads))
+        return postResponse.json()
+    else:
+        return "NO SPREADS IN ARR"
+
 # --- PROJECTIONS --- #
 def postProjections(projectionArr):
     postProjsUrl = baseApiUrl + "/projections"
@@ -149,8 +160,19 @@ def getActualStats(date=None):
     return statsData
 
 def postActualStats(statsArr):
-    postStatsUrl = baseApiUrl + "/stats"
-    postResponse = requests.post(postStatsUrl, headers=apiHeaders, data=json.dumps(statsArr))
+    if len(statsArr) > 0:
+        postStatsUrl = baseApiUrl + "/stats"
+        postResponse = requests.post(postStatsUrl, headers=apiHeaders, data=json.dumps(statsArr))
+
+# --- POST GAME DATA --- #
+def updateGamesWithPostgameData(postgameDataArr):
+
+    if len(postGameData) > 0:
+        for postGameData in postgameDataArr:
+            postgameUpdateUrl = baseApiUrl + "/games/" + str(game["gameId"])
+            gameUpdateResponse = requests.put(postgameUpdateUrl, headers=apiHeaders, data=json.dumps(postGameData))
+
+        return "DONE"
 
 # --- ML DATA --- #
 def getBaseMlData(gameDate, statType, isTraining, numGames):
@@ -200,9 +222,10 @@ def postPredictions(predSrc, gameDate, statType, predictionArr):
 
     return postResponse
 
+# --- SALARY DATA --- #
 def postSalaries(salaries):
     '''
-    predSrc = GOOGLE or AZURE
+    salaries = array of salary objects w/ playerId, site, gameId, salary
     '''
     postPredictionsUrl = baseApiUrl + '/salaries'
 

@@ -43,9 +43,32 @@ def logSourceIdsUpdate(sourceIds, method):
 def logIncompletePlayersUpdate(playerBios):
     logger.info('Incomplete players updated. Players updated: ' + str(len(playerBios)))
 
+# -- ACTUAL STATS LOGS --- #
+def logActualStatsError(error):
+    logger.error('Failed to retrieve or post actual stats. Error:', e)
+
+# -- ML LOGS -- #
+def logRetrainGoogleModelSuccess(stat, newNumEntries):
+    logger.info('Google model for ' + str(stat) + ' retrained. Number entries: ' + str(newNumEntries))
+
+# -- GAME SPREAD LOGS -- #
+def logSpreadScrapeSuccess(spreads):
+    logger.info('Game spreads successfully scraped for ', len(spreads), ' games.')
+
+def logSpreadScrapeError(error):
+    logger.error('Failed to complete scrape spreads task. Error: ' + str(error))
+
 # -- TASK LOGS --- #
 def logFirstOfDayUpdateError(error):
     logger.error('Failed to complete initial daily task. Error: ' + str(error))
+
+def logSalaryScrapeTaskSuccess(salaries):
+    logger.info('Salary data scraped. # salaries: ' + str(len(salaries)))
+
+def logSalaryScrapeTaskError(error):
+    logger.error('Failed to complete scrape salary task. Error: ' + str(error))
+
+
 
 
 

@@ -123,10 +123,10 @@ def getFinalAnalysisForDates(datesToTest, source, salaryCap, threshold):
 
     return float(totalOver / totalTested)
 
-dates = ml.getDateRangeArr('2016-02-07', '2016-04-05')
+dates = ml.getDateRangeArr('2016-02-20', '2016-04-05')
 source = 'GOOGLE'
 cap = 60000
-minimum = 285
+minimum = 297.2
 
 print(getFinalAnalysisForDates(dates, source, cap, minimum))
 

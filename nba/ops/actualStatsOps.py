@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime, timedelta, date
 import pytz
+import logger
 from pytz import timezone
 
 import nba.scrapers.actual_stats_scraper as actual
@@ -29,8 +30,11 @@ def scrapeActualGameStatsForYesterdayAndPostToDb():
     yesterday_utc = datetime.now(tz=pytz.utc) - timedelta(days=1)
     yesterday_pst = yesterday_utc.astimezone(timezone('US/Pacific')).strftime(DATE_FORMAT)
 
-    stats = scrapeGameStats(yesterday_pst)
-    return api.postActualStats(stats)
+    try:
+        stats = scrapeGameStats(yesterday_pst)
+        api.postActualStats(stats)
+    except Exception as e:
+        logger.logActualStatsError(e)
         
     
     
