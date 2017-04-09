@@ -45,7 +45,7 @@ def logIncompletePlayersUpdate(playerBios):
 
 # -- ACTUAL STATS LOGS --- #
 def logActualStatsError(error):
-    logger.error('Failed to retrieve or post actual stats. Error:', e)
+    logger.error('Failed to retrieve or post actual stats. Error:', error)
 
 # -- ML LOGS -- #
 def logRetrainGoogleModelSuccess(stat, newNumEntries):

@@ -73,6 +73,16 @@ def updatePlayerBios(updates):
             print("COULDN'T UPDATE ", str(currentPlayer["playerId"]))
             continue
 
+# update incomplete players w/ missing bios
+def updatePlayerPositions(updates):
+    for positionUpdate in updates:
+        updatePlayerUrl = baseApiUrl + '/players/' + str(positionUpdate["playerId"]) + '/position'
+        try:
+            update = requests.put(updatePlayerUrl, headers=apiHeaders, data=json.dumps(positionUpdate))
+        except:
+            print("COULDN'T UPDATE ", str(positionUpdate["playerId"]))
+            continue
+
 
 def postPlayersNotOnRosters(idArr):
     if len(idArr) > 0:
