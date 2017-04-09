@@ -10,6 +10,7 @@ import nba.ops.driverWaits as waits
 from selenium.webdriver.support.ui import Select
 
 from nba.classes.NewPlayerId import NewPlayerId
+from nba.classes.NbaPositionUpdate import NbaPositionUpdate
 import nba.ops.apiCalls as api
 from nba.ops.config import APP_CONFIG
 
@@ -20,7 +21,7 @@ def getSalaryDataForDate(date, fantasySite, playerList, driver):
     date in YYYY-MM-DD format
     session is a requests session
     """
-    print("Getting salary data for", date)
+    # print("Getting salary data for", date)
     baseUrl = config["FC_BASE_URL"]
     projSourceId = 5
     fullUrl = baseUrl + fantasySite + '/NBA/' + date
@@ -44,6 +45,7 @@ def getSalaryDataForDate(date, fantasySite, playerList, driver):
 
     salaryData = {
         'currentPlayerSalaries': [],
+        'playerPositionUpdates': [],
         'missingPlayerIds': []
     }
 
@@ -59,6 +61,7 @@ def getSalaryDataForDate(date, fantasySite, playerList, driver):
                 newPlayerId = NewPlayerId(projSourceId, fcId, playerName)
                 salaryData['missingPlayerIds'].append(newPlayerId.__dict__)
             else:
+                # add salary data
                 if fantasySite == 'fanduel':
                     site = 'FAN_DUEL'
                 elif fantasySite == 'draftkings':
@@ -72,6 +75,16 @@ def getSalaryDataForDate(date, fantasySite, playerList, driver):
                 }
 
                 salaryData['currentPlayerSalaries'].append(salaryObj)
+
+                # add position data:
+                currentPlayerPosition = playerObj["player_position"]
+                newPlayerPosition = row[1].text_content().strip()
+
+                # if position is different than what we have:
+                if currentPlayerPosition != newPlayerPosition:
+                    update = NbaPositionUpdate(playerObj["player_id"], newPlayerPosition)
+                    salaryData['playerPositionUpdates'].append(update.__dict__)
+                    
         except Exception as e:
             continue
 

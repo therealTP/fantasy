@@ -40,22 +40,40 @@ def getSalariesForDatesAndPostToApi(dateArr):
 
     allData = {
         'allSalaries': [],
-        'allNewIds': []
+        'allNewIds': [],
+        'allPositionUpdates': []
     }
+
+    newPosPlayers = []
 
     for date in dateArr:
         salariesForDate = fc.getSalaryDataForDate(date, site, playerData, driver)
         allData['allSalaries'].extend(salariesForDate['currentPlayerSalaries'])
         allData['allNewIds'].extend(salariesForDate['missingPlayerIds'])
+        
+        # add pos updates that aren't already in arr
+        for newPos in salariesForDate['playerPositionUpdates']:
+            if newPos not in allData['allPositionUpdates']:
+                allData['allPositionUpdates'].append(newPos)
+                # if playerId has already been recorded w/ diff pos change:
+                if newPos["playerId"] in newPosPlayers:
+                    print("MULTIPLE POS CHANGE PLAYER", newPos["playerId"])
+                else:
+                    # first time player/pos combo added, will add playerId
+                    newPosPlayers.append(newPos["playerId"])
 
-    newSalariesResponse = api.postSalaries(allData['allSalaries'])
+    posUpdates = sorted(allData['allPositionUpdates'], key=lambda k: k['playerId'])
+    print(posUpdates)
+    # posUpdatesResponse = api.updatePlayerPositions(posUpdates)
+
+    # newSalariesResponse = api.postSalaries(allData['allSalaries'])
     # UNCOMMENT LINE BELOW IF ALSO WANT TO ADD NEW FC IDS
     # newIdsResponse = api.postNewIds(allData['allNewIds'])
     
     return "DONE"
 
-# salaryDates = ml.getDateRangeArr('2015-11-04', '2016-04-13')
-# getSalariesForDatesAndPostToApi(salaryDates)
+salaryDates = ml.getDateRangeArr('2015-11-15', '2016-04-10')
+getSalariesForDatesAndPostToApi(salaryDates)
 
 
         
