@@ -40,8 +40,11 @@ def getPlayerInfo(brefId, sessionObj):
 
     try:
         gamesPlayed = int(tree.cssselect('div.stats_pullout div.p1 div p')[0].text_content())
+    except ValueError:
+        gamesPlayed = int(tree.cssselect('div.stats_pullout div.p1 div p')[1].text_content())
     except IndexError:
         gamesPlayed = 0
+
     # minsPlayed = int(tree.cssselect('table#totals tfoot tr')[0].text_content())
     
     meta_arr = tree.cssselect('div#meta div:last-child p')
