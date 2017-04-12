@@ -28,6 +28,3 @@ def getPostGameDataForYesterdaysGames():
         allPostGameData.append(postGameData)
 
     return allPostGameData
-
-# def getGameLinesForTodaysGames():
-    

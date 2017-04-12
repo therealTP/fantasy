@@ -27,11 +27,8 @@ try:
     # get a count of how many manual updates are pending in the db (for notification)
     manualUpdates = api.getPendingManualUpdatesCounts()
 
-
     # TODO: get post game data, e.g scores, injuries, winner, etc
     # actual.getYesterdayPostGameDataAndPostToDb()
-
-
 
     notify.notifyFirstOfDayUpdateTaskSuccess(manualUpdates)
 
