@@ -13,3 +13,10 @@ def appendToCsv(arrOfArrs, filename):
     with open(filename, "a") as f:
         writer = csv.writer(f,quoting=csv.QUOTE_NONNUMERIC)
         writer.writerows(arrOfArrs)
+
+def openCsvFromFileToArrays(filename):
+    with open(filename, 'r') as f:
+        reader = csv.reader(f)
+        data = list(reader)
+
+    return data
