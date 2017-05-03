@@ -5,6 +5,9 @@ from lxml import html
 from nba.classes.NbaPlayerStat import NbaPlayerStat
 from nba.ops.config import APP_CONFIG
 
+import nba.ops.apiCalls as api
+import nba.ops.csvOps as csvOps
+
 config = APP_CONFIG
 
 def getStatForRow(row, gameId, teamId, playerList):
@@ -70,6 +73,54 @@ def getGameStats(gameData, playerList, sessionObj):
             gameStats.append(homePlayerStat)
 
     return gameStats
+
+
+def get_usual_depth_positions(season):
+    session = requests.Session()
+    current_players = api.getCurrentPlayerData()
+    # teams_url = 'http://www.basketball-reference.com/leagues/NBA_' + str(season) + '.html'
+    depth_url = 'http://basketball.realgm.com/nba/depth-charts/' + str(season)
+
+    page = session.get(depth_url)
+    tree = html.fromstring(page.text)
+    # team_rows = tree.cssselect('table#confs_standings_E tbody tr th a, table#confs_standings_W tbody tr th a')
+    team_section = tree.cssselect('table.basketball tbody')
+
+    all_depth_pos = {}
+
+    for section in team_section:
+        rows = section.cssselect('tr')
+        for depth, row in enumerate(rows):
+            players = row.cssselect("td.depth-chart-cell a")
+            for player in players:
+                player_name = " ".join(player.get("href").split("/")[2].split("-")).strip()
+                player_obj = next((player for player in current_players if player["player_name"] == player_name), None)
+                player_depth = depth + 1
+
+                if player_obj is None:
+                    player_id = int(input("What is the player_id for " + player_name + "? "))
+                    if player_id == 0:
+                        continue
+                else:
+                    player_id = player_obj["player_id"]
+
+                if player_id in all_depth_pos:
+                    if all_depth_pos[player_id] < player_depth:
+                        all_depth_pos[player_id] = player_depth
+                else:
+                    all_depth_pos[player_id] = player_depth
+
+    depth_rows = []
+    filename = './../local-data/usual_depth_pos_2017.csv'
+    for player, depth in all_depth_pos.items():
+        depth_rows.append([player, depth])
+
+    csvOps.writeToCsv(depth_rows, filename)
+
+get_usual_depth_positions(2017)
+
+
+
 
 
 
