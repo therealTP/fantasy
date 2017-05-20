@@ -140,9 +140,9 @@ def getBoxScoreData(gameSlug, sessionObj, playerList):
 
     gameData = {
         "awayTeamInactive": [], # ALL inactives
-        "homeTeamInactive": [],
-        "awayTeamDnp": [],
-        "homeTeamDnp": []
+        "homeTeamInactive": []
+        # "awayTeamDnp": [],
+        # "homeTeamDnp": []
         # attendance:
         # homeTeamPts:
         # awayTeamPts: 

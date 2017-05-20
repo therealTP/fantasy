@@ -1,5 +1,7 @@
 import nba.ops.apiCalls as api
 import nba.ops.mlDataPrep as ml
+import json
+import nba.ops.jsonData as jsonData
 
 # function to get optimal lineup from arr of player objects
 def getOptimalLineup(playerData, salaryCap):
@@ -10,11 +12,11 @@ def getOptimalLineup(playerData, salaryCap):
     """
     current_team_salary = 0
     constraints = {
-        'PG':2,
-        'SG':2,
-        'SF':2,
-        'PF':2,
-        'C':1
+        'PG': 2,
+        'SG': 2,
+        'SF': 2,
+        'PF': 2,
+        'C': 1
         # 'G':1,
         # 'F':1,
         # 'UTIL': 1
@@ -91,15 +93,20 @@ def getFinalAnalysisForDates(datesToTest, source, salaryCap, threshold):
     totalTested = 0
     totalOver = 0
 
+    # get tournment cutoffs
+    file = jsonData.LOCAL_DATA_PATH + "2017_tournament_results.json"
+    with open(file) as data_file:
+        cutoffs = json.load(data_file)
+
     # for dates in range:
     for dateToTest in datesToTest:
         try:
             # get the predictions for the date
             playerProjs = api.getPredictions(source, dateToTest)
-            # print(playerProjs[0].value)
             
             # calculate optimal lineup from predictions
             team = getOptimalLineup(playerProjs, salaryCap)
+            print(team)
             
             predicted_points = 0
             team_salary = 0
@@ -110,23 +117,28 @@ def getFinalAnalysisForDates(datesToTest, source, salaryCap, threshold):
 
             # calculate actual pts for team
             actualPoints = getActualPointsForTeam(team)
+
+            # get threshold for date (just double up for now)
+            cutoff = cutoffs[dateToTest]["Double Up"]
             
             # inc totalOver count if team is over threshold
             if predicted_points > 0 and actualPoints > 0:
-                print("DATE", dateToTest, "PREDICTED", predicted_points, "ACTUAL", actualPoints, "SALARY", team_salary)
+                print("DATE", dateToTest, "PREDICTED", predicted_points, "ACTUAL", actualPoints, "SALARY", team_salary, "CUTOFF", cutoff)
                 totalTested += 1
-                if actualPoints > threshold:
+                if actualPoints > cutoff:
                     totalOver += 1
             
-        except (KeyError, TypeError):
+        except (KeyError, TypeError) as e:
+            print("ERROR OPTIMIZING", str(dateToTest))
+            print(e)
             pass
 
     return float(totalOver / totalTested)
 
-dates = ml.getDateRangeArr('2016-02-20', '2016-04-05')
+dates = ml.getDateRangeArr('2017-03-20', '2017-04-12')
 source = 'GOOGLE'
 cap = 60000
-minimum = 297.2
+minimum = 285
 
 print(getFinalAnalysisForDates(dates, source, cap, minimum))
 

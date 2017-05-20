@@ -177,12 +177,14 @@ def postActualStats(statsArr):
 # --- POST GAME DATA --- #
 def updateGamesWithPostgameData(postgameDataArr):
 
-    if len(postGameData) > 0:
-        for postGameData in postgameDataArr:
-            postgameUpdateUrl = baseApiUrl + "/games/" + str(game["gameId"])
-            gameUpdateResponse = requests.put(postgameUpdateUrl, headers=apiHeaders, data=json.dumps(postGameData))
-
-        return "DONE"
+    if len(postgameDataArr) > 0:
+        postgameUpdateUrl = baseApiUrl + "/games/postgame"
+        return requests.post(postgameUpdateUrl, headers=apiHeaders, data=json.dumps(postgameDataArr)).json()
+        # for postGameData in postgameDataArr:
+        #     postgameUpdateUrl = baseApiUrl + "/games/" + str(postGameData["gameId"])
+        #     gameUpdateResponse = requests.put(postgameUpdateUrl, headers=apiHeaders, data=json.dumps(postGameData))
+    else:
+        return "NO GAMES"
 
 # --- ML DATA --- #
 def getBaseMlData(gameDate, statType, isTraining, numGames):

@@ -8,6 +8,9 @@ import nba.ops.jsonData as jsonData
 from nba.ops.config import APP_CONFIG
 config = APP_CONFIG
 
+# [0, 0.1, 0, 0, 1.3, 'mcgarmi01', 'PF', 2, 6, False,
+# 82, 255, 283, 13, 52, 21, 1463040, 'OKC', 'true', 0.7,
+# 'true', 'MIN', -13, 111.25, 1900, 5, 'Fri', 82, 2, 2, 18, 1, 'true', 'true', 1, 4.42, 2.814, 4.483, 1, 0.2, 1, 47.0, 2, 0, 0.8, 0.8, 0.0, 0.0, 0, 0]
 def getColumns():
     columns = [
         # ACTUAL STAT OF TYPE (only included in training data)
@@ -15,14 +18,14 @@ def getColumns():
         # PROJECTION DATA
         "nf", "rw", "bm", "fp",
         # PLAYER DATA
-        "bref_id", "player_position", "depth_pos", "usual_depth_pos", "is_starter", 
-        "height", "weight", "age", "exp_months",  "games_played", "draft_pick", "current_salary",
+        "bref_id", "player_position", "current_depth", "usual_depth", "is_starter",
+        "height", "weight", "age", "exp_months",  "games_played", "draft_pick", "player_salary",
         # TEAM DATA
         "team_abbrev", "team_won_last_game", "team_winning_pct",
         # GAME DATA
         "is_home", "opponent_abbrev", "team_spread", "team_pred_pts", 
         # GAME TIME & DATE
-        "game_time_24_et", "game_tz", "day_of_week", # "game_month",
+        "game_time_24_et", "game_tz", "day_of_week", "days_into_season",
         # BASIC INJURY COUNT
         "num_teammates_injured", "num_opponents_injured",
         # STADIUM ATTENDANCE
@@ -262,6 +265,8 @@ def getAndPrepFinalData(gameDate, statType, isTraining, numRecentGames, dicts=Fa
             preppedData.append(finalRow)
     
     return preppedData
+
+# print(getAndPrepFinalData('2015-11-07', 'pts', True, 10))
 
 # This fcn primarily used for pulling training data for a date range
 def getDataForMultipleDates(dateArr, statType, isTraining, numRecentGames):

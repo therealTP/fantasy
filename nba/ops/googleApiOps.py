@@ -219,10 +219,6 @@ def retrainAllModelsWithYesterdaysDataAndLog():
     analyzeData = analyzePredictionModel(statType)
     logger.logRetrainGoogleModelSuccess(stat, analyzeData["dataDescription"]["outputFeature"]["numeric"]["count"])
 
-# retrainModelWithDate("2015-11-11", "pts")
-# waitForModelToRetrain("pts")
-# print(analyzePredictionModel("pts"))
-
 
 
     
