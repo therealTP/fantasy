@@ -2,7 +2,9 @@ nba/config.json
 *__pycache__*
 nba/local-data/
 nba/.idea
+nba/.vscode
 *.pyc
 *ghostdriver.log
 .*
 !/.gitignore
+*UNKNOWN.egg*
